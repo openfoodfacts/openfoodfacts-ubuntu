@@ -37,7 +37,7 @@ MainView {
                 onClicked: {
                     var barcodeValue = "3029330003533";
                     console.log("picture tooken with barcode = " + barcodeValue);
-                    pageStack.push(Qt.resolvedUrl("qml/ProductView.qml", {barcode: barcodeValue}))
+                    pageStack.push(Qt.resolvedUrl("qml/ProductView.qml"), {"barcode": barcodeValue});
                 }
             }
 

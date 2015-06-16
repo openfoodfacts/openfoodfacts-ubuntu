@@ -3,10 +3,9 @@ import Ubuntu.Components 1.2
 
 Page {
     title: "View product"
-    id: productView
-    visible: false
-    property string barcode;
-
+    id: pageProductView
+   property string barcode:"";
+    onBarcodeChanged: console.log(pageProductView.barcode)
 
     Column {
         spacing: units.gu(1)
@@ -15,11 +14,10 @@ Page {
             fill: parent
         }
 
-
         Label {
             id: label
             objectName: "label"
-            text: productView.barcode
+            text: pageProductView.barcode
         }
     }
 }
