@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-16 20:41+0200\n"
+"POT-Creation-Date: 2015-06-16 21:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,14 +21,6 @@ msgstr ""
 msgid "OpenFoodFacts"
 msgstr ""
 
-#: Main.qml:41
-msgid "Hello.."
-msgstr ""
-
-#: Main.qml:48
-msgid "Tap me!"
-msgstr ""
-
-#: Main.qml:51
-msgid "..world!"
+#: Main.qml:35
+msgid "Take a picture"
 msgstr ""

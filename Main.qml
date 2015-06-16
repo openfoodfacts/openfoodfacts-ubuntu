@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import Ubuntu.Components 1.1
+import QtQuick 2.4
+import Ubuntu.Components 1.2
 
 /*!
     \brief MainView with a Label and Button elements.
@@ -18,40 +18,31 @@ MainView {
     */
     //automaticOrientation: true
 
-    // Removes the old toolbar and enables new features of the new header.
-    useDeprecatedToolbar: false
-
     width: units.gu(100)
     height: units.gu(75)
 
-    Page {
-        title: i18n.tr("OpenFoodFacts")
-
-        Column {
-            spacing: units.gu(1)
-            anchors {
-                margins: units.gu(2)
-                fill: parent
-            }
-
-            Label {
-                id: label
-                objectName: "label"
-
-                text: i18n.tr("Hello..")
-            }
+    PageStack {
+        id: pageStack
+        Component.onCompleted: push(pageMain)
+        Page {
+            title: i18n.tr("OpenFoodFacts")
+            id:pageMain
 
             Button {
                 objectName: "button"
                 width: parent.width
 
-                text: i18n.tr("Tap me!")
+                text: i18n.tr("Take a picture")
 
                 onClicked: {
-                    label.text = i18n.tr("..world!")
+                    var barcodeValue = "3029330003533";
+                    console.log("picture tooken with barcode = " + barcodeValue);
+                    pageStack.push(Qt.resolvedUrl("qml/ProductView.qml", {barcode: barcodeValue}))
                 }
             }
+
         }
     }
 }
+
 
