@@ -1,9 +1,10 @@
-Makefile
 *.tmp
-*.pot
-*.user
 .bzr
 .git
 *.*~
+*.user
+*.pot
 po
+
+
 
