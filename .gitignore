@@ -4,6 +4,7 @@
 *.*~
 *.user
 *.pot
+*.qmlproject
 po
 
 
