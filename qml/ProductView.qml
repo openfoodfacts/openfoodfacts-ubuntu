@@ -1,27 +1,44 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.2
-import "component/parser.js" as JS
+import Ubuntu.Components.ListItems 1.0 as ListItem
+import "component"
 
 
 Page {
-    title: "View product : "+ jsonData["product"]["product_name"];
+    title: "View product : ";
     id: pageProductView
 
 
     property string barcode:"";
     onBarcodeChanged: console.log(pageProductView.barcode)
-
-    Component.onCompleted: JS.load()
-    ListModel {  id:listModel }
     property var jsonData
 
     Flickable {
+        anchors.fill: parent
+        JSONListModel {
+            id: openFoodFactJSON
+            source: "http://fr.openfoodfacts.org/api/v0/produit/" + pageProductView.barcode+".json";
+            query: "$[*]"
+            onJsonChanged: {
+               var _json = openFoodFactJSON.model.get(0);
+                titleLabel.text = _json.product_name;
+                productImage.source = _json.image_small_url;
+                labelbarcode.text=pageProductView.barcode;
 
+                descproduct.text= "Dénomination générique : " + _json.generic_name;
+
+
+                //3029330003533
+            }
+        }
+
+
+
+        // iconSource: model.data.thumbnail
         Label {
             id: titleLabel
             wrapMode: Text.WordWrap
             fontSize: "x-large"
-            text:  jsonData["product"]["product_name"]
         }
 
 
@@ -34,18 +51,33 @@ Page {
             height: units.gu(20)
 
             image: Image {
-                source: jsonData["product"]["image_small_url"]
+                id : productImage;
             }
+        }
 
-            Label {
-                id: labelbarcode
-                y : titleLabel.y + titleLabel.height + units.gu(1);
-                x : pictureproduct.x + units.gu(1);
-                objectName: "label"
-                // anchors.horizontalCenter: parent.horizontalCenter
-                fontSize: "x-small"
-                text: pageProductView.barcode
-            }
+        Label {
+            id: labelbarcode
+            y : titleLabel.y + titleLabel.height + units.gu(1); // hauteur
+            x : pictureproduct.x + pictureproduct.width+ units.gu(1); // largeur
+            objectName: "label"
+            // anchors.horizontalCenter: parent.horizontalCenter
+            fontSize: "x-small"
+        }
+
+        Text {
+            id: descproduct
+
+            x : labelbarcode.x; // largeur
+            y : labelbarcode.y + labelbarcode.height + units.gu(1);
+            objectName: "label"
+
+        }
+
+    }
+
+    /*  Flickable {
+
+
             Label {
                 id: featureproduct
                 objectName: "label"
@@ -128,6 +160,6 @@ Page {
 
         }
 
-    }
+    }*/
 }
 

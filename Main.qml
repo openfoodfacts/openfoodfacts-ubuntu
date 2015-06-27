@@ -63,6 +63,7 @@ MainView {
                         id: barcodeinput
                         height: units.gu(4)
                         placeholderText: "Enter your barcode"
+                        text : "3029330003533"
                         inputMethodHints : Qt.ImhDigitsOnly
                     }
 
