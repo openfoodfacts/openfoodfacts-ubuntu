@@ -79,6 +79,7 @@ Page {
                  clip: true
 
 
+
               Column {
 
                  Label {
@@ -92,7 +93,7 @@ Page {
                  UbuntuShape {
                         id: pictureproduct
                          width: units.gu(15)
-                         height: units.gu(15)
+                         height: units.gu(20)
                          anchors.horizontalCenter: parent.horizontalCenter
                          image: Image {
                               id : productImage;
