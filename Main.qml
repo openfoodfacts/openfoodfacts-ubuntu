@@ -22,6 +22,9 @@ MainView {
     width: units.gu(100)
     height: units.gu(75)
 
+
+    backgroundColor: "#48c1ba"
+
     PageStack {
         id: pageStack
         Component.onCompleted: push(pageMain)
@@ -30,6 +33,10 @@ MainView {
         Page {
             title: i18n.tr("OpenFoodFacts")
             id:pageMain
+
+            Rectangle {
+                anchors.fill:parent
+                color: "#EDEDEC"
 
           Column {
                 spacing: units.gu(2)
@@ -80,8 +87,8 @@ MainView {
                           pageStack.push(Qt.resolvedUrl("qml/ProductView.qml"), {"barcode": barcodeValue});
                       }
                     }
-
             }
+          }
           }
 
         }
