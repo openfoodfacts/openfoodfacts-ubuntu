@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.2
+import "qrc:///component/qml/component"
 import Ubuntu.Components.ListItems 1.0 as ListItem
 import QtGraphicalEffects 1.0
 
