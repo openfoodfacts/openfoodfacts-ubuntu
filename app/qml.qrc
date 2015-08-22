@@ -6,6 +6,8 @@
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>
+        <file>qml/component/RadialAction.qml</file>
+        <file>qml/component/RadialBottomEdge.qml</file>
         <file>qml/component/jsonpath.js</file>
     </qresource>
 </RCC>

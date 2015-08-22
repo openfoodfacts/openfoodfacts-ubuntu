@@ -2,12 +2,14 @@ import QtQuick 2.0
 import Ubuntu.Components 1.1
 import QtMultimedia 5.0
 import Ubuntu.Content 0.1
+
 /*
 import QtQuick 2.4
 import Ubuntu.Components 1.1
 import QtMultimedia 5.4
 import Ubuntu.Content 1.1
 */
+import "qrc:///component/qml/component"
 
 
 MainView {
@@ -27,7 +29,11 @@ MainView {
 
     PageStack {
         id: pageStack
-        Component.onCompleted: push(pageMain)
+        Component.onCompleted: {
+        push(Qt.resolvedUrl("barcodeReader.qml"));
+         //push(pageMain)
+        }
+
         height: parent.height
     }
 
@@ -92,11 +98,45 @@ MainView {
         //decoder.decodeImageFromFile(mainView.imagesource, 900,900,true);
     }
 
-    Page {
+    RadialBottomEdge {
+        actions: [
+
+            RadialAction {
+                iconName: "settings"
+                iconColor: UbuntuColors.coolGrey
+            },
+
+            RadialAction {
+                iconName: "search"
+                iconColor: UbuntuColors.coolGrey
+                onTriggered : {
+                    var barcodeValue = 3029330003533;
+                     pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                }
+            },
+
+            RadialAction {
+                iconName: "save"
+                iconColor: "white"
+                enabled: false
+                backgroundColor: UbuntuColors.green
+                onTriggered: console.log("save")
+            },
+
+            RadialAction {
+                iconName: "add"
+                iconColor: "white"
+                backgroundColor: UbuntuColors.green
+            }
+
+        ]
+    }
+
+   /* Page {
         title: i18n.tr("OpenFoodFacts")
         id:pageMain
 
-        /*head {
+        head {
             actions: [
 
                 Action {
@@ -109,7 +149,7 @@ MainView {
                     }
                 }
             ]
-        }*/
+        }
         Rectangle {
             anchors.fill:parent
             color: "#EDEDEC"
@@ -161,5 +201,6 @@ MainView {
             }
         }//rectangle
     } // page
+    */
 
 }
