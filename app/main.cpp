@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
     /*Product p;
     p.addPicture(new QImage(),"");*/
-
+    view.engine()->addImportPath("./qml");
     view.setResizeMode(QQuickView::SizeRootObjectToView);
     view.setSource(QUrl("qrc:///qml/main.qml"));
     view.show();
