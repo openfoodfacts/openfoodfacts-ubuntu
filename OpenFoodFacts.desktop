@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=OpenFoodFacts
-Exec=qmlscene $@ Main.qml
-Icon=openfoodfacts.png
-Terminal=false
-Type=Application
-X-Ubuntu-Touch=true
-
