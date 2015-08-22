@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/main.qml</file>
+        <file>qml/ProductView.qml</file>
+        <file>qml/barcodeReader.qml</file>
+    </qresource>
+    <qresource prefix="/component">
+        <file>qml/component/JSONListModel.qml</file>
+        <file>qml/component/jsonpath.js</file>
+    </qresource>
+</RCC>

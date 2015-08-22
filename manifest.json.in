@@ -1,0 +1,15 @@
+{
+    "name": "openfoodfacts.nymeria",
+    "description": "description of OpenFoodFacts",
+    "architecture": "@CLICK_ARCH@",
+    "title": "OpenFoodFacts",
+    "hooks": {
+        "OpenFoodFacts": {
+            "apparmor": "OpenFoodFacts.apparmor",
+            "desktop": "OpenFoodFacts.desktop"
+        }
+    },
+    "version": "0.4",
+    "maintainer": "Ubuntouch-fr team <your@mail.com>",
+    "framework": "ubuntu-sdk-15.04"
+}

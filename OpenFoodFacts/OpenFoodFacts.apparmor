@@ -1,0 +1,9 @@
+{
+    "policy_groups": [
+        "networking",
+        "camera",
+        "content_exchange",
+        "content_exchange_source"
+    ],
+    "policy_version": 1.3
+}
