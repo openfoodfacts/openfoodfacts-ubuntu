@@ -3,9 +3,8 @@
 .git
 *.*~
 *.user
-*.pot
 *.qmlproject
-po
+
 
 
 

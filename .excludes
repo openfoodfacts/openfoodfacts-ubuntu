@@ -1,9 +1,7 @@
 Makefile
 *.tmp
-*.pot
 *.user
 .bzr
 .git
 *.*~
-po
 

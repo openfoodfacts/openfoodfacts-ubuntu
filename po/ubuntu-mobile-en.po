@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-28 15:22+0200\n"
+"PO-Revision-Date: 2015-08-28 15:35+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: Pierre Slamich <pierre.slamich@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#: /home/morgan/qt/openfoodfacts/OpenFoodFacts/Main.qml:99
+msgid "Barcode reader"
+msgstr "Barcode reader"
+
+#. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
+#: /home/morgan/qt/openfoodfacts/OpenFoodFacts/Main.qml:110
+msgid "Import image"
+msgstr "Import image"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/barcodeReader.qml:20
+msgid "Lecture du code barre"
+msgstr "Reading barcode"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:28
+msgid "Dénomination générique"
+msgstr "Common name"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:30
+msgid "Quantité"
+msgstr "Quantity"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:32
+msgid "Conditionnement"
+msgstr "Packaging"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:34
+msgid "Marques"
+msgstr "Brands"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:37
+msgid "Catégories"
+msgstr "Categories"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:39
+msgid "Origine des ingrédients"
+msgstr "Origin of ingredients"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:41
+msgid "Lieux de fabrication ou de transformation"
+msgstr "Manufacturing or processing places"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:43
+msgid "Ville et pays d'achat"
+msgstr "City and Country where purchased"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:45
+msgid "Magasins"
+msgstr "Stores"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:47
+msgid "Pays de vente"
+msgstr "Countries where sold"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:49
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:283
+msgid "Ingrédients"
+msgstr "Ingredients"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:51
+msgid "Traces éventuelles"
+msgstr "Traces"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:54
+msgid "Taille d'une portion"
+msgstr "Serving size"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:199
+msgid "Caractéristiques du produit"
+msgstr "Product characteristics"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:318
+msgid "Informations nutritionnelles"
+msgstr "Nutrition facts"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:348
+msgid "Composition par"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:349
+msgid "portion"
+msgstr "serving"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:355
+msgid "Énergie"
+msgstr "Energy"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:359
+msgid "Matières grasses"
+msgstr "Fat"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:359
+msgid "et"
+msgstr "and"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:359
+msgid "Lipides"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:367
+msgid "Glucides"
+msgstr "Carbohydrate"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:371
+msgid "dont Sucres"
+msgstr "of which Sugars"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:375
+msgid "Fibres alimentaires"
+msgstr "Dietary fiber"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:379
+msgid "Protéines"
+msgstr "Proteins"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:383
+msgid "Sel"
+msgstr "Salt"
+
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:387
+msgid "Sodium"
+msgstr "Sodium"
