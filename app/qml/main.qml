@@ -1,14 +1,13 @@
+/*
 import QtQuick 2.0
 import Ubuntu.Components 1.1
-import QtMultimedia 5.0
 import Ubuntu.Content 0.1
+*/
 
-/*
 import QtQuick 2.4
 import Ubuntu.Components 1.1
-import QtMultimedia 5.4
 import Ubuntu.Content 1.1
-*/
+
 import "qrc:///component/qml/component"
 
 
@@ -26,6 +25,39 @@ MainView {
         //Theme.name = "Ubuntu.Components.Themes.SuruDark"
         i18n.domain = "OpenFoodFacts"
     }
+
+    /*RadialBottomEdge {
+        actions: [
+
+            RadialAction {
+                iconName: "settings"
+                iconColor: UbuntuColors.coolGrey
+            },
+
+            RadialAction {
+                iconName: "search"
+                iconColor: UbuntuColors.coolGrey
+                onTriggered : {
+                    pageStack.pop();
+                    pageStack.push(Qt.resolvedUrl("main.qml"));
+                }
+            },
+
+            RadialAction {
+                iconName: "save"
+                iconColor: "white"
+                enabled: false
+                backgroundColor: UbuntuColors.green
+                onTriggered: console.log("save")
+            },
+
+            RadialAction {
+                iconName: "add"
+                iconColor: "white"
+                backgroundColor: UbuntuColors.green
+            }
+        ]
+    }*/
 
     PageStack {
         id: pageStack
@@ -98,40 +130,7 @@ MainView {
         //decoder.decodeImageFromFile(mainView.imagesource, 900,900,true);
     }
 
-    RadialBottomEdge {
-        actions: [
 
-            /*RadialAction {
-                iconName: "settings"
-                iconColor: UbuntuColors.coolGrey
-            },*/
-
-            RadialAction {
-                iconName: "search"
-                iconColor: UbuntuColors.coolGrey
-                onTriggered : {
-                    /*var barcodeValue = 3029330003533;
-                     pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});*/
-                    pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
-                }
-            }
-
-           /* RadialAction {
-                iconName: "save"
-                iconColor: "white"
-                enabled: false
-                backgroundColor: UbuntuColors.green
-                onTriggered: console.log("save")
-            },
-
-            RadialAction {
-                iconName: "add"
-                iconColor: "white"
-                backgroundColor: UbuntuColors.green
-            }*/
-
-        ]
-    }
 
    /* Page {
         title: i18n.tr("OpenFoodFacts")

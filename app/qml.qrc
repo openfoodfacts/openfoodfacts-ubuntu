@@ -3,6 +3,7 @@
         <file>qml/main.qml</file>
         <file>qml/ProductView.qml</file>
         <file>qml/barcodeReader.qml</file>
+        <file>qml/notFound.qml</file>
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>

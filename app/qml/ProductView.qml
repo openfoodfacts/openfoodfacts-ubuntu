@@ -1,5 +1,10 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.2
+import Ubuntu.Components 1.1
+/*
+import QtQuick 2.0
+import Ubuntu.Components 1.1
+*/
+
 import "qrc:///component/qml/component"
 import Ubuntu.Components.ListItems 1.0 as ListItem
 import QtGraphicalEffects 1.0
@@ -10,16 +15,39 @@ Page {
     id: pageProductView
 
     property string barcode:"";
-    onBarcodeChanged: console.log(pageProductView.barcode)
-    property var jsonData
+    onBarcodeChanged: console.log(pageProductView.barcode);
+    property var jsonData;
+    property string productFound:"";
+
+    onProductFoundChanged: {
+        if (pageProductView.productFound === "0") {
+            pageStack.pop();
+            pageStack.push(Qt.resolvedUrl("notFound.qml"));
+        }
+    }
+
+    Timer {
+        id: findProductTimer
+        interval: 500
+        repeat: false
+        onTriggered: {
+            if (pageProductView.productFound !== "1") {
+                pageProductView.productFound = "0";
+            }
+        }
+    }
 
     JSONListModel {
         id: openFoodFactJSON
         source: "http://fr.openfoodfacts.org/api/v0/produit/" + pageProductView.barcode + ".json";
         query: "$[*]"
         onJsonChanged: {
-            if (openFoodFactJSON.model.length() > 0) {
-                var _json = openFoodFactJSON.model.get(0);
+            findProductTimer.start()
+            var _json = openFoodFactJSON.model.get(0);
+
+            if (typeof _json.product_name !== "undefined" && _json.product_name !== "" ) {
+                pageProductView.productFound = "1";
+
                 titleLabel.text = _json.product_name;
                 productImage.source = _json.image_small_url;
                 picturebackgroundtop.source = _json.image_small_url;
@@ -49,6 +77,8 @@ Page {
                 var ingredients_text = _json.ingredients_text || 'n/a';
                 ingrproduct.text = "<b>"+i18n.tr("Ingredients")+" : </b>" + _json.ingredients_text;
                 var traces = _json.traces || 'n/a';
+
+                // TRANSLATORS: an aliment can contains traces of thoses products
                 tracproduct.text = "<b>"+i18n.tr("Traces")+" : </b>" + traces;
                 imagenutr.source = "http://static.openfoodfacts.org/images/misc/" + _json.nutrition_grade_fr + ".338x72.png";
                 var serving_size = _json.serving_size || 'n/a';
@@ -96,10 +126,11 @@ Page {
                 var sodium_serving  = (typeof _json.nutriments.sodium_serving  !== "undefined") ? _json.nutriments.sodium_serving  : "n/a";
                 sodium.value = "<font color=\"#620000\">" + sodium_100g + " " + sodium_unit + "</font> | <font color=\"#002762\">" + sodium_serving + " " + sodium_unit + "</font>";
             } else {
-                console.log("no result");
+                pageProductView.productFound = "0";
             }
         }
     }
+
 
     Rectangle {
         id:main
@@ -349,7 +380,7 @@ Page {
 
                             ListItem.SingleValue {
                                 id:tablenutri
-                                text: "<b><font color=\"#000000\">"+i18n.tr("Composition par")+"</b></font>"
+                                text: "<b><font color=\"#000000\">"+i18n.tr("Composition by")+"</b></font>"
                                 value: "<b><font color=\"#620000\">100 g/ml</font></b> | <b><font color=\"#002762\">"+i18n.tr("serving")+"</font></b>"
                             }
                             ListItem.Divider { }
