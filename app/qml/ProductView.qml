@@ -26,6 +26,7 @@ Page {
         }
     }
 
+
     Timer {
         id: findProductTimer
         interval: 500

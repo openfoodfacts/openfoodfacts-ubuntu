@@ -7,12 +7,13 @@ import QtQuick 2.4
 import Ubuntu.Components 1.1
 
 
-
+import "qrc:///component/qml/component"
 
 
 Page {
     id: notFoundPage
     title: i18n.tr("Product not found")
+
 
     Button {
         objectName: "button"

@@ -12,6 +12,7 @@ import Ubuntu.Components.ListItems 1.0
 import Ubuntu.Components.Popups 1.0
 import CodeReader 1.0
 import QtQuick.Window 2.0
+import "qrc:///component/qml/component"
 
 
 
@@ -30,7 +31,6 @@ Page {
             }
         }
     }
-
 
 
     Camera {
@@ -66,31 +66,33 @@ Page {
         source: camera
         focus: visible
 
+        /*PinchArea {
+            id: pinchy
+            anchors.fill: parent
+
+            property real initialZoom
+            property real minimumScale: 0.3
+            property real maximumScale: 3.0
+            property bool active: false
+
+            onPinchStarted: {
+                print("pinch started!")
+                active = true;
+                initialZoom = camera.currentZoom;
+            }
+            onPinchUpdated: {
+                print("pinch updated")
+                var scaleFactor = MathUtils.projectValue(pinch.scale, 1.0, maximumScale, 0.0, camera.maximumZoom);
+                camera.currentZoom = MathUtils.clamp(initialZoom + scaleFactor, 1, camera.maximumZoom);
+            }
+            onPinchFinished: {
+                active = false;
+            }
+        }*/
+
     }
 
-    /*PinchArea {
-        id: pinchy
-        anchors.fill: parent
 
-        property real initialZoom
-        property real minimumScale: 0.3
-        property real maximumScale: 3.0
-        property bool active: false
-
-        onPinchStarted: {
-            print("pinch started!")
-            active = true;
-            initialZoom = camera.currentZoom;
-        }
-        onPinchUpdated: {
-            print("pinch updated")
-            var scaleFactor = MathUtils.projectValue(pinch.scale, 1.0, maximumScale, 0.0, camera.maximumZoom);
-            camera.currentZoom = MathUtils.clamp(initialZoom + scaleFactor, 1, camera.maximumZoom);
-        }
-        onPinchFinished: {
-            active = false;
-        }
-    }*/
     /*Label {
         anchors {
             left: parent.left

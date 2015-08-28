@@ -26,23 +26,23 @@ MainView {
         i18n.domain = "OpenFoodFacts"
     }
 
-    /*RadialBottomEdge {
-        actions: [
 
+    PageStack {
+        id: pageStack
+        Component.onCompleted: {
+            push(Qt.resolvedUrl("barcodeReader.qml"));
+            //push(pageMain)
+        }
+        height: parent.height
+    }
+
+  /*  RadialBottomEdge {
+        id:radialBottom;
+        actions: [
             RadialAction {
                 iconName: "settings"
                 iconColor: UbuntuColors.coolGrey
             },
-
-            RadialAction {
-                iconName: "search"
-                iconColor: UbuntuColors.coolGrey
-                onTriggered : {
-                    pageStack.pop();
-                    pageStack.push(Qt.resolvedUrl("main.qml"));
-                }
-            },
-
             RadialAction {
                 iconName: "save"
                 iconColor: "white"
@@ -55,19 +55,17 @@ MainView {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
+            },
+            RadialAction {
+                iconName: "search"
+                iconColor: UbuntuColors.coolGrey
+                onTriggered : {
+                    pageStack.pop();
+                    //pageStack.push(Qt.resolvedUrl("main.qml"));
+                }
             }
         ]
     }*/
-
-    PageStack {
-        id: pageStack
-        Component.onCompleted: {
-        push(Qt.resolvedUrl("barcodeReader.qml"));
-         //push(pageMain)
-        }
-
-        height: parent.height
-    }
 
     Connections {
         target: ContentHub
@@ -132,7 +130,7 @@ MainView {
 
 
 
-   /* Page {
+    /* Page {
         title: i18n.tr("OpenFoodFacts")
         id:pageMain
 
