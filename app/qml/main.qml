@@ -101,21 +101,22 @@ MainView {
     RadialBottomEdge {
         actions: [
 
-            RadialAction {
+            /*RadialAction {
                 iconName: "settings"
                 iconColor: UbuntuColors.coolGrey
-            },
+            },*/
 
             RadialAction {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
                 onTriggered : {
-                    var barcodeValue = 3029330003533;
-                     pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                    /*var barcodeValue = 3029330003533;
+                     pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});*/
+                    pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
                 }
-            },
+            }
 
-            RadialAction {
+           /* RadialAction {
                 iconName: "save"
                 iconColor: "white"
                 enabled: false
@@ -127,7 +128,7 @@ MainView {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
-            }
+            }*/
 
         ]
     }
