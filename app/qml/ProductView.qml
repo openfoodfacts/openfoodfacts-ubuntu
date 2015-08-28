@@ -26,33 +26,33 @@ Page {
                 labelbarcode.text=pageProductView.barcode;
 
                 var generic_name = _json.generic_name || 'n/a';
-                descproduct.text = "<b>"+i18n.tr("Dénomination générique")+ " : </b>" + generic_name;
+                descproduct.text = "<b>"+i18n.tr("Common name")+ " : </b>" + generic_name;
                 var quantity = _json.quantity || 'n/a';
-                quantproduct.text = "<b>"+i18n.tr("Quantité")+" : </b>" + quantity;
+                quantproduct.text = "<b>"+i18n.tr("Quantity")+" : </b>" + quantity;
                 var packaging = _json.packaging || 'n/a';
-                packproduct.text = "<b>"+i18n.tr("Conditionnement")+" : </b>" + packaging;
+                packproduct.text = "<b>"+i18n.tr("Packaging")+" : </b>" + packaging;
                 var brands = _json.brands || 'n/a';
-                brandproduct.text = "<b>"+i18n.tr("Marques")+" : </b>" + brands;
+                brandproduct.text = "<b>"+i18n.tr("Brands")+" : </b>" + brands;
 
                 var categories = _json.categories || 'n/a';
-                catproduct.text = "<b>"+i18n.tr("Catégories")+" : </b>" + categories;
+                catproduct.text = "<b>"+i18n.tr("Categories")+" : </b>" + categories;
                 var origins = _json.origins || 'n/a';
-                oriproduct.text = "<b>"+i18n.tr("Origine des ingrédients")+" : </b>" + origins;
+                oriproduct.text = "<b>"+i18n.tr("Origin of ingredients")+" : </b>" + origins;
                 var manufacturing_places = _json.manufacturing_places || 'n/a';
-                manuproduct.text = "<b>"+i18n.tr("Lieux de fabrication ou de transformation")+" : </b>" + manufacturing_places;
+                manuproduct.text = "<b>"+i18n.tr("Manufacturing or processing places")+" : </b>" + manufacturing_places;
                 var purchase_places = _json.purchase_places || 'n/a';
-                purcproduct.text = "<b>"+i18n.tr("Ville et pays d'achat")+" : </b>" + purchase_places;
+                purcproduct.text = "<b>"+i18n.tr("City and Country where purchased")+" : </b>" + purchase_places;
                 var stores = _json.stores || 'n/a';
-                storproduct.text = "<b>"+i18n.tr("Magasins")+" : </b>" + stores;
+                storproduct.text = "<b>"+i18n.tr("Stores")+" : </b>" + stores;
                 var countries = _json.countries || 'n/a';
-                counproduct.text = "<b>"+i18n.tr("Pays de vente")+" : </b>" + countries;
+                counproduct.text = "<b>"+i18n.tr("Countries where sold")+" : </b>" + countries;
                 var ingredients_text = _json.ingredients_text || 'n/a';
-                ingrproduct.text = "<b>"+i18n.tr("Ingrédients")+" : </b>" + _json.ingredients_text;
+                ingrproduct.text = "<b>"+i18n.tr("Ingredients")+" : </b>" + _json.ingredients_text;
                 var traces = _json.traces || 'n/a';
-                tracproduct.text = "<b>"+i18n.tr("Traces éventuelles")+" : </b>" + traces;
+                tracproduct.text = "<b>"+i18n.tr("Traces")+" : </b>" + traces;
                 imagenutr.source = "http://static.openfoodfacts.org/images/misc/" + _json.nutrition_grade_fr + ".338x72.png";
                 var serving_size = _json.serving_size || 'n/a';
-                sizeproduct.text = "<b><br/>"+i18n.tr("Taille d'une portion")+" : </b>" + serving_size;
+                sizeproduct.text = "<b><br/>"+i18n.tr("Serving size")+" : </b>" + serving_size;
 
                 var energy_100g = (typeof _json.nutriments.energy_100g !== "undefined") ? _json.nutriments.energy_100g : "n/a";
                 var energy_unit = (typeof _json.nutriments.energy_unit !== "undefined") ? _json.nutriments.energy_unit : " ";
@@ -200,7 +200,7 @@ Page {
                                 objectName: "label"
                                 fontSize: "large"
                                 color: "#48c1ba"
-                                text: "<b>"+i18n.tr("Caractéristiques du produit")+"</b><br/>"
+                                text: "<b>"+i18n.tr("Product characteristics")+"</b><br/>"
                                 font.underline : true
                             }
 
@@ -284,7 +284,7 @@ Page {
                                 objectName: "label"
                                 fontSize: "large"
                                 color: "#48c1ba"
-                                text: "<b>"+i18n.tr("Ingrédients")+"</b><br/>"
+                                text: "<b>"+i18n.tr("Ingredients")+"</b><br/>"
                                 font.underline : true
                             }
 
@@ -319,7 +319,7 @@ Page {
                                 objectName: "label"
                                 fontSize: "large"
                                 color: "#48c1ba"
-                                text: "<b>"+i18n.tr("Informations nutritionnelles")+"</b><br/>"
+                                text: "<b>"+i18n.tr("Nutrition facts")+"</b><br/>"
                                 font.underline : true
                             }
 
@@ -350,17 +350,17 @@ Page {
                             ListItem.SingleValue {
                                 id:tablenutri
                                 text: "<b><font color=\"#000000\">"+i18n.tr("Composition par")+"</b></font>"
-                                value: "<b><font color=\"#620000\">100 g/ml</font></b> | <b><font color=\"#002762\">"+i18n.tr("portion")+"</font></b>"
+                                value: "<b><font color=\"#620000\">100 g/ml</font></b> | <b><font color=\"#002762\">"+i18n.tr("serving")+"</font></b>"
                             }
                             ListItem.Divider { }
 
                             ListItem.SingleValue {
                                 id: energy
-                                text: "<font color=\"#000000\">"+i18n.tr("Énergie")+"</font>"
+                                text: "<font color=\"#000000\">"+i18n.tr("Energy")+"</font>"
                             }
                             ListItem.SingleValue {
                                 id: fat
-                                text: "<font color=\"#000000\">"+i18n.tr("Matières grasses")+"</font><br/><font color=\"#000000\">"+i18n.tr("et")+" "+i18n.tr("Lipides")+"</font>"
+                                text: "<font color=\"#000000\">"+i18n.tr("Fat")+"</font><br/><font color=\"#000000\">"+i18n.tr("and")+" "+i18n.tr("Lipides")+"</font>"
                             }
                             //ListItem.SingleValue {
                             //    id: saturated-fat_100g
@@ -368,23 +368,23 @@ Page {
                             //}
                             ListItem.SingleValue {
                                 id: carbohydrates
-                                text: "<font color=\"#000000\">"+i18n.tr("Glucides")+"</font>"
+                                text: "<font color=\"#000000\">"+i18n.tr("Carbohydrate")+"</font>"
                             }
                             ListItem.SingleValue {
                                 id: sugars
-                                text: "<font color=\"#000000\">    "+i18n.tr("dont Sucres")+"</font>"
+                                text: "<font color=\"#000000\">    "+i18n.tr("of which Sugars")+"</font>"
                             }
                             ListItem.SingleValue {
                                 id: fiber
-                                text: "<font color=\"#000000\">"+i18n.tr("Fibres alimentaires")+"</font>"
+                                text: "<font color=\"#000000\">"+i18n.tr("Dietary fiber")+"</font>"
                             }
                             ListItem.SingleValue {
                                 id: proteins
-                                text: "<font color=\"#000000\">"+i18n.tr("Protéines")+"</font>"
+                                text: "<font color=\"#000000\">"+i18n.tr("Proteins")+"</font>"
                             }
                             ListItem.SingleValue {
                                 id: salt
-                                text: "<font color=\"#000000\">"+i18n.tr("Sel")+"</font>"
+                                text: "<font color=\"#000000\">"+i18n.tr("Salt")+"</font>"
                             }
                             ListItem.SingleValue {
                                 id: sodium

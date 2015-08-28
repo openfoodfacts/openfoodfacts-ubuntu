@@ -17,7 +17,7 @@ import QtQuick.Window 2.0
 
 Page {
     id: grabCodePage
-    title: i18n.tr("Lecture du code barre")
+    title: i18n.tr("Reading barcode")
 
     QRCodeReader {
         id: qrCodeReader
