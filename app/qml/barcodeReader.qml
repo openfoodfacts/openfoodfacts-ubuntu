@@ -48,7 +48,7 @@ Page {
 
     Timer {
         id: captureTimer
-        interval: 1500
+        interval: 1000
         repeat: true
         onTriggered: {
             print("capturing");
