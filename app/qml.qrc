@@ -4,6 +4,11 @@
         <file>qml/ProductView.qml</file>
         <file>qml/barcodeReader.qml</file>
         <file>qml/notFound.qml</file>
+        <file alias="a.png">../OpenFoodFacts/a.png</file>
+        <file alias="b.png">../OpenFoodFacts/b.png</file>
+        <file alias="c.png">../OpenFoodFacts/c.png</file>
+        <file alias="d.png">../OpenFoodFacts/d.png</file>
+        <file alias="e.png">../OpenFoodFacts/e.png</file>
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>
