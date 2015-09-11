@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<QRCodeReader>("CodeReader", 1, 0, "QRCodeReader");
 
     /*Product p;
+
     p.addPicture(new QImage(),"");*/
     //view.engine()->addImportPath("qrc:///component/");
     view.setResizeMode(QQuickView::SizeRootObjectToView);

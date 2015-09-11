@@ -12,7 +12,7 @@ class Product: public QObject
 public:
     Product();
     ~Product();
-    Q_INVOKABLE void addPicture(QImage *img, QString label="front");
+    Q_INVOKABLE void addPicture(QImage *img, QString productCode, QString label="front");
 
 public slots:
     void replyFinished(QNetworkReply* reply);
