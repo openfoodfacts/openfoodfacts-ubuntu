@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-09 12:12+0200\n"
+"POT-Creation-Date: 2015-09-11 10:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgid "Countries where sold"
 msgstr ""
 
 #: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:79
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:320
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:319
 msgid "Ingredients"
 msgstr ""
 
@@ -88,62 +88,62 @@ msgstr ""
 msgid "Traces"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:87
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:86
 msgid "Serving size"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:236
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:235
 msgid "Product characteristics"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:355
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:354
 msgid "Nutrition facts"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:385
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:384
 msgid "Composition by"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:386
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:385
 msgid "serving"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:392
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:391
 msgid "Energy"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:396
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:395
 msgid "Fat"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:396
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:395
 msgid "and"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:396
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:395
 msgid "Lipides"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:404
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:403
 msgid "Carbohydrate"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:408
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:407
 msgid "of which Sugars"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:412
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:411
 msgid "Dietary fiber"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:416
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:415
 msgid "Proteins"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:420
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:419
 msgid "Salt"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:424
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:423
 msgid "Sodium"
 msgstr ""
