@@ -9,6 +9,8 @@
         <file alias="c.png">../OpenFoodFacts/c.png</file>
         <file alias="d.png">../OpenFoodFacts/d.png</file>
         <file alias="e.png">../OpenFoodFacts/e.png</file>
+        <file>qml/nutrition.jpg</file>
+        <file>qml/shoot.png</file>
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>
