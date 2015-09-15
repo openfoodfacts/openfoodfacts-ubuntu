@@ -1,5 +1,5 @@
 {
-    "name": "openfoodfacts.nymeria",
+    "name": "openfoodfacts.ubuntouch-fr",
     "description": "OpenFoodFacts is an application that allow the user to know what he eat",
     "architecture": "@CLICK_ARCH@",
     "title": "OpenFoodFacts",
@@ -9,7 +9,7 @@
             "desktop": "OpenFoodFacts.desktop"
         }
     },
-    "version": "0.5",
-    "maintainer": "Ubuntouch-fr team <your@mail.com>",
+    "version": "1.0",
+    "maintainer": "Ubuntouch-fr Team <jimmy@ubuntouch-fr.org>",
     "framework": "ubuntu-sdk-15.04"
 }
