@@ -7,6 +7,7 @@ import Ubuntu.Content 0.1
 import QtQuick 2.4
 import Ubuntu.Components 1.1
 import Ubuntu.Content 1.1
+import QtGraphicalEffects 1.0
 
 import "qrc:///component/qml/component"
 
@@ -26,15 +27,125 @@ MainView {
         i18n.domain = "OpenFoodFacts"
     }
 
-
     PageStack {
         id: pageStack
-        Component.onCompleted: {
-            push(Qt.resolvedUrl("barcodeReader.qml"));
+        //Component.onCompleted: {
+            //push(Qt.resolvedUrl("barcodeReader.qml"));
             //push(pageMain)
-        }
+        //}
         height: parent.height
-    }
+        Component.onCompleted: push(mainpage)
+
+
+        Page {
+                title: i18n.tr("OpenFoodFacts")
+                id: mainpage
+        Rectangle {
+            id:rect1
+            anchors.fill:parent
+            color: "#EDEDEC"
+            Column {
+                spacing: units.gu(2)
+                anchors {
+                    right: parent.right
+                    left: parent.left
+
+                }
+
+
+
+
+
+
+                Rectangle {
+                    id: headerpicture
+                    width: parent.width;
+                    height: units.gu(18)
+                    color: "#EDEDEC"
+
+                    Image {
+                        id : picturebackgroundtop;
+                        source:"nutrition.jpg";
+                        width: parent.width;
+                        height: units.gu(15)
+                    }
+
+
+                    Image {
+                        id : productImage;
+                        source:"shoot.png";
+                        fillMode: Image.PreserveAspectCrop
+                        visible: false // Do not forget to make original pic insisible
+                    }
+
+                    Rectangle {
+                        id: mask
+                        anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
+                        width: units.gu(7)
+                        height: units.gu(7)
+                        color: "#48c1ba";
+                        radius: 120
+                        clip: true
+                        visible: true
+
+                        Image {
+                            anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
+                            width: units.gu(6)
+                            height: units.gu(6)
+                            source:"shoot.png";
+                            fillMode: Image.PreserveAspectCrop
+                        }
+
+                        MouseArea {
+                                anchors.fill: mask
+                                onClicked: {
+                                    pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
+                                }
+                                onPressed: {
+                                    backgroundImage.color = "#29b3ab" }
+                                onReleased: {
+                                    backgroundImage.color = "#48c1ba" }
+                        }
+
+                    }
+
+
+                } // header picture
+
+
+
+
+
+
+
+                Row {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    spacing: units.gu(1)
+
+                    TextField {
+                        id: barcodeinput
+                        height: units.gu(4)
+                        placeholderText: "Enter your barcode"
+                        inputMethodHints : Qt.ImhDigitsOnly
+                    }
+
+
+                    Button {
+                        objectName: "envoyer"
+                        width: units.gu(4)
+                        height: units.gu(4)
+                        iconName: "search"
+
+                        onClicked: {
+                            var barcodeValue = barcodeinput.text;
+                            pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                        }
+                    }
+
+                }
+            }
+        }
+    }   }
 
   /*  RadialBottomEdge {
         id:radialBottom;
