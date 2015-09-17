@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: openfoodfacts\n"
+"Project-Id-Version: openfoodfacts.ubuntu-fr\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-08-28 15:58+0200\n"
 "PO-Revision-Date: 2015-08-28 21:06+0000\n"
@@ -17,28 +17,44 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-09-09 09:44+0000\n"
 "X-Generator: Launchpad (build 17706)\n"
 
-#: /home/morgan/qt/openfoodfacts/OpenFoodFacts/Main.qml:99
+#: /home/kazord/code/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "Lecteur de code barre"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
-#: /home/morgan/qt/openfoodfacts/OpenFoodFacts/Main.qml:110
+#: /home/kazord/code/openfoodfacts/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "Importer une image"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/barcodeReader.qml:20
+#: /home/kazord/code/openfoodfacts/app/qml/barcodeReader.qml:21
 msgid "Reading barcode"
 msgstr "Lecture du code barre"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:29
+#: /home/kazord/code/openfoodfacts/app/qml/main.qml:43
+msgid "OpenFoodFacts"
+msgstr "OpenFoodFacts"
+
+#: /home/kazord/code/openfoodfacts/app/qml/main.qml:130
+msgid "Enter your barcode"
+msgstr "Entrez le code barre"
+
+#: /home/kazord/code/openfoodfacts/app/qml/notFound.qml:15
+msgid "Product not found"
+msgstr "Produit non trouvé"
+
+#: /home/kazord/code/openfoodfacts/app/qml/notFound.qml:23
+msgid "No product found"
+msgstr "Pas de produit trouvé"
+
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:58
 msgid "Common name"
 msgstr "Dénomination générique"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:31
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:60
 msgid "Quantity"
 msgstr "Quantité"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:33
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:62
 msgid "Packaging"
 msgstr "Emballage"
 
@@ -70,11 +86,12 @@ msgstr "Magasins"
 msgid "Countries where sold"
 msgstr "Pays de vente"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:50
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:287
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:79
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:319
 msgid "Ingredients"
 msgstr "Ingrédients"
 
+#. TRANSLATORS: an aliment can contains traces of thoses products
 #: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:52
 msgid "Traces"
 msgstr "Traces"
@@ -99,7 +116,7 @@ msgstr "Composition par"
 msgid "serving"
 msgstr "portion"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:359
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:391
 msgid "Energy"
 msgstr "Énergie"
 
@@ -107,7 +124,7 @@ msgstr "Énergie"
 msgid "Fat"
 msgstr "Matières grasses"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:363
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:395
 msgid "and"
 msgstr "et"
 
@@ -138,3 +155,4 @@ msgstr "Sel"
 #: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:391
 msgid "Sodium"
 msgstr "Sodium"
+

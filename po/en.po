@@ -18,124 +18,141 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: en\n"
 
-#: /home/morgan/qt/openfoodfacts/OpenFoodFacts/Main.qml:99
+#: /home/kazord/code/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "Barcode reader"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
-#: /home/morgan/qt/openfoodfacts/OpenFoodFacts/Main.qml:110
+#: /home/kazord/code/openfoodfacts/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "Import image"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/barcodeReader.qml:20
-msgid "Lecture du code barre"
+#: /home/kazord/code/openfoodfacts/app/qml/barcodeReader.qml:21
+msgid "Reading barcode"
 msgstr "Reading barcode"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:28
-msgid "Dénomination générique"
+#: /home/kazord/code/openfoodfacts/app/qml/main.qml:43
+msgid "OpenFoodFacts"
+msgstr "OpenFoodFacts"
+
+#: /home/kazord/code/openfoodfacts/app/qml/main.qml:130
+msgid "Enter your barcode"
+msgstr "Enter your barcode"
+
+#: /home/kazord/code/openfoodfacts/app/qml/notFound.qml:15
+msgid "Product not found"
+msgstr "Product not found"
+
+#: /home/kazord/code/openfoodfacts/app/qml/notFound.qml:23
+msgid "No product found"
+msgstr "No product found"
+
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:58
+msgid "Common name"
 msgstr "Common name"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:30
-msgid "Quantité"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:60
+msgid "Quantity"
 msgstr "Quantity"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:32
-msgid "Conditionnement"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:62
+msgid "Packaging"
 msgstr "Packaging"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:34
-msgid "Marques"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:64
+msgid "Brands"
 msgstr "Brands"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:37
-msgid "Catégories"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:67
+msgid "Categories"
 msgstr "Categories"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:39
-msgid "Origine des ingrédients"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:69
+msgid "Origin of ingredients"
 msgstr "Origin of ingredients"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:41
-msgid "Lieux de fabrication ou de transformation"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:71
+msgid "Manufacturing or processing places"
 msgstr "Manufacturing or processing places"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:43
-msgid "Ville et pays d'achat"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:73
+msgid "City and Country where purchased"
 msgstr "City and Country where purchased"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:45
-msgid "Magasins"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:75
+msgid "Stores"
 msgstr "Stores"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:47
-msgid "Pays de vente"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:77
+msgid "Countries where sold"
 msgstr "Countries where sold"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:49
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:283
-msgid "Ingrédients"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:79
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:319
+msgid "Ingredients"
 msgstr "Ingredients"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:51
-msgid "Traces éventuelles"
+#. TRANSLATORS: an aliment can contains traces of thoses products
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:83
+msgid "Traces"
 msgstr "Traces"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:54
-msgid "Taille d'une portion"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:86
+msgid "Serving size"
 msgstr "Serving size"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:199
-msgid "Caractéristiques du produit"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:235
+msgid "Product characteristics"
 msgstr "Product characteristics"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:318
-msgid "Informations nutritionnelles"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:354
+msgid "Nutrition facts"
 msgstr "Nutrition facts"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:348
-msgid "Composition par"
-msgstr ""
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:384
+msgid "Composition by"
+msgstr "Composition by"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:349
-msgid "portion"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:385
+msgid "serving"
 msgstr "serving"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:355
-msgid "Énergie"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:391
+msgid "Energy"
 msgstr "Energy"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:359
-msgid "Matières grasses"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:395
+msgid "Fat"
 msgstr "Fat"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:359
-msgid "et"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:395
+msgid "and"
 msgstr "and"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:359
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:395
 msgid "Lipides"
-msgstr ""
+msgstr "Lipides"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:367
-msgid "Glucides"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:403
+msgid "Carbohydrate"
 msgstr "Carbohydrate"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:371
-msgid "dont Sucres"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:407
+msgid "of which Sugars"
 msgstr "of which Sugars"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:375
-msgid "Fibres alimentaires"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:411
+msgid "Dietary fiber"
 msgstr "Dietary fiber"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:379
-msgid "Protéines"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:415
+msgid "Proteins"
 msgstr "Proteins"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:383
-msgid "Sel"
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:419
+msgid "Salt"
 msgstr "Salt"
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:387
+#: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:423
 msgid "Sodium"
 msgstr "Sodium"

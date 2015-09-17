@@ -22,10 +22,11 @@ MainView {
 
     useDeprecatedToolbar: false
     backgroundColor: "#48c1ba"
-    Component.onCompleted: {
-        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
-        i18n.domain = "OpenFoodFacts"
-    }
+    Component.onCompleted: { console.log(i18n.domain)
+        console.log(i18n.language)}
+//        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
+//        console.log("domaine")
+//    }
 
     PageStack {
         id: pageStack
@@ -125,7 +126,7 @@ MainView {
                     TextField {
                         id: barcodeinput
                         height: units.gu(4)
-                        placeholderText: "Enter your barcode"
+                        placeholderText: i18n.tr("Enter your barcode")
                         inputMethodHints : Qt.ImhDigitsOnly
                     }
 

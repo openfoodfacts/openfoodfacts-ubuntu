@@ -14,7 +14,7 @@ UBUNTU_MANIFEST_FILE=manifest.json.in
 
 # specify translation domain, this must be equal with the
 # app name in the manifest file
-UBUNTU_TRANSLATION_DOMAIN="OpenFoodFacts.nymeria"
+UBUNTU_TRANSLATION_DOMAIN="openfoodfacts.ubuntouch-fr"
 
 # specify the source files that should be included into
 # the translation file, from those files a translation
