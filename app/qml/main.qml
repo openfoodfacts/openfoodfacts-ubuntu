@@ -61,7 +61,7 @@ MainView {
                 Rectangle {
                     id: headerpicture
                     width: parent.width;
-                    height: units.gu(19)
+                    height: units.gu(20)
                     color: "#EDEDEC"
 
                     Image {
@@ -84,8 +84,8 @@ MainView {
                     Rectangle {
                         id: mask
                         anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
-                        width: units.gu(8)
-                        height: units.gu(8)
+                        width: units.gu(9)
+                        height: units.gu(9)
                         color: "#48c1ba";
                         radius: 120
                         clip: true
@@ -93,8 +93,8 @@ MainView {
 
                         Image {
                             anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
-                            width: units.gu(7)
-                            height: units.gu(7)
+                            width: units.gu(8)
+                            height: units.gu(8)
                             source:"shoot.png";
                             fillMode: Image.PreserveAspectCrop
                         }
