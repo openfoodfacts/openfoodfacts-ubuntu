@@ -61,7 +61,7 @@ MainView {
                 Rectangle {
                     id: headerpicture
                     width: parent.width;
-                    height: units.gu(18)
+                    height: units.gu(19)
                     color: "#EDEDEC"
 
                     Image {
@@ -69,6 +69,8 @@ MainView {
                         source:"nutrition.jpg";
                         width: parent.width;
                         height: units.gu(15)
+                        fillMode: Image.PreserveAspectCrop
+
                     }
 
 
@@ -82,8 +84,8 @@ MainView {
                     Rectangle {
                         id: mask
                         anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
-                        width: units.gu(7)
-                        height: units.gu(7)
+                        width: units.gu(8)
+                        height: units.gu(8)
                         color: "#48c1ba";
                         radius: 120
                         clip: true
@@ -91,8 +93,8 @@ MainView {
 
                         Image {
                             anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
-                            width: units.gu(6)
-                            height: units.gu(6)
+                            width: units.gu(7)
+                            height: units.gu(7)
                             source:"shoot.png";
                             fillMode: Image.PreserveAspectCrop
                         }
