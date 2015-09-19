@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-18 19:46+0200\n"
+"POT-Creation-Date: 2015-09-19 19:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,11 @@ msgstr ""
 msgid "OpenFoodFacts"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:131
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:49
+msgid "Settings"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:142
 msgid "Enter your barcode"
 msgstr ""
 
@@ -47,7 +51,7 @@ msgid "No product found"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:43
-msgid "URLOFDATAJSON"
+msgid "world.openfoodfacts.org/api/v0/product/"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:58
