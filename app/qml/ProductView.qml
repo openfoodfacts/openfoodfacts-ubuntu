@@ -40,7 +40,7 @@ Page {
 
     JSONListModel {
         id: openFoodFactJSON
-        source: "http://"+i18n.tr("URLOFDATAJSON") + pageProductView.barcode + ".json";
+        source: "http://"+i18n.tr("world.openfoodfacts.org/api/v0/product/") + pageProductView.barcode + ".json";
         query: "$[*]"
         onJsonChanged: {
             findProductTimer.start()
