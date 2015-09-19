@@ -8,6 +8,24 @@ Page {
     title: i18n.tr("Settings")
     signal settingsChanged()
 
+    head {
+        actions: [
+
+            Action {
+                text: i18n.tr("about")
+                iconName: "info"
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("About.qml"));
+                }
+            }
+        ]
+    }
+    Label {
+        anchors.centerIn: parent
+        text: "Not implemented"
+    }
+
+/*
     Flickable {
         id: flickable
 
@@ -15,10 +33,8 @@ Page {
         contentHeight: settingsColumn.height + units.gu(10)
 
 
-
         Column {
             id: settingsColumn
-
             anchors {
                 top: parent.top
                 left: parent.left
@@ -173,5 +189,5 @@ Page {
 
 
         }
-    }
+    }*/
 }
