@@ -41,6 +41,22 @@ MainView {
         Page {
                 title: i18n.tr("OpenFoodFacts")
                 id: mainpage
+
+                head {
+                    actions: [
+
+                        Action {
+                            text: i18n.tr("Settings")
+                            iconName: "settings"
+                            onTriggered: {
+                                pageStack.push(Qt.resolvedUrl("Settings.qml"));
+                            }
+                        }
+                    ]
+                }
+
+
+
         Rectangle {
             id:rect1
             anchors.fill:parent
@@ -52,11 +68,6 @@ MainView {
                     left: parent.left
 
                 }
-
-
-
-
-
 
                 Rectangle {
                     id: headerpicture
@@ -156,6 +167,9 @@ MainView {
             RadialAction {
                 iconName: "settings"
                 iconColor: UbuntuColors.coolGrey
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("Settings.qml"));
+                }
             },
             RadialAction {
                 iconName: "save"
