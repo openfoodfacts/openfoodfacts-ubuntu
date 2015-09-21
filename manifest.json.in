@@ -9,7 +9,7 @@
             "desktop": "OpenFoodFacts.desktop"
         }
     },
-    "version": "1.1",
+    "version": "1.1.1",
     "maintainer": "Ubuntouch-fr Team <jimmy@ubuntouch-fr.org>",
     "framework": "ubuntu-sdk-15.04"
 }
