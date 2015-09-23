@@ -38,8 +38,8 @@ Page {
 
         flash.mode: Camera.FlashTorch
 
-        focus.focusMode: Camera.FocusMacro + Camera.FocusContinuous
-        focus.focusPointMode: Camera.FocusPointAuto
+        focus.focusMode: Camera.FocusContinuous
+        focus.focusPointMode: Camera.FocusPointCenter
 
         Component.onCompleted: {
             captureTimer.start()
