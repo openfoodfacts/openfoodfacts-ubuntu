@@ -1,6 +1,10 @@
 #OpenFoodFacts Ubuntu Touch
 An implementation of OpenFoodFacts database to Ubuntu touch devices.
 
+#License
+This application is released under the term of the GNU GENERAL PUBLIC LICENSE Version 3.
+See file [gpl-3.0.txt](gpl-3.0.txt) for details.
+
 #Dependences
 Don't forget to install dependences because the barcode detector use static linkage
 
