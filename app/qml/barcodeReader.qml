@@ -7,6 +7,7 @@ import QtQuick 2.4
 import Ubuntu.Components 1.1
 import QtMultimedia 5.4
 import Ubuntu.Content 1.1
+import QtSensors 5.3
 
 import Ubuntu.Components.ListItems 1.0
 import Ubuntu.Components.Popups 1.0
@@ -29,30 +30,88 @@ Page {
                 pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": barcodeValue});
                 //pageStack.pop();
             }
+            else {
+                mycamera.unlock();
+                captureTimer.restart();
+            }
+
         }
     }
 
+    Item {
 
-    Camera {
-        id: camera
 
-        flash.mode: Camera.FlashTorch
-
-        focus.focusMode: Camera.FocusContinuous
-        focus.focusPointMode: Camera.FocusPointCenter
-
-        Component.onCompleted: {
-            captureTimer.start()
+        anchors {
+            fill: parent
         }
+
+        Camera {
+            id: mycamera
+
+            flash.mode: Camera.FlashTorch
+
+            focus.focusMode:  Camera.FocusContinuous // +Camera.FocusMacro
+            focus.focusPointMode: Camera.FocusPointCenter
+
+            onLockStatusChanged: {
+                mytext.text = mycamera.lockStatus
+                if(mycamera.lockStatus === Camera.Locked) {
+                    mycamera.imageCapture.captureToLocation('./toto.jpg');
+                    //mytext.text = "captured"
+                    //mycamera.imageCapture.capture();
+                    captureTimer.stop();
+                }
+
+            }
+
+            imageCapture {
+                    onImageCaptured: {
+                        photopreview.source = preview
+                        //mytext.text = capturedImagePath
+                        //preview can be use for decode, but imageSaved have better quality
+                    }
+
+                    onImageSaved: {
+                        //print(path)
+                        //mytext2.text = "decoding"
+                        qrCodeReader.decode(path);
+                    }
+
+                    onCaptureFailed: {
+                        mytext.text = message;
+                    }
+            }
+
+//        Component.onCompleted: {
+//            captureTimer.start()
+//        }
+    }
+
+    Image {
+        anchors {
+            fill: parent
+        }
+        id: photopreview
     }
 
     Timer {
         id: captureTimer
-        interval: 400
+        interval: 200
         repeat: true
         onTriggered: {
-            print("capturing");
-            qrCodeReader.grab();
+           // -100 is gravity*gravity approximation
+           var accel = -100+accelero.reading.x*accelero.reading.x + accelero.reading.y*accelero.reading.y + accelero.reading.z*accelero.reading.z;
+           if(1 > accel && -1 < accel)
+            {
+               mycamera.searchAndLock();
+               //captureTimer.stop();
+           }
+           else
+               mytext.text = accel;
+
+            //mytext.text = accelero.accelerationMode;
+            //print("capturing");
+//            qrCodeReader.grab();
         }
     }
 
@@ -63,12 +122,41 @@ Page {
         }
         fillMode: Image.PreserveAspectCrop
         orientation: device.naturalOrientation === "portrait"  ? -90 : 0
-        source: camera
+        source: mycamera
         focus: visible
+        MouseArea {
+            anchors.fill: parent;
+            onClicked: mycamera.searchAndLock()
+        }
+    }
+    Item {
+        width: parent.width
+        height: units.gu(16)
+        Label {
+            width:parent.width
+            id:mytext
+            text: "Infos"
+            horizontalAlignment: Text.AlignRight
+            wrapMode: Text.WordWrap
+            fontSize: "small"
+            color: UbuntuColors.lightAubergine
+            anchors.centerIn: parent
 
+        }
     }
 
 
+    Accelerometer {
+        id:accelero
+    }
+
+    Component.onCompleted: {
+        captureTimer.start();
+        accelero.accelerationMode = Accelerometer.Combined;
+        accelero.active = true;
+    }
+
+}
     /*Label {
         anchors {
             left: parent.left
@@ -82,16 +170,16 @@ Page {
         fontSize: "large"
     }*/
 
-    Component.onCompleted: {
-        qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(videoOutput, 0, 0).x, mainView.mapFromItem(videoOutput, 0, 0).y, videoOutput.width, videoOutput.height)
-    }
+//    Component.onCompleted: {
+//        qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(videoOutput, 0, 0).x, mainView.mapFromItem(videoOutput, 0, 0).y, videoOutput.width, videoOutput.height)
+//    }
 
     // We must use Item element because Screen component does not work with QtObject
-    Item {
-        id: device
-        property string naturalOrientation: Screen.primaryOrientation == Qt.LandscapeOrientation ? "landscape" : "portrait"
-        visible: false
-    }
+//    Item {
+//        id: device
+//        property string naturalOrientation: Screen.primaryOrientation == Qt.LandscapeOrientation ? "landscape" : "portrait"
+//        visible: false
+//    }
 
 }
 

@@ -97,6 +97,17 @@ void QRCodeReader::grab()
     QMetaObject::invokeMethod(reader, "doWork", Q_ARG(QImage, img));
 }
 
+void QRCodeReader::decode(const QString &path) {
+    QImage img(path);
+    Reader *reader = new Reader;
+    reader->moveToThread(&m_readerThread);
+    connect(&m_readerThread, SIGNAL(finished()), reader, SLOT(deleteLater()));
+    connect(reader, SIGNAL(resultReady(QString, QString)), this, SLOT(handleResults(QString, QString)));
+    m_readerThread.start();
+
+    QMetaObject::invokeMethod(reader, "doWork", Q_ARG(QImage, img));
+}
+
 void QRCodeReader::handleResults(const QString &type, const QString &text)
 {
     m_type = type;

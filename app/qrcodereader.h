@@ -44,6 +44,7 @@ public:
 
 public slots:
     void grab();
+    void decode(const QString &path);
 
 signals:
     void validChanged();
