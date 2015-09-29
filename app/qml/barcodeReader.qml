@@ -39,7 +39,7 @@ Page {
         flash.mode: Camera.FlashTorch
 
         focus.focusMode: Camera.FocusContinuous
-        focus.focusPointMode: Camera.FocusPointCenter
+        focus.focusPointMode: Camera.FocusPointAuto
 
         Component.onCompleted: {
             captureTimer.start()
@@ -48,7 +48,7 @@ Page {
 
     Timer {
         id: captureTimer
-        interval: 400
+        interval: 1000
         repeat: true
         onTriggered: {
             print("capturing");
@@ -65,6 +65,30 @@ Page {
         orientation: device.naturalOrientation === "portrait"  ? -90 : 0
         source: camera
         focus: visible
+
+        /*PinchArea {
+            id: pinchy
+            anchors.fill: parent
+
+            property real initialZoom
+            property real minimumScale: 0.3
+            property real maximumScale: 3.0
+            property bool active: false
+
+            onPinchStarted: {
+                print("pinch started!")
+                active = true;
+                initialZoom = camera.currentZoom;
+            }
+            onPinchUpdated: {
+                print("pinch updated")
+                var scaleFactor = MathUtils.projectValue(pinch.scale, 1.0, maximumScale, 0.0, camera.maximumZoom);
+                camera.currentZoom = MathUtils.clamp(initialZoom + scaleFactor, 1, camera.maximumZoom);
+            }
+            onPinchFinished: {
+                active = false;
+            }
+        }*/
 
     }
 

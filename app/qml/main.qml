@@ -8,13 +8,14 @@ import QtQuick 2.4
 import Ubuntu.Components 1.1
 import Ubuntu.Content 1.1
 import QtGraphicalEffects 1.0
+import Qt.labs.settings 1.0
 
 import "qrc:///component/qml/component"
 
 
 MainView {
-    id: mainView
-    objectName: "mainView"
+    id: openFoodFacts
+    objectName: "openFoodFacts"
     applicationName: "openfoodfacts.ubuntouch-fr"
 
     width: units.gu(40)
@@ -27,6 +28,16 @@ MainView {
 //        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
 //        console.log("domaine")
 //    }
+    // persistent app settings:
+    property var settings: Settings {
+        property bool visiblecomposition: true
+        property bool visiblenutrition:	true
+        property bool visibleingredient:	true
+        property bool visiblecharacteristics:	true
+        //property string userallergen:	text
+        property bool developerModeEnabled:	false
+
+    }
 
     PageStack {
         id: pageStack
@@ -160,30 +171,11 @@ MainView {
             }
         }
     }   }
-
-  /*  RadialBottomEdge {
+/*
+    RadialBottomEdge {
         id:radialBottom;
         actions: [
-            RadialAction {
-                iconName: "settings"
-                iconColor: UbuntuColors.coolGrey
-                onTriggered: {
-                    pageStack.push(Qt.resolvedUrl("Settings.qml"));
-                }
-            },
-            RadialAction {
-                iconName: "save"
-                iconColor: "white"
-                enabled: false
-                backgroundColor: UbuntuColors.green
-                onTriggered: console.log("save")
-            },
 
-            RadialAction {
-                iconName: "add"
-                iconColor: "white"
-                backgroundColor: UbuntuColors.green
-            },
             RadialAction {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
@@ -191,10 +183,32 @@ MainView {
                     pageStack.pop();
                     //pageStack.push(Qt.resolvedUrl("main.qml"));
                 }
-            }
-        ]
-    }*/
+            },
 
+            RadialAction {
+                iconName: "add"
+                iconColor: "white"
+                backgroundColor: UbuntuColors.green
+            },
+
+            RadialAction {
+                iconName: "settings"
+                iconColor: UbuntuColors.coolGrey
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("Settings.qml"));
+                }
+            },
+
+            RadialAction {
+                iconName: "browser-timeline"
+                iconColor: UbuntuColors.coolGrey
+                onTriggered: console.log("History")
+            }
+
+
+        ]
+    }
+*/
     Connections {
         target: ContentHub
         onExportRequested: {
@@ -231,11 +245,11 @@ MainView {
     ContentTransferHint {
         id: importHint
         anchors.fill: parent
-        activeTransfer: mainView.activeTransfer
+        activeTransfer: openFoodFacts.activeTransfer
         z: 100
     }
     Connections {
-        target: mainView.activeTransfer
+        target: openFoodFacts.activeTransfer
         onStateChanged: {
             switch (mainView.activeTransfer.state) {
             case ContentTransfer.Charged:

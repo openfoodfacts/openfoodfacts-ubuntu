@@ -1,12 +1,24 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.2
 import Ubuntu.Components.ListItems 1.0 as ListItem
+import Qt.labs.settings 1.0
+import Ubuntu.Components 1.2 as Toolkit
 
 Page {
     id: settingsPage
 
     title: i18n.tr("Settings")
     signal settingsChanged()
+
+
+    head.backAction: Action {
+        iconName: "back"
+            onTriggered: { //openFoodFacts.settings.userallergen = userallergen.text;
+                pageStack.pop();
+            }
+
+    }
+
 
     head {
         actions: [
@@ -20,12 +32,7 @@ Page {
             }
         ]
     }
-    Label {
-        anchors.centerIn: parent
-        text: "Not implemented"
-    }
 
-/*
     Flickable {
         id: flickable
 
@@ -42,8 +49,22 @@ Page {
             }
 
             ListItem.Header {
+                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                 text: i18n.tr("Global")
             }
+
+
+            ListItem.Standard {
+                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                showDivider: false
+                text: i18n.tr("Allergen")
+                progression: true
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("Allergen.qml"));
+                }
+            }
+
+/*
 
             Item {
                 id: templateallergen
@@ -77,58 +98,15 @@ Page {
                     spacing: units.gu(2)
 
                     TextArea {
+                        id:userallergen
                          objectName: "allergen"
-                         placeholderText: "1 par lignes"
+                         placeholderText: "1 by lines"
                          autoSize: true
                          width: parent.width
+                         text: openFoodFacts.settings.userallergen
                     }
                 }
             }
-
-
-
-            Item {
-                id: templatetheme
-
-                property string title
-                property real titleWidth: units.gu(10)
-                property alias spacing: contenttheme.spacing
-                default property alias content: contenttheme.children
-
-                height: Math.max(contenttheme.height, labeltheme.height)
-                width: parent.width
-
-
-                Label {
-                    id: labeltheme
-                    text: "Theme"
-                    width: templatetheme.titleWidth
-                    anchors.left: parent.left
-                    anchors.top: contenttheme.top
-                    anchors.topMargin: 2; anchors.leftMargin: 16;
-
-                }
-
-                Row {
-                    id: contenttheme
-
-                    anchors.left: labeltheme.right
-                    anchors.leftMargin: units.gu(2)
-                    anchors.right: parent.right
-                    anchors.rightMargin: units.gu(2)
-                    spacing: units.gu(2)
-
-                    ListItem.ItemSelector {
-                        model: [i18n.tr("dark"),
-                                i18n.tr("clear")]
-                        containerHeight: itemHeight * 2
-                    }
-
-                }
-            }
-
-
-
 
 
 
@@ -142,7 +120,7 @@ Page {
                 }
             }
 
-
+*/
             ListItem.Header {
                 text: i18n.tr("Viewing Information")
             }
@@ -151,43 +129,47 @@ Page {
                 showDivider: false
                 text: i18n.tr("Product characteristics")
                 control: Switch {
-                    id: productcharact
-                    checked: openfoodfacts.settings.productcharact
-
-                }
+                    id: characteristicswitch
+                    checked: openFoodFacts.settings.visiblecharacteristics
+                    onClicked: { openFoodFacts.settings.visiblecharacteristics = checked;
+                    }
+                  }
             }
 
             ListItem.Standard {
                 showDivider: false
                 text: i18n.tr("ingredients")
                 control: Switch {
-                    id: ingredients
-                    checked: openfoodfacts.settings.ingredients
-
-                }
+                    id: ingredientwitch
+                    checked: openFoodFacts.settings.visibleingredient
+                    onClicked: { openFoodFacts.settings.visibleingredient = checked;
+                    }
+                  }
             }
 
             ListItem.Standard {
                 showDivider: false
                 text: i18n.tr("Nutrition facts")
                 control: Switch {
-                    id: nutritionfacts
-                    checked: openfoodfacts.settings.nutritionfacts
-
+                    id: nutritionwitch
+                    checked: openFoodFacts.settings.visiblenutrition
+                    onClicked: { openFoodFacts.settings.visiblenutrition = checked;
+                    }
+                  }
                 }
-            }
 
             ListItem.Standard {
                 showDivider: false
                 text: i18n.tr("Composition")
                 control: Switch {
-                    id: composition
-                    checked: openfoodfacts.settings.composition
-
+                    id: compositionwitch
+                    checked: openFoodFacts.settings.visiblecomposition
+                    onClicked: { openFoodFacts.settings.visiblecomposition = checked;
+                    }
                 }
             }
 
 
         }
-    }*/
+    }
 }

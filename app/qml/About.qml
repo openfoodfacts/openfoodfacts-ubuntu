@@ -1,6 +1,7 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.2
 import Ubuntu.Components.ListItems 1.0 as ListItem
+import Ubuntu.Components.Popups 1.0
 
 Page {
     id: about
@@ -39,6 +40,33 @@ Page {
                 anchors.centerIn: parent
 
 
+                MouseArea {
+                    anchors.fill: parent
+
+                    onPressAndHold: {
+
+                        if (openFoodFacts.settings.developerModeEnabled === false)
+                               openFoodFacts.settings.developerModeEnabled = true
+                        else
+                               openFoodFacts.settings.developerModeEnabled = false
+
+
+                }
+
+
+
+            }
+        }
+        }
+
+        Item {
+            width: parent.width
+            height: visible ? units.gu(5) : units.gu(0)
+            visible: (openFoodFacts.settings.developerModeEnabled)
+            Label {
+                text: "Developer mode is enabled"
+                color: UbuntuColors.red
+                anchors.centerIn: parent
             }
         }
 
@@ -46,7 +74,7 @@ Page {
             width: parent.width
             height: units.gu(8)
             Label {
-                text: "Version 1.1"
+                text: "Version 1.1.3"
                 fontSize: "large"
                 color: UbuntuColors.lightAubergine
                 anchors.centerIn: parent

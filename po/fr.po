@@ -46,6 +46,10 @@ msgstr "Produit non trouvé"
 msgid "No product found"
 msgstr "Pas de produit trouvé"
 
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:43
+msgid "world.openfoodfacts.org/api/v0/product/"
+msgstr "fr.openfoodfacts.org/api/v0/produit/"
+
 #: /home/kazord/code/openfoodfacts/app/qml/ProductView.qml:58
 msgid "Common name"
 msgstr "Dénomination générique"

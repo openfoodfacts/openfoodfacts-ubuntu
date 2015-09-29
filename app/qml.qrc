@@ -14,6 +14,7 @@
         <file>qml/Settings.qml</file>
         <file>qml/About.qml</file>
         <file>qml/OpenFoodFacts.png</file>
+        <file>qml/Allergen.qml</file>
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>

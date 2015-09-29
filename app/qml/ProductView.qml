@@ -40,7 +40,7 @@ Page {
 
     JSONListModel {
         id: openFoodFactJSON
-        source: "http://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
+        source: "http://"+i18n.tr("world.openfoodfacts.org/api/v0/product/") + pageProductView.barcode + ".json";
         query: "$[*]"
         onJsonChanged: {
             findProductTimer.start()
@@ -75,8 +75,12 @@ Page {
                 storproduct.text = "<b>"+i18n.tr("Stores")+" : </b>" + stores;
                 var countries = _json.countries || 'n/a';
                 counproduct.text = "<b>"+i18n.tr("Countries where sold")+" : </b>" + countries;
-                var ingredients_text = _json.ingredients_text || 'n/a';
-                ingrproduct.text = "<b>"+i18n.tr("Ingredients")+" : </b>" + _json.ingredients_text;
+                var ingredients_text_with_allergens = _json.ingredients_text_with_allergens || 'n/a';
+                ingrproduct.text = "<b>"+i18n.tr("Ingredients")+" : </b>" + ingredients_text_with_allergens;
+
+                var allergens = _json.allergens || 'n/a';
+                allergenproduct.text = "<b>"+i18n.tr("Substances or products causing allergies or intolerances")+" : </b>" + allergens;
+
                 var traces = _json.traces || 'n/a';
 
                 // TRANSLATORS: an aliment can contains traces of thoses products
@@ -203,7 +207,20 @@ Page {
                         width:content.width;
                         visible: false
                     }
+/*
+                    Label {
+                        id: labelattention
 
+                    width:content.width;
+                    fontSize: "x-small"
+                    horizontalAlignment : Text.AlignHCenter
+                    color:"red";
+                    text: if ( ingrproduct.text.indexOf(openFoodFacts.settings.userallergen) > -1 )
+                              "found it"
+                            else
+                              "not found"
+                    }
+*/
                     Label {
                         id: labelbarcode
                         width:content.width;
@@ -213,12 +230,18 @@ Page {
                         color:"#48c1ba";
                     }
 
+
                     UbuntuShape {
                         id: sectioncaract
                         width: content.width
-                        height: labelsectioncaract.height + descproduct.height + quantproduct.height + packproduct.height + brandproduct.height
-                                + catproduct.height + oriproduct.height + manuproduct.height + purcproduct.height + storproduct.height +
-                                counproduct.height + 20
+                        visible: (openFoodFacts.settings.visiblecharacteristics)
+                        height: if (openFoodFacts.settings.visiblecharacteristics === false)
+                                    sectioncaract.height = 0
+                                else
+                                    labelsectioncaract.height + descproduct.height + quantproduct.height + packproduct.height + brandproduct.height
+                                                                    + catproduct.height + oriproduct.height + manuproduct.height + purcproduct.height + storproduct.height +
+                                                                    counproduct.height + 20
+
                         color : "#ffffff";
 
                         Column {
@@ -302,7 +325,12 @@ Page {
                     UbuntuShape {
                         id: sectioningr
                         width: content.width
-                        height: labelsectioningr.height + ingrproduct.height + tracproduct.height + 20
+                        visible: (openFoodFacts.settings.visibleingredient)
+                        height: if (openFoodFacts.settings.visibleingredient === false)
+                                    sectioningr.height = 0
+                                else
+                                    labelsectioningr.height + ingrproduct.height + allergenproduct.height + tracproduct.height + 20
+
                         color : "#ffffff";
 
                         Column {
@@ -326,6 +354,13 @@ Page {
                                 width:contentsectioningr.width;
                                 objectName: "label"
                             }
+
+                            Text{
+                                id: allergenproduct
+                                wrapMode: Text.Wrap
+                                width:contentsectioningr.width;
+                                objectName: "label"
+                            }
                             Text{
                                 id: tracproduct
                                 wrapMode: Text.Wrap
@@ -337,7 +372,13 @@ Page {
                     UbuntuShape {
                         id: sectionnutr
                         width: content.width
-                        height: labelsectionnutr.height + imagenutr.height + sizeproduct.height + 20
+                        visible: (openFoodFacts.settings.visiblenutrition)
+                        height: if (openFoodFacts.settings.visiblenutrition === false)
+                                    sectionnutr.height = 0
+                                else
+                                    labelsectionnutr.height + imagenutr.height + sizeproduct.height + 20
+
+
                         color : "#ffffff";
 
                         Column {
@@ -372,7 +413,13 @@ Page {
                     UbuntuShape {
                         id: sectiontablenutr
                         width: content.width
-                        height: tablenutri.height + energy.height + fat.height + carbohydrates.height + sugars.height + fiber.height + proteins.height + salt.height + sodium.height + 20
+                        visible: (openFoodFacts.settings.visiblecomposition)
+                        height: if (openFoodFacts.settings.visiblecomposition === false)
+                                    sectiontablenutr.height = 0
+                                else
+                                    tablenutri.height + energy.height + fat.height + carbohydrates.height + sugars.height + fiber.height + proteins.height + salt.height + sodium.height + 20
+
+
                         color : "#ffffff";
 
                         Column {
