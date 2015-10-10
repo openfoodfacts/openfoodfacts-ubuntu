@@ -22,19 +22,54 @@ MainView {
     height: units.gu(68)
 
     useDeprecatedToolbar: false
-    backgroundColor: "#48c1ba"
+    backgroundColor: openFoodFacts.settings.color
     Component.onCompleted: { console.log(i18n.domain)
         console.log(i18n.language)}
 //        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
 //        console.log("domaine")
 //    }
+
     // persistent app settings:
     property var settings: Settings {
         property bool visiblecomposition: true
         property bool visiblenutrition:	true
         property bool visibleingredient:	true
         property bool visiblecharacteristics:	true
-        //property string userallergen:	text
+
+        property string color:  '#48c1ba'
+
+        property string allergen:  ''
+
+
+        property string allergenegg: ''
+        property bool checkboxegg:	false
+        property string allergenpeanut: ''
+        property bool checkboxpeanut:	false
+        property string allergencereal: ''
+        property bool checkboxcereal:	false
+        property string allergencrustacean: ''
+        property bool checkboxcrustacean:	false
+        property string allergenfish: ''
+        property bool checkboxfish:	false
+        property string allergensoy: ''
+        property bool checkboxsoy:	false
+        property string allergenmilk: ''
+        property bool checkboxmilk:	false
+        property string allergennuts: ''
+        property bool checkboxnuts:	false
+        property string allergenmustard: ''
+        property bool checkboxmustard:	false
+        property string allergencelery: ''
+        property bool checkboxcelery:	false
+        property string allergensesameseeds: ''
+        property bool checkboxsesameseeds:	false
+        property string allergenmollusk: ''
+        property bool checkboxmollusk:	false
+        property string allergensulfurdioxide: ''
+        property bool checkboxsulfurdioxide:	false
+        property string allergenlupin: ''
+        property bool checkboxlupin:	false
+
         property bool developerModeEnabled:	false
 
     }
@@ -65,7 +100,6 @@ MainView {
                         }
                     ]
                 }
-
 
 
         Rectangle {
@@ -108,7 +142,7 @@ MainView {
                         anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
                         width: units.gu(9)
                         height: units.gu(9)
-                        color: "#48c1ba";
+                        color: openFoodFacts.settings.color;
                         radius: 120
                         clip: true
                         visible: true
