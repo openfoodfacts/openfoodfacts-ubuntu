@@ -129,8 +129,8 @@ Page {
                                  width: parent.width/6
                                  text: "ok"
                                  color:  "#38B44A"
-                                 onClicked: PopupUtils.close(dialogue),
-                                 openFoodFacts.settings.color = barcodeinput.text;
+                                 onClicked: ((barcodeinput.text == "")? openFoodFacts.settings.color = "#1ab6ef" : openFoodFacts.settings.color = barcodeinput.text),
+                                            PopupUtils.close(dialogue)
                              }
                          }
 
