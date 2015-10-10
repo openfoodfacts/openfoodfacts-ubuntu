@@ -3,22 +3,13 @@ import Ubuntu.Components 1.2
 import Ubuntu.Components.ListItems 1.0 as ListItem
 import Qt.labs.settings 1.0
 import Ubuntu.Components 1.2 as Toolkit
+import Ubuntu.Components.Popups 0.1
 
 Page {
     id: settingsPage
 
     title: i18n.tr("Settings")
     signal settingsChanged()
-
-
-    head.backAction: Action {
-        iconName: "back"
-            onTriggered: { //openFoodFacts.settings.userallergen = userallergen.text;
-                pageStack.pop();
-            }
-
-    }
-
 
     head {
         actions: [
@@ -32,12 +23,17 @@ Page {
             }
         ]
     }
+    Rectangle {
+        id:main
+        anchors.fill: parent;
+        color: "#EDEDEC"
 
     Flickable {
         id: flickable
-
         anchors.fill: parent
-        contentHeight: settingsColumn.height + units.gu(10)
+        contentHeight: settingsColumn.height
+        flickableDirection: Flickable.VerticalFlick
+        clip: true
 
 
         Column {
@@ -50,65 +46,107 @@ Page {
 
             ListItem.Header {
                 visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                text: i18n.tr("Global")
+                text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Global")+"</font>"
             }
 
 
-            ListItem.Standard {
+            ListItem.MultiValue {
                 visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                 showDivider: false
-                text: i18n.tr("Allergen")
+                text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Allergen")+"</font>"
+                values:  ["<font color=\"#b3b3b3\">"+
+                    ((openFoodFacts.settings.allergenegg !== "egg")? openFoodFacts.settings.allergenegg + "" : ""),
+                    ((openFoodFacts.settings.allergenpeanut !== "peanut")? openFoodFacts.settings.allergenpeanut + "" : ""),
+                    ((openFoodFacts.settings.allergencereal !== "cereal")? openFoodFacts.settings.allergencereal + "" : ""),
+                    ((openFoodFacts.settings.allergencrustacean !== "crustacean")? openFoodFacts.settings.allergencrustacean + "" : ""),
+                    ((openFoodFacts.settings.allergenfish !== "fish")? openFoodFacts.settings.allergenfish + "" : ""),
+                    ((openFoodFacts.settings.allergensoy !== "soy")? openFoodFacts.settings.allergensoy + "" : ""),
+                    ((openFoodFacts.settings.allergenmilk !== "milk")? openFoodFacts.settings.allergenmilk + "" : "")
+                       +"</font>"  ]
                 progression: true
                 onTriggered: {
                     pageStack.push(Qt.resolvedUrl("Allergen.qml"));
                 }
             }
 
+
+                Component {
+                     id: dialog
+                     Dialog {
+                         id: dialogue
+                         title: "Choose a color"
+                         Row {
+                             id: row
+                             width: parent.width
+                             spacing: units.gu(1)
+                             Button {
+                                 width: parent.width/2
+                                 text: ""
+                                 color:  "#48c1ba"
+                                 onClicked: PopupUtils.close(dialogue),
+                                 openFoodFacts.settings.color = "#48c1ba";
+                             }
+                             Button {
+                                 width: parent.width/2
+                                 text: ""
+                                 color:  "#DD4814"
+                                 onClicked: PopupUtils.close(dialogue),
+                                 openFoodFacts.settings.color = "#DD4814";
+                             }
+                         }
+                         Row {
+                             id: row2
+                             width: parent.width
+                             spacing: units.gu(1)
+                             Button {
+                                 width: parent.width/2
+                                 text: ""
+                                 color:  "#77216F"
+                                 onClicked: PopupUtils.close(dialogue),
+                                 openFoodFacts.settings.color = "#77216F";
+                             }
+                             Button {
+                                 width: parent.width/2
+                                 text: ""
+                                 color:  "#AEA79F"
+                                 onClicked: PopupUtils.close(dialogue),
+                                 openFoodFacts.settings.color = "#AEA79F";
+                             }
+                         }
+                         Row {
+                             id: row3
+                             width: parent.width
+                             spacing: units.gu(1)
+
+
+                             TextField {
+                                 id: barcodeinput
+                                 width: parent.width/1.2
+                                 placeholderText: i18n.tr("Example : #1ab6ef")
+                             }
+
+                             Button {
+                                 width: parent.width/6
+                                 text: "ok"
+                                 color:  "#38B44A"
+                                 onClicked: PopupUtils.close(dialogue),
+                                 openFoodFacts.settings.color = barcodeinput.text;
+                             }
+                         }
+
+                     }
+                }
+                ListItem.SingleValue {
+                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                    showDivider: false
+                    progression: true
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Theme")+"</font>"
+                    onClicked: PopupUtils.open(dialog)
+                }
+
+
+
 /*
-
-            Item {
-                id: templateallergen
-
-                property string title
-                property real titleWidth: units.gu(10)
-                property alias spacing: contentallergen.spacing
-                default property alias content: contentallergen.children
-
-                height: Math.max(contentallergen.height, labelallergen.height)
-                width: parent.width
-
-
-                Label {
-                    id: labelallergen
-                    text: "Allergen"
-                    width: templateallergen.titleWidth
-                    anchors.left: parent.left
-                    anchors.top: contentallergen.top
-                    anchors.topMargin: 2; anchors.leftMargin: 16;
-
-                }
-
-                Row {
-                    id: contentallergen
-
-                    anchors.left: labelallergen.right
-                    anchors.leftMargin: units.gu(2)
-                    anchors.right: parent.right
-                    anchors.rightMargin: units.gu(2)
-                    spacing: units.gu(2)
-
-                    TextArea {
-                        id:userallergen
-                         objectName: "allergen"
-                         placeholderText: "1 by lines"
-                         autoSize: true
-                         width: parent.width
-                         text: openFoodFacts.settings.userallergen
-                    }
-                }
-            }
-
-
 
             ListItem.Standard {
                 showDivider: false
@@ -122,12 +160,12 @@ Page {
 
 */
             ListItem.Header {
-                text: i18n.tr("Viewing Information")
+                text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Viewing Information")+"</font>"
             }
 
             ListItem.Standard {
                 showDivider: false
-                text: i18n.tr("Product characteristics")
+                text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Product characteristics")+"</font>"
                 control: Switch {
                     id: characteristicswitch
                     checked: openFoodFacts.settings.visiblecharacteristics
@@ -138,7 +176,7 @@ Page {
 
             ListItem.Standard {
                 showDivider: false
-                text: i18n.tr("ingredients")
+                text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("ingredients")+"</font>"
                 control: Switch {
                     id: ingredientwitch
                     checked: openFoodFacts.settings.visibleingredient
@@ -149,7 +187,7 @@ Page {
 
             ListItem.Standard {
                 showDivider: false
-                text: i18n.tr("Nutrition facts")
+                text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Nutrition facts")+"</font>"
                 control: Switch {
                     id: nutritionwitch
                     checked: openFoodFacts.settings.visiblenutrition
@@ -160,7 +198,7 @@ Page {
 
             ListItem.Standard {
                 showDivider: false
-                text: i18n.tr("Composition")
+                text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Composition")+"</font>"
                 control: Switch {
                     id: compositionwitch
                     checked: openFoodFacts.settings.visiblecomposition
@@ -169,7 +207,7 @@ Page {
                 }
             }
 
-
+           }
         }
     }
 }
