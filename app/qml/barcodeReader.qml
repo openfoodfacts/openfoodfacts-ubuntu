@@ -26,11 +26,14 @@ Page {
 
         onValidChanged: {
             if (valid) {
+                mytext.text = "reading ok"
+
                 var barcodeValue = qrCodeReader.text;
-                pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": barcodeValue});
+                //pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": barcodeValue});
                 //pageStack.pop();
             }
             else {
+                mytext.text = "reading fail"
                 mycamera.unlock();
                 captureTimer.restart();
             }
@@ -56,7 +59,7 @@ Page {
             onLockStatusChanged: {
                 mytext.text = mycamera.lockStatus
                 if(mycamera.lockStatus === Camera.Locked) {
-                    mycamera.imageCapture.captureToLocation('./toto.jpg');
+                    mycamera.imageCapture.captureToLocation(qrCodeReader.tmp);
                     //mytext.text = "captured"
                     //mycamera.imageCapture.capture();
                     captureTimer.stop();
@@ -66,19 +69,23 @@ Page {
 
             imageCapture {
                     onImageCaptured: {
-                        photopreview.source = preview
+                        photopreview.source = preview;
                         //mytext.text = capturedImagePath
                         //preview can be use for decode, but imageSaved have better quality
+                        //qrCodeReader.decode(preview);
                     }
 
                     onImageSaved: {
                         //print(path)
-                        //mytext2.text = "decoding"
+                        mytext.text = path;
                         qrCodeReader.decode(path);
+//                        //mytext.text = "decode return"
                     }
 
                     onCaptureFailed: {
                         mytext.text = message;
+                        //mycamera.unlock();
+                        //captureTimer.restart();
                     }
             }
 
@@ -95,20 +102,29 @@ Page {
     }
 
     Timer {
+        property real lx: 0
+        property real ly: 0
+        property real lz: 0
         id: captureTimer
         interval: 200
         repeat: true
         onTriggered: {
-           // -100 is gravity*gravity approximation
-           var accel = -100+accelero.reading.x*accelero.reading.x + accelero.reading.y*accelero.reading.y + accelero.reading.z*accelero.reading.z;
-           if(1 > accel && -1 < accel)
-            {
-               mycamera.searchAndLock();
-               //captureTimer.stop();
-           }
-           else
-               mytext.text = accel;
 
+           if(captureTimer.lx - accelero.reading.x < 1 && captureTimer.lx - accelero.reading.x > -1
+                   && captureTimer.ly - accelero.reading.y < 1 && captureTimer.ly - accelero.reading.y > -1
+                   && captureTimer.lz - accelero.reading.z < 1 && captureTimer.lz - accelero.reading.z > -1
+                   )
+           {
+               if(mycamera.imageCapture.ready) {
+                   mycamera.searchAndLock();
+                 }
+
+
+           }
+
+           captureTimer.lx = accelero.reading.x
+           captureTimer.ly = accelero.reading.y
+           captureTimer.lz = accelero.reading.z
             //mytext.text = accelero.accelerationMode;
             //print("capturing");
 //            qrCodeReader.grab();

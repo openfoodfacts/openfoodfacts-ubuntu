@@ -31,6 +31,7 @@ class QRCodeReader : public QObject
     Q_PROPERTY(bool valid READ valid NOTIFY validChanged)
     Q_PROPERTY(QString type READ type NOTIFY validChanged)
     Q_PROPERTY(QString text READ text NOTIFY validChanged)
+    Q_PROPERTY(QString tmp READ tmp)
     Q_PROPERTY(QRect scanRect READ scanRect WRITE setScanRect NOTIFY scanRectChanged)
 
 public:
@@ -39,12 +40,14 @@ public:
     bool valid() const;
     QString type() const;
     QString text() const;
+    QString tmp() const;
     QRect scanRect() const;
     void setScanRect(const QRect &rect);
 
 public slots:
     void grab();
     void decode(const QString &path);
+    void decode(const QImage &img);
 
 signals:
     void validChanged();
@@ -59,6 +62,8 @@ private:
     QString m_type;
     QString m_text;
     QRect m_scanRect;
+
+    QString m_tmp;
 
     QThread m_readerThread;
 };

@@ -27,11 +27,14 @@
 #include <QWindow>
 #include <QDebug>
 #include <QUrlQuery>
+#include <QDir>
+#include <QFile>
 
 QRCodeReader::QRCodeReader(QObject *parent) :
     QObject(parent),
     m_mainWindow(0)
 {
+    m_tmp = QDir::tempPath()+ "/tmp.jpg";
     QGuiApplication *app = qobject_cast<QGuiApplication*>(qApp);
 
     foreach (QWindow *win, app->allWindows()) {
@@ -69,7 +72,10 @@ QString QRCodeReader::text() const
 {
     return m_text;
 }
-
+QString QRCodeReader::tmp() const
+{
+    return m_tmp;
+}
 void QRCodeReader::grab()
 {
     if (!m_mainWindow) {
@@ -107,12 +113,23 @@ void QRCodeReader::decode(const QString &path) {
 
     QMetaObject::invokeMethod(reader, "doWork", Q_ARG(QImage, img));
 }
+void QRCodeReader::decode(const QImage &img) {
+
+    Reader *reader = new Reader;
+    reader->moveToThread(&m_readerThread);
+    connect(&m_readerThread, SIGNAL(finished()), reader, SLOT(deleteLater()));
+    connect(reader, SIGNAL(resultReady(QString, QString)), this, SLOT(handleResults(QString, QString)));
+    m_readerThread.start();
+
+    QMetaObject::invokeMethod(reader, "doWork", Q_ARG(QImage, img));
+}
 
 void QRCodeReader::handleResults(const QString &type, const QString &text)
 {
     m_type = type;
     m_text = text;
     qDebug() << "parsed:" << type << text;
+    QFile::remove(m_tmp);
     emit validChanged();
 }
 
@@ -153,3 +170,5 @@ void Reader::doWork(const QImage &image)
     emit finished();
 
 }
+
+

@@ -1,6 +1,6 @@
 TARGET = openFoodFacts
 
-QT += quick widgets network
+QT += core quick widgets network
 
 #load Ubuntu specific features
 load(ubuntu-click)
