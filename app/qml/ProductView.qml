@@ -227,7 +227,7 @@ Page {
                         objectName: "label"
                         fontSize: "x-small"
                         horizontalAlignment : Text.AlignHCenter
-                        color:"#48c1ba";
+                        color: openFoodFacts.settings.color;
                     }
 
 
@@ -254,7 +254,7 @@ Page {
                                 width:contentsectioncaract.width;
                                 objectName: "label"
                                 fontSize: "large"
-                                color: "#48c1ba"
+                                color: openFoodFacts.settings.color
                                 text: "<b>"+i18n.tr("Product characteristics")+"</b><br/>"
                                 font.underline : true
                             }
@@ -343,7 +343,7 @@ Page {
                                 width:contentsectioningr.width;
                                 objectName: "label"
                                 fontSize: "large"
-                                color: "#48c1ba"
+                                color: openFoodFacts.settings.color
                                 text: "<b>"+i18n.tr("Ingredients")+"</b><br/>"
                                 font.underline : true
                             }
@@ -391,7 +391,7 @@ Page {
                                 width:content.width;
                                 objectName: "label"
                                 fontSize: "large"
-                                color: "#48c1ba"
+                                color: openFoodFacts.settings.color
                                 text: "<b>"+i18n.tr("Nutrition facts")+"</b><br/>"
                                 font.underline : true
                             }
