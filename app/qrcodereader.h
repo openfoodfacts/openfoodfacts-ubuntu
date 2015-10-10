@@ -48,6 +48,7 @@ public slots:
     void grab();
     void decode(const QString &path);
     void decode(const QImage &img);
+    void ZBarFinished();
 
 signals:
     void validChanged();

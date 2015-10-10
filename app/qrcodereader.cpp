@@ -76,6 +76,14 @@ QString QRCodeReader::tmp() const
 {
     return m_tmp;
 }
+void QRCodeReader::ZBarFinished() {
+     qDebug() << "zbarfinished";
+     QFile::remove(m_tmp);
+m_readerThread.quit();
+    if(!valid())
+        emit validChanged();
+}
+
 void QRCodeReader::grab()
 {
     if (!m_mainWindow) {
@@ -93,10 +101,11 @@ void QRCodeReader::grab()
     }
 
     qDebug() << "got image" << img.size();
-
+//img.save("/run/user/32011/confined/openfoodfacts.ubuntouch-fr/tmp2.jpg");
     Reader *reader = new Reader;
     reader->moveToThread(&m_readerThread);
     connect(&m_readerThread, SIGNAL(finished()), reader, SLOT(deleteLater()));
+    connect(reader, SIGNAL(finished()), this, SLOT(ZBarFinished()));
     connect(reader, SIGNAL(resultReady(QString, QString)), this, SLOT(handleResults(QString, QString)));
     m_readerThread.start();
 
@@ -105,19 +114,25 @@ void QRCodeReader::grab()
 
 void QRCodeReader::decode(const QString &path) {
     QImage img(path);
+   //QRect rect(img.width()/2 - m_scanRect.width()/2, img.height()/2 - m_scanRect.height()/2,  m_scanRect.width(),  m_scanRect.height());
+QRect rect(img.width()/4,img.height()/4,  img.width()/2,   img.height()/2);
+    QImage img2 = img.copy(rect);
+    img2.save("/run/user/32011/confined/openfoodfacts.ubuntouch-fr/tmp2.jpg");
     Reader *reader = new Reader;
     reader->moveToThread(&m_readerThread);
     connect(&m_readerThread, SIGNAL(finished()), reader, SLOT(deleteLater()));
+    connect(reader, SIGNAL(finished()), this, SLOT(ZBarFinished()));
     connect(reader, SIGNAL(resultReady(QString, QString)), this, SLOT(handleResults(QString, QString)));
     m_readerThread.start();
 
-    QMetaObject::invokeMethod(reader, "doWork", Q_ARG(QImage, img));
+    QMetaObject::invokeMethod(reader, "doWork", Q_ARG(QImage, img2));
 }
 void QRCodeReader::decode(const QImage &img) {
 
     Reader *reader = new Reader;
     reader->moveToThread(&m_readerThread);
     connect(&m_readerThread, SIGNAL(finished()), reader, SLOT(deleteLater()));
+    connect(reader, SIGNAL(finished()), this, SLOT(ZBarFinished()));
     connect(reader, SIGNAL(resultReady(QString, QString)), this, SLOT(handleResults(QString, QString)));
     m_readerThread.start();
 
@@ -129,12 +144,13 @@ void QRCodeReader::handleResults(const QString &type, const QString &text)
     m_type = type;
     m_text = text;
     qDebug() << "parsed:" << type << text;
-    QFile::remove(m_tmp);
+
     emit validChanged();
 }
 
 void Reader::doWork(const QImage &image)
 {
+    qDebug() << "doWork Started";
 
     zbar::QZBarImage img(image.convertToFormat(QImage::Format_RGB32));
     zbar::Image tmp = img.convert(*(long*)"Y800");
@@ -147,7 +163,7 @@ void Reader::doWork(const QImage &image)
 
     // scan the image for barcodes
     int n = scanner.scan(tmp);
-    //    qDebug() << "scanner ret" << n;
+//        qDebug() << "scanner ret" << n;
 
     img.set_symbols(tmp.get_symbols());
 
@@ -163,6 +179,7 @@ void Reader::doWork(const QImage &image)
 
         emit resultReady(typeName, symbolString);
     }
+    qDebug() << "fini";
 
     tmp.set_data(NULL, 0);
     img.set_data(NULL, 0);

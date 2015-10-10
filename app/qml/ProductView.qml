@@ -22,7 +22,7 @@ Page {
     onProductFoundChanged: {
         if (pageProductView.productFound === "0") {
             pageStack.pop();
-            pageStack.push(Qt.resolvedUrl("notFound.qml"));
+            pageStack.push(Qt.resolvedUrl("notFound.qml"), {"barcode": barcode});
         }
     }
 

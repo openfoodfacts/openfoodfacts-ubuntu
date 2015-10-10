@@ -13,14 +13,14 @@ import "qrc:///component/qml/component"
 Page {
     id: notFoundPage
     title: i18n.tr("Product not found")
-
+    property string barcode:"";
 
     Button {
         objectName: "button"
         anchors.horizontalCenter: parent.horizontalCenter
-        width: units.gu(30)
+        //width: units.gu(30)
 
-        text: i18n.tr("No product found")
+        text: i18n.tr("Product %1 not found").arg(barcode)
 
 
     }
