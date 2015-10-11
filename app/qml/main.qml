@@ -205,8 +205,9 @@ MainView {
             }
         }
     }   }
-/*
+
     RadialBottomEdge {
+        visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
         id:radialBottom;
         actions: [
 
@@ -214,8 +215,8 @@ MainView {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
                 onTriggered : {
-                    pageStack.pop();
-                    //pageStack.push(Qt.resolvedUrl("main.qml"));
+                    //pageStack.pop();
+                    pageStack.push(Qt.resolvedUrl("main.qml"));
                 }
             },
 
@@ -223,6 +224,9 @@ MainView {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("addproduct.qml"));
+                }
             },
 
             RadialAction {
@@ -236,13 +240,15 @@ MainView {
             RadialAction {
                 iconName: "browser-timeline"
                 iconColor: UbuntuColors.coolGrey
-                onTriggered: console.log("History")
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("History.qml"));
+                }
             }
 
 
         ]
     }
-*/
+
     Connections {
         target: ContentHub
         onExportRequested: {
