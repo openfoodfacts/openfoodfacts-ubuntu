@@ -25,6 +25,7 @@ Page {
 
         onValidChanged: {
             if (valid) {
+                captureTimer.stop()
                 var barcodeValue = qrCodeReader.text;
                 pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": barcodeValue});
                 //pageStack.pop();
@@ -37,7 +38,7 @@ Page {
         id: camera
 
         flash.mode: Camera.FlashTorch
-
+        digitalZoom: ((maximumDigitalZoom > 2)? 2 : maximumDigitalZoom)
         focus.focusMode: Camera.FocusContinuous
         focus.focusPointMode: Camera.FocusPointAuto
 
@@ -48,7 +49,7 @@ Page {
 
     Timer {
         id: captureTimer
-        interval: 1000
+        interval: 1200
         repeat: true
         onTriggered: {
             print("capturing");
@@ -61,10 +62,15 @@ Page {
         anchors {
             fill: parent
         }
+
         fillMode: Image.PreserveAspectCrop
         orientation: device.naturalOrientation === "portrait"  ? -90 : 0
         source: camera
         focus: visible
+        MouseArea {
+            anchors.fill: parent;
+            onClicked:  qrCodeReader.grab();
+        }
 
         /*PinchArea {
             id: pinchy
