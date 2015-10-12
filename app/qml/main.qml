@@ -31,6 +31,7 @@ MainView {
 
     // persistent app settings:
     property var settings: Settings {
+
         property bool visiblecomposition: true
         property bool visiblenutrition:	true
         property bool visibleingredient:	true
@@ -38,37 +39,7 @@ MainView {
 
         property string color:  '#48c1ba'
 
-        property string allergen:  ''
-
-
-        property string allergenegg: ''
-        property bool checkboxegg:	false
-        property string allergenpeanut: ''
-        property bool checkboxpeanut:	false
-        property string allergencereal: ''
-        property bool checkboxcereal:	false
-        property string allergencrustacean: ''
-        property bool checkboxcrustacean:	false
-        property string allergenfish: ''
-        property bool checkboxfish:	false
-        property string allergensoy: ''
-        property bool checkboxsoy:	false
-        property string allergenmilk: ''
-        property bool checkboxmilk:	false
-        property string allergennuts: ''
-        property bool checkboxnuts:	false
-        property string allergenmustard: ''
-        property bool checkboxmustard:	false
-        property string allergencelery: ''
-        property bool checkboxcelery:	false
-        property string allergensesameseeds: ''
-        property bool checkboxsesameseeds:	false
-        property string allergenmollusk: ''
-        property bool checkboxmollusk:	false
-        property string allergensulfurdioxide: ''
-        property bool checkboxsulfurdioxide:	false
-        property string allergenlupin: ''
-        property bool checkboxlupin:	false
+        property var allergen:  []
 
         property bool developerModeEnabled:	false
 
