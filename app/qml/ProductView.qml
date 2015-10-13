@@ -130,7 +130,10 @@ Page {
                 var sodium_unit = (typeof _json.nutriments.sodium_unit !== "undefined") ? _json.nutriments.sodium_unit : " ";
                 var sodium_serving  = (typeof _json.nutriments.sodium_serving  !== "undefined") ? _json.nutriments.sodium_serving  : "n/a";
                 sodium.value = "<font color=\"#620000\">" + sodium_100g + " " + sodium_unit + "</font> | <font color=\"#002762\">" + sodium_serving + " " + sodium_unit + "</font>";
+
+                helpScreen.visible = true
             } else {
+                activity.visible = false
                 pageProductView.productFound = "0";
             }
         }
@@ -142,10 +145,21 @@ Page {
         anchors.fill: parent; //anchors.topMargin: 5; anchors.leftMargin: 5; anchors.rightMargin: 5; anchors.bottomMargin: 5;
         color: "#EDEDEC"
 
+
+        ActivityIndicator {
+            id:activity
+            anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
+            objectName: "activityindicator_standard"
+            anchors.leftMargin: units.gu(10)
+            running: true
+        }
+
+
         Rectangle {
             id:helpScreen
             width:main.width; height:main.height
             color: "#EDEDEC"
+            visible: false
 
             Flickable {
                 anchors.fill: parent
@@ -171,10 +185,22 @@ Page {
                         radius: 62
                     }
 
+                    Rectangle {
+                        id: allergendetect
+                        anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
+                        width: units.gu(19)
+                        height: units.gu(19)
+                        color: "#EDEDEC" //CHANGE IF DETECT ALLERGEN
+                        radius: 120
+                        clip: true
+                        visible: true
+
                     Image {
                         id : productImage;
                         fillMode: Image.PreserveAspectCrop
                         visible: false // Do not forget to make original pic insisible
+                    }
+
                     }
 
                     Rectangle {
@@ -227,7 +253,7 @@ Page {
                         objectName: "label"
                         fontSize: "x-small"
                         horizontalAlignment : Text.AlignHCenter
-                        color:"#48c1ba";
+                        color: openFoodFacts.settings.color;
                     }
 
 
@@ -254,7 +280,7 @@ Page {
                                 width:contentsectioncaract.width;
                                 objectName: "label"
                                 fontSize: "large"
-                                color: "#48c1ba"
+                                color: openFoodFacts.settings.color
                                 text: "<b>"+i18n.tr("Product characteristics")+"</b><br/>"
                                 font.underline : true
                             }
@@ -343,7 +369,7 @@ Page {
                                 width:contentsectioningr.width;
                                 objectName: "label"
                                 fontSize: "large"
-                                color: "#48c1ba"
+                                color: openFoodFacts.settings.color
                                 text: "<b>"+i18n.tr("Ingredients")+"</b><br/>"
                                 font.underline : true
                             }
@@ -391,7 +417,7 @@ Page {
                                 width:content.width;
                                 objectName: "label"
                                 fontSize: "large"
-                                color: "#48c1ba"
+                                color: openFoodFacts.settings.color
                                 text: "<b>"+i18n.tr("Nutrition facts")+"</b><br/>"
                                 font.underline : true
                             }

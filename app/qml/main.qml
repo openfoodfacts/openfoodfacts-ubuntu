@@ -18,23 +18,34 @@ MainView {
     objectName: "openFoodFacts"
     applicationName: "openfoodfacts.ubuntouch-fr"
 
+    property variant myallergen: []
+
     width: units.gu(40)
     height: units.gu(68)
 
     useDeprecatedToolbar: false
-    backgroundColor: "#48c1ba"
+    backgroundColor: openFoodFacts.settings.color
     Component.onCompleted: { console.log(i18n.domain)
-        console.log(i18n.language)}
+        console.log(i18n.language)
+        if(settings.allergen === undefined)
+            settings.allergen = []
+    }
 //        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
 //        console.log("domaine")
 //    }
+
     // persistent app settings:
     property var settings: Settings {
+
         property bool visiblecomposition: true
         property bool visiblenutrition:	true
         property bool visibleingredient:	true
         property bool visiblecharacteristics:	true
-        //property string userallergen:	text
+
+        property string color:  '#48c1ba'
+
+        property var allergen: undefined
+
         property bool developerModeEnabled:	false
 
     }
@@ -67,7 +78,6 @@ MainView {
                 }
 
 
-
         Rectangle {
             id:rect1
             anchors.fill:parent
@@ -95,7 +105,6 @@ MainView {
 
                     }
 
-
                     Image {
                         id : productImage;
                         source:"shoot.png";
@@ -108,10 +117,20 @@ MainView {
                         anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
                         width: units.gu(9)
                         height: units.gu(9)
-                        color: "#48c1ba";
+                        color: "#EDEDEC"
                         radius: 120
                         clip: true
                         visible: true
+
+                        Rectangle {
+                            id: mask2
+                            anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: mask.verticalCenter;
+                            width: units.gu(8)
+                            height: units.gu(8)
+                            color: openFoodFacts.settings.color;
+                            radius: 120
+                            clip: true
+                            visible: true
 
                         Image {
                             anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
@@ -119,6 +138,7 @@ MainView {
                             height: units.gu(8)
                             source:"shoot.png";
                             fillMode: Image.PreserveAspectCrop
+                        }
                         }
 
                         MouseArea {
@@ -131,14 +151,11 @@ MainView {
                                 onReleased: {
                                     backgroundImage.color = "#48c1ba" }
                         }
-
                     }
 
 
+
                 } // header picture
-
-
-
 
 
 
@@ -171,8 +188,9 @@ MainView {
             }
         }
     }   }
-/*
+
     RadialBottomEdge {
+        visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
         id:radialBottom;
         actions: [
 
@@ -180,8 +198,8 @@ MainView {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
                 onTriggered : {
-                    pageStack.pop();
-                    //pageStack.push(Qt.resolvedUrl("main.qml"));
+                    //pageStack.pop();
+                    pageStack.push(Qt.resolvedUrl("main.qml"));
                 }
             },
 
@@ -189,6 +207,9 @@ MainView {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("addproduct.qml"));
+                }
             },
 
             RadialAction {
@@ -202,13 +223,15 @@ MainView {
             RadialAction {
                 iconName: "browser-timeline"
                 iconColor: UbuntuColors.coolGrey
-                onTriggered: console.log("History")
+                onTriggered: {
+                    pageStack.push(Qt.resolvedUrl("History.qml"));
+                }
             }
 
 
         ]
     }
-*/
+
     Connections {
         target: ContentHub
         onExportRequested: {

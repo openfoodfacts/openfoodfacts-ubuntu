@@ -1,18 +1,10 @@
-/*
-import QtQuick 2.0
-import Ubuntu.Components 1.1
-*/
-
 import QtQuick 2.4
-import Ubuntu.Components 1.1
-
-
-import "qrc:///component/qml/component"
-
+import Ubuntu.Components 1.2
 
 Page {
-    id: notFoundPage
-    title: i18n.tr("Product not found")
+    id: addproductmain
+
+    title: i18n.tr("Add product")
 
     Rectangle {
         id:main
@@ -22,12 +14,12 @@ Page {
     Flickable {
         id: flickable
         anchors.fill: parent
-        contentHeight: product.height
+        contentHeight: addproduct.height
         flickableDirection: Flickable.VerticalFlick
         clip: true
 
     Column {
-        id: product
+        id: addproduct
         anchors {
             top: parent.top
             left: parent.left
@@ -49,7 +41,7 @@ Page {
 
                 Icon {
                     id: emptyIcon
-                    name: "find"
+                    name: "cancel"
                     anchors.horizontalCenter: parent.horizontalCenter
                     height: units.gu(10)
                     width: height
@@ -58,17 +50,26 @@ Page {
 
                 Label {
                     id: emptyLabel
-                    text: i18n.tr("Your product was not found")
+                    text: i18n.tr("Not implemented")
                     color: "#5d5d5d"
                     fontSize: "large"
                     font.bold: true
-                    width: product.width
+                    width: addproduct.width
                     wrapMode: Text.WordWrap
                     anchors.top: emptyIcon.bottom
                     anchors.topMargin: units.gu(4)
                     horizontalAlignment: Text.AlignHCenter
                 }
 
+                Label {
+                    id: emptySublabel
+                    text: i18n.tr("Page not yet finished, thank you to return again later.")
+                    color: "#7b7b7b"
+                    width: addproduct.width
+                    wrapMode: Text.WordWrap
+                    anchors.top: emptyLabel.bottom
+                    horizontalAlignment: Text.AlignHCenter
+                }
             }
         }
 
@@ -85,6 +86,5 @@ Page {
     }
 
 
+
 }
-
-

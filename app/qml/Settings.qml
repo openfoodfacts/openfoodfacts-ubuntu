@@ -3,22 +3,13 @@ import Ubuntu.Components 1.2
 import Ubuntu.Components.ListItems 1.0 as ListItem
 import Qt.labs.settings 1.0
 import Ubuntu.Components 1.2 as Toolkit
+import Ubuntu.Components.Popups 0.1
 
 Page {
     id: settingsPage
 
     title: i18n.tr("Settings")
     signal settingsChanged()
-
-
-    head.backAction: Action {
-        iconName: "back"
-            onTriggered: { //openFoodFacts.settings.userallergen = userallergen.text;
-                pageStack.pop();
-            }
-
-    }
-
 
     head {
         actions: [
@@ -32,83 +23,131 @@ Page {
             }
         ]
     }
+    Rectangle {
+        id:main
+        anchors.fill: parent;
+        color: "#EDEDEC"
 
-    Flickable {
-        id: flickable
-
-        anchors.fill: parent
-        contentHeight: settingsColumn.height + units.gu(10)
-
-
-        Column {
-            id: settingsColumn
-            anchors {
-                top: parent.top
-                left: parent.left
-                right: parent.right
-            }
-
-            ListItem.Header {
-                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                text: i18n.tr("Global")
-            }
+        Flickable {
+            id: flickable
+            anchors.fill: parent
+            contentHeight: settingsColumn.height
+            flickableDirection: Flickable.VerticalFlick
+            clip: true
 
 
-            ListItem.Standard {
-                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                showDivider: false
-                text: i18n.tr("Allergen")
-                progression: true
-                onTriggered: {
-                    pageStack.push(Qt.resolvedUrl("Allergen.qml"));
-                }
-            }
-
-/*
-
-            Item {
-                id: templateallergen
-
-                property string title
-                property real titleWidth: units.gu(10)
-                property alias spacing: contentallergen.spacing
-                default property alias content: contentallergen.children
-
-                height: Math.max(contentallergen.height, labelallergen.height)
-                width: parent.width
-
-
-                Label {
-                    id: labelallergen
-                    text: "Allergen"
-                    width: templateallergen.titleWidth
-                    anchors.left: parent.left
-                    anchors.top: contentallergen.top
-                    anchors.topMargin: 2; anchors.leftMargin: 16;
-
+            Column {
+                id: settingsColumn
+                anchors {
+                    top: parent.top
+                    left: parent.left
+                    right: parent.right
                 }
 
-                Row {
-                    id: contentallergen
+                ListItem.Header {
+                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Global")+"</font>"
+                }
 
-                    anchors.left: labelallergen.right
-                    anchors.leftMargin: units.gu(2)
-                    anchors.right: parent.right
-                    anchors.rightMargin: units.gu(2)
-                    spacing: units.gu(2)
-
-                    TextArea {
-                        id:userallergen
-                         objectName: "allergen"
-                         placeholderText: "1 by lines"
-                         autoSize: true
-                         width: parent.width
-                         text: openFoodFacts.settings.userallergen
+                ListItem.MultiValue {
+                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Allergen")+"</font>"
+                    function addFontColor(list, color) {
+                        if(list.length > 0) {
+                            var txtlist = list.slice(); //local copy
+                            txtlist[0] = "<font color=\""+color+"\">"+txtlist[0];
+                            txtlist[txtlist.length-1] = txtlist[txtlist.length-1]+"</font>";
+                            return txtlist;
+                        }
+                        else
+                            return [];
+                    }
+                    values: addFontColor(openFoodFacts.settings.allergen, "#b3b3b3")
+                    progression: true
+                    onTriggered: {
+                        pageStack.push(Qt.resolvedUrl("Allergen.qml"));
                     }
                 }
-            }
 
 
+                Component {
+                    id: dialog
+                    Dialog {
+                        id: dialogue
+                        title: "Choose a color"
+                        Row {
+                            id: row
+                            width: parent.width
+                            spacing: units.gu(1)
+                            Button {
+                                width: parent.width/2
+                                text: ""
+                                color:  "#48c1ba"
+                                onClicked: PopupUtils.close(dialogue),
+                                           openFoodFacts.settings.color = "#48c1ba";
+                            }
+                            Button {
+                                width: parent.width/2
+                                text: ""
+                                color:  "#DD4814"
+                                onClicked: PopupUtils.close(dialogue),
+                                           openFoodFacts.settings.color = "#DD4814";
+                            }
+                        }
+                        Row {
+                            id: row2
+                            width: parent.width
+                            spacing: units.gu(1)
+                            Button {
+                                width: parent.width/2
+                                text: ""
+                                color:  "#77216F"
+                                onClicked: PopupUtils.close(dialogue),
+                                           openFoodFacts.settings.color = "#77216F";
+                            }
+                            Button {
+                                width: parent.width/2
+                                text: ""
+                                color:  "#AEA79F"
+                                onClicked: PopupUtils.close(dialogue),
+                                           openFoodFacts.settings.color = "#AEA79F";
+                            }
+                        }
+                        Row {
+                            id: row3
+                            width: parent.width
+                            spacing: units.gu(1)
+
+
+                            TextField {
+                                id: barcodeinput
+                                width: parent.width/1.2
+                                placeholderText: i18n.tr("Example : #1ab6ef")
+                            }
+
+                            Button {
+                                width: parent.width/6
+                                text: "ok"
+                                color:  "#38B44A"
+                                onClicked: ((barcodeinput.text == "")? openFoodFacts.settings.color = "#1ab6ef" : openFoodFacts.settings.color = barcodeinput.text),
+                                           PopupUtils.close(dialogue)
+                            }
+                        }
+
+                    }
+                }
+                ListItem.SingleValue {
+                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                    showDivider: false
+                    progression: true
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Theme")+"</font>"
+                    onClicked: PopupUtils.open(dialog)
+                }
+
+
+
+                /*
 
             ListItem.Standard {
                 showDivider: false
@@ -121,55 +160,55 @@ Page {
             }
 
 */
-            ListItem.Header {
-                text: i18n.tr("Viewing Information")
-            }
-
-            ListItem.Standard {
-                showDivider: false
-                text: i18n.tr("Product characteristics")
-                control: Switch {
-                    id: characteristicswitch
-                    checked: openFoodFacts.settings.visiblecharacteristics
-                    onClicked: { openFoodFacts.settings.visiblecharacteristics = checked;
-                    }
-                  }
-            }
-
-            ListItem.Standard {
-                showDivider: false
-                text: i18n.tr("ingredients")
-                control: Switch {
-                    id: ingredientwitch
-                    checked: openFoodFacts.settings.visibleingredient
-                    onClicked: { openFoodFacts.settings.visibleingredient = checked;
-                    }
-                  }
-            }
-
-            ListItem.Standard {
-                showDivider: false
-                text: i18n.tr("Nutrition facts")
-                control: Switch {
-                    id: nutritionwitch
-                    checked: openFoodFacts.settings.visiblenutrition
-                    onClicked: { openFoodFacts.settings.visiblenutrition = checked;
-                    }
-                  }
+                ListItem.Header {
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Viewing Information")+"</font>"
                 }
 
-            ListItem.Standard {
-                showDivider: false
-                text: i18n.tr("Composition")
-                control: Switch {
-                    id: compositionwitch
-                    checked: openFoodFacts.settings.visiblecomposition
-                    onClicked: { openFoodFacts.settings.visiblecomposition = checked;
+                ListItem.Standard {
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Product characteristics")+"</font>"
+                    control: Switch {
+                        id: characteristicswitch
+                        checked: openFoodFacts.settings.visiblecharacteristics
+                        onClicked: { openFoodFacts.settings.visiblecharacteristics = checked;
+                        }
                     }
                 }
+
+                ListItem.Standard {
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("ingredients")+"</font>"
+                    control: Switch {
+                        id: ingredientwitch
+                        checked: openFoodFacts.settings.visibleingredient
+                        onClicked: { openFoodFacts.settings.visibleingredient = checked;
+                        }
+                    }
+                }
+
+                ListItem.Standard {
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Nutrition facts")+"</font>"
+                    control: Switch {
+                        id: nutritionwitch
+                        checked: openFoodFacts.settings.visiblenutrition
+                        onClicked: { openFoodFacts.settings.visiblenutrition = checked;
+                        }
+                    }
+                }
+
+                ListItem.Standard {
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Composition")+"</font>"
+                    control: Switch {
+                        id: compositionwitch
+                        checked: openFoodFacts.settings.visiblecomposition
+                        onClicked: { openFoodFacts.settings.visiblecomposition = checked;
+                        }
+                    }
+                }
+
             }
-
-
         }
     }
 }
