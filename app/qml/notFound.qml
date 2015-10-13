@@ -14,16 +14,76 @@ Page {
     id: notFoundPage
     title: i18n.tr("Product not found")
 
+    Rectangle {
+        id:main
+        anchors.fill: parent;
+        color: "#EDEDEC"
 
-    Button {
-        objectName: "button"
-        anchors.horizontalCenter: parent.horizontalCenter
-        width: units.gu(30)
+    Flickable {
+        id: flickable
+        anchors.fill: parent
+        contentHeight: product.height
+        flickableDirection: Flickable.VerticalFlick
+        clip: true
 
-        text: i18n.tr("No product found")
+    Column {
+        id: product
+        anchors {
+            top: parent.top
+            left: parent.left
+            right: parent.right
+        }
+
+
+
+
+
+        Rectangle {
+            id:emptyrect
+            anchors.fill: parent; anchors.topMargin: units.gu(5);
+            color: "#EDEDEC"
+
+            Item {
+                id: emptyState
+                anchors.fill: parent;
+
+                Icon {
+                    id: emptyIcon
+                    name: "find"
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    height: units.gu(10)
+                    width: height
+                    color: "#BBBBBB"
+                }
+
+                Label {
+                    id: emptyLabel
+                    text: i18n.tr("Your product was not found")
+                    color: "#5d5d5d"
+                    fontSize: "large"
+                    font.bold: true
+                    width: product.width
+                    wrapMode: Text.WordWrap
+                    anchors.top: emptyIcon.bottom
+                    anchors.topMargin: units.gu(4)
+                    horizontalAlignment: Text.AlignHCenter
+                }
+
+            }
+        }
+
+
+
+
+
+
+
 
 
     }
+    }
+    }
+
 
 }
 
