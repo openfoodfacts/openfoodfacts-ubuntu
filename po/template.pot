@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-13 21:28+0200\n"
+"POT-Creation-Date: 2015-10-13 21:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Product not found"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:61
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:69
 msgid "Your product was not found"
 msgstr ""
 

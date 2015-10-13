@@ -14,6 +14,14 @@ Page {
     id: notFoundPage
     title: i18n.tr("Product not found")
 
+    head.backAction: Action {
+        iconName: "back"
+            onTriggered: {
+                pageStack.push(Qt.resolvedUrl("main.qml"));
+            }
+
+    }
+
     Rectangle {
         id:main
         anchors.fill: parent;
