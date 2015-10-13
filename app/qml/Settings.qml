@@ -25,7 +25,7 @@ Page {
     }
     Rectangle {
         id:main
-        anchors.fill: parent; anchors.topMargin: 5;
+        anchors.fill: parent;
         color: "#EDEDEC"
 
         Flickable {
