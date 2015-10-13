@@ -105,7 +105,6 @@ MainView {
 
                     }
 
-
                     Image {
                         id : productImage;
                         source:"shoot.png";
@@ -118,10 +117,20 @@ MainView {
                         anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
                         width: units.gu(9)
                         height: units.gu(9)
-                        color: openFoodFacts.settings.color;
+                        color: "#EDEDEC"
                         radius: 120
                         clip: true
                         visible: true
+
+                        Rectangle {
+                            id: mask2
+                            anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: mask.verticalCenter;
+                            width: units.gu(8)
+                            height: units.gu(8)
+                            color: openFoodFacts.settings.color;
+                            radius: 120
+                            clip: true
+                            visible: true
 
                         Image {
                             anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
@@ -129,6 +138,7 @@ MainView {
                             height: units.gu(8)
                             source:"shoot.png";
                             fillMode: Image.PreserveAspectCrop
+                        }
                         }
 
                         MouseArea {
@@ -141,14 +151,11 @@ MainView {
                                 onReleased: {
                                     backgroundImage.color = "#48c1ba" }
                         }
-
                     }
 
 
+
                 } // header picture
-
-
-
 
 
 
