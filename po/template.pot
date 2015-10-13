@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-13 12:47+0200\n"
+"POT-Creation-Date: 2015-10-13 21:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,16 +39,16 @@ msgstr ""
 msgid "Reading barcode"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:59
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:64
 msgid "OpenFoodFacts"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:66
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:71
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:11
 msgid "Settings"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:165
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:170
 msgid "Enter your barcode"
 msgstr ""
 
@@ -56,8 +56,8 @@ msgstr ""
 msgid "Product not found"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:23
-msgid "No product found"
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:61
+msgid "Your product was not found"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:43
@@ -105,7 +105,7 @@ msgid "Countries where sold"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:79
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:347
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:373
 msgid "Ingredients"
 msgstr ""
 
@@ -122,61 +122,61 @@ msgstr ""
 msgid "Serving size"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:258
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:284
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:169
 msgid "Product characteristics"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:395
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:421
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:191
 msgid "Nutrition facts"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:431
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:457
 msgid "Composition by"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:432
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:458
 msgid "serving"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:438
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:464
 msgid "Energy"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:442
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:468
 msgid "Fat"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:442
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:468
 msgid "and"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:442
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:468
 msgid "Lipides"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:450
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:476
 msgid "Carbohydrate"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:454
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:480
 msgid "of which Sugars"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:458
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:484
 msgid "Dietary fiber"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:462
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:488
 msgid "Proteins"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:466
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:492
 msgid "Salt"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:470
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:496
 msgid "Sodium"
 msgstr ""
 
