@@ -28,14 +28,14 @@ Page {
             console.log("valid changed"+valid)
             if (valid) {
                 captureTimer.stop();
-                mytext.text = "reading ok"
+                mytext.text = "barcode found"
 
                 var barcodeValue = qrCodeReader.text;
                 pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": barcodeValue});
                 //pageStack.pop();
             }
             else {
-                mytext.text = "reading fail"
+                mytext.text = "no barcode found"
                 mycamera.unlock();
                 captureTimer.start();
             }
@@ -45,7 +45,6 @@ Page {
 
     Item {
 
-
         anchors {
             fill: parent
         }
@@ -54,24 +53,24 @@ Page {
             id: mycamera
 
             flash.mode: Camera.FlashTorch
-
+            exposure {
+                exposureMode: Camera.ExposureAuto
+            }
             focus.focusMode:  Camera.FocusContinuous // +Camera.FocusMacro
             focus.focusPointMode: Camera.FocusPointCenter
 
             onLockStatusChanged: {
                 mytext.text = mycamera.lockStatus
                 if(mycamera.lockStatus === Camera.Locked) {
+                    mytext.text = "looking for barccode"
                     captureTimer.stop();
-                    //qrCodeReader.grab();
-                    mycamera.imageCapture.captureToLocation(qrCodeReader.tmp);
-                    //mytext.text = "captured"
-                    //mycamera.imageCapture.capture();
-
+                    qrCodeReader.grab();
+                    //mycamera.imageCapture.captureToLocation(qrCodeReader.tmp);
                 }
 
             }
 
-            imageCapture {
+            /*imageCapture {
                 onImageCaptured: {
                     photopreview.source = preview;
                     //mytext.text = capturedImagePath
@@ -91,19 +90,13 @@ Page {
                     //mycamera.unlock();
                     //captureTimer.restart();
                 }
-            }
+            }*/
 
             //        Component.onCompleted: {
             //            captureTimer.start()
             //        }
         }
 
-        Image {
-            anchors {
-                fill: parent
-            }
-            id: photopreview
-        }
 
         Timer {
             property real lx: 0
@@ -111,7 +104,7 @@ Page {
             property real lz: 0
             property real psi: 0.1
             id: captureTimer
-            interval: 400
+            interval: 200
             repeat: true
             onTriggered: {
 
@@ -124,16 +117,11 @@ Page {
                         mycamera.searchAndLock();
                         captureTimer.stop();
                     }
-
-
                 }
 
                 captureTimer.lx = accelero.reading.x
                 captureTimer.ly = accelero.reading.y
                 captureTimer.lz = accelero.reading.z
-                //mytext.text = accelero.accelerationMode;
-                //print("capturing");
-                //            qrCodeReader.grab();
             }
         }
 
@@ -151,17 +139,61 @@ Page {
                 anchors.fill: parent;
                 onClicked: mycamera.searchAndLock()
             }
-            Rectangle {
-                id:zone
-                x: parent.width*3/8
-                y: parent.height*3/8
-                width: parent.width/4
-                height: parent.height/4
-                border.color: "red"
-                border.width: units.gu(1)
-                color:"transparent"
-            }
         }
+
+
+        Rectangle {
+            id: barcodeZone
+            x: videoOutput.width*2/8
+            y: videoOutput.height*2/8
+            width: videoOutput.width/2
+            height: videoOutput.height/2
+            border.color: "red"
+            color:"transparent"
+        }
+
+        /*
+        *   Fill the screen with a gray area
+        *   like that, the user can focus on the barcode
+        */
+        Rectangle {
+            id : mapGreyToTop
+            color: "black"
+            opacity: 0.6
+            x: videoOutput.x;
+            y: videoOutput.y;
+            width: videoOutput.width;
+            height: barcodeZone.y;
+        }
+        Rectangle {
+            id : mapGreyToBottom
+            color: "black"
+            opacity: 0.6
+            x: videoOutput.x;
+            y: (videoOutput.y + videoOutput.height) - barcodeZone.y
+            width: videoOutput.width;
+            height: barcodeZone.y;
+        }
+        Rectangle {
+            id : mapGreyToLeft
+            color: "black"
+            opacity: 0.6
+            x: videoOutput.x;
+            y: mapGreyToTop.y + mapGreyToTop.height;
+            width: barcodeZone.x - videoOutput.x;
+            height: mapGreyToBottom.y - barcodeZone.y ;
+        }
+
+        Rectangle {
+            id : mapGreyToRight
+            color: "black"
+            opacity: 0.6
+            x: videoOutput.x + barcodeZone.x + barcodeZone.width;
+            y: mapGreyToTop.y + mapGreyToTop.height;
+            width: barcodeZone.x - videoOutput.x;
+            height: mapGreyToBottom.y - barcodeZone.y ;
+        }
+
         Item {
             width: parent.width
             height: units.gu(16)
@@ -178,8 +210,6 @@ Page {
             }
         }
 
-
-
         Accelerometer {
             id:accelero
         }
@@ -191,23 +221,11 @@ Page {
         }
 
     }
-    /*Label {
-        anchors {
-            left: parent.left
-            top: parent.top
-            right: parent.right
-            margins: units.gu(1)
-        }
-        text: i18n.tr("Scan a QR Code containing account information")
-        wrapMode: Text.WordWrap
-        horizontalAlignment: Text.AlignHCenter
-        fontSize: "large"
-    }*/
 
-        Component.onCompleted: {
-            //qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(videoOutput, 0, 0).x, mainView.mapFromItem(videoOutput, 0, 0).y, videoOutput.width, videoOutput.height)
-            //qrCodeReader.scanRect = Qt.rect(0, 0, zone.width, zone.height)
-        }
+
+    Component.onCompleted: {
+        qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(barcodeZone, 0, 0).x, mainView.mapFromItem(barcodeZone, 0, 0).y, barcodeZone.width, barcodeZone.height)
+    }
 
     // We must use Item element because Screen component does not work with QtObject
     Item {

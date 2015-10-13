@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 12:50+0200\n"
+"POT-Creation-Date: 2015-10-13 06:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/barcodeReader.qml:21
+#: /home/morgan/qt/openfoodfacts/app/qml/barcodeReader.qml:22
 msgid "Reading barcode"
 msgstr ""
 
@@ -52,7 +52,8 @@ msgid "Product not found"
 msgstr ""
 
 #: /home/morgan/qt/openfoodfacts/app/qml/notFound.qml:23
-msgid "No product found"
+#, qt-format
+msgid "Product %1 not found"
 msgstr ""
 
 #: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:58

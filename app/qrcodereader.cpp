@@ -101,7 +101,7 @@ void QRCodeReader::grab()
     }
 
     qDebug() << "got image" << img.size();
-//img.save("/run/user/32011/confined/openfoodfacts.ubuntouch-fr/tmp2.jpg");
+    //img.save("/run/user/32011/confined/openfoodfacts.ubuntouch-fr/tmp_morgan.jpg");
     Reader *reader = new Reader;
     reader->moveToThread(&m_readerThread);
     connect(&m_readerThread, SIGNAL(finished()), reader, SLOT(deleteLater()));
