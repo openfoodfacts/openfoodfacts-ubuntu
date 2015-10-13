@@ -21,7 +21,7 @@ Page {
 
     onProductFoundChanged: {
         if (pageProductView.productFound === "0") {
-            pageStack.pop(pageProductView);
+            pageStack.pop();
             pageStack.push(Qt.resolvedUrl("notFound.qml"));
         }
     }
