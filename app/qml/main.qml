@@ -18,13 +18,18 @@ MainView {
     objectName: "openFoodFacts"
     applicationName: "openfoodfacts.ubuntouch-fr"
 
+    property variant myallergen: []
+
     width: units.gu(40)
     height: units.gu(68)
 
     useDeprecatedToolbar: false
     backgroundColor: openFoodFacts.settings.color
     Component.onCompleted: { console.log(i18n.domain)
-        console.log(i18n.language)}
+        console.log(i18n.language)
+        if(settings.allergen === undefined)
+            settings.allergen = []
+    }
 //        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
 //        console.log("domaine")
 //    }
@@ -39,7 +44,7 @@ MainView {
 
         property string color:  '#48c1ba'
 
-        property var allergen:  []
+        property var allergen: undefined
 
         property bool developerModeEnabled:	false
 
