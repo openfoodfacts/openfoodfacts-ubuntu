@@ -20,19 +20,18 @@ Page {
 
     Column {
         id: addproduct
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
-        }
-
-
+        anchors.fill: parent
 
 
 
         Rectangle {
             id:emptyrect
-            anchors.fill: parent; anchors.topMargin: units.gu(5);
+            anchors {
+                top: parent.top
+                left: parent.left
+                right: parent.right
+            }
+            anchors.topMargin: units.gu(5);
             color: "#EDEDEC"
 
             Item {

@@ -20,19 +20,17 @@ Page {
 
     Column {
         id: historyColumn
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
-        }
-
-
-
+        anchors.fill: parent
 
 
         Rectangle {
             id:emptyrect
-            anchors.fill: parent; anchors.topMargin: units.gu(5);
+            anchors {
+                top: parent.top
+                left: parent.left
+                right: parent.right
+            }
+            anchors.topMargin: units.gu(5);
             color: "#EDEDEC"
 
             Item {
@@ -63,7 +61,8 @@ Page {
 
                 Label {
                     id: emptySublabel
-                    text: i18n.tr("You have not scanned product")
+                    text: i18n.tr("Page not yet finished, thank you to return again later.")
+                    //text: i18n.tr("You have not scanned product.")
                     color: "#7b7b7b"
                     width: historyColumn.width
                     wrapMode: Text.WordWrap

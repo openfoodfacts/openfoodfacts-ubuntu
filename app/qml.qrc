@@ -15,7 +15,7 @@
         <file>qml/About.qml</file>
         <file>qml/OpenFoodFacts.png</file>
         <file>qml/Allergen.qml</file>
-        <file>qml/History.qml</file>
+        <file>qml/history.qml</file>
         <file>qml/addproduct.qml</file>
     </qresource>
     <qresource prefix="/component">

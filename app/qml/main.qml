@@ -224,7 +224,7 @@ MainView {
                 iconName: "browser-timeline"
                 iconColor: UbuntuColors.coolGrey
                 onTriggered: {
-                    pageStack.push(Qt.resolvedUrl("History.qml"));
+                    pageStack.push(Qt.resolvedUrl("history.qml"));
                 }
             }
 
