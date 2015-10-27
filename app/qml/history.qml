@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.1
+import Ubuntu.Components.ListItems 1.0 as ListItem
 
 Page {
     id: history
@@ -18,11 +19,53 @@ Page {
         flickableDirection: Flickable.VerticalFlick
         clip: true
 
+
     Column {
         id: historyColumn
         anchors.fill: parent
+        anchors.topMargin: units.gu(1)
+
+        ListModel {
+            id: historyModel
+            ListElement {
+                   label: "Cigarettes croustillantes"
+                   codebarre: "3256220211475"
+               }
+               ListElement {
+                   label: "Kiri Goûter"
+                   codebarre: "3073780969000"
+               }
+               ListElement {
+                   label: "Têtes brulées la bille double choc goût Citroïd Megacide"
+                   codebarre: "3501271119035"
+               }
+        }
+
+        UbuntuListView {
+            objectName: "ubuntuListView"
+            width: parent.width
+            height: main.height
+            model: historyModel
+            clip: true
+            spacing: units.gu(1)
+
+            delegate: ListItem.Subtitled {
+                showDivider: false
+                anchors.leftMargin: units.gu(2)
+                Text {
+                    text: label
+                    color: openFoodFacts.settings.color
+                }
+                subText: codebarre
+                onClicked: {
+                    var barcodeValue = codebarre;
+                    pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});                }
+            }
+        }
 
 
+
+/*
         Rectangle {
             id:emptyrect
             anchors {
@@ -72,7 +115,7 @@ Page {
             }
         }
 
-
+*/
 
 
 
