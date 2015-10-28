@@ -25,27 +25,21 @@ Page {
         anchors.fill: parent
         anchors.topMargin: units.gu(1)
 
-        ListModel {
-            id: historyModel
-            ListElement {
-                   label: "Cigarettes croustillantes"
-                   codebarre: "3256220211475"
-               }
-               ListElement {
-                   label: "Kiri Goûter"
-                   codebarre: "3073780969000"
-               }
-               ListElement {
-                   label: "Têtes brulées la bille double choc goût Citroïd Megacide"
-                   codebarre: "3501271119035"
-               }
+        Button {
+            objectName: "createhistory"
+            text: "create line of history (test)"
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            onClicked: {
+                openFoodFacts.settings.historyModel.insert(0, {"label": "Cigarettes croustillantes (test)", "codebarre":"3256220211475"})
+            }
         }
 
         UbuntuListView {
             objectName: "ubuntuListView"
             width: parent.width
             height: main.height
-            model: historyModel
+            model: openFoodFacts.settings.historyModel
             clip: true
             spacing: units.gu(1)
 
