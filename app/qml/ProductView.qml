@@ -21,8 +21,11 @@ Page {
 
     onProductFoundChanged: {
         if (pageProductView.productFound === "0") {
+            openFoodFacts.settings.historyModel.insert(0, {"label": i18n.tr("Product not found"), "codebarre": pageProductView.barcode});
+            openFoodFacts.settings.historyModel.remove(5)
             pageStack.pop();
-            pageStack.push(Qt.resolvedUrl("notFound.qml"));
+            var barcodeValue = pageProductView.barcode;
+            pageStack.push(Qt.resolvedUrl("notFound.qml"), {"barcode": barcodeValue});
         }
     }
 
@@ -132,6 +135,9 @@ Page {
                 sodium.value = "<font color=\"#620000\">" + sodium_100g + " " + sodium_unit + "</font> | <font color=\"#002762\">" + sodium_serving + " " + sodium_unit + "</font>";
 
                 helpScreen.visible = true
+
+                openFoodFacts.settings.historyModel.insert(0, {"label": titleLabel.text, "codebarre": pageProductView.barcode});
+                openFoodFacts.settings.historyModel.remove(5)
             } else {
                 activity.visible = false
                 pageProductView.productFound = "0";
