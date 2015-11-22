@@ -45,7 +45,6 @@ Page {
                 }
 
                 ListItem.Header {
-                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                     text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Global")+"</font>"
                 }
 
@@ -565,30 +564,40 @@ Page {
 /*********************************** COLOR PICKER END ***************************************/
 
                             TextField {
+                                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                                 id: barcodeinput
                                 width: parent.width/1.6
                                 placeholderText: i18n.tr("Example : #1ab6ef")
                             }
 
                             Button {
+                                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                                 width: parent.width/6
                                 text: "ok"
                                 color:  "#38B44A"
                                 onClicked: ((barcodeinput.text == "")? openFoodFacts.settings.color = "#1ab6ef" : openFoodFacts.settings.color = barcodeinput.text),
                                            PopupUtils.close(dialogue)
                             }
+
                         }
 
+                        Row {
+                            id: row4
+                            width: parent.width
+                            spacing: units.gu(1)
 
-
-
-
+                        Button {
+                            width: parent.width
+                            text: "Cancel"
+                            color:  "#fc4949"
+                            onClicked: PopupUtils.close(dialogue);
+                        }
+                        }
 
 
                     }
                 }
                 ListItem.SingleValue {
-                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                     showDivider: false
                     progression: true
                     text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Theme")+"</font>"

@@ -178,7 +178,6 @@ MainView {
                         width: units.gu(4)
                         height: units.gu(4)
                         iconName: "search"
-
                         onClicked: {
                             var barcodeValue = barcodeinput.text;
                             pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
