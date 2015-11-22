@@ -107,10 +107,10 @@ MainView {
 
                     Image {
                         id : productImage;
-                        source:"shoot.png";
                         fillMode: Image.PreserveAspectCrop
                         visible: false // Do not forget to make original pic insisible
                     }
+
 
                     Rectangle {
                         id: mask
@@ -132,12 +132,13 @@ MainView {
                             clip: true
                             visible: true
 
-                        Image {
+                        Icon {
+                            id: shootIcon
+                            name: "camera-app-symbolic"
                             anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
-                            width: units.gu(8)
-                            height: units.gu(8)
-                            source:"shoot.png";
-                            fillMode: Image.PreserveAspectCrop
+                            width: units.gu(5)
+                            height: units.gu(5)
+                            color: "#FFFFFF"
                         }
                         }
 
