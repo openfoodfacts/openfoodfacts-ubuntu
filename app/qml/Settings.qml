@@ -74,7 +74,7 @@ Page {
                     id: dialog
                     Dialog {
                         id: dialogue
-                        title: "Choose a color"
+                        title: i18n.tr("Choose a color")
                         Row {
                             id: row
                             width: main.width
@@ -540,7 +540,7 @@ Page {
 
                                     Button {
                                         width: parent.width
-                                        text: "Cancel"
+                                        text: i18n.tr("Cancel")
                                         color:  "#fc4949"
                                         onClicked: PopupUtils.close(dialogue2);
                                     }
@@ -573,7 +573,7 @@ Page {
                             Button {
                                 visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                                 width: parent.width/6
-                                text: "ok"
+                                text: i18n.tr("ok")
                                 color:  "#38B44A"
                                 onClicked: ((barcodeinput.text == "")? openFoodFacts.settings.color = "#1ab6ef" : openFoodFacts.settings.color = barcodeinput.text),
                                            PopupUtils.close(dialogue)
@@ -588,7 +588,7 @@ Page {
 
                         Button {
                             width: parent.width
-                            text: "Cancel"
+                            text: i18n.tr("Cancel")
                             color:  "#fc4949"
                             onClicked: PopupUtils.close(dialogue);
                         }

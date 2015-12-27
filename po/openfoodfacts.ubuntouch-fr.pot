@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-22 10:12+0100\n"
+"POT-Creation-Date: 2015-12-27 17:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,8 +205,21 @@ msgstr ""
 msgid "Global"
 msgstr ""
 
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:77
+msgid "Choose a color"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:543
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:591
+msgid "Cancel"
+msgstr ""
+
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:570
 msgid "Example : #1ab6ef"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:576
+msgid "ok"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:603
