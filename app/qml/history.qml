@@ -4,7 +4,7 @@ import Ubuntu.Components 1.1
 Page {
     id: history
 
-    title: i18n.tr("History")
+    title: i18n.tr("Historical")
 
     Rectangle {
         id:main
