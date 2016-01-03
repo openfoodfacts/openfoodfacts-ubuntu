@@ -72,31 +72,70 @@ Page {
             onClicked:  qrCodeReader.grab();
         }
 
-        /*PinchArea {
-            id: pinchy
-            anchors.fill: parent
-
-            property real initialZoom
-            property real minimumScale: 0.3
-            property real maximumScale: 3.0
-            property bool active: false
-
-            onPinchStarted: {
-                print("pinch started!")
-                active = true;
-                initialZoom = camera.currentZoom;
-            }
-            onPinchUpdated: {
-                print("pinch updated")
-                var scaleFactor = MathUtils.projectValue(pinch.scale, 1.0, maximumScale, 0.0, camera.maximumZoom);
-                camera.currentZoom = MathUtils.clamp(initialZoom + scaleFactor, 1, camera.maximumZoom);
-            }
-            onPinchFinished: {
-                active = false;
-            }
-        }*/
-
     }
+
+    Rectangle {
+        id: barcodeZone
+        x: videoOutput.width*2/8
+        y: videoOutput.height*2/8
+        width: videoOutput.width/2
+        height: videoOutput.height/2
+        border.color: "red"
+        color:"transparent"
+    }
+
+    /*
+    *   Fill the screen with a gray area
+    *   like that, the user can focus on the barcode
+    */
+    Rectangle {
+        id : mapGreyToTop
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x;
+        y: videoOutput.y;
+        width: videoOutput.width;
+        height: barcodeZone.y;
+
+        Text {
+            id: infoTexte
+            text : i18n.tr("please, wait until the focus is done");
+            anchors.horizontalCenter: page.horizontalCenter;
+            font.pointSize: 24; font.bold: true;
+            color:"white";
+        }
+    }
+
+    Rectangle {
+        id : mapGreyToBottom
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x;
+        y: (videoOutput.y + videoOutput.height) - barcodeZone.y
+        width: videoOutput.width;
+        height: barcodeZone.y;
+    }
+    Rectangle {
+        id : mapGreyToLeft
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x;
+        y: mapGreyToTop.y + mapGreyToTop.height;
+        width: barcodeZone.x - videoOutput.x;
+        height: mapGreyToBottom.y - barcodeZone.y ;
+    }
+
+    Rectangle {
+        id : mapGreyToRight
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x + barcodeZone.x + barcodeZone.width;
+        y: mapGreyToTop.y + mapGreyToTop.height;
+        width: barcodeZone.x - videoOutput.x;
+        height: mapGreyToBottom.y - barcodeZone.y ;
+    }
+
+
 
 
     /*Label {
@@ -113,7 +152,9 @@ Page {
     }*/
 
     Component.onCompleted: {
-        qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(videoOutput, 0, 0).x, mainView.mapFromItem(videoOutput, 0, 0).y, videoOutput.width, videoOutput.height)
+        //qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(videoOutput, 0, 0).x, mainView.mapFromItem(videoOutput, 0, 0).y, videoOutput.width, videoOutput.height)
+        qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(barcodeZone, 0, 0).x, mainView.mapFromItem(barcodeZone, 0, 0).y, barcodeZone.width, barcodeZone.height)
+
     }
 
     // We must use Item element because Screen component does not work with QtObject
