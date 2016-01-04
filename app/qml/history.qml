@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.1
+import Ubuntu.Components.ListItems 1.0 as ListItem
 
 Page {
     id: history
@@ -17,14 +18,18 @@ Page {
         contentHeight: historyColumn.height
         flickableDirection: Flickable.VerticalFlick
         clip: true
+        Component.onCompleted:if (openFoodFacts.settings.historyModel.count == "0")
+                                  emptyrect.visible = true
+                             else
+                                  historyColumn.visible = true;
 
-    Column {
-        id: historyColumn
-        anchors.fill: parent
+
 
 
         Rectangle {
             id:emptyrect
+            visible: false
+
             anchors {
                 top: parent.top
                 left: parent.left
@@ -61,8 +66,7 @@ Page {
 
                 Label {
                     id: emptySublabel
-                    text: i18n.tr("Page not yet finished, thank you to return again later.")
-                    //text: i18n.tr("You have not scanned product.")
+                    text: i18n.tr("You have not scanned product.")
                     color: "#7b7b7b"
                     width: historyColumn.width
                     wrapMode: Text.WordWrap
@@ -71,6 +75,39 @@ Page {
                 }
             }
         }
+
+    Column {
+        id: historyColumn
+        anchors.fill: parent
+        anchors.topMargin: units.gu(1)
+        visible: false
+
+
+        UbuntuListView {
+            objectName: "ubuntuListView"
+            width: parent.width
+            height: main.height
+            model: openFoodFacts.settings.historyModel
+            clip: true
+            spacing: units.gu(1)
+
+            delegate: ListItem.Subtitled {
+                showDivider: false
+                anchors.leftMargin: units.gu(2)
+                Text {
+                    text: label
+                    color: openFoodFacts.settings.color
+                }
+                subText: codebarre
+                onClicked: {
+                    var barcodeValue = codebarre;
+                    pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});                }
+            }
+        }
+
+
+
+
 
 
 

@@ -48,6 +48,7 @@ MainView {
 
         property bool developerModeEnabled:	false
 
+        property ListModel historyModel: ListModel {}
     }
 
     PageStack {

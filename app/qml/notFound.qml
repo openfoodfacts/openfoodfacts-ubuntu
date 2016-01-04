@@ -5,8 +5,6 @@ import Ubuntu.Components 1.1
 
 import QtQuick 2.4
 import Ubuntu.Components 1.1
-
-
 import "qrc:///component/qml/component"
 
 
@@ -14,6 +12,8 @@ Page {
     id: notFoundPage
     title: i18n.tr("Product not found")
 
+    property string barcode:"";
+    onBarcodeChanged: console.log(notFoundPage.barcode);
 
     Rectangle {
         id:main
@@ -69,7 +69,16 @@ Page {
                     anchors.topMargin: units.gu(4)
                     horizontalAlignment: Text.AlignHCenter
                 }
-
+                Label {
+                    id: emptyBarrecode
+                    text: notFoundPage.barcode
+                    color: "#5d5d5d"
+                    fontSize: "small"
+                    width: product.width
+                    wrapMode: Text.WordWrap
+                    anchors.top: emptyLabel.bottom
+                    horizontalAlignment: Text.AlignHCenter
+                }
             }
         }
 
