@@ -27,8 +27,8 @@ Page {
             if (valid) {
                 captureTimer.stop()
                 var barcodeValue = qrCodeReader.text;
+                pageStack.pop();
                 pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": barcodeValue});
-                //pageStack.pop();
             }
         }
     }
