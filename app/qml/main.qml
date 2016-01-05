@@ -58,7 +58,9 @@ MainView {
             //push(pageMain)
         //}
         height: parent.height
-        Component.onCompleted: push(mainpage)
+        Component.onCompleted: {
+            push(mainpage);
+        }
 
 
         Page {
@@ -199,8 +201,10 @@ MainView {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
                 onTriggered : {
-                    //pageStack.pop();
-                    pageStack.push(Qt.resolvedUrl("main.qml"));
+                    if (pageStack.depth > 0) {
+                       pageStack.clear();
+                    }
+                    pageStack.push(mainpage);
                 }
             },
 
