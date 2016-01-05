@@ -193,7 +193,6 @@ MainView {
     }   }
 
     RadialBottomEdge {
-        visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
         id:radialBottom;
         actions: [
 
