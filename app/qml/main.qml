@@ -5,8 +5,7 @@ import Ubuntu.Content 0.1
 */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Content 1.1
+import Ubuntu.Components 1.1
 import QtGraphicalEffects 1.0
 import Qt.labs.settings 1.0
 
@@ -30,9 +29,9 @@ MainView {
         if(settings.allergen === undefined)
             settings.allergen = []
     }
-//        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
-//        console.log("domaine")
-//    }
+    //        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
+    //        console.log("domaine")
+    //    }
 
     // persistent app settings:
     property var settings: Settings {
@@ -53,99 +52,92 @@ MainView {
 
     PageStack {
         id: pageStack
-        //Component.onCompleted: {
-            //push(Qt.resolvedUrl("barcodeReader.qml"));
-            //push(pageMain)
-        //}
         height: parent.height
         Component.onCompleted: {
             push(mainpage);
         }
-
-
         Page {
-                title: i18n.tr("OpenFoodFacts")
-                id: mainpage
+            title: i18n.tr("OpenFoodFacts")
+            id: mainpage
 
-                head {
-                    actions: [
-
-                        Action {
-                            text: i18n.tr("Settings")
-                            iconName: "settings"
-                            onTriggered: {
-                                pageStack.push(Qt.resolvedUrl("Settings.qml"));
-                            }
+            head {
+                actions: [
+                    Action {
+                        text: i18n.tr("Settings")
+                        iconName: "settings"
+                        onTriggered: {
+                            pageStack.push(Qt.resolvedUrl("Settings.qml"));
                         }
-                    ]
-                }
+                    }
+                ]
+            }
 
 
-        Rectangle {
-            id:rect1
-            anchors.fill:parent
-            color: "#EDEDEC"
-            Column {
-                spacing: units.gu(2)
-                anchors {
-                    right: parent.right
-                    left: parent.left
-
-                }
-
-                Rectangle {
-                    id: headerpicture
-                    width: parent.width;
-                    height: units.gu(20)
-                    color: "#EDEDEC"
-
-                    Image {
-                        id : picturebackgroundtop;
-                        source:"nutrition.jpg";
-                        width: parent.width;
-                        height: units.gu(15)
-                        fillMode: Image.PreserveAspectCrop
+            Rectangle {
+                id:rect1
+                anchors.fill:parent
+                color: "#EDEDEC"
+                Column {
+                    spacing: units.gu(2)
+                    anchors {
+                        right: parent.right
+                        left: parent.left
 
                     }
-
-                    Image {
-                        id : productImage;
-                        fillMode: Image.PreserveAspectCrop
-                        visible: false // Do not forget to make original pic insisible
-                    }
-
 
                     Rectangle {
-                        id: mask
-                        anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
-                        width: units.gu(9)
-                        height: units.gu(9)
+                        id: headerpicture
+                        width: parent.width;
+                        height: units.gu(20)
                         color: "#EDEDEC"
-                        radius: 120
-                        clip: true
-                        visible: true
+
+                        Image {
+                            id : picturebackgroundtop;
+                            source:"nutrition.jpg";
+                            width: parent.width;
+                            height: units.gu(15)
+                            fillMode: Image.PreserveAspectCrop
+
+                        }
+
+                        Image {
+                            id : productImage;
+                            fillMode: Image.PreserveAspectCrop
+                            visible: false // Do not forget to make original pic insisible
+                        }
+
 
                         Rectangle {
-                            id: mask2
-                            anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: mask.verticalCenter;
-                            width: units.gu(8)
-                            height: units.gu(8)
-                            color: openFoodFacts.settings.color;
+                            id: mask
+                            anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
+                            width: units.gu(9)
+                            height: units.gu(9)
+                            color: "#EDEDEC"
                             radius: 120
                             clip: true
                             visible: true
 
-                        Icon {
-                            id: shootIcon
-                            name: "camera-app-symbolic"
-                            anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
-                            width: units.gu(5)
-                            height: units.gu(5)
-                            color: "#FFFFFF"
-                        }
-                        }
+                            Rectangle {
+                                id: mask2
+                                anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: mask.verticalCenter;
+                                width: units.gu(8)
+                                height: units.gu(8)
+                                color: openFoodFacts.settings.color;
+                                radius: 120
+                                clip: true
+                                visible: true
 
-                        MouseArea {
+                                Icon {
+                                    id: shootIcon
+                                    name: "camera-app-symbolic"
+                                    anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
+                                    width: units.gu(5)
+                                    height: units.gu(5)
+                                    color: "#FFFFFF"
+                                }
+                            }
+
+                            MouseArea {
                                 anchors.fill: mask
                                 onClicked: {
                                     pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
@@ -154,43 +146,38 @@ MainView {
                                     backgroundImage.color = "#29b3ab" }
                                 onReleased: {
                                     backgroundImage.color = "#48c1ba" }
+                            }
                         }
-                    }
+                    } // header picture
 
 
+                    Row {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        spacing: units.gu(1)
 
-                } // header picture
-
-
-
-
-                Row {
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    spacing: units.gu(1)
-
-                    TextField {
-                        id: barcodeinput
-                        height: units.gu(4)
-                        placeholderText: i18n.tr("Enter your barcode")
-                        inputMethodHints : Qt.ImhDigitsOnly
-                    }
-
-
-                    Button {
-                        objectName: "envoyer"
-                        width: units.gu(4)
-                        height: units.gu(4)
-                        iconName: "search"
-                        onClicked: {
-                            var barcodeValue = barcodeinput.text;
-                            pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                        TextField {
+                            id: barcodeinput
+                            height: units.gu(4)
+                            placeholderText: i18n.tr("Enter your barcode")
+                            inputMethodHints : Qt.ImhDigitsOnly
                         }
-                    }
 
+
+                        Button {
+                            objectName: "envoyer"
+                            width: units.gu(4)
+                            height: units.gu(4)
+                            iconName: "search"
+                            onClicked: {
+                                var barcodeValue = barcodeinput.text;
+                                pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                            }
+                        }
+
+                    }
                 }
             }
-        }
-    }   }
+        }   }
 
     RadialBottomEdge {
         id:radialBottom;
@@ -201,7 +188,7 @@ MainView {
                 iconColor: UbuntuColors.coolGrey
                 onTriggered : {
                     if (pageStack.depth > 0) {
-                       pageStack.clear();
+                        pageStack.clear();
                     }
                     pageStack.push(mainpage);
                 }
