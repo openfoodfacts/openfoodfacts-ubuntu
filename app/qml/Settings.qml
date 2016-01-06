@@ -1,8 +1,7 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.2
-import Ubuntu.Components.ListItems 1.0 as ListItem
+import Ubuntu.Components 1.3
+import Ubuntu.Components.ListItems 1.3 as ListItem
 import Qt.labs.settings 1.0
-import Ubuntu.Components 1.2 as Toolkit
 import Ubuntu.Components.Popups 0.1
 
 Page {
@@ -84,7 +83,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "red"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -95,7 +93,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "#FF0099"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -106,7 +103,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "#CC0066"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -117,7 +113,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "purple"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -128,7 +123,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "indigo"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -139,7 +133,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "blue"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -150,7 +143,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "#1ab6ef"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -161,7 +153,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "#336666"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -182,7 +173,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "green"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -193,7 +183,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "#00CC66"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -204,7 +193,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "#FF9966"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -215,7 +203,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "orange"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -226,7 +213,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "grey"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -237,7 +223,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "#647da4"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -248,7 +233,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "brown"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -259,7 +243,6 @@ Page {
                                 width: units.gu(3)
                                 height: units.gu(3)
                                 color: "black"
-                                anchors.centerIn : Item
                                 MouseArea {
                                     anchors.fill: parent
                                     onClicked: { PopupUtils.close(dialogue),
@@ -277,7 +260,7 @@ Page {
                             width: parent.width
                             spacing: units.gu(1)
 
-/*********************************** COLOR PICKER START **************************************/
+                            /*********************************** COLOR PICKER START **************************************/
 
                             Component {
                                 id: dialog2
@@ -399,7 +382,7 @@ Page {
                                                     color = Qt.rgba(1, brightness, 1 - sectionVal + brightness, 1)
                                                     break;
                                                 }
-                                        //        print("got color", color.r, color.g, color.b)
+                                                //        print("got color", color.r, color.g, color.b)
                                                 return color
                                             }
 
@@ -498,10 +481,10 @@ Page {
                                                 y: item ? Math.max(0, Math.min(point.y - height * .5, parent.height - item.height)) : 0
                                                 sourceComponent: root.lights ? undefined : root.touchDelegate
                                                 visible: mouseArea.draggedItem != touchDelegateLoader && root.active
-                                        //        Behavior on x {
-                                        //            enabled: !mouseArea.pressed
-                                        //            NumberAnimation {}
-                                        //        }
+                                                //        Behavior on x {
+                                                //            enabled: !mouseArea.pressed
+                                                //            NumberAnimation {}
+                                                //        }
                                             }
 
                                             Repeater {
@@ -561,7 +544,7 @@ Page {
                             }
 
 
-/*********************************** COLOR PICKER END ***************************************/
+                            /*********************************** COLOR PICKER END ***************************************/
 
                             TextField {
                                 visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
@@ -586,12 +569,12 @@ Page {
                             width: parent.width
                             spacing: units.gu(1)
 
-                        Button {
-                            width: parent.width
-                            text: i18n.tr("Cancel")
-                            color:  "#fc4949"
-                            onClicked: PopupUtils.close(dialogue);
-                        }
+                            Button {
+                                width: parent.width
+                                text: i18n.tr("Cancel")
+                                color:  "#fc4949"
+                                onClicked: PopupUtils.close(dialogue);
+                            }
                         }
 
 
@@ -604,21 +587,6 @@ Page {
                     onClicked: PopupUtils.open(dialog)
                 }
 
-
-
-                /*
-
-            ListItem.Standard {
-                showDivider: false
-                text: i18n.tr("Offline Mode")
-                control: Switch {
-                    id: offlinemode
-                    checked: openfoodfacts.settings.offlinemode
-
-                }
-            }
-
-*/
                 ListItem.Header {
                     text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Viewing Information")+"</font>"
                 }

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-05 18:28+0100\n"
+"POT-Creation-Date: 2016-01-06 10:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgid "Page not yet finished, thank you to return again later."
 msgstr ""
 
 #: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:8
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:54
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:53
 msgid "Allergen"
 msgstr ""
 
@@ -67,16 +67,16 @@ msgstr ""
 msgid "You have not scanned product."
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:60
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:55
 msgid "OpenFoodFacts"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:66
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:11
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:61
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:161
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:156
 msgid "Enter your barcode"
 msgstr ""
 
@@ -148,12 +148,12 @@ msgid "Serving size"
 msgstr ""
 
 #: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:290
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:628
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:596
 msgid "Product characteristics"
 msgstr ""
 
 #: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:427
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:650
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:618
 msgid "Nutrition facts"
 msgstr ""
 
@@ -205,43 +205,43 @@ msgstr ""
 msgid "Sodium"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:18
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:17
 msgid "about"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:48
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:47
 msgid "Global"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:77
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:76
 msgid "Choose a color"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:543
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:591
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:526
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:574
 msgid "Cancel"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:570
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:553
 msgid "Example : #1ab6ef"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:576
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:559
 msgid "ok"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:603
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:586
 msgid "Theme"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:623
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:591
 msgid "Viewing Information"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:639
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:607
 msgid "ingredients"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:661
+#: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:629
 msgid "Composition"
 msgstr ""

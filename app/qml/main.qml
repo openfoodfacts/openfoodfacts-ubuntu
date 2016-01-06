@@ -1,13 +1,8 @@
-/*
-import QtQuick 2.0
-import Ubuntu.Components 1.1
-import Ubuntu.Content 0.1
-*/
-
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import QtGraphicalEffects 1.0
 import Qt.labs.settings 1.0
+//import Ubuntu.Components.Themes 1.0
 
 import "qrc:///component/qml/component"
 
@@ -22,16 +17,16 @@ MainView {
     width: units.gu(40)
     height: units.gu(68)
 
-    //useDeprecatedToolbar: false
-    backgroundColor: openFoodFacts.settings.color
+    //Theme.name = "Ubuntu.Components.Themes.SuruDark"
+    backgroundColor: openFoodFacts.settings.color;
+    /*theme.palette: Palette {
+           normal.background: UbuntuColors.blue
+       }*/
     Component.onCompleted: { console.log(i18n.domain)
         console.log(i18n.language)
         if(settings.allergen === undefined)
             settings.allergen = []
     }
-    //        //Theme.name = "Ubuntu.Components.Themes.SuruDark"
-    //        console.log("domaine")
-    //    }
 
     // persistent app settings:
     property var settings: Settings {
