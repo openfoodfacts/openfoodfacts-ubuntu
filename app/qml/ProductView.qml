@@ -16,13 +16,19 @@ Page {
 
     property string barcode:"";
     onBarcodeChanged: console.log(pageProductView.barcode);
+    property string productNameSearch : "";
+    onProductNameSearchChanged: {
+        console.log("product name search changed : " + productNameSearch);
+        openFoodFactJSON.source =  "http://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
+    }
+
     property var jsonData;
     property string productFound:"";
 
     onProductFoundChanged: {
         if (pageProductView.productFound === "0") {
-            openFoodFacts.settings.historyModel.insert(0, {"label": i18n.tr("Product not found"), "codebarre": pageProductView.barcode});
-            openFoodFacts.settings.historyModel.remove(5)
+           /* openFoodFacts.settings.historyModel.insert(0, {"label": i18n.tr("Product not found"), "codebarre": pageProductView.barcode});
+            openFoodFacts.settings.historyModel.remove(5)*/
             pageStack.pop();
             var barcodeValue = pageProductView.barcode;
             pageStack.push(Qt.resolvedUrl("notFound.qml"), {"barcode": barcodeValue});
@@ -46,10 +52,11 @@ Page {
         source: "http://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
         query: "$[*]"
         onJsonChanged: {
+            console.log("json changed");
             findProductTimer.start()
             var _json = openFoodFactJSON.model.get(0);
 
-            if (typeof _json.product_name !== "undefined" && _json.product_name !== "" ) {
+            if (typeof _json !== "undefined" && typeof _json.product_name !== "undefined" && _json.product_name !== "" ) {
                 pageProductView.productFound = "1";
 
                 titleLabel.text = _json.product_name;

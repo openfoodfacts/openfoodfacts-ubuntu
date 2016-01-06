@@ -20,78 +20,66 @@ Page {
         anchors.fill: parent;
         color: "#EDEDEC"
 
-    Flickable {
-        id: flickable
-        anchors.fill: parent
-        contentHeight: product.height
-        flickableDirection: Flickable.VerticalFlick
-        clip: true
+        Flickable {
+            id: flickable
+            anchors.fill: parent
+            contentHeight: product.height
+            flickableDirection: Flickable.VerticalFlick
+            clip: true
 
-    Column {
-        id: product
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
-        }
-
-
-
-
-
-        Rectangle {
-            id:emptyrect
-            anchors.fill: parent; anchors.topMargin: units.gu(5);
-            color: "#EDEDEC"
-
-            Item {
-                id: emptyState
-                anchors.fill: parent;
-
-                Icon {
-                    id: emptyIcon
-                    name: "find"
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    height: units.gu(10)
-                    width: height
-                    color: "#BBBBBB"
+            Rectangle {
+                id: product
+                anchors {
+                    top: parent.top
+                    left: parent.left
+                    right: parent.right
                 }
 
-                Label {
-                    id: emptyLabel
-                    text: i18n.tr("Your product was not found")
-                    color: "#5d5d5d"
-                    fontSize: "large"
-                    font.bold: true
-                    width: product.width
-                    wrapMode: Text.WordWrap
-                    anchors.top: emptyIcon.bottom
-                    anchors.topMargin: units.gu(4)
-                    horizontalAlignment: Text.AlignHCenter
-                }
-                Label {
-                    id: emptyBarrecode
-                    text: notFoundPage.barcode
-                    color: "#5d5d5d"
-                    fontSize: "small"
-                    width: product.width
-                    wrapMode: Text.WordWrap
-                    anchors.top: emptyLabel.bottom
-                    horizontalAlignment: Text.AlignHCenter
-                }
-            }
-        }
+                Rectangle {
+                    id:emptyrect
+                    anchors.fill: parent; anchors.topMargin: units.gu(5);
+                    color: "#EDEDEC"
 
+                    Item {
+                        id: emptyState
+                        anchors.fill: parent;
 
+                        Icon {
+                            id: emptyIcon
+                            name: "find"
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            height: units.gu(10)
+                            width: height
+                            color: "#BBBBBB"
+                        }
 
+                        Label {
+                            id: emptyLabel
+                            text: i18n.tr("Your product was not found")
+                            color: "#5d5d5d"
+                            fontSize: "large"
+                            font.bold: true
+                            width: product.width
+                            wrapMode: Text.WordWrap
+                            anchors.top: emptyIcon.bottom
+                            anchors.topMargin: units.gu(4)
+                            horizontalAlignment: Text.AlignHCenter
+                        }
+                        Label {
+                            id: emptyBarrecode
+                            text: notFoundPage.barcode
+                            color: "#5d5d5d"
+                            fontSize: "small"
+                            width: product.width
+                            wrapMode: Text.WordWrap
+                            anchors.top: emptyLabel.bottom
+                            horizontalAlignment: Text.AlignHCenter
+                        }
+                    }
+                } // empty rect
 
-
-
-
-
-
-    }
-    }
+            } // product rectangle
+        } // flickable
     }
 
 

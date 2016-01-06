@@ -17,6 +17,7 @@
         <file>qml/history.qml</file>
         <file>qml/addproduct.qml</file>
         <file>qml/picker.png</file>
+        <file>qml/ProductSearchResult.qml</file>
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>

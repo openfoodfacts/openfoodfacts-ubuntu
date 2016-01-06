@@ -156,7 +156,8 @@ MainView {
                         TextField {
                             id: barcodeinput
                             height: units.gu(4)
-                            placeholderText: i18n.tr("Enter your barcode")
+                            //placeholderText: i18n.tr("Enter your product's name or product's barcode")
+                            placeholderText: i18n.tr("Enter your product's barcode")
                             inputMethodHints : Qt.ImhDigitsOnly
                         }
 
@@ -167,8 +168,20 @@ MainView {
                             height: units.gu(4)
                             iconName: "search"
                             onClicked: {
-                                var barcodeValue = barcodeinput.text;
-                                pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                                function isNumeric(n) {
+                                    return !isNaN(parseFloat(n)) && isFinite(n);
+                                }
+
+                                var searchValue = barcodeinput.text;
+
+                                // if it's a barcode
+                                if (isNumeric(searchValue)) {
+                                    pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": searchValue});
+                                } else {
+                                    // pageStack.push(Qt.resolvedUrl("ProductSearchResult.qml"), {"productNameSearch": searchValue});
+                                }
+
+
                             }
                         }
 
