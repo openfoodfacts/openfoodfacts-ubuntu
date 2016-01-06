@@ -42,7 +42,10 @@ MainView {
 
         property bool developerModeEnabled:	false
 
-        property ListModel historyModel: ListModel {}
+        property ListModel historyModel: ListModel {
+            id: historyListModel;
+        } // listModel
+
     }
 
     PageStack {
