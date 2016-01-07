@@ -4,7 +4,7 @@ import QtMultimedia 5.0
 import Ubuntu.Content 0.1*/
 
 import QtQuick 2.4
-import Ubuntu.Components 1.2
+import Ubuntu.Components 1.3
 import QtMultimedia 5.4
 
 import Ubuntu.Components.ListItems 1.0
@@ -99,9 +99,11 @@ Page {
         Text {
             id: infoTexte
             text : i18n.tr("please, wait until the focus is done");
-            anchors.horizontalCenter: page.horizontalCenter;
-            font.pointSize: 24; font.bold: true;
+            font.bold: true;
             color:"white";
+            width: parent.width
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
         }
     }
 
