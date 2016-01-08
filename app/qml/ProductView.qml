@@ -43,6 +43,12 @@ Page {
         }
     }
 
+    BusyIndicator {
+        scale: 0.8
+        visible: pageProductView.productFound === "0"
+        anchors.centerIn: parent
+    }
+
     JSONListModel {
         id: openFoodFactJSON
         source: "http://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
@@ -140,17 +146,23 @@ Page {
                 helpScreen.visible = true;
 
                 // add the product only if
+                var product_already_in_history = false;
                 for (var i=0; i < openFoodFacts.settings.historyModel.count; i++) {
                     var hmodel = openFoodFacts.settings.historyModel.get(i);
                     if (hmodel.codebarre === pageProductView.barcode) {
                         console.log("product already scanned");
                         // move the current item to top of list, because it's the last one visited
                         openFoodFacts.settings.historyModel.move(i,0,1);
-                    } else {
-                        console.log("product never scanned, let's add it to the history");
-                        openFoodFacts.settings.historyModel.insert(0, {"label": titleLabel.text, "codebarre": pageProductView.barcode});
-
+                        product_already_in_history = true;
                     }
+                }
+
+                if (product_already_in_history) {
+                    console.log("product is already in history");
+                } else {
+                    console.log("product never scanned, let's add it to the history");
+                    openFoodFacts.settings.historyModel.insert(0, {"label": titleLabel.text, "codebarre": pageProductView.barcode});
+
                 }
 
             } else {
