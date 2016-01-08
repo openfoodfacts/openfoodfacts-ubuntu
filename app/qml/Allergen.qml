@@ -5,7 +5,10 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 Page {
     id: allergen
 
-    title: i18n.tr("Allergen")
+    title: i18n.tr("Allergen");
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
     signal settingsChanged()
 
 /*

@@ -5,7 +5,10 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 Page {
     id: history
 
-    title: i18n.tr("Historical")
+    title: i18n.tr("Historical");
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
 
     Rectangle {
         id:main

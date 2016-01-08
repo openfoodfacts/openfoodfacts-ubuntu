@@ -21,6 +21,7 @@ Page {
                 }
             }
         ]
+        foregroundColor: openFoodFacts.settings.fontColor;
     }
     Rectangle {
         id:main
@@ -85,8 +86,8 @@ Page {
                                 color: "red"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "red"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "red"; }
                                 }
                             }
                             Rectangle {
@@ -95,8 +96,8 @@ Page {
                                 color: "#FF0099"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "#FF0099"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#FF0099"; }
                                 }
                             }
                             Rectangle {
@@ -105,8 +106,8 @@ Page {
                                 color: "#CC0066"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "#CC0066"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#CC0066"; }
                                 }
                             }
                             Rectangle {
@@ -115,8 +116,8 @@ Page {
                                 color: "purple"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "purple"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "purple"; }
                                 }
                             }
                             Rectangle {
@@ -125,8 +126,8 @@ Page {
                                 color: "indigo"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "indigo"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "indigo"; }
                                 }
                             }
                             Rectangle {
@@ -135,8 +136,8 @@ Page {
                                 color: "blue"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "blue"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "blue"; }
                                 }
                             }
                             Rectangle {
@@ -145,8 +146,8 @@ Page {
                                 color: "#1ab6ef"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "#1ab6ef"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#1ab6ef"; }
                                 }
                             }
                             Rectangle {
@@ -155,8 +156,11 @@ Page {
                                 color: "#336666"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "#336666"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#336666"
+                                        ;
+
+                                    }
                                 }
                             }
 
@@ -175,8 +179,8 @@ Page {
                                 color: "green"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "green"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "green"; }
                                 }
                             }
                             Rectangle {
@@ -185,8 +189,8 @@ Page {
                                 color: "#00CC66"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "#00CC66"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#00CC66"; }
                                 }
                             }
                             Rectangle {
@@ -195,8 +199,8 @@ Page {
                                 color: "#FF9966"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "#FF9966"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#FF9966"; }
                                 }
                             }
                             Rectangle {
@@ -205,8 +209,8 @@ Page {
                                 color: "orange"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "orange"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "orange"; }
                                 }
                             }
                             Rectangle {
@@ -215,8 +219,8 @@ Page {
                                 color: "grey"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "grey"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "grey"; }
                                 }
                             }
                             Rectangle {
@@ -225,8 +229,8 @@ Page {
                                 color: "#647da4"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "#647da4"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#647da4"; }
                                 }
                             }
                             Rectangle {
@@ -235,8 +239,8 @@ Page {
                                 color: "brown"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "brown"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "brown"; }
                                 }
                             }
                             Rectangle {
@@ -245,8 +249,8 @@ Page {
                                 color: "black"
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue),
-                                                 openFoodFacts.settings.color = "black"; }
+                                    onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "black"; }
                                 }
                             }
 

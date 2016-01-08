@@ -6,7 +6,10 @@ import Ubuntu.Components.Popups 1.0
 Page {
     id: about
 
-    title: i18n.tr("About")
+    title: i18n.tr("About");
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
 
     Column {
         anchors {

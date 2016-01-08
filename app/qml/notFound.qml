@@ -10,7 +10,10 @@ import "qrc:///component/qml/component"
 
 Page {
     id: notFoundPage
-    title: i18n.tr("Product not found")
+    title: i18n.tr("Product not found");
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
 
     property string barcode:"";
     onBarcodeChanged: console.log(notFoundPage.barcode);

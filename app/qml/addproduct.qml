@@ -5,6 +5,9 @@ Page {
     id: addproductmain
 
     title: i18n.tr("Add product")
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
 
     Rectangle {
         id:main

@@ -13,6 +13,9 @@ import QtGraphicalEffects 1.0
 Page {
     title: titleLabel.text;
     id: pageProductView
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
 
     property string barcode:"";
     onBarcodeChanged: console.log(pageProductView.barcode);

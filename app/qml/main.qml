@@ -18,15 +18,16 @@ MainView {
     height: units.gu(68)
 
     //Theme.name = "Ubuntu.Components.Themes.SuruDark"
-    backgroundColor: openFoodFacts.settings.color;
-    /*theme.palette: Palette {
+    headerColor: openFoodFacts.settings.color;
+
+    /* theme.palette: Palette {
            normal.background: UbuntuColors.blue
-       }*/
+       }
     Component.onCompleted: { console.log(i18n.domain)
         console.log(i18n.language)
         if(settings.allergen === undefined)
             settings.allergen = []
-    }
+    }*/
 
     // persistent app settings:
     property var settings: Settings {
@@ -37,6 +38,7 @@ MainView {
         property bool visiblecharacteristics:	true
 
         property string color:  '#48c1ba'
+        property string fontColor : "white";
 
         property var allergen: undefined
 
@@ -68,6 +70,7 @@ MainView {
                         }
                     }
                 ]
+                foregroundColor: openFoodFacts.settings.fontColor;
             }
 
 

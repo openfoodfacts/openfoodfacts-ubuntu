@@ -6,9 +6,6 @@ import Ubuntu.Content 0.1*/
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import QtMultimedia 5.4
-
-import Ubuntu.Components.ListItems 1.0
-import Ubuntu.Components.Popups 1.0
 import CodeReader 1.0
 import QtQuick.Window 2.0
 import "qrc:///component/qml/component"
@@ -17,7 +14,10 @@ import "qrc:///component/qml/component"
 
 Page {
     id: grabCodePage
-    title: i18n.tr("Reading barcode")
+    title: i18n.tr("Reading barcode");
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
 
     QRCodeReader {
         id: qrCodeReader

@@ -8,6 +8,9 @@ import QtGraphicalEffects 1.0
 Page {
     id: pageProductSearch
     title: i18n.tr("search result for : ") + pageProductSearch.productNameSearch;
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
 
 
     property string productNameSearch : "";
