@@ -104,26 +104,12 @@ Page {
                         subText: codebarre
                         onClicked: {
                             var barcodeValue = codebarre;
-                            pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});                }
+                            pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                        }
                     }
-                }
+                } // ListView
 
-
-
-
-
-
-
-
-
-
-
-
-
-            }
-        }
+            } // Column
+        } // Flickable
     }
-
-
-
 }

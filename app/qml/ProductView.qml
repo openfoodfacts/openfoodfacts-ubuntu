@@ -30,8 +30,6 @@ Page {
 
     onProductFoundChanged: {
         if (pageProductView.productFound === "0") {
-           /* openFoodFacts.settings.historyModel.insert(0, {"label": i18n.tr("Product not found"), "codebarre": pageProductView.barcode});
-            openFoodFacts.settings.historyModel.remove(5)*/
             pageStack.pop();
             var barcodeValue = pageProductView.barcode;
             pageStack.push(Qt.resolvedUrl("notFound.qml"), {"barcode": barcodeValue});
@@ -144,10 +142,22 @@ Page {
                 var sodium_serving  = (typeof _json.nutriments.sodium_serving  !== "undefined") ? _json.nutriments.sodium_serving  : "n/a";
                 sodium.value = "<font color=\"#620000\">" + sodium_100g + " " + sodium_unit + "</font> | <font color=\"#002762\">" + sodium_serving + " " + sodium_unit + "</font>";
 
-                helpScreen.visible = true
+                helpScreen.visible = true;
 
-                openFoodFacts.settings.historyModel.insert(0, {"label": titleLabel.text, "codebarre": pageProductView.barcode});
-                openFoodFacts.settings.historyModel.remove(5)
+                // add the product only if
+                for (var i=0; i < openFoodFacts.settings.historyModel.count; i++) {
+                    var hmodel = openFoodFacts.settings.historyModel.get(i);
+                    if (hmodel.codebarre === pageProductView.barcode) {
+                        console.log("product already scanned");
+                        // move the current item to top of list, because it's the last one visited
+                        openFoodFacts.settings.historyModel.move(i,0,1);
+                    } else {
+                        console.log("product never scanned, let's add it to the history");
+                        openFoodFacts.settings.historyModel.insert(0, {"label": titleLabel.text, "codebarre": pageProductView.barcode});
+
+                    }
+                }
+
             } else {
                 activity.visible = false
                 pageProductView.productFound = "0";
@@ -211,11 +221,11 @@ Page {
                         clip: true
                         visible: true
 
-                    Image {
-                        id : productImage;
-                        fillMode: Image.PreserveAspectCrop
-                        visible: false // Do not forget to make original pic insisible
-                    }
+                        Image {
+                            id : productImage;
+                            fillMode: Image.PreserveAspectCrop
+                            visible: false // Do not forget to make original pic insisible
+                        }
 
                     }
 
@@ -249,7 +259,7 @@ Page {
                         width:content.width;
                         visible: false
                     }
-/*
+                    /*
                     Label {
                         id: labelattention
 
@@ -281,8 +291,8 @@ Page {
                                     sectioncaract.height = 0
                                 else
                                     labelsectioncaract.height + descproduct.height + quantproduct.height + packproduct.height + brandproduct.height
-                                                                    + catproduct.height + oriproduct.height + manuproduct.height + purcproduct.height + storproduct.height +
-                                                                    counproduct.height + 20
+                                            + catproduct.height + oriproduct.height + manuproduct.height + purcproduct.height + storproduct.height +
+                                            counproduct.height + 20
 
                         color : "#ffffff";
 
