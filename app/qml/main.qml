@@ -3,7 +3,6 @@ import Ubuntu.Components 1.3
 import QtGraphicalEffects 1.0
 import Qt.labs.settings 1.0
 //import Ubuntu.Components.Themes 1.0
-
 import "qrc:///component/qml/component"
 
 
@@ -159,9 +158,8 @@ MainView {
                         TextField {
                             id: barcodeinput
                             height: units.gu(4)
-                            //placeholderText: i18n.tr("Enter your product's name or product's barcode")
-                            placeholderText: i18n.tr("Enter your product's barcode")
-                            inputMethodHints : Qt.ImhDigitsOnly
+                            placeholderText: i18n.tr("Enter your product's name or product's barcode")
+                            //inputMethodHints : Qt.ImhDigitsOnly
                         }
 
 
@@ -181,12 +179,10 @@ MainView {
                                 if (isNumeric(searchValue)) {
                                     pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": searchValue});
                                 } else {
-                                    // pageStack.push(Qt.resolvedUrl("ProductSearchResult.qml"), {"productNameSearch": searchValue});
+                                     pageStack.push(Qt.resolvedUrl("ProductSearchResult.qml"), {"productNameSearch": searchValue});
                                 }
-
-
                             }
-                        }
+                        } // send button
 
                     }
                 }

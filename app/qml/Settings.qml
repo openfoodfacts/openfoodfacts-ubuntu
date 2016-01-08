@@ -537,7 +537,7 @@ Page {
                             Image {
                                 id : productImage;
                                 visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                                source:"picker.png";
+                                source: Qt.resolvedUrl("qrc:///images/picker.png");
                                 fillMode: Image.PreserveAspectCrop
                                 width: units.gu(4)
                                 height: units.gu(4)
@@ -559,8 +559,8 @@ Page {
 
                             Button {
                                 visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                                width: parent.width/6
-                                text: i18n.tr("ok")
+                                width: parent.width/6;
+                                text: i18n.tr("ok");
                                 color:  "#38B44A"
                                 onClicked: ((barcodeinput.text == "")? openFoodFacts.settings.color = "#1ab6ef" : openFoodFacts.settings.color = barcodeinput.text),
                                            PopupUtils.close(dialogue)
