@@ -136,22 +136,6 @@ Page {
         height: mapGreyToBottom.y - barcodeZone.y ;
     }
 
-
-
-
-    /*Label {
-        anchors {
-            left: parent.left
-            top: parent.top
-            right: parent.right
-            margins: units.gu(1)
-        }
-        text: i18n.tr("Scan a QR Code containing account information")
-        wrapMode: Text.WordWrap
-        horizontalAlignment: Text.AlignHCenter
-        fontSize: "large"
-    }*/
-
     Component.onCompleted: {
         //qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(videoOutput, 0, 0).x, mainView.mapFromItem(videoOutput, 0, 0).y, videoOutput.width, videoOutput.height)
         qrCodeReader.scanRect = Qt.rect(openFoodFacts.mapFromItem(barcodeZone, 0, 0).x, openFoodFacts.mapFromItem(barcodeZone, 0, 0).y, barcodeZone.width, barcodeZone.height)

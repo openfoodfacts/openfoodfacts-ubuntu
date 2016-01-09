@@ -187,7 +187,8 @@ MainView {
                     }
                 }
             }
-        }   }
+        }
+    }
 
     RadialBottomEdge {
         id:radialBottom;
