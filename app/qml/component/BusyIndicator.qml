@@ -39,7 +39,17 @@
 ****************************************************************************/
 
 import QtQuick 2.4
+import Ubuntu.Components 1.3
 
+
+ActivityIndicator {
+    id:activity
+    anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: parent.verticalCenter;
+    objectName: "activityindicator_standard"
+    anchors.leftMargin: units.gu(10)
+    running: true
+}
+/*
 Image {
     id: container
 
@@ -52,3 +62,4 @@ Image {
         duration: 1200
     }
 }
+*/
