@@ -39,10 +39,24 @@ Page {
         XmlRole { name: "categories"; query: "@categories/string()" }*/
 
     }
+
     Rectangle {
         id:main
-        anchors.fill: parent;
+        anchors.fill: parent; //anchors.topMargin: 5; anchors.leftMargin: 5; anchors.rightMargin: 5; anchors.bottomMargin: 5;
         color: "#EDEDEC"
+
+        Rectangle {
+            id:helpScreen
+            width:main.width; height:main.height
+            color: "#EDEDEC"
+
+            Flickable {
+                anchors.fill: parent
+                contentWidth: helpScreen.width;
+                contentHeight: searchResultView
+                flickableDirection: Flickable.VerticalFlick
+                clip: true
+
 
     ListView {
         id:searchResultView
@@ -65,11 +79,13 @@ Page {
         }
     }
 
+        }    }    }
+
     BusyIndicator {
         scale: 0.8
         visible: pageProductSearch.loading
         anchors.centerIn: parent
     }
- }
+
 }
 
