@@ -39,6 +39,10 @@ Page {
         XmlRole { name: "categories"; query: "@categories/string()" }*/
 
     }
+    Rectangle {
+        id:main
+        anchors.fill: parent;
+        color: "#EDEDEC"
 
     ListView {
         id:searchResultView
@@ -66,6 +70,6 @@ Page {
         visible: pageProductSearch.loading
         anchors.centerIn: parent
     }
-
+ }
 }
 
