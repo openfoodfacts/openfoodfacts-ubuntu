@@ -186,9 +186,10 @@ MainView {
 
                     }
                 }
-            }
-        }
-    }
+            }   
+
+        } //page
+    } //pagestack
 
     RadialBottomEdge {
         id:radialBottom;
@@ -218,6 +219,10 @@ MainView {
                 iconName: "settings"
                 iconColor: UbuntuColors.coolGrey
                 onTriggered: {
+                    if (pageStack.depth > 0) {
+                        pageStack.clear();
+                    }
+                    pageStack.push(mainpage);
                     pageStack.push(Qt.resolvedUrl("Settings.qml"));
                 }
             },
@@ -226,6 +231,10 @@ MainView {
                 iconName: "browser-timeline"
                 iconColor: UbuntuColors.coolGrey
                 onTriggered: {
+                    if (pageStack.depth > 0) {
+                        pageStack.clear();
+                    }
+                    pageStack.push(mainpage);
                     pageStack.push(Qt.resolvedUrl("history.qml"));
                 }
             }
@@ -234,4 +243,4 @@ MainView {
         ]
     }
 
-}
+} //mainview
