@@ -427,7 +427,7 @@ Page {
                                 objectName: "label"
                             }
                         }}
-
+/*
                     UbuntuShape {
                         id: sectionnutr
                         width: content.width
@@ -469,7 +469,7 @@ Page {
                             }
                         }}
 
-                    /*UbuntuShape {
+                    UbuntuShape {
                         id: sectiontablenutr
                         width: content.width
                         visible: (openFoodFacts.settings.visiblecomposition)
@@ -537,6 +537,68 @@ Page {
 
 
 
+                    ListItem.Expandable {
+                        id: sectionnutr
+                        expandedHeight: contentCol2.height + units.gu(1)
+                        visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                        expanded: openFoodFacts.settings.visiblecomposition
+                        onClicked: {
+                            if (openFoodFacts.settings.visiblecomposition === true)
+                                     openFoodFacts.settings.visiblecomposition = false
+                                 else
+                                     openFoodFacts.settings.visiblecomposition = true
+                        }
+                        showDivider: false
+
+                        Column {
+                            id: contentCol2
+                            anchors { left: parent.left; right: parent.right }
+                            Item {
+                                anchors { left: parent.left; right: parent.right}
+                                height: sectionnutr.collapsedHeight
+                                Label {
+                                    anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
+                                    text: i18n.tr("Nutrition facts")
+                                }
+                                Icon {
+                                    id: expendedIcon2
+                                    name: if (openFoodFacts.settings.visiblecomposition = true)
+                                              expendedIcon2.name = "up"
+                                              else
+                                              expendedIcon2.name = "down"
+                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
+                                    height: units.gu(2)
+                                    width: height
+                                }
+                            }
+
+                            UbuntuShape {
+                                anchors { left: parent.left; right: parent.right }
+                                height: labelsectionnutr.height + imagenutr.height + sizeproduct.height + 20
+                                backgroundColor: "white"
+
+                                Column {
+                                    id: contentsectionnutr
+                                    anchors.fill: sectionnutr; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
+
+
+                                    Image {
+                                        id: imagenutr
+                                        fillMode: Image.PreserveAspectFit
+                                        width:contentsectionnutr.width;
+                                        anchors.horizontalCenter: parent.horizontalCenter
+                                    }
+                                    Text{
+                                        id: sizeproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectionnutr.width;
+                                        objectName: "label"
+                                    }
+                                }
+
+                            }
+                        }
+                    }
 
                     ListItem.Expandable {
                         id: sectiontablenutr
