@@ -469,7 +469,7 @@ Page {
                             }
                         }}
 
-                    UbuntuShape {
+                    /*UbuntuShape {
                         id: sectiontablenutr
                         width: content.width
                         visible: (openFoodFacts.settings.visiblecomposition)
@@ -528,7 +528,113 @@ Page {
                                 id: sodium
                                 text: "<font color=\"#000000\">    "+i18n.tr("Sodium")+"</font>"
                             }
-                        }}
+                        }}*/
+
+
+
+
+
+
+
+
+
+                    ListItem.Expandable {
+                        id: sectiontablenutr
+                        expandedHeight: contentCol1.height + units.gu(1)
+                        visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                        expanded: openFoodFacts.settings.visiblecomposition
+                        onClicked: {
+                            if (openFoodFacts.settings.visiblecomposition === true)
+                                     openFoodFacts.settings.visiblecomposition = false
+                                 else
+                                     openFoodFacts.settings.visiblecomposition = true
+                        }
+                        showDivider: false
+
+                        Column {
+                            id: contentCol1
+                            anchors { left: parent.left; right: parent.right }
+                            Item {
+                                anchors { left: parent.left; right: parent.right}
+                                height: sectiontablenutr.collapsedHeight
+                                Label {
+                                    anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
+                                    text: "Nutrition"
+                                }
+                                Icon {
+                                    id: expendedIcon
+                                    name: if (openFoodFacts.settings.visiblecomposition = true)
+                                              expendedIcon.name = "up"
+                                              else
+                                              expendedIcon.name = "down"
+                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
+                                    height: units.gu(2)
+                                    width: height
+                                }
+                            }
+
+                            UbuntuShape {
+                                anchors { left: parent.left; right: parent.right }
+                                height: tablenutri.height + energy.height + fat.height + carbohydrates.height + sugars.height + fiber.height + proteins.height + salt.height + sodium.height + 20
+                                backgroundColor: "white"
+
+                                Column {
+                                    id: contentsectiontablenutr
+                                    anchors.fill: parent; anchors.topMargin: 10; anchors.leftMargin: 3; anchors.rightMargin: 3; anchors.bottomMargin: 10;
+
+                                    ListItem.SingleValue {
+                                        id:tablenutri
+                                        text: "<b><font color=\"#000000\">"+i18n.tr("Composition by")+"</b></font>"
+                                        value: "<b><font color=\"#620000\">100 g/ml</font></b> | <b><font color=\"#002762\">"+i18n.tr("serving")+"</font></b>"
+                                    }
+                                    ListItem.Divider { }
+
+                                    ListItem.SingleValue {
+                                        id: energy
+                                        text: "<font color=\"#000000\">"+i18n.tr("Energy")+"</font>"
+                                    }
+                                    ListItem.SingleValue {
+                                        id: fat
+                                        text: "<font color=\"#000000\">"+i18n.tr("Fat")+"</font><br/><font color=\"#000000\">"+i18n.tr("and")+" "+i18n.tr("Lipides")+"</font>"
+                                    }
+                                    //ListItem.SingleValue {
+                                    //    id: saturated-fat_100g
+                                    //    text: "<font color=\"#000000\">    dont Saturé")+"</font>"
+                                    //}
+                                    ListItem.SingleValue {
+                                        id: carbohydrates
+                                        text: "<font color=\"#000000\">"+i18n.tr("Carbohydrate")+"</font>"
+                                    }
+                                    ListItem.SingleValue {
+                                        id: sugars
+                                        text: "<font color=\"#000000\">    "+i18n.tr("of which Sugars")+"</font>"
+                                    }
+                                    ListItem.SingleValue {
+                                        id: fiber
+                                        text: "<font color=\"#000000\">"+i18n.tr("Dietary fiber")+"</font>"
+                                    }
+                                    ListItem.SingleValue {
+                                        id: proteins
+                                        text: "<font color=\"#000000\">"+i18n.tr("Proteins")+"</font>"
+                                    }
+                                    ListItem.SingleValue {
+                                        id: salt
+                                        text: "<font color=\"#000000\">"+i18n.tr("Salt")+"</font>"
+                                    }
+                                    ListItem.SingleValue {
+                                        id: sodium
+                                        text: "<font color=\"#000000\">    "+i18n.tr("Sodium")+"</font>"
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+
+
 
                 }
 
