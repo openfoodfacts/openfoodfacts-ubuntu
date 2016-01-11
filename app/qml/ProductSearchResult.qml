@@ -11,7 +11,6 @@ Page {
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }
-    Component.onCompleted: openFoodFacts.currentPage="ProductSearchResult";
 
 
     property string productNameSearch : "";
@@ -54,7 +53,7 @@ Page {
             Flickable {
                 anchors.fill: parent
                 contentWidth: helpScreen.width;
-                contentHeight: searchResultView.height;
+                contentHeight: searchResultView
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
 
@@ -89,4 +88,3 @@ Page {
     }
 
 }
-
