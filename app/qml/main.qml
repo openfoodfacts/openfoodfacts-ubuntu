@@ -31,6 +31,20 @@ MainView {
     // for display the right icon in RadialButton
     property string currentPage : ""
 
+    function getHistoryArray() {
+        var history = [], hM_l = openFoodFacts.historyModel.count;
+        for (var i=0; i<hM_l; i++){
+            var item = openFoodFacts.historyModel.get(i);
+            history.push({"label": item.label, "codebarre": item.codebarre});
+        }
+
+        console.log("historyModel to array, size : "+history.length);
+        return history;
+    }
+
+    // historyListModel
+    property ListModel historyModel: ListModel {}
+
     // persistent app settings:
     property var settings: Settings {
 
@@ -44,20 +58,29 @@ MainView {
 
         property var allergen: undefined
 
-        property bool developerModeEnabled:	false
-
-        property ListModel historyModel: ListModel {
-            id: historyListModel;
-        } // listModel
-
+        property bool developerModeEnabled:	false;
+        property var history : [];
     }
 
     PageStack {
         id: pageStack
         height: parent.height
         Component.onCompleted: {
+            console.log("###### on Component completion #####")
             push(mainpage);
+
+            console.log("History array lenth : "+ openFoodFacts.settings.history.length);
+            var history_l = openFoodFacts.settings.history.length
+            for (var i=0; i<history_l; i++){
+                var item = openFoodFacts.settings.history[i];
+                openFoodFacts.historyListModel.append({"label": item.label, "codebarre": item.codebarre})
+            }
         }
+        Component.onDestruction: {
+            console.log("####### On component destruction ###### ");
+            openFoodFacts.settings.history = getHistoryArray();
+        }
+
         Page {
             title: i18n.tr("OpenFoodFacts")
             id: mainpage
@@ -182,14 +205,14 @@ MainView {
                                 if (isNumeric(searchValue)) {
                                     pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": searchValue});
                                 } else {
-                                     pageStack.push(Qt.resolvedUrl("ProductSearchResult.qml"), {"productNameSearch": searchValue});
+                                    pageStack.push(Qt.resolvedUrl("ProductSearchResult.qml"), {"productNameSearch": searchValue});
                                 }
                             }
                         } // send button
 
                     }
                 }
-            }   
+            }
 
         } //page
     } //pagestack

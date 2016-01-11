@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 12:51+0100\n"
+"POT-Creation-Date: 2016-01-11 13:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,16 +67,16 @@ msgstr ""
 msgid "You have not scanned product."
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:62
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:85
 msgid "OpenFoodFacts"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:68
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:91
 #: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:164
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:187
 msgid "Enter your product's name or product's barcode"
 msgstr ""
 

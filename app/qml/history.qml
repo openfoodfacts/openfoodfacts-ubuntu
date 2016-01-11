@@ -21,7 +21,7 @@ Page {
             contentHeight: historyColumn.height
             flickableDirection: Flickable.VerticalFlick
             clip: true
-            Component.onCompleted:if (openFoodFacts.settings.historyModel.count == "0")
+            Component.onCompleted:if (openFoodFacts.settings.historyListModel.count == "0")
                                       emptyrect.visible = true
                                   else
                                       historyColumn.visible = true;
