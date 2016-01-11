@@ -21,10 +21,12 @@ Page {
             contentHeight: historyColumn.height
             flickableDirection: Flickable.VerticalFlick
             clip: true
-            Component.onCompleted:if (openFoodFacts.settings.historyListModel.count == "0")
-                                      emptyrect.visible = true
-                                  else
-                                      historyColumn.visible = true;
+            Component.onCompleted: {
+                if (openFoodFacts.historyModel.count == "0")
+                    emptyrect.visible = true
+                else
+                    historyColumn.visible = true;
+            }
 
 
 
@@ -90,7 +92,7 @@ Page {
                     objectName: "ubuntuListView"
                     width: parent.width
                     height: main.height
-                    model: openFoodFacts.settings.historyModel
+                    model: openFoodFacts.historyModel
                     clip: true
                     spacing: units.gu(1)
 

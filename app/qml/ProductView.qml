@@ -98,7 +98,7 @@ Page {
 
                 // TRANSLATORS: an aliment can contains traces of thoses products
                 tracproduct.text = "<b>"+i18n.tr("Traces")+" : </b>" + traces;
-                if (_json.nutrition_grade_fr !== "undefined") {
+                if ( typeof _json.nutrition_grade_fr !== 'undefined') {
                     imagenutr.source = Qt.resolvedUrl("qrc:///images/" + _json.nutrition_grade_fr +".png");
                 }
 

@@ -43,7 +43,7 @@ MainView {
     }
 
     // historyListModel
-    property ListModel historyModel: ListModel {}
+    property ListModel historyModel: ListModel { id :historyModel}
 
     // persistent app settings:
     property var settings: Settings {
@@ -59,7 +59,7 @@ MainView {
         property var allergen: undefined
 
         property bool developerModeEnabled:	false;
-        property var history : [];
+        property var history;
     }
 
     PageStack {
@@ -69,21 +69,30 @@ MainView {
             console.log("###### on Component completion #####")
             push(mainpage);
 
-            console.log("History array lenth : "+ openFoodFacts.settings.history.length);
+            // deal with history
+
+            if(typeof openFoodFacts.settings.history === 'undefined') {
+                console.log("history is undefined, let's create a new one");
+                openFoodFacts.settings.history = [];
+            }
+            console.log("Retrieve history with : "+ openFoodFacts.settings.history.length +" elemets");
+
             var history_l = openFoodFacts.settings.history.length
             for (var i=0; i<history_l; i++){
                 var item = openFoodFacts.settings.history[i];
-                openFoodFacts.historyListModel.append({"label": item.label, "codebarre": item.codebarre})
+                openFoodFacts.historyModel.insert(i,{"label": item.label, "codebarre": item.codebarre})
             }
         }
         Component.onDestruction: {
             console.log("####### On component destruction ###### ");
             openFoodFacts.settings.history = getHistoryArray();
+            console.log("Store an history with : "+ openFoodFacts.settings.history.length +" elemets");
         }
 
         Page {
             title: i18n.tr("OpenFoodFacts")
             id: mainpage
+            Component.onCompleted: openFoodFacts.currentPage="Main"
 
             head {
                 actions: [
@@ -224,6 +233,7 @@ MainView {
             RadialAction {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
+                enabled : openFoodFacts.currentPage !== "Main"
                 onTriggered : {
                     if (pageStack.depth > 0) {
                         pageStack.clear();
@@ -236,6 +246,7 @@ MainView {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
+                enabled : openFoodFacts.currentPage !== "AddProduct"
                 onTriggered: {
                     pageStack.push(Qt.resolvedUrl("addproduct.qml"));
                 }
@@ -244,6 +255,7 @@ MainView {
             RadialAction {
                 iconName: "settings"
                 iconColor: UbuntuColors.coolGrey
+                enabled : openFoodFacts.currentPage !== "Settings"
                 onTriggered: {
                     if (pageStack.depth > 0) {
                         pageStack.clear();
@@ -256,6 +268,7 @@ MainView {
             RadialAction {
                 iconName: "browser-timeline"
                 iconColor: UbuntuColors.coolGrey
+                enabled : openFoodFacts.currentPage !== "History"
                 onTriggered: {
                     if (pageStack.depth > 0) {
                         pageStack.clear();
@@ -264,9 +277,7 @@ MainView {
                     pageStack.push(Qt.resolvedUrl("history.qml"));
                 }
             }
-
-
-        ]
+        ] // RadialAction list
     }
 
 } //mainview
