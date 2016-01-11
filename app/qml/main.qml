@@ -2,7 +2,6 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import QtGraphicalEffects 1.0
 import Qt.labs.settings 1.0
-//import Ubuntu.Components.Themes 1.0
 import "qrc:///component/qml/component"
 
 
@@ -10,8 +9,6 @@ MainView {
     id: openFoodFacts
     objectName: "openFoodFacts"
     applicationName: "openfoodfacts.ubuntouch-fr"
-
-    property variant myallergen: []
 
     width: units.gu(40)
     height: units.gu(68)
@@ -56,7 +53,7 @@ MainView {
         property string color:  '#48c1ba'
         property string fontColor : "white";
 
-        property var allergen: undefined
+        property var allergen;
 
         property bool developerModeEnabled:	false;
         property var history;
@@ -69,14 +66,17 @@ MainView {
             console.log("###### on Component completion #####")
             push(mainpage);
 
-            // deal with history
+            if(typeof openFoodFacts.settings.allergen === 'undefined') {
+                console.log("allergen is undefined, let's create a new one");
+                openFoodFacts.settings.allergen = [];
+            }
 
+            // deal with history
             if(typeof openFoodFacts.settings.history === 'undefined') {
                 console.log("history is undefined, let's create a new one");
                 openFoodFacts.settings.history = [];
             }
             console.log("Retrieve history with : "+ openFoodFacts.settings.history.length +" elemets");
-
             var history_l = openFoodFacts.settings.history.length
             for (var i=0; i<history_l; i++){
                 var item = openFoodFacts.settings.history[i];

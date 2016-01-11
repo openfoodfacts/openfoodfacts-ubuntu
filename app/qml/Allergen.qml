@@ -109,9 +109,12 @@ Page {
                     anchors.left: parent.left
                     checked: (openFoodFacts.settings.allergen.indexOf(name) !== -1)
                     onClicked: {
-                        if (checked === true)
+                        if (checked === true) {
+                            console.log("name :");
+                            console.log(name);
                             openFoodFacts.settings.allergen.push(name)
-                        else
+                            console.log("pushed");
+                        } else
                             openFoodFacts.settings.allergen.splice(openFoodFacts.settings.allergen.indexOf(name), 1)
                         openFoodFacts.settings.allergenChanged();
                     }
