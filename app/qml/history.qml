@@ -9,7 +9,7 @@ Page {
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }
-
+    Component.onCompleted: openFoodFacts.currentPage="History";
     Rectangle {
         id:main
         anchors.fill: parent;

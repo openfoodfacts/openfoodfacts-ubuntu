@@ -11,6 +11,7 @@ Page {
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }
+    Component.onCompleted: openFoodFacts.currentPage="ProductView";
 
     property string barcode:"";
     onBarcodeChanged: console.log(pageProductView.barcode);
@@ -97,7 +98,10 @@ Page {
 
                 // TRANSLATORS: an aliment can contains traces of thoses products
                 tracproduct.text = "<b>"+i18n.tr("Traces")+" : </b>" + traces;
-                imagenutr.source = Qt.resolvedUrl("qrc:///images/" + _json.nutrition_grade_fr +".png");
+                if (_json.nutrition_grade_fr !== "undefined") {
+                    imagenutr.source = Qt.resolvedUrl("qrc:///images/" + _json.nutrition_grade_fr +".png");
+                }
+
                 var serving_size = _json.serving_size || 'n/a';
                 sizeproduct.text = "<b><br/>"+i18n.tr("Serving size")+" : </b>" + serving_size;
 
@@ -301,7 +305,7 @@ Page {
                                             + catproduct.height + oriproduct.height + manuproduct.height + purcproduct.height + storproduct.height +
                                             counproduct.height + 20
 
-                        color : "#ffffff";
+                        backgroundColor : "#ffffff";
 
                         Column {
                             id: contentsectioncaract

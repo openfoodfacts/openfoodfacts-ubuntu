@@ -28,6 +28,9 @@ MainView {
             settings.allergen = []
     }*/
 
+    // for display the right icon in RadialButton
+    property string currentPage : ""
+
     // persistent app settings:
     property var settings: Settings {
 
@@ -58,7 +61,7 @@ MainView {
         Page {
             title: i18n.tr("OpenFoodFacts")
             id: mainpage
-
+            Component.onCompleted: openFoodFacts.currentPage="Main"
             head {
                 actions: [
                     Action {
@@ -125,7 +128,7 @@ MainView {
                                 color: openFoodFacts.settings.color;
                                 radius: 120
                                 clip: true
-                                visible: true
+                                visible: trueaddProduct
 
                                 Icon {
                                     id: shootIcon
@@ -194,10 +197,10 @@ MainView {
     RadialBottomEdge {
         id:radialBottom;
         actions: [
-
             RadialAction {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
+                enabled : openFoodFacts.currentPage !== "Main"
                 onTriggered : {
                     if (pageStack.depth > 0) {
                         pageStack.clear();
@@ -210,6 +213,7 @@ MainView {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
+                enabled : openFoodFacts.currentPage !== "AddProduct"
                 onTriggered: {
                     pageStack.push(Qt.resolvedUrl("addproduct.qml"));
                 }
@@ -218,11 +222,8 @@ MainView {
             RadialAction {
                 iconName: "settings"
                 iconColor: UbuntuColors.coolGrey
+                enabled : openFoodFacts.currentPage !== "Settings"
                 onTriggered: {
-                    if (pageStack.depth > 0) {
-                        pageStack.clear();
-                    }
-                    pageStack.push(mainpage);
                     pageStack.push(Qt.resolvedUrl("Settings.qml"));
                 }
             },
@@ -230,17 +231,13 @@ MainView {
             RadialAction {
                 iconName: "browser-timeline"
                 iconColor: UbuntuColors.coolGrey
+                enabled : openFoodFacts.currentPage !== "History"
                 onTriggered: {
-                    if (pageStack.depth > 0) {
-                        pageStack.clear();
-                    }
-                    pageStack.push(mainpage);
                     pageStack.push(Qt.resolvedUrl("history.qml"));
                 }
             }
 
-
-        ]
+        ] // RadialAction list
     }
 
 } //mainview

@@ -14,6 +14,7 @@ Page {
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }
+    Component.onCompleted: openFoodFacts.currentPage="NotFound";
 
     property string barcode:"";
     onBarcodeChanged: console.log(notFoundPage.barcode);

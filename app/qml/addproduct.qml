@@ -5,6 +5,7 @@ Page {
     id: addproductmain
 
     title: i18n.tr("Add product")
+    Component.onCompleted: openFoodFacts.currentPage="AddProduct"
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }

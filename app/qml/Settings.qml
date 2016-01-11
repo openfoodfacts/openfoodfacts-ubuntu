@@ -9,6 +9,7 @@ Page {
 
     title: i18n.tr("Settings")
     signal settingsChanged()
+    Component.onCompleted: openFoodFacts.currentPage="Settings"
 
     head {
         actions: [

@@ -18,6 +18,7 @@ Page {
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }
+    Component.onCompleted: openFoodFacts.currentPage="BarcodeReader";
 
     QRCodeReader {
         id: qrCodeReader
