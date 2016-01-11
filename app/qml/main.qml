@@ -177,10 +177,6 @@ MainView {
                                 onClicked: {
                                     pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
                                 }
-                                onPressed: {
-                                    backgroundImage.color = "#29b3ab" }
-                                onReleased: {
-                                    backgroundImage.color = "#48c1ba" }
                             }
                         }
                     } // header picture
