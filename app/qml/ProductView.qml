@@ -290,263 +290,201 @@ Page {
                     }
 
 
-                    UbuntuShape {
+                    ListItem.Expandable {
                         id: sectioncaract
-                        width: content.width
-                        visible: (openFoodFacts.settings.visiblecharacteristics)
-                        height: if (openFoodFacts.settings.visiblecharacteristics === false)
-                                    sectioncaract.height = 0
-                                else
-                                    labelsectioncaract.height + descproduct.height + quantproduct.height + packproduct.height + brandproduct.height
-                                            + catproduct.height + oriproduct.height + manuproduct.height + purcproduct.height + storproduct.height +
-                                            counproduct.height + 20
-
-                        color : "#ffffff";
+                        expandedHeight: contentCol4.height + units.gu(1)
+                        expanded: openFoodFacts.settings.visiblecharacteristics
+                        onClicked: {
+                            if (openFoodFacts.settings.visiblecharacteristics === true)
+                                     openFoodFacts.settings.visiblecharacteristics = false
+                                 else
+                                     openFoodFacts.settings.visiblecharacteristics = true
+                        }
+                        showDivider: false
 
                         Column {
-                            id: contentsectioncaract
-                            anchors.fill: sectioncaract; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
-
-                            Label {
-                                id: labelsectioncaract
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                                fontSize: "large"
-                                color: openFoodFacts.settings.color
-                                text: "<b>"+i18n.tr("Product characteristics")+"</b><br/>"
-                                font.underline : true
+                            id: contentCol4
+                            anchors { left: parent.left; right: parent.right }
+                            Item {
+                                anchors { left: parent.left; right: parent.right}
+                                height: sectioncaract.collapsedHeight
+                                Label {
+                                    anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
+                                    text: i18n.tr("Product characteristics")
+                                }
+                                Icon {
+                                    id: expendedIcon4
+                                    name: if (openFoodFacts.settings.visiblecharacteristics === true)
+                                              expendedIcon4.name = "up"
+                                              else
+                                              expendedIcon4.name = "down"
+                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
+                                    height: units.gu(2)
+                                    width: height
+                                }
                             }
 
-                            Text{
-                                id: descproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: quantproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
+                            UbuntuShape {
+                                anchors { left: parent.left; right: parent.right }
+                                height: descproduct.height + quantproduct.height + packproduct.height + brandproduct.height
+                                        + catproduct.height + oriproduct.height + manuproduct.height + purcproduct.height + storproduct.height +
+                                        counproduct.height + 20
 
-                            Text{
-                                id: packproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: brandproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: catproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: oriproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: manuproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: purcproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: storproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: counproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioncaract.width;
-                                objectName: "label"
-                            }
-                        }}
+                                backgroundColor: "white"
 
-                    UbuntuShape {
+                                Column {
+                                    id: contentsectioncaract
+                                    anchors.fill: parent; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
+
+                                    Text{
+                                        id: descproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: quantproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+
+                                    Text{
+                                        id: packproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: brandproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: catproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: oriproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: manuproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: purcproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: storproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: counproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioncaract.width;
+                                        objectName: "label"
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+
+
+                    ListItem.Expandable {
                         id: sectioningr
-                        width: content.width
-                        visible: (openFoodFacts.settings.visibleingredient)
-                        height: if (openFoodFacts.settings.visibleingredient === false)
-                                    sectioningr.height = 0
-                                else
-                                    labelsectioningr.height + ingrproduct.height + allergenproduct.height + tracproduct.height + 20
-
-                        color : "#ffffff";
-
-                        Column {
-                            id: contentsectioningr
-                            anchors.fill: sectioningr; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
-
-                            Label {
-                                id: labelsectioningr
-                                wrapMode: Text.Wrap
-                                width:contentsectioningr.width;
-                                objectName: "label"
-                                fontSize: "large"
-                                color: openFoodFacts.settings.color
-                                text: "<b>"+i18n.tr("Ingredients")+"</b><br/>"
-                                font.underline : true
-                            }
-
-                            Text{
-                                id: ingrproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioningr.width;
-                                objectName: "label"
-                            }
-
-                            Text{
-                                id: allergenproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioningr.width;
-                                objectName: "label"
-                            }
-                            Text{
-                                id: tracproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectioningr.width;
-                                objectName: "label"
-                            }
-                        }}
-/*
-                    UbuntuShape {
-                        id: sectionnutr
-                        width: content.width
-                        visible: (openFoodFacts.settings.visiblenutrition)
-                        height: if (openFoodFacts.settings.visiblenutrition === false)
-                                    sectionnutr.height = 0
-                                else
-                                    labelsectionnutr.height + imagenutr.height + sizeproduct.height + 20
-
-
-                        color : "#ffffff";
+                        expandedHeight: contentCol3.height + units.gu(1)
+                        expanded: openFoodFacts.settings.visibleingredient
+                        onClicked: {
+                            if (openFoodFacts.settings.visibleingredient === true)
+                                     openFoodFacts.settings.visibleingredient = false
+                                 else
+                                     openFoodFacts.settings.visibleingredient = true
+                        }
+                        showDivider: false
 
                         Column {
-                            id: contentsectionnutr
-                            anchors.fill: sectionnutr; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
-
-                            Label {
-                                id: labelsectionnutr
-                                wrapMode: Text.Wrap
-                                width:content.width;
-                                objectName: "label"
-                                fontSize: "large"
-                                color: openFoodFacts.settings.color
-                                text: "<b>"+i18n.tr("Nutrition facts")+"</b><br/>"
-                                font.underline : true
+                            id: contentCol3
+                            anchors { left: parent.left; right: parent.right }
+                            Item {
+                                anchors { left: parent.left; right: parent.right}
+                                height: sectioningr.collapsedHeight
+                                Label {
+                                    anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
+                                    text: i18n.tr("Ingredients")
+                                }
+                                Icon {
+                                    id: expendedIcon3
+                                    name: if (openFoodFacts.settings.visibleingredient = true)
+                                              expendedIcon3.name = "up"
+                                              else
+                                              expendedIcon3.name = "down"
+                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
+                                    height: units.gu(2)
+                                    width: height
+                                }
                             }
 
-                            Image {
-                                id: imagenutr
-                                fillMode: Image.PreserveAspectFit
-                                width:contentsectionnutr.width;
-                                anchors.horizontalCenter: parent.horizontalCenter
+                            UbuntuShape {
+                                anchors { left: parent.left; right: parent.right }
+                                height: ingrproduct.height + allergenproduct.height + tracproduct.height + 20
+
+                                backgroundColor: "white"
+
+                                Column {
+                                    id: contentsectioningr
+                                    anchors.fill: parent; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
+
+                                    Text{
+                                        id: ingrproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioningr.width;
+                                        objectName: "label"
+                                    }
+
+                                    Text{
+                                        id: allergenproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioningr.width;
+                                        objectName: "label"
+                                    }
+                                    Text{
+                                        id: tracproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectioningr.width;
+                                        objectName: "label"
+                                    }
+
+                                }
+
                             }
-                            Text{
-                                id: sizeproduct
-                                wrapMode: Text.Wrap
-                                width:contentsectionnutr.width;
-                                objectName: "label"
-                            }
-                        }}
-
-                    UbuntuShape {
-                        id: sectiontablenutr
-                        width: content.width
-                        visible: (openFoodFacts.settings.visiblecomposition)
-                        height: if (openFoodFacts.settings.visiblecomposition === false)
-                                    sectiontablenutr.height = 0
-                                else
-                                    tablenutri.height + energy.height + fat.height + carbohydrates.height + sugars.height + fiber.height + proteins.height + salt.height + sodium.height + 20
-
-
-                        color : "#ffffff";
-
-                        Column {
-                            id: contentsectiontablenutr
-                            anchors.fill: sectiontablenutr; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
-
-                            ListItem.SingleValue {
-                                id:tablenutri
-                                text: "<b><font color=\"#000000\">"+i18n.tr("Composition by")+"</b></font>"
-                                value: "<b><font color=\"#620000\">100 g/ml</font></b> | <b><font color=\"#002762\">"+i18n.tr("serving")+"</font></b>"
-                            }
-                            ListItem.Divider { }
-
-                            ListItem.SingleValue {
-                                id: energy
-                                text: "<font color=\"#000000\">"+i18n.tr("Energy")+"</font>"
-                            }
-                            ListItem.SingleValue {
-                                id: fat
-                                text: "<font color=\"#000000\">"+i18n.tr("Fat")+"</font><br/><font color=\"#000000\">"+i18n.tr("and")+" "+i18n.tr("Lipides")+"</font>"
-                            }
-                            //ListItem.SingleValue {
-                            //    id: saturated-fat_100g
-                            //    text: "<font color=\"#000000\">    dont Saturé")+"</font>"
-                            //}
-                            ListItem.SingleValue {
-                                id: carbohydrates
-                                text: "<font color=\"#000000\">"+i18n.tr("Carbohydrate")+"</font>"
-                            }
-                            ListItem.SingleValue {
-                                id: sugars
-                                text: "<font color=\"#000000\">    "+i18n.tr("of which Sugars")+"</font>"
-                            }
-                            ListItem.SingleValue {
-                                id: fiber
-                                text: "<font color=\"#000000\">"+i18n.tr("Dietary fiber")+"</font>"
-                            }
-                            ListItem.SingleValue {
-                                id: proteins
-                                text: "<font color=\"#000000\">"+i18n.tr("Proteins")+"</font>"
-                            }
-                            ListItem.SingleValue {
-                                id: salt
-                                text: "<font color=\"#000000\">"+i18n.tr("Salt")+"</font>"
-                            }
-                            ListItem.SingleValue {
-                                id: sodium
-                                text: "<font color=\"#000000\">    "+i18n.tr("Sodium")+"</font>"
-                            }
-                        }}*/
-
-
-
-
-
-
+                        }
+                    }
 
 
                     ListItem.Expandable {
                         id: sectionnutr
                         expandedHeight: contentCol2.height + units.gu(1)
-                        visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                        expanded: openFoodFacts.settings.visiblecomposition
+                        expanded: openFoodFacts.settings.visiblenutrition
                         onClicked: {
-                            if (openFoodFacts.settings.visiblecomposition === true)
-                                     openFoodFacts.settings.visiblecomposition = false
+                            if (openFoodFacts.settings.visiblenutrition === true)
+                                     openFoodFacts.settings.visiblenutrition = false
                                  else
-                                     openFoodFacts.settings.visiblecomposition = true
+                                     openFoodFacts.settings.visiblenutrition = true
                         }
                         showDivider: false
 
@@ -562,7 +500,7 @@ Page {
                                 }
                                 Icon {
                                     id: expendedIcon2
-                                    name: if (openFoodFacts.settings.visiblecomposition = true)
+                                    name: if (openFoodFacts.settings.visiblenutrition = true)
                                               expendedIcon2.name = "up"
                                               else
                                               expendedIcon2.name = "down"
@@ -574,12 +512,12 @@ Page {
 
                             UbuntuShape {
                                 anchors { left: parent.left; right: parent.right }
-                                height: labelsectionnutr.height + imagenutr.height + sizeproduct.height + 20
+                                height: imagenutr.height + sizeproduct.height + 20
                                 backgroundColor: "white"
 
                                 Column {
                                     id: contentsectionnutr
-                                    anchors.fill: sectionnutr; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
+                                    anchors.fill: parent; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
 
 
                                     Image {
@@ -603,7 +541,6 @@ Page {
                     ListItem.Expandable {
                         id: sectiontablenutr
                         expandedHeight: contentCol1.height + units.gu(1)
-                        visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                         expanded: openFoodFacts.settings.visiblecomposition
                         onClicked: {
                             if (openFoodFacts.settings.visiblecomposition === true)
@@ -621,7 +558,7 @@ Page {
                                 height: sectiontablenutr.collapsedHeight
                                 Label {
                                     anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
-                                    text: "Nutrition"
+                                    text: i18n.tr("nutritional value")
                                 }
                                 Icon {
                                     id: expendedIcon
@@ -700,7 +637,7 @@ Page {
 
                 }
 
-            }
+            } //Flickable
         }
     }
 
