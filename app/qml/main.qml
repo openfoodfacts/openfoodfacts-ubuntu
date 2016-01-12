@@ -229,11 +229,12 @@ MainView {
             RadialAction {
                 iconName: "search"
                 iconColor: UbuntuColors.coolGrey
-                enabled : openFoodFacts.currentPage !== "Main"
+                enabled : openFoodFacts.currentPage !== "Main";
                 onTriggered : {
                     if (pageStack.depth > 0) {
                         pageStack.clear();
                     }
+                    openFoodFacts.currentPage="Main";
                     pageStack.push(mainpage);
                 }
             },
@@ -244,6 +245,7 @@ MainView {
                 backgroundColor: UbuntuColors.green
                 enabled : openFoodFacts.currentPage !== "AddProduct"
                 onTriggered: {
+                    openFoodFacts.currentPage="AddProduct";
                     pageStack.push(Qt.resolvedUrl("addproduct.qml"));
                 }
             },*/
@@ -253,10 +255,7 @@ MainView {
                 iconColor: UbuntuColors.coolGrey
                 enabled : openFoodFacts.currentPage !== "Settings"
                 onTriggered: {
-                    if (pageStack.depth > 0) {
-                        pageStack.clear();
-                    }
-                    pageStack.push(mainpage);
+                    openFoodFacts.currentPage="Settings";
                     pageStack.push(Qt.resolvedUrl("Settings.qml"));
                 }
             },
@@ -266,10 +265,7 @@ MainView {
                 iconColor: UbuntuColors.coolGrey
                 enabled : openFoodFacts.currentPage !== "History"
                 onTriggered: {
-                    if (pageStack.depth > 0) {
-                        pageStack.clear();
-                    }
-                    pageStack.push(mainpage);
+                    openFoodFacts.currentPage="History";
                     pageStack.push(Qt.resolvedUrl("history.qml"));
                 }
             }
