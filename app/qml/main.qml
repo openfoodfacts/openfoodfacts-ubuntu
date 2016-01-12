@@ -238,7 +238,7 @@ MainView {
                 }
             },
 
-            RadialAction {
+            /*RadialAction {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
@@ -246,7 +246,7 @@ MainView {
                 onTriggered: {
                     pageStack.push(Qt.resolvedUrl("addproduct.qml"));
                 }
-            },
+            },*/
 
             RadialAction {
                 iconName: "settings"
