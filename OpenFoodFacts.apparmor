@@ -4,7 +4,7 @@
         "camera",
         "content_exchange",
         "content_exchange_source",
-	"debug"
+        "debug"
     ],
     "policy_version": 1.3
 }
