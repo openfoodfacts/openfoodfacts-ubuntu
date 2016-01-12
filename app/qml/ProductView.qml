@@ -21,6 +21,12 @@ Page {
         openFoodFactJSON.source =  "http://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
     }
 
+    function roundDecimal(nombre, precision){
+        var precision = precision || 2;
+        var tmp = Math.pow(10, precision);
+        return Math.round( nombre*tmp )/tmp;
+    }
+
     property var jsonData;
     property string productFound:"";
 
@@ -105,46 +111,47 @@ Page {
                 var serving_size = _json.serving_size || 'n/a';
                 sizeproduct.text = "<b><br/>"+i18n.tr("Serving size")+" : </b>" + serving_size;
 
-                var energy_100g = (typeof _json.nutriments.energy_100g !== "undefined") ? _json.nutriments.energy_100g : "n/a";
+                var energy_100g = (typeof _json.nutriments.energy_100g !== "undefined") ? roundDecimal(_json.nutriments.energy_100g) : "n/a";
                 var energy_unit = (typeof _json.nutriments.energy_unit !== "undefined") ? _json.nutriments.energy_unit : " ";
-                var energy_serving  = (typeof _json.nutriments.energy_serving  !== "undefined") ? _json.nutriments.energy_serving  : "n/a";
+                var energy_serving  = (typeof _json.nutriments.energy_serving  !== "undefined") ? roundDecimal(_json.nutriments.energy_serving)  : "n/a";
                 energy.value = "<font color=\"#620000\">" + energy_100g + " " + energy_unit + "</font> | <font color=\"#002762\">" + energy_serving + " " + energy_unit + "</font>";
-                var fat_100g = (typeof _json.nutriments.fat_100g !== "undefined") ? _json.nutriments.fat_100g : "n/a";
+
+                var fat_100g = (typeof _json.nutriments.fat_100g !== "undefined") ? roundDecimal(_json.nutriments.fat_100g) : "n/a";
                 var fat_unit = (typeof _json.nutriments.fat_unit !== "undefined") ? _json.nutriments.fat_unit : " ";
-                var fat_serving  = (typeof _json.nutriments.fat_serving  !== "undefined") ? _json.nutriments.fat_serving  : "n/a";
+                var fat_serving  = (typeof _json.nutriments.fat_serving  !== "undefined") ? roundDecimal(_json.nutriments.fat_serving)  : "n/a";
                 fat.value = "<font color=\"#620000\">" + fat_100g + " " + fat_unit + "</font> | <font color=\"#002762\">" + fat_serving + " " + fat_unit + "</font>";
 
                 //saturated-fat_100g.text = _json.nutriments.saturated-fat_100g + " " + _json.nutriments.saturated-fat_unit;
                 //saturated-fat_serving.text = _json.nutriments.saturated\-fat_serving + " " + _json.nutriments.saturated-fat_unit;
 
-                var carbohydrates_100g = (typeof _json.nutriments.carbohydrates_100g !== "undefined") ? _json.nutriments.carbohydrates_100g : "n/a";
+                var carbohydrates_100g = (typeof _json.nutriments.carbohydrates_100g !== "undefined") ? roundDecimal(_json.nutriments.carbohydrates_100g) : "n/a";
                 var carbohydrates_unit = (typeof _json.nutriments.carbohydrates_unit !== "undefined") ? _json.nutriments.carbohydrates_unit : " ";
-                var carbohydrates_serving  = (typeof _json.nutriments.carbohydrates_serving  !== "undefined") ? _json.nutriments.carbohydrates_serving  : "n/a";
+                var carbohydrates_serving  = (typeof _json.nutriments.carbohydrates_serving  !== "undefined") ? roundDecimal(_json.nutriments.carbohydrates_serving)  : "n/a";
                 carbohydrates.value = "<font color=\"#620000\">" + carbohydrates_100g + " " + carbohydrates_unit + "</font> | <font color=\"#002762\">" + carbohydrates_serving + " " + carbohydrates_unit + "</font>";
 
-                var sugars_100g = (typeof _json.nutriments.sugars_100g !== "undefined") ? _json.nutriments.sugars_100g : "n/a";
+                var sugars_100g = (typeof _json.nutriments.sugars_100g !== "undefined") ? roundDecimal(_json.nutriments.sugars_100g) : "n/a";
                 var sugars_unit = (typeof _json.nutriments.sugars_unit !== "undefined") ? _json.nutriments.sugars_unit : " ";
-                var sugars_serving  = (typeof _json.nutriments.sugars_serving  !== "undefined") ? _json.nutriments.sugars_serving  : "n/a";
+                var sugars_serving  = (typeof _json.nutriments.sugars_serving  !== "undefined") ? roundDecimal(_json.nutriments.sugars_serving)  : "n/a";
                 sugars.value = "<font color=\"#620000\">" + sugars_100g + " " + sugars_unit + "</font> | <font color=\"#002762\">" + sugars_serving + " " + sugars_unit + "</font>";
 
-                var fiber_100g = (typeof _json.nutriments.fiber_100g !== "undefined") ? _json.nutriments.fiber_100g : "n/a";
+                var fiber_100g = (typeof _json.nutriments.fiber_100g !== "undefined") ? roundDecimal(_json.nutriments.fiber_100g) : "n/a";
                 var fiber_unit = (typeof _json.nutriments.fiber_unit !== "undefined") ? _json.nutriments.fiber_unit : " ";
-                var fiber_serving  = (typeof _json.nutriments.fiber_serving  !== "undefined") ? _json.nutriments.fiber_serving  : "n/a";
+                var fiber_serving  = (typeof _json.nutriments.fiber_serving  !== "undefined") ? roundDecimal(_json.nutriments.fiber_serving) : "n/a";
                 fiber.value = "<font color=\"#620000\">" + fiber_100g + " " + fiber_unit + "</font> | <font color=\"#002762\">" + fiber_serving + " " + fiber_unit + "</font>";
 
-                var proteins_100g = (typeof _json.nutriments.proteins_100g !== "undefined") ? _json.nutriments.proteins_100g : "n/a";
+                var proteins_100g = (typeof _json.nutriments.proteins_100g !== "undefined") ? roundDecimal(_json.nutriments.proteins_100g) : "n/a";
                 var proteins_unit = (typeof _json.nutriments.proteins_unit !== "undefined") ? _json.nutriments.proteins_unit : " ";
-                var proteins_serving  = (typeof _json.nutriments.proteins_serving  !== "undefined") ? _json.nutriments.proteins_serving  : "n/a";
+                var proteins_serving  = (typeof _json.nutriments.proteins_serving  !== "undefined") ? roundDecimal(_json.nutriments.proteins_serving)  : "n/a";
                 proteins.value = "<font color=\"#620000\">" + proteins_100g + " " + proteins_unit + "</font> | <font color=\"#002762\">" + proteins_serving + " " + proteins_unit + "</font>";
 
-                var salt_100g = (typeof _json.nutriments.salt_100g !== "undefined") ? _json.nutriments.salt_100g : "n/a";
+                var salt_100g = (typeof _json.nutriments.salt_100g !== "undefined") ? roundDecimal(_json.nutriments.salt_100g) : "n/a";
                 var salt_unit = (typeof _json.nutriments.salt_unit !== "undefined") ? _json.nutriments.salt_unit : " ";
-                var salt_serving  = (typeof _json.nutriments.salt_serving  !== "undefined") ? _json.nutriments.salt_serving  : "n/a";
+                var salt_serving  = (typeof _json.nutriments.salt_serving  !== "undefined") ? roundDecimal(_json.nutriments.salt_serving)  : "n/a";
                 salt.value = "<font color=\"#620000\">" + salt_100g + " " + salt_unit + "</font> | <font color=\"#002762\">" + salt_serving + " " + salt_unit + "</font>";
 
-                var sodium_100g = (typeof _json.nutriments.sodium_100g !== "undefined") ? _json.nutriments.sodium_100g : "n/a";
+                var sodium_100g = (typeof _json.nutriments.sodium_100g !== "undefined") ? roundDecimal(_json.nutriments.sodium_100g): "n/a";
                 var sodium_unit = (typeof _json.nutriments.sodium_unit !== "undefined") ? _json.nutriments.sodium_unit : " ";
-                var sodium_serving  = (typeof _json.nutriments.sodium_serving  !== "undefined") ? _json.nutriments.sodium_serving  : "n/a";
+                var sodium_serving  = (typeof _json.nutriments.sodium_serving  !== "undefined") ? roundDecimal(_json.nutriments.sodium_serving)  : "n/a";
                 sodium.value = "<font color=\"#620000\">" + sodium_100g + " " + sodium_unit + "</font> | <font color=\"#002762\">" + sodium_serving + " " + sodium_unit + "</font>";
 
                 helpScreen.visible = true;
