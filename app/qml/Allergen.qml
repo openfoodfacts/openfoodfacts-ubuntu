@@ -9,76 +9,26 @@ Page {
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }
-    signal settingsChanged()
 
-/*
-    head.backAction: Action {
-        iconName: "back"
-            onTriggered: {
-                pageStack.pop();
-            }
-
-    }
-*/
     ListModel {
-        id: allergenModel
-        //TODO: voir a n'utiliser qu'un seule labelle et mettre la majuscule par fonction
-        ListElement {
-               name: "egg"
-               label: "Egg"
-           }
-           ListElement {
-               name: "peanut"
-               label: "Peanut"
-           }
-           ListElement {
-               name: "cereal"
-               label: "Cereal"
-           }
-           ListElement {
-               name: "crustacean"
-               label: "Crustacean"
-           }
-           ListElement {
-               name: "fish"
-               label: "Fish"
-           }
-           ListElement {
-               name: "soy"
-               label: "Soy"
-           }
-           ListElement {
-               name: "milk"
-               label: "Milk"
-           }
-           ListElement {
-               name: "nuts"
-               label: "Nuts"
-           }
-           ListElement {
-               name: "mustard"
-               label: "Mustard"
-           }
-           ListElement {
-               name: "celery"
-               label: "Celery"
-           }
-           ListElement {
-               name: "sesame seeds"
-               label: "Sesame seeds"
-           }
-           ListElement {
-               name: "mollusk"
-               label: "Mollusk"
-           }
-           ListElement {
-               name: "sulftur dioxide"
-               label: "Sulfur dioxide"
-           }
-           ListElement {
-               name: "lupin"
-               label: "Lupin"
-           }
+        id: allergenModel;
+        dynamicRoles: true;
+        Component.onCompleted: {
+            allergenModel.append({ "label": i18n.tr("Egg") } );
+            allergenModel.append({ "label": i18n.tr("Peanut") } );
+            allergenModel.append({ "label": i18n.tr("Cereal") } );
+            allergenModel.append({ "label": i18n.tr("Crustacean") } );
+            allergenModel.append({ "label": i18n.tr("Fish") } );
+            allergenModel.append({ "label": i18n.tr("Soy") } );
+            allergenModel.append({ "label": i18n.tr("Milk") } );
+            allergenModel.append({ "label": i18n.tr("Nuts") } );
+            allergenModel.append({ "label": i18n.tr("Mustard") } );
+            allergenModel.append({ "label": i18n.tr("Celery") } );
+            allergenModel.append({ "label": i18n.tr("Sesame seeds") } );
+            allergenModel.append({ "label": i18n.tr("Mollusk") } );
+            allergenModel.append({ "label": i18n.tr("Sulfur dioxide") } );
+            allergenModel.append({ "label": i18n.tr("lupin") } );
+        }
     }
 
     Rectangle {
@@ -107,16 +57,23 @@ Page {
                 CheckBox {
                     //anchors.verticalCenter: egg.verticalCenter
                     anchors.left: parent.left
-                    checked: (openFoodFacts.settings.allergen.indexOf(name) !== -1)
-                    onClicked: {
-                        if (checked === true) {
-                            console.log("name :");
-                            console.log(name);
-                            openFoodFacts.settings.allergen.push(name)
-                            console.log("pushed");
-                        } else
-                            openFoodFacts.settings.allergen.splice(openFoodFacts.settings.allergen.indexOf(name), 1)
-                        openFoodFacts.settings.allergenChanged();
+                    checked: (openFoodFacts.settings.allergen.indexOf(label) >-1)
+                    onCheckedChanged: {
+                        if (checked) {
+                            if (openFoodFacts.settings.allergen.indexOf(label) >-1) {
+                                console.log("allergen already in array");
+                            } else {
+                                console.log("allergen "+label+" is not in allergen list, let's add it");
+                                openFoodFacts.settings.allergen.push(label);
+                            }
+                        } else {
+                            if(openFoodFacts.settings.allergen.indexOf(label) >-1) {
+                                console.log("remove allergen "+label+" from list");
+                                openFoodFacts.settings.allergen.splice(openFoodFacts.settings.allergen.indexOf(label), 1);
+                            } else {
+                                console.log("you try to remove "+ label+" which is not in the list");
+                            }
+                        }
                     }
                 }
 
@@ -124,13 +81,12 @@ Page {
                     fontSize: "large"
                     anchors.left: parent.left
                     anchors.leftMargin: units.gu(5)
-                    color: openFoodFacts.settings.color
-
-                    text: i18n.tr(label)
+                    color: openFoodFacts.settings.color;
+                    text: label;
                 }
             }
         }
 
 
-   }
+    }
 }

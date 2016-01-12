@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-12 12:01+0100\n"
+"POT-Creation-Date: 2016-01-12 13:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +45,62 @@ msgstr ""
 #: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:8
 #: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:55
 msgid "Allergen"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:27
+msgid "Egg"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:28
+msgid "Peanut"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:29
+msgid "Cereal"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:30
+msgid "Crustacean"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:31
+msgid "Fish"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:32
+msgid "Soy"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:33
+msgid "Milk"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:34
+msgid "Nuts"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:35
+msgid "Mustard"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:36
+msgid "Celery"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:37
+msgid "Sesame seeds"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:38
+msgid "Mollusk"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:39
+msgid "Sulfur dioxide"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:40
+msgid "lupin"
 msgstr ""
 
 #: /home/morgan/qt/openfoodfacts/app/qml/barcodeReader.qml:17
