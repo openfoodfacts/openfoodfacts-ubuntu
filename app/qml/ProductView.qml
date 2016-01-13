@@ -296,9 +296,11 @@ Page {
                         expanded: openFoodFacts.settings.visiblecharacteristics
                         onClicked: {
                             if (openFoodFacts.settings.visiblecharacteristics === true)
-                                     openFoodFacts.settings.visiblecharacteristics = false
+                                     {openFoodFacts.settings.visiblecharacteristics = false;
+                                      expendedIcon4.name = "down";}
                                  else
-                                     openFoodFacts.settings.visiblecharacteristics = true
+                                     {openFoodFacts.settings.visiblecharacteristics = true;
+                                      expendedIcon4.name = "up";}
                         }
                         showDivider: false
 
@@ -411,9 +413,11 @@ Page {
                         expanded: openFoodFacts.settings.visibleingredient
                         onClicked: {
                             if (openFoodFacts.settings.visibleingredient === true)
-                                     openFoodFacts.settings.visibleingredient = false
+                                     {openFoodFacts.settings.visibleingredient = false;
+                                      expendedIcon3.name = "down";}
                                  else
-                                     openFoodFacts.settings.visibleingredient = true
+                                     {openFoodFacts.settings.visibleingredient = true;
+                                      expendedIcon3.name = "up";}
                         }
                         showDivider: false
 
@@ -482,9 +486,11 @@ Page {
                         expanded: openFoodFacts.settings.visiblenutrition
                         onClicked: {
                             if (openFoodFacts.settings.visiblenutrition === true)
-                                     openFoodFacts.settings.visiblenutrition = false
+                                     {openFoodFacts.settings.visiblenutrition = false;
+                                      expendedIcon2.name = "down";}
                                  else
-                                     openFoodFacts.settings.visiblenutrition = true
+                                     {openFoodFacts.settings.visiblenutrition = true;
+                                      expendedIcon2.name = "up";}
                         }
                         showDivider: false
 
@@ -544,9 +550,11 @@ Page {
                         expanded: openFoodFacts.settings.visiblecomposition
                         onClicked: {
                             if (openFoodFacts.settings.visiblecomposition === true)
-                                     openFoodFacts.settings.visiblecomposition = false
+                                     {openFoodFacts.settings.visiblecomposition = false;
+                                      expendedIcon.name = "down";}
                                  else
-                                     openFoodFacts.settings.visiblecomposition = true
+                                     {openFoodFacts.settings.visiblecomposition = true;
+                                      expendedIcon.name = "up";}
                         }
                         showDivider: false
 
