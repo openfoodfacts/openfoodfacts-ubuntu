@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-15 13:52+0100\n"
+"POT-Creation-Date: 2016-01-15 14:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,124 +47,6 @@ msgstr ""
 msgid "Allergen"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:20
-msgid "gluten"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:21
-msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:25
-msgid "crustaceans"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:26
-msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:29
-msgid "eggs"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:30
-msgid "eggs, egg, egg yolk"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:33
-msgid "fish"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:34
-msgid ""
-"fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
-"sole, trout, tuna, sardine, sardines"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:38
-msgid "peanuts"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:39
-msgid "peanuts, peanut, arachis hypogaea"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:43
-msgid "soybeans"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:44
-msgid "soybeans, soya, soja, soia, soy"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:48
-msgid "Milk"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:49
-msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:53
-msgid "Nuts"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:54
-msgid ""
-"nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
-"Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:58
-msgid "Celery"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:59
-msgid "celery"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:63
-msgid "Mustard"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:64
-msgid "mustard, brassica"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:68
-msgid "Sesame"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:69
-msgid "sesame seeds, sesame"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:73
-msgid "Sulfur"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:74
-msgid ""
-"sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
-"bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
-"E226, E227, E228"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:78
-msgid "molluscs"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:79
-msgid ""
-"molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
-"mussles, mussle, clams, clam, scallops, scallop"
-msgstr ""
-
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:83
-#: /home/morgan/qt/openfoodfacts/app/qml/Allergen.qml:84
-msgid "lupin"
-msgstr ""
-
 #: /home/morgan/qt/openfoodfacts/app/qml/barcodeReader.qml:17
 msgid "Reading barcode"
 msgstr ""
@@ -185,16 +67,134 @@ msgstr ""
 msgid "You have not scanned product."
 msgstr ""
 
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:50
+msgid "gluten"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:51
+msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:55
+msgid "crustaceans"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:56
+msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:59
+msgid "eggs"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:60
+msgid "eggs, egg, egg yolk"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:63
+msgid "fish"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:64
+msgid ""
+"fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
+"sole, trout, tuna, sardine, sardines"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:68
+msgid "peanuts"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:69
+msgid "peanuts, peanut, arachis hypogaea"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:73
+msgid "soybeans"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:74
+msgid "soybeans, soya, soja, soia, soy"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:78
+msgid "Milk"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:79
+msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:83
+msgid "Nuts"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:84
+msgid ""
+"nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
+"Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:88
+msgid "Celery"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:89
+msgid "celery"
+msgstr ""
+
 #: /home/morgan/qt/openfoodfacts/app/qml/main.qml:93
+msgid "Mustard"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:94
+msgid "mustard, brassica"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:98
+msgid "Sesame"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:99
+msgid "sesame seeds, sesame"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:103
+msgid "Sulfur"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:104
+msgid ""
+"sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
+"bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
+"E226, E227, E228"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:108
+msgid "molluscs"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:109
+msgid ""
+"molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
+"mussles, mussle, clams, clam, scallops, scallop"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:113
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:114
+msgid "lupin"
+msgstr ""
+
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:167
 msgid "OpenFoodFacts"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:100
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:174
 #: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:192
+#: /home/morgan/qt/openfoodfacts/app/qml/main.qml:266
 msgid "Enter your product's name or product's barcode"
 msgstr ""
 
@@ -206,119 +206,119 @@ msgstr ""
 msgid "Your product was not found"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:77
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:94
 msgid "Common name"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:79
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:96
 msgid "Quantity"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:81
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:98
 msgid "Packaging"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:83
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:100
 msgid "Brands"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:86
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:103
 msgid "Categories"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:88
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:105
 msgid "Origin of ingredients"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:90
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:107
 msgid "Manufacturing or processing places"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:92
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:109
 msgid "City and Country where purchased"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:94
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:111
 msgid "Stores"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:96
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:113
 msgid "Countries where sold"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:98
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:417
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:115
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:436
 msgid "Ingredients"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:101
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:118
 msgid "Substances or products causing allergies or intolerances"
 msgstr ""
 
 #. TRANSLATORS: an aliment can contains traces of thoses products
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:106
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:123
 msgid "Traces"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:112
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:129
 msgid "Serving size"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:328
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:347
 #: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:601
 msgid "Product characteristics"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:465
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:484
 #: /home/morgan/qt/openfoodfacts/app/qml/Settings.qml:623
 msgid "Nutrition facts"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:501
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:520
 msgid "Composition by"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:502
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:521
 msgid "serving"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:508
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:527
 msgid "Energy"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:512
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:531
 msgid "Fat"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:512
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:531
 msgid "and"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:512
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:531
 msgid "Lipides"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:520
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:539
 msgid "Carbohydrate"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:524
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:543
 msgid "of which Sugars"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:528
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:547
 msgid "Dietary fiber"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:532
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:551
 msgid "Proteins"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:536
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:555
 msgid "Salt"
 msgstr ""
 
-#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:540
+#: /home/morgan/qt/openfoodfacts/app/qml/ProductView.qml:559
 msgid "Sodium"
 msgstr ""
 

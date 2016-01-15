@@ -38,6 +38,23 @@ Page {
         }
     }
 
+    function isContainsAllergen(str) {
+        var list_allergen = [];
+
+        for (var i=0; i < openFoodFacts.allergenModel.count; i++) {
+            var allergenModelKey = openFoodFacts.allergenModel.get(i).label.toLowerCase();
+            for (var j=0; j < openFoodFacts.settings.allergen.length; j++ ) {
+                var lowerAllergenKey =  openFoodFacts.settings.allergen[j].toLowerCase();
+                // if string match 100%
+                if (lowerAllergenKey.localeCompare(allergenModelKey) == 0 ) {
+                    console.log("allergen lower key = "+ lowerAllergenKey);
+                    console.log("allergenModel lower key = "+ allergenModelKey);
+                }
+            }
+
+        }
+    }
+
 
     Timer {
         id: findProductTimer
@@ -155,6 +172,8 @@ Page {
                 sodium.value = "<font color=\"#620000\">" + sodium_100g + " " + sodium_unit + "</font> | <font color=\"#002762\">" + sodium_serving + " " + sodium_unit + "</font>";
 
                 helpScreen.visible = true;
+
+                isContainsAllergen();
 
                 // add the product only if
                 var product_already_in_history = false;
