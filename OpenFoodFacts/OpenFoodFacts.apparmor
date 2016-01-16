@@ -3,8 +3,7 @@
         "networking",
         "camera",
         "content_exchange",
-        "content_exchange_source",
-        "debug"
+        "content_exchange_source"
     ],
     "policy_version": 1.3
 }
