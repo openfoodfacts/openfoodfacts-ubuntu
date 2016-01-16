@@ -4,12 +4,13 @@
 #
 # Translators:
 # Jimmy <jimmy@ubuntouch-fr.org>, 2015-2016
+# Thomas H <thomas.housieaux@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-06 13:12+0100\n"
-"PO-Revision-Date: 2016-01-05 11:05+0000\n"
+"PO-Revision-Date: 2016-01-16 09:11+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: French (France) (http://www.transifex.com/ubuntouch-fr/"
 "openfoodfacts-1/language/fr_FR/)\n"
@@ -81,7 +82,7 @@ msgstr "Paramètres"
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:160
 #, fuzzy
 msgid "Enter your product's barcode"
-msgstr "Entrez votre code barres"
+msgstr "Entrez le nom ou le code-barres du produit"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:13
 msgid "Product not found"
@@ -251,3 +252,18 @@ msgstr "Ingrédients"
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:629
 msgid "Composition"
 msgstr "Composition"
+
+#~ msgid "Milk"
+#~ msgstr "Lait"
+
+#~ msgid "Nuts"
+#~ msgstr "Noisettes"
+
+#~ msgid "Celery"
+#~ msgstr "Céleri"
+
+#~ msgid "Mustard"
+#~ msgstr "Moutarde"
+
+#~ msgid "lupin"
+#~ msgstr "lupin"

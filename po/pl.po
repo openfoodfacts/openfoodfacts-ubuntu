@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-06 13:12+0100\n"
-"PO-Revision-Date: 2016-01-05 09:10+0000\n"
+"PO-Revision-Date: 2016-01-16 09:11+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: Polish (http://www.transifex.com/ubuntouch-fr/openfoodfacts-1/"
 "language/pl/)\n"
@@ -69,7 +69,7 @@ msgstr "Wyczyść historię"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:69
 msgid "You have not scanned product."
-msgstr ""
+msgstr "Nie zeskanowałeś produktu."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:58
 msgid "OpenFoodFacts"
@@ -81,9 +81,8 @@ msgid "Settings"
 msgstr "Ustawienia"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:160
-#, fuzzy
 msgid "Enter your product's barcode"
-msgstr "Wprowadź kod kreskowy"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:13
 msgid "Product not found"
@@ -191,11 +190,11 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:489
 msgid "Carbohydrate"
-msgstr ""
+msgstr "Węglowodany"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:493
 msgid "of which Sugars"
-msgstr ""
+msgstr "w tym cukry"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:497
 msgid "Dietary fiber"
