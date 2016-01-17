@@ -256,7 +256,7 @@ Page {
 
                 Column {
                     id: content
-                    anchors.fill: parent; anchors.topMargin: headerpicture.height; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 5;
+                    anchors.fill: parent; anchors.topMargin: headerpicture.height; anchors.leftMargin: 0; anchors.rightMargin: 0; anchors.bottomMargin: 5;
                     spacing:15;
 
                     Label {
@@ -529,7 +529,7 @@ Page {
                                     Image {
                                         id: imagenutr
                                         fillMode: Image.PreserveAspectFit
-                                        width:contentsectionnutr.width;
+                                        width:contentsectionnutr.width - 10;
                                         anchors.horizontalCenter: parent.horizontalCenter
                                     }
                                     Text{
