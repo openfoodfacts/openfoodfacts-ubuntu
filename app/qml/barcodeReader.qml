@@ -18,7 +18,6 @@ Page {
     head {
         foregroundColor: openFoodFacts.settings.fontColor;
     }
-    Component.onCompleted: openFoodFacts.currentPage="BarcodeReader";
 
     QRCodeReader {
         id: qrCodeReader
@@ -139,8 +138,8 @@ Page {
 
     Component.onCompleted: {
         //qrCodeReader.scanRect = Qt.rect(mainView.mapFromItem(videoOutput, 0, 0).x, mainView.mapFromItem(videoOutput, 0, 0).y, videoOutput.width, videoOutput.height)
-        qrCodeReader.scanRect = Qt.rect(openFoodFacts.mapFromItem(barcodeZone, 0, 0).x, openFoodFacts.mapFromItem(barcodeZone, 0, 0).y, barcodeZone.width, barcodeZone.height)
-
+        qrCodeReader.scanRect = Qt.rect(openFoodFacts.mapFromItem(barcodeZone, 0, 0).x, openFoodFacts.mapFromItem(barcodeZone, 0, 0).y, barcodeZone.width, barcodeZone.height);
+        openFoodFacts.currentPage="BarcodeReader";
     }
 
     // We must use Item element because Screen component does not work with QtObject
