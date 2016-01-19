@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-17 21:42+0100\n"
+"POT-Creation-Date: 2016-01-18 09:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,12 +151,12 @@ msgid "Serving size"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:315
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:600
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:425
 msgid "Product characteristics"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:505
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:622
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:447
 msgid "Nutrition facts"
 msgstr ""
 
@@ -224,31 +224,31 @@ msgstr ""
 msgid "Choose a color"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:530
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:578
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:355
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:403
 msgid "Cancel"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:557
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:382
 msgid "Example : #1ab6ef"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:563
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:388
 msgid "ok"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:590
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:415
 msgid "Theme"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:595
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:420
 msgid "Viewing Information"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:611
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:436
 msgid "ingredients"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:633
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:458
 msgid "Composition"
 msgstr ""
