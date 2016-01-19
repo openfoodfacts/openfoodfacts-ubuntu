@@ -280,18 +280,19 @@ Page {
 
                                         Item
                                         {
+                                            id: colorpicker
                                             width: parent.width
-                                            height: width
+                                            height: width/2
 
                                             function updateSelectedColor()
                                             {
-                                                ColorPickerContext.selected_red =
+                                                selected_red =
                                                         (1 - (cursor.y / height)) *
                                                         (1 + (cursor.x / width) * (main_red - 1))
-                                                ColorPickerContext.selected_green =
+                                                selected_green =
                                                         (1 - (cursor.y / height)) *
                                                         (1 + (cursor.x / width) * (main_green - 1))
-                                                ColorPickerContext.selected_blue =
+                                                selected_blue =
                                                         (1 - (cursor.y / height)) *
                                                         (1 + (cursor.x / width) * (main_blue - 1))
                                             }
@@ -303,28 +304,23 @@ Page {
                                                 transform: Rotation { angle: 90}
                                                 x: parent.width
                                                 y: 0
-                                                gradient: Gradient
-                                                {
-                                                    GradientStop { position: 0.0; color: Qt.rgba(main_red, main_green, main_blue, 1)}
-                                                    GradientStop { position: 1.0; color: "white" }
+                                                gradient: Gradient {
+                                                    GradientStop { position: 0.0; color: "#ff0000" }
+                                                    GradientStop { position: 0.17; color: "#ffff00" }
+                                                    GradientStop { position: 0.33; color: "#00ff00" }
+                                                    GradientStop { position: 0.5; color: "#00ffff" }
+                                                    GradientStop { position: 0.66; color: "#0000ff" }
+                                                    GradientStop { position: 0.83; color: "#ff00ff" }
+                                                    GradientStop { position: 1.0; color: "#ff0000" }
                                                 }
-                                            }
 
-                                            Rectangle
-                                            {
-                                                anchors.fill: parent
-                                                gradient: Gradient
-                                                {
-                                                    GradientStop { position: 0.0; color: Qt.rgba(0, 0, 0, 0) }
-                                                    GradientStop { position: 1.0; color: Qt.rgba(0, 0, 0, 1) }
-                                                }
                                             }
 
                                             Image
                                             {
                                                 id: cursor
-                                                x: width/2
-                                                y: height/2
+                                                x: colorpicker.width/2
+                                                y: colorpicker.height/2
                                                 source: "cursor.png"
                                             }
 
@@ -336,13 +332,13 @@ Page {
                                                 {
                                                     cursor.x = mouseX - 4
                                                     cursor.y = mouseY - 4
-                                                    updateSelectedColor()
+                                                    colorpicker.updateSelectedColor()
                                                 }
                                                 onPositionChanged:
                                                 {
                                                     cursor.x = mouseX - 4
                                                     cursor.y = mouseY - 4
-                                                    updateSelectedColor()
+                                                    colorpicker.updateSelectedColor()
                                                 }
                                             }
                                         }
