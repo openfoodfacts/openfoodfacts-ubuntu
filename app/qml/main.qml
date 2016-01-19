@@ -31,6 +31,8 @@ MainView {
     // persistent app settings:
     property var settings: Settings {
 
+        property bool firstRun: true
+
         property bool visiblecomposition: true
         property bool visiblenutrition:	true
         property bool visibleingredient:	true
@@ -53,7 +55,13 @@ MainView {
         id: pageStack
         height: parent.height
         Component.onCompleted: {
-            push(mainpage);
+            // Show the welcome wizard only when running the app for the first time
+            if (settings.firstRun) {
+                console.log("[LOG]: Detecting first time run by user. Starting welcome wizard.")
+                push(Qt.resolvedUrl("qrc:///welcomewizard/qml/welcomewizard/WelcomeWizard.qml"))
+            } else {
+                push(mainpage);
+            }
         }
         Page {
             title: i18n.tr("OpenFoodFacts")

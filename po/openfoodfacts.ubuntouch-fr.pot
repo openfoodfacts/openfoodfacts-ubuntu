@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-18 09:01+0100\n"
+"POT-Creation-Date: 2016-01-19 19:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,16 +67,16 @@ msgstr ""
 msgid "You have not scanned product."
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:59
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:67
 msgid "OpenFoodFacts"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:65
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:73
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:161
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:169
 msgid "Enter your product's name or product's barcode"
 msgstr ""
 
@@ -151,12 +151,12 @@ msgid "Serving size"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:315
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:425
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:421
 msgid "Product characteristics"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:505
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:447
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:443
 msgid "Nutrition facts"
 msgstr ""
 
@@ -224,31 +224,31 @@ msgstr ""
 msgid "Choose a color"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:355
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:403
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:351
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:399
 msgid "Cancel"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:382
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:378
 msgid "Example : #1ab6ef"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:388
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:384
 msgid "ok"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:415
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:411
 msgid "Theme"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:420
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:416
 msgid "Viewing Information"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:436
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:432
 msgid "ingredients"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:458
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:454
 msgid "Composition"
 msgstr ""

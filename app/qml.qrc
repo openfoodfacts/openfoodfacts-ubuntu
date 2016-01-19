@@ -29,5 +29,22 @@
         <file>qml/component/RadialBottomEdge.qml</file>
         <file>qml/component/jsonpath.js</file>
         <file>qml/component/BusyIndicator.qml</file>
+        <file>qml/component/Walkthrough.qml</file>
+        <file>qml/component/ActionButton.qml</file>
+    </qresource>
+    <qresource prefix="/welcomewizard">
+        <file>qml/welcomewizard/Slide1.qml</file>
+        <file>qml/welcomewizard/Slide2.qml</file>
+        <file>qml/welcomewizard/Slide3.qml</file>
+        <file>qml/welcomewizard/Slide4.qml</file>
+        <file>qml/welcomewizard/Slide5.qml</file>
+        <file>qml/welcomewizard/Slide6.qml</file>
+        <file>qml/welcomewizard/WelcomeWizard.qml</file>
+        <file>qml/welcomewizard/image/OpenFoodFacts.png</file>
+        <file>qml/welcomewizard/image/discover.png</file>
+        <file>qml/welcomewizard/image/gift.png</file>
+        <file>qml/welcomewizard/image/language.png</file>
+        <file>qml/welcomewizard/image/smart.png</file>
+        <file>qml/welcomewizard/image/support.png</file>
     </qresource>
 </RCC>
