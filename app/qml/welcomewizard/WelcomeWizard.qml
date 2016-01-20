@@ -32,8 +32,8 @@ Walkthrough {
     onFinished: {
         console.log("[LOG]: Welcome tour complete")
         settings.firstRun = false
-        mainStack.pop()
-        mainStack.push(tabs)
+        pageStack.pop()
+        push(mainpage);
     }
     model: [
         Slide1{},
