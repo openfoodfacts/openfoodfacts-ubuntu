@@ -63,7 +63,6 @@ Component {
             }
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
-            linkColor: podbird.appTheme.linkText
             text: i18n.tr("OpenFoodFacts is available in over 10 languages and is translated by the %1 community").arg("<a href=\"https://www.transifex.com/ubuntouch-fr/openfoodfacts-1/\">transifex Translators</a>")
             onLinkActivated: Qt.openUrlExternally(link)
         }
