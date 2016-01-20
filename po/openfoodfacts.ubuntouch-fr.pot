@@ -8,13 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-20 20:09+0100\n"
+"POT-Creation-Date: 2016-01-20 20:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
@@ -88,7 +88,7 @@ msgstr ""
 msgid "Your product was not found"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductSearchResult.qml:32
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductSearchResult.qml:10
 msgid "search result for : "
 msgstr ""
 
@@ -251,4 +251,69 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:454
 msgid "Composition"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:90
+msgid "Skip"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
+msgid "Welcome to OpenFoodFacts"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
+msgid ""
+"An application to learn more about food and eating healthier, it lists "
+"information about food products worldwide."
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:71
+msgid "Swipe to move between pages"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
+msgid "BLA BLA BLA"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
+msgid "Allergen management"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:62
+msgid ""
+"If you have a food allergy, ask that information in paramêtres. The "
+"application will help you identify a single glance the products compatible "
+"with your allergy."
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide4.qml:66
+#, qt-format
+msgid ""
+"OpenFoodFacts is available in over 10 languages and is translated by the %1 "
+"community"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:45
+msgid "Support"
+msgstr ""
+
+#. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:64
+#, qt-format
+msgid ""
+"If you find any bugs or have any feature requests, let us know on our "
+"project page at %1"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:45
+msgid "Enjoy"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:62
+msgid "We hope you enjoy using OpenFoodFacts!"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:76
+msgid "Finish"
 msgstr ""

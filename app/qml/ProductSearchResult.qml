@@ -7,33 +7,10 @@ import "qrc:///component/qml/component"
 
 Page {
     id: pageProductSearch
-
-    Item {
-        width: units.gu(50)
-        height: units.gu(70)
-        Header {
-            id: header
-            width: parent.width
-            height: units.gu(6)
-            z: 1 // ensure the header goes on top of the flickable contents
-            flickable: scrollableContent
-            foregroundColor: openFoodFacts.settings.fontColor;
-            Rectangle {
-                // to visualize the header
-                anchors.fill: parent
-                color: UbuntuColors.blue
-            }
-        }
-        Flickable {
-            id: scrollableContent
-            anchors.fill: parent
-            contentHeight: height * 2
-            Label {
-                text: i18n.tr("search result for : ") + pageProductSearch.productNameSearch;
-            }
-        }
+    title: i18n.tr("search result for : ") + pageProductSearch.productNameSearch;
+    head {
+        foregroundColor: openFoodFacts.settings.fontColor;
     }
-
 
 
     property string productNameSearch : "";

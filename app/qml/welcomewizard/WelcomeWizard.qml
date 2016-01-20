@@ -29,7 +29,7 @@ Rectangle {
 Walkthrough {
     id: walkthrough
     appName: "OpenFoodFacts"
-    finished: {
+    onFinished: {
         console.log("[LOG]: Welcome tour complete")
         settings.firstRun = false
         mainStack.pop()
