@@ -119,6 +119,8 @@ MainView {
     // persistent app settings:
     property var settings: Settings {
 
+        property bool firstRun: true
+
         property bool visiblecomposition: true
         property bool visiblenutrition:	true
         property bool visibleingredient:	true

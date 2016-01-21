@@ -69,6 +69,8 @@ Page {
                 width: parent.width
                 horizontalAlignment: Text.AlignLeft
                 font.pixelSize: 24
+                anchors.verticalCenter: parent.verticalCenter;
+
                 color: "black"
                 text: product_name
             }

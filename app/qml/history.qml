@@ -99,6 +99,10 @@ Page {
                     delegate: ListItem.Subtitled {
                         showDivider: false
                         anchors.leftMargin: units.gu(2)
+                        removable: true
+                        confirmRemoval : true
+                        onItemRemoved: openFoodFacts.settings.historyModel.remove(index)
+
                         Text {
                             text: label
                             color: openFoodFacts.settings.color
