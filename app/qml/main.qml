@@ -57,7 +57,6 @@ MainView {
         Component.onCompleted: {
             // Show the welcome wizard only when running the app for the first time
             if (settings.firstRun) {
-                console.log("[LOG]: Detecting first time run by user. Starting welcome wizard.")
                 push(Qt.resolvedUrl("qrc:///welcomewizard/qml/welcomewizard/WelcomeWizard.qml"))
             } else {
                 push(mainpage);
