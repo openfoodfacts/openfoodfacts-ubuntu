@@ -74,7 +74,11 @@ Component {
             width: parent.width/1.3
             color: UbuntuColors.green
             text: i18n.tr("Finish")
-            onClicked: finished()
+            onClicked: {
+                settings.firstRun = false
+                pageStack.pop()
+                push(mainpage);
+            }
         }
     }
 }
