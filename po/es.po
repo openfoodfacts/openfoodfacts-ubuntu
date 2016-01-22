@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-21 22:01+0100\n"
+"POT-Creation-Date: 2016-01-22 20:45+0100\n"
 "PO-Revision-Date: 2016-01-16 09:11+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/ubuntouch-fr/"
@@ -187,16 +187,16 @@ msgstr ""
 msgid "lupin"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:169
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:175
 msgid "OpenFoodFacts"
 msgstr "OpenFoodFacts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:182
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr "Configuraciones"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:268
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:274
 msgid "Enter your product's name or product's barcode"
 msgstr ""
 
@@ -391,11 +391,6 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:71
 msgid "Swipe to move between pages"
-msgstr ""
-
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:45
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
-msgid "BLA BLA BLA"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
