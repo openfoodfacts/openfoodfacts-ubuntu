@@ -140,7 +140,13 @@ MainView {
         height: parent.height
         Component.onCompleted: {
             console.log("###### on Component completion #####")
-            push(mainpage);
+            // Show the welcome wizard only when running the app for the first time
+             if (settings.firstRun) {
+                 console.log("[LOG]: Detecting first time run by user. Starting welcome wizard.")
+                 push(Qt.resolvedUrl("qrc:///welcomewizard/qml/welcomewizard/WelcomeWizard.qml"))
+             } else {
+                 push(mainpage);
+             }
 
             if(typeof openFoodFacts.settings.allergen === 'undefined') {
                 console.log("allergen is undefined, let's create a new one");
