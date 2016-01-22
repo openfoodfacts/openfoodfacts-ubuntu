@@ -101,7 +101,7 @@ Page {
                         anchors.leftMargin: units.gu(2)
                         removable: true
                         confirmRemoval : true
-                        onItemRemoved: openFoodFacts.settings.historyModel.remove(index)
+                        onItemRemoved: openFoodFacts.historyModel.remove(index)
 
                         Text {
                             text: label
