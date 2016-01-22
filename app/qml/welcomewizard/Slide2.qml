@@ -42,7 +42,7 @@ Component {
             elide: Text.ElideRight
             fontSize: "x-large"
             maximumLineCount: 2
-            text: i18n.tr("BLA BLA BLA")
+            text: "BLA BLA BLA"
             horizontalAlignment: Text.AlignHCenter
             width: parent.width
             wrapMode: Text.WordWrap
@@ -59,7 +59,7 @@ Component {
                 topMargin: units.gu(4)
             }
             horizontalAlignment: Text.AlignHCenter
-            text: i18n.tr("BLA BLA BLA")
+            text: "BLA BLA BLA"
             wrapMode: Text.WordWrap
         }
     }
