@@ -121,6 +121,7 @@ MainView {
 
         property bool firstRun: true
 
+        property bool scanhomepage: false
         property bool visiblecomposition: true
         property bool visiblenutrition:	true
         property bool visibleingredient:	true
@@ -145,7 +146,7 @@ MainView {
                  console.log("[LOG]: Detecting first time run by user. Starting welcome wizard.")
                  push(Qt.resolvedUrl("qrc:///welcomewizard/qml/welcomewizard/WelcomeWizard.qml"))
              } else {
-                 push(mainpage);
+                     push(mainpage);
              }
 
             if(typeof openFoodFacts.settings.allergen === 'undefined') {
@@ -302,6 +303,7 @@ MainView {
             }
 
         } //page
+
     } //pagestack
 
     RadialBottomEdge {

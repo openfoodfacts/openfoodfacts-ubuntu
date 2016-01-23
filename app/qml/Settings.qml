@@ -49,6 +49,19 @@ Page {
                     text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Global")+"</font>"
                 }
 
+                ListItem.Standard {
+                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("scanner from the home page")+"</font>"
+                    control: Switch {
+                        id: scanhomepageswitch
+                        checked: openFoodFacts.settings.scanhomepage
+                        onClicked: { openFoodFacts.settings.scanhomepage = checked;
+                                     pageStack.clear();
+                        }
+                    }
+                }
+
                 ListItem.MultiValue {
                     visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                     showDivider: false
