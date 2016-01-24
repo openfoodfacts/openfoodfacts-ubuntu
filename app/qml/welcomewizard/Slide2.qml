@@ -42,7 +42,7 @@ Component {
             elide: Text.ElideRight
             fontSize: "x-large"
             maximumLineCount: 2
-            text: "BLA BLA BLA"
+            text: i18n.tr("Discover products and their ingredients")
             horizontalAlignment: Text.AlignHCenter
             width: parent.width
             wrapMode: Text.WordWrap
@@ -59,7 +59,7 @@ Component {
                 topMargin: units.gu(4)
             }
             horizontalAlignment: Text.AlignHCenter
-            text: "BLA BLA BLA"
+            text: i18n.tr("OpenFoodFacts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site.")
             wrapMode: Text.WordWrap
         }
     }

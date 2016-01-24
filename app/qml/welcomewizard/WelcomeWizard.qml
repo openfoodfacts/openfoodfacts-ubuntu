@@ -37,8 +37,8 @@ Walkthrough {
     }
     model: [
         Slide1{},
-        //Slide2{},
-        //Slide3{},
+        Slide2{},
+        //Slide3{}, //allergen not ready
         Slide4{},
         Slide5{},
         Slide6{}
