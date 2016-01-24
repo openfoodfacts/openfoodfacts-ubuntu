@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-22 20:45+0100\n"
+"POT-Creation-Date: 2016-01-24 10:06+0100\n"
 "PO-Revision-Date: 2016-01-16 09:11+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: German (http://www.transifex.com/ubuntouch-fr/openfoodfacts-1/"
@@ -47,7 +47,7 @@ msgid "Page not yet finished, thank you to return again later."
 msgstr "Seite noch nicht fertig, schau später nochmal vorbei."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Allergen.qml:8
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:55
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:68
 msgid "Allergen"
 msgstr "Allergen"
 
@@ -189,16 +189,16 @@ msgstr ""
 msgid "lupin"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:175
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
 msgid "OpenFoodFacts"
 msgstr "OpenFoodFacts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:182
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:274
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:275
 msgid "Enter your product's name or product's barcode"
 msgstr ""
 
@@ -273,12 +273,12 @@ msgid "Serving size"
 msgstr "Dosierungsgröße"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:345
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:422
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:435
 msgid "Product characteristics"
 msgstr "Produktcharakteristiken"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:535
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:444
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:457
 msgid "Nutrition facts"
 msgstr "Ernährungsfakten"
 
@@ -343,36 +343,40 @@ msgstr "Über"
 msgid "Global"
 msgstr "Global"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:78
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:55
+msgid "scanner from the home page"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:91
 msgid "Choose a color"
 msgstr "Farbe wählen"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:352
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:400
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:365
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:413
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:379
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:392
 msgid "Example : #1ab6ef"
 msgstr "Beispiel: #1ab6ef"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:385
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:398
 msgid "ok"
 msgstr "ok"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:412
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:425
 msgid "Theme"
 msgstr "Theme"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:417
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:430
 msgid "Viewing Information"
 msgstr "Anzeigedaten"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:433
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:446
 msgid "ingredients"
 msgstr "Inhaltsstoffe"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:455
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:468
 msgid "Composition"
 msgstr "Zusammensetzung"
 
@@ -393,6 +397,17 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:71
 msgid "Swipe to move between pages"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:45
+msgid "Discover products and their ingredients"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
+msgid ""
+"OpenFoodFacts uses the official database of the same name to provide access "
+"to a huge collection of food products and their ingredients. You can also "
+"add products directly on the official site."
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
