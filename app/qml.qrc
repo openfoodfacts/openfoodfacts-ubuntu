@@ -13,6 +13,7 @@
         <file>qml/addproduct.qml</file>
         <file>qml/ProductSearchResult.qml</file>
         <file>qml/cursor.png</file>
+        <file>qml/SettingsDeveloper.qml</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="busy.png">../OpenFoodFacts/busy.png</file>

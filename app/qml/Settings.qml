@@ -49,40 +49,6 @@ Page {
                     text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Global")+"</font>"
                 }
 
-                ListItem.Standard {
-                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                    showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("scanner from the home page")+"</font>"
-                    control: Switch {
-                        id: scanhomepageswitch
-                        checked: openFoodFacts.settings.scanhomepage
-                        onClicked: { openFoodFacts.settings.scanhomepage = checked;
-                                     pageStack.clear();
-                        }
-                    }
-                }
-
-                ListItem.MultiValue {
-                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                    showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Allergen")+"</font>"
-                    function addFontColor(list, color) {
-                        if(list.length > 0) {
-                            var txtlist = list.slice(); //local copy
-                            txtlist[0] = "<font color=\""+color+"\">"+txtlist[0];
-                            txtlist[txtlist.length-1] = txtlist[txtlist.length-1]+"</font>";
-                            return txtlist;
-                        }
-                        else
-                            return [];
-                    }
-                    values: addFontColor(openFoodFacts.settings.allergen, "#b3b3b3")
-                    progression: true
-                    onTriggered: {
-                        pageStack.push(Qt.resolvedUrl("Allergen.qml"));
-                    }
-                }
-
 
                 Component {
                     id: dialog
@@ -290,74 +256,6 @@ Page {
                                         width: parent.width
                                         spacing: units.gu(1)
 
-
-
-                                        Item
-                                        {
-                                            id: colorpicker
-                                            width: parent.width
-                                            height: width/2
-
-                                            function updateSelectedColor()
-                                            {
-                                                selected_red =
-                                                        (1 - (cursor.y / height)) *
-                                                        (1 + (cursor.x / width) * (main_red - 1))
-                                                selected_green =
-                                                        (1 - (cursor.y / height)) *
-                                                        (1 + (cursor.x / width) * (main_green - 1))
-                                                selected_blue =
-                                                        (1 - (cursor.y / height)) *
-                                                        (1 + (cursor.x / width) * (main_blue - 1))
-                                            }
-
-                                            Rectangle
-                                            {
-                                                width: parent.height
-                                                height: parent.width
-                                                transform: Rotation { angle: 90}
-                                                x: parent.width
-                                                y: 0
-                                                gradient: Gradient {
-                                                    GradientStop { position: 0.0; color: "#ff0000" }
-                                                    GradientStop { position: 0.17; color: "#ffff00" }
-                                                    GradientStop { position: 0.33; color: "#00ff00" }
-                                                    GradientStop { position: 0.5; color: "#00ffff" }
-                                                    GradientStop { position: 0.66; color: "#0000ff" }
-                                                    GradientStop { position: 0.83; color: "#ff00ff" }
-                                                    GradientStop { position: 1.0; color: "#ff0000" }
-                                                }
-
-                                            }
-
-                                            Image
-                                            {
-                                                id: cursor
-                                                x: colorpicker.width/2
-                                                y: colorpicker.height/2
-                                                source: "cursor.png"
-                                            }
-
-                                            MouseArea
-                                            {
-                                                acceptedButtons: Qt.LeftButton
-                                                anchors.fill: parent
-                                                onPressed:
-                                                {
-                                                    cursor.x = mouseX - 4
-                                                    cursor.y = mouseY - 4
-                                                    colorpicker.updateSelectedColor()
-                                                }
-                                                onPositionChanged:
-                                                {
-                                                    cursor.x = mouseX - 4
-                                                    cursor.y = mouseY - 4
-                                                    colorpicker.updateSelectedColor()
-                                                }
-                                            }
-                                        }
-
-
                                     }
 
                                     Button {
@@ -473,6 +371,29 @@ Page {
                         }
                     }
                 }
+
+
+
+                ListItem.Standard {
+                    id: settingsdeveloper
+                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developer settings</font>"
+                    progression: true
+                    onTriggered: {
+                        pageStack.push(Qt.resolvedUrl("SettingsDeveloper.qml"));
+                    }
+                    Icon {
+                        id: expendedIcon4
+                        name: "security-alert"
+                        anchors { left: parent.left; verticalCenter: parent.verticalCenter}
+                        anchors.leftMargin: 15;
+                        height: units.gu(2.5)
+                        width: height
+                    }
+                }
+
+
 
             }
         }
