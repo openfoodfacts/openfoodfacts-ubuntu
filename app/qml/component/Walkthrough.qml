@@ -33,7 +33,7 @@ Page {
     property list<Component> model
 
     // Property to set the color of bottom cirle to indicate the user's progress
-    property color completeColor: "green"
+    property color completeColor: "#48c1ba"
 
     // Property to set the color of the bottom circle to indicate the slide still left to cover
     property color inCompleteColor: "lightgrey"
