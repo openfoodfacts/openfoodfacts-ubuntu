@@ -158,7 +158,11 @@ Page {
                 helpScreen.visible = true;
 
                 if (ALLERGEN.isContainsAllergen(ingredients_text_with_allergens) === true) {
-                    allergendetect.color="red";
+                    allergendetect.color = "red";
+                    labelattention.visible = true;
+                    maskallergen.visible = true;
+                    mask.height = units.gu(17);
+                    mask.width = units.gu(17);
                 }
 
                 // add the product only if
@@ -249,8 +253,8 @@ Page {
                             fillMode: Image.PreserveAspectCrop
                             visible: false // Do not forget to make original pic insisible
                         }
-
                     }
+
 
                     Rectangle {
                         id: mask
@@ -268,6 +272,24 @@ Page {
                         source: productImage
                         maskSource: mask
                     }
+                    Rectangle {
+                        id: maskallergen
+                        anchors.horizontalCenter: mask.horizontalCenter; anchors.verticalCenter: mask.verticalCenter;
+                        width: units.gu(17)
+                        height: units.gu(2)
+                        color: "red";
+                        visible: false
+                        Label {
+                            id: labelattention
+                            anchors.fill: mask
+                            width: maskallergen.width
+                            visible: false
+                            font.bold : true
+                            horizontalAlignment : Text.AlignHCenter
+                            color:"white";
+                            text: i18n.tr("Allergen detected");
+                        }
+                    }
                 } // header picture
 
                 Column {
@@ -282,20 +304,7 @@ Page {
                         width:content.width;
                         visible: false
                     }
-                    /*
-                    Label {
-                        id: labelattention
 
-                    width:content.width;
-                    fontSize: "x-small"
-                    horizontalAlignment : Text.AlignHCenter
-                    color:"red";
-                    text: if ( ingrproduct.text.indexOf(openFoodFacts.settings.userallergen) > -1 )
-                              "found it"
-                            else
-                              "not found"
-                    }
-*/
                     Label {
                         id: labelbarcode
                         width:content.width;
