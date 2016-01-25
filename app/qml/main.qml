@@ -183,6 +183,7 @@ MainView {
                         text: i18n.tr("Settings")
                         iconName: "settings"
                         onTriggered: {
+                            openFoodFacts.currentPage="Settings"
                             pageStack.push(Qt.resolvedUrl("Settings.qml"));
                         }
                     }
