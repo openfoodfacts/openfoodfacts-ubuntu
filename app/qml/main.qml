@@ -75,32 +75,32 @@ MainView {
                                      "products_fr" : "soja, soya, soia, sojas, son de soja, lécithine de soja, tonyu, graines de soja" } );
 
             allergenModel.append({
-                                     "label": i18n.tr("Milk"),
+                                     "label": i18n.tr("milk"),
                                      "products" : i18n.tr("milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"),
                                      "products_fr" : "lactose, laitier, laitiere, laitiers, crème, beurre, bas-beurre, babeurre, beurre patissier, petit-lait, yaourt, fromage, méton, lait cru, Emmental, comte, bleu, edam, lactique, lactiques, ferments lactiques, cheddar, reblochon, parmesan, mimolette, crème de lait, fromage de vache, fromage de chèvre, gouda, lait écrémé, lait entier, lactoserum, lactosérum, mozzarella, protéines de lait, crème fraiche, ricotta, fromage blanc, mascarpone, caséinate, caséine" } );
 
             allergenModel.append({
-                                     "label": i18n.tr("Nuts"),
+                                     "label": i18n.tr("nuts"),
                                      "products" : i18n.tr("nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  Brazil nuts, pistachio nuts, macadamia, Queensland nuts"),
                                      "products_fr" :"fruits à coque, amandes, noisettes, noix, noix de cajou, noix de pécan, noix du Brésil, pistaches, noix de Macadamia, noix du Queensland, fruits secs, autres fruits secs"} );
 
             allergenModel.append({
-                                     "label": i18n.tr("Celery"),
+                                     "label": i18n.tr("celery"),
                                      "products" : i18n.tr("celery"),
                                      "products_fr" :"céleri, céleri-rave"} );
 
             allergenModel.append({
-                                     "label": i18n.tr("Mustard"),
+                                     "label": i18n.tr("mustard"),
                                      "products" : i18n.tr("mustard, brassica"),
                                      "products_fr" :"moutarde, graines de moutarde"} );
 
             allergenModel.append({
-                                     "label": i18n.tr("Sesame"),
+                                     "label": i18n.tr("sesame"),
                                      "products" : i18n.tr("sesame seeds, sesame"),
                                      "products_fr" :"graines de sésame, sésame"} );
 
             allergenModel.append({
-                                     "label": i18n.tr("Sulfur"),
+                                     "label": i18n.tr("sulfur"),
                                      "products" : i18n.tr("sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"),
                                      "products_fr" :"anhydride sulfureux et sulfites, anhydride sulfureux, sulfites, sulfite, sulphites, sulphite, bisulfite, metabisulfite, disulfite, disulfites, disulfite de sodium, disulfite de potassium, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"} );
 

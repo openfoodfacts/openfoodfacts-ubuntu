@@ -1,6 +1,8 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import "qrc:///component/qml/component"
+import "qrc:///component/qml/component/allergen.js" as ALLERGEN
+
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import QtGraphicalEffects 1.0
 
@@ -37,24 +39,6 @@ Page {
             pageStack.push(Qt.resolvedUrl("notFound.qml"), {"barcode": barcodeValue});
         }
     }
-
-    function isContainsAllergen(str) {
-        var list_allergen = [];
-
-        for (var i=0; i < openFoodFacts.allergenModel.count; i++) {
-            var allergenModelKey = openFoodFacts.allergenModel.get(i).label.toLowerCase();
-            for (var j=0; j < openFoodFacts.settings.allergen.length; j++ ) {
-                var lowerAllergenKey =  openFoodFacts.settings.allergen[j].toLowerCase();
-                // if string match 100%
-                if (lowerAllergenKey.localeCompare(allergenModelKey) == 0 ) {
-                    console.log("allergen lower key = "+ lowerAllergenKey);
-                    console.log("allergenModel lower key = "+ allergenModelKey);
-                }
-            }
-
-        }
-    }
-
 
     Timer {
         id: findProductTimer
@@ -173,7 +157,9 @@ Page {
 
                 helpScreen.visible = true;
 
-                isContainsAllergen();
+                if (ALLERGEN.isContainsAllergen(ingredients_text_with_allergens) === true) {
+                    allergendetect.color="red";
+                }
 
                 // add the product only if
                 var product_already_in_history = false;
@@ -326,11 +312,11 @@ Page {
                         expanded: openFoodFacts.settings.visiblecharacteristics
                         onClicked: {
                             if (openFoodFacts.settings.visiblecharacteristics === true)
-                                     {openFoodFacts.settings.visiblecharacteristics = false;
-                                      expendedIcon4.name = "down";}
-                                 else
-                                     {openFoodFacts.settings.visiblecharacteristics = true;
-                                      expendedIcon4.name = "up";}
+                            {openFoodFacts.settings.visiblecharacteristics = false;
+                                expendedIcon4.name = "down";}
+                            else
+                            {openFoodFacts.settings.visiblecharacteristics = true;
+                                expendedIcon4.name = "up";}
                         }
                         showDivider: false
 
@@ -348,7 +334,7 @@ Page {
                                     id: expendedIcon4
                                     name: if (openFoodFacts.settings.visiblecharacteristics === true)
                                               expendedIcon4.name = "up"
-                                              else
+                                          else
                                               expendedIcon4.name = "down"
                                     anchors { right: parent.right; verticalCenter: parent.verticalCenter}
                                     height: units.gu(2)
@@ -443,11 +429,11 @@ Page {
                         expanded: openFoodFacts.settings.visibleingredient
                         onClicked: {
                             if (openFoodFacts.settings.visibleingredient === true)
-                                     {openFoodFacts.settings.visibleingredient = false;
-                                      expendedIcon3.name = "down";}
-                                 else
-                                     {openFoodFacts.settings.visibleingredient = true;
-                                      expendedIcon3.name = "up";}
+                            {openFoodFacts.settings.visibleingredient = false;
+                                expendedIcon3.name = "down";}
+                            else
+                            {openFoodFacts.settings.visibleingredient = true;
+                                expendedIcon3.name = "up";}
                         }
                         showDivider: false
 
@@ -465,7 +451,7 @@ Page {
                                     id: expendedIcon3
                                     name: if (openFoodFacts.settings.visibleingredient = true)
                                               expendedIcon3.name = "up"
-                                              else
+                                          else
                                               expendedIcon3.name = "down"
                                     anchors { right: parent.right; verticalCenter: parent.verticalCenter}
                                     height: units.gu(2)
@@ -516,11 +502,11 @@ Page {
                         expanded: openFoodFacts.settings.visiblenutrition
                         onClicked: {
                             if (openFoodFacts.settings.visiblenutrition === true)
-                                     {openFoodFacts.settings.visiblenutrition = false;
-                                      expendedIcon2.name = "down";}
-                                 else
-                                     {openFoodFacts.settings.visiblenutrition = true;
-                                      expendedIcon2.name = "up";}
+                            {openFoodFacts.settings.visiblenutrition = false;
+                                expendedIcon2.name = "down";}
+                            else
+                            {openFoodFacts.settings.visiblenutrition = true;
+                                expendedIcon2.name = "up";}
                         }
                         showDivider: false
 
@@ -538,7 +524,7 @@ Page {
                                     id: expendedIcon2
                                     name: if (openFoodFacts.settings.visiblenutrition = true)
                                               expendedIcon2.name = "up"
-                                              else
+                                          else
                                               expendedIcon2.name = "down"
                                     anchors { right: parent.right; verticalCenter: parent.verticalCenter}
                                     height: units.gu(2)
@@ -580,11 +566,11 @@ Page {
                         expanded: openFoodFacts.settings.visiblecomposition
                         onClicked: {
                             if (openFoodFacts.settings.visiblecomposition === true)
-                                     {openFoodFacts.settings.visiblecomposition = false;
-                                      expendedIcon.name = "down";}
-                                 else
-                                     {openFoodFacts.settings.visiblecomposition = true;
-                                      expendedIcon.name = "up";}
+                            {openFoodFacts.settings.visiblecomposition = false;
+                                expendedIcon.name = "down";}
+                            else
+                            {openFoodFacts.settings.visiblecomposition = true;
+                                expendedIcon.name = "up";}
                         }
                         showDivider: false
 
@@ -602,7 +588,7 @@ Page {
                                     id: expendedIcon
                                     name: if (openFoodFacts.settings.visiblecomposition = true)
                                               expendedIcon.name = "up"
-                                              else
+                                          else
                                               expendedIcon.name = "down"
                                     anchors { right: parent.right; verticalCenter: parent.verticalCenter}
                                     height: units.gu(2)

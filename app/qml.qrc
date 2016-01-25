@@ -32,6 +32,7 @@
         <file>qml/component/BusyIndicator.qml</file>
         <file>qml/component/Walkthrough.qml</file>
         <file>qml/component/ActionButton.qml</file>
+        <file>qml/component/allergen.js</file>
     </qresource>
     <qresource prefix="/welcomewizard">
         <file>qml/welcomewizard/Slide1.qml</file>
