@@ -52,25 +52,7 @@ Page {
                     }
                 }
 
-                ListItem.MultiValue {
-                    showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Allergen")+"</font>"
-                    function addFontColor(list, color) {
-                        if(list.length > 0) {
-                            var txtlist = list.slice(); //local copy
-                            txtlist[0] = "<font color=\""+color+"\">"+txtlist[0];
-                            txtlist[txtlist.length-1] = txtlist[txtlist.length-1]+"</font>";
-                            return txtlist;
-                        }
-                        else
-                            return [];
-                    }
-                    values: addFontColor(openFoodFacts.settings.allergen, "#b3b3b3")
-                    progression: true
-                    onTriggered: {
-                        pageStack.push(Qt.resolvedUrl("Allergen.qml"));
-                    }
-                }
+
 
 
 
