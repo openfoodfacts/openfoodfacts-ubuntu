@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Jimmy <jimmy@ubuntouch-fr.org>, 2016
 # Kristijan Zic <kristijan.zic@gmail.com>, 2016
@@ -10,22 +10,21 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-26 09:44+0100\n"
-"PO-Revision-Date: 2016-01-16 09:11+0000\n"
+"PO-Revision-Date: 2016-01-26 08:45+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
-"Language-Team: Croatian (http://www.transifex.com/ubuntouch-fr/"
-"openfoodfacts-1/language/hr/)\n"
-"Language: hr\n"
+"Language-Team: Croatian (http://www.transifex.com/ubuntouch-fr/openfoodfacts-1/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "Čitač bar koda"
 
-#. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
+#. TRANSLATORS: Name of an action in the toolbar to import pictures from other
+#. applications and scan them for codes
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "Uvedi sliku"
@@ -209,7 +208,7 @@ msgstr "Vaš proizvod nije pronađen"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductSearchResult.qml:10
 msgid "search result for : "
-msgstr ""
+msgstr "Rezultat pretraživanja za:"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:78
 msgid "Common name"
@@ -270,9 +269,8 @@ msgid "Serving size"
 msgstr "Porcija"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:290
-#, fuzzy
 msgid "Allergen detected"
-msgstr "Alergen"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:340
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:333
@@ -285,9 +283,8 @@ msgid "Nutrition facts"
 msgstr "Nutritivne vrijednosti"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:594
-#, fuzzy
 msgid "nutritional value"
-msgstr "Nutritivne vrijednosti"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:619
 msgid "Composition by"
@@ -391,9 +388,8 @@ msgid "Skip"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
-#, fuzzy
 msgid "Welcome to OpenFoodFacts"
-msgstr "OpenFoodFacts"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
 msgid ""
@@ -438,7 +434,8 @@ msgstr ""
 msgid "Support"
 msgstr ""
 
-#. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
+#. TRANSLATORS: The %1 points to a url defined in html format <a
+#. href=\link\>Link</a>.
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
 msgid ""

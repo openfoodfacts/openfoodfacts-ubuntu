@@ -1,29 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Manuel Alejandro Jiménez Quintero <alejanjim@gmail.com>, 2016
+# rampmaster <rampmaster@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-26 09:44+0100\n"
-"PO-Revision-Date: 2016-01-16 09:11+0000\n"
+"PO-Revision-Date: 2016-01-26 08:45+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
-"Language-Team: Spanish (http://www.transifex.com/ubuntouch-fr/"
-"openfoodfacts-1/language/es/)\n"
-"Language: es\n"
+"Language-Team: Spanish (http://www.transifex.com/ubuntouch-fr/openfoodfacts-1/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "Lector de código de barras"
 
-#. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
+#. TRANSLATORS: Name of an action in the toolbar to import pictures from other
+#. applications and scan them for codes
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "Importar imagen"
@@ -71,7 +72,7 @@ msgstr "No has escaneado el producto."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:50
 msgid "gluten"
-msgstr ""
+msgstr "gluten"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:51
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
@@ -79,7 +80,7 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:55
 msgid "crustaceans"
-msgstr ""
+msgstr "crustáceos"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:56
 msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
@@ -87,15 +88,15 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:59
 msgid "eggs"
-msgstr ""
+msgstr "Huevos"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:60
 msgid "eggs, egg, egg yolk"
-msgstr ""
+msgstr "huevos, huevo, yema"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:63
 msgid "fish"
-msgstr ""
+msgstr "pescado"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:64
 msgid ""
@@ -195,7 +196,7 @@ msgstr "Configuraciones"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:276
 msgid "Enter your product's name or product's barcode"
-msgstr ""
+msgstr "Ingresa el nombre o código de barra de su producto"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:13
 msgid "Product not found"
@@ -207,7 +208,7 @@ msgstr "Tu producto no fue encontrado"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductSearchResult.qml:10
 msgid "search result for : "
-msgstr ""
+msgstr "resultado de búsqueda para:"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:78
 msgid "Common name"
@@ -268,9 +269,8 @@ msgid "Serving size"
 msgstr "Tamaño de la porción"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:290
-#, fuzzy
 msgid "Allergen detected"
-msgstr "Alérgenos"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:340
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:333
@@ -283,9 +283,8 @@ msgid "Nutrition facts"
 msgstr "Información nutricional"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:594
-#, fuzzy
 msgid "nutritional value"
-msgstr "Información nutricional"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:619
 msgid "Composition by"
@@ -389,9 +388,8 @@ msgid "Skip"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
-#, fuzzy
 msgid "Welcome to OpenFoodFacts"
-msgstr "OpenFoodFacts"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
 msgid ""
@@ -436,7 +434,8 @@ msgstr ""
 msgid "Support"
 msgstr ""
 
-#. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
+#. TRANSLATORS: The %1 points to a url defined in html format <a
+#. href=\link\>Link</a>.
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
 msgid ""
