@@ -43,6 +43,9 @@ Component {
             fontSize: "x-large"
             height: contentHeight
             anchors.centerIn: parent
+            horizontalAlignment: Text.AlignHCenter
+            width: parent.width
+            wrapMode: Text.WordWrap
         }
 
         Label {
