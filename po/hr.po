@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 19:12+0100\n"
+"POT-Creation-Date: 2016-02-04 07:45+0100\n"
 "PO-Revision-Date: 2016-01-26 08:45+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: Croatian (http://www.transifex.com/ubuntouch-fr/"
@@ -187,7 +187,8 @@ msgid "lupin"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
-msgid "OpenFoodFacts"
+#, fuzzy
+msgid "Open Food Facts"
 msgstr "OpenFoodFacts"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
@@ -389,8 +390,9 @@ msgid "Skip"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
-msgid "Welcome to OpenFoodFacts"
-msgstr ""
+#, fuzzy
+msgid "Welcome to Open Food Facts"
+msgstr "OpenFoodFacts"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
 msgid ""
@@ -408,9 +410,9 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
 msgid ""
-"OpenFoodFacts uses the official database of the same name to provide access "
-"to a huge collection of food products and their ingredients. You can also "
-"add products directly on the official site."
+"Open Food Facts uses the official database of the same name to provide "
+"access to a huge collection of food products and their ingredients. You can "
+"also add products directly on the official site."
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
