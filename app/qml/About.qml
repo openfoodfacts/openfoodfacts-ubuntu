@@ -24,7 +24,7 @@ Page {
             width: parent.width
             height: units.gu(6)
             Label {
-                text: qsTr("OpenFoodFacts")
+                text: qsTr("Open Food Facts")
                 anchors.centerIn: parent
                 fontSize: "x-large"
             }
