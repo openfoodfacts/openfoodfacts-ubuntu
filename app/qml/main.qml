@@ -173,7 +173,7 @@ MainView {
         }
 
         Page {
-            title: i18n.tr("OpenFoodFacts")
+            title: i18n.tr("Open Food Facts")
             id: mainpage
             Component.onCompleted: openFoodFacts.currentPage="Main"
 

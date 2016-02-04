@@ -58,3 +58,6 @@ mfile.path = /
 mfile.CONFIG += no_check_exist
 mfile.files  += $$OUT_PWD/manifest.json
 INSTALLS+=mfile
+
+DISTFILES += \
+    ../OpenFoodFacts/OpenFoodFacts.desktop

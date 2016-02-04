@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=OpenFoodFacts
+Name=Open Food Facts
 Exec=openFoodFacts %u
 Icon=OpenFoodFacts.png
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
 
-Name[en_US]=OpenFoodFacts
+Name[fr_FR]=Open Food Facts

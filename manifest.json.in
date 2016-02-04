@@ -1,8 +1,8 @@
 {
     "name": "openfoodfacts.ubuntouch-fr",
-    "description": "OpenFoodFacts is an application that allow the user to know what he eat",
+    "description": "Open Food Facts is an application that allow the user to know what he eat",
     "architecture": "@CLICK_ARCH@",
-    "title": "OpenFoodFacts",
+    "title": "Open Food Facts",
     "hooks": {
         "OpenFoodFacts": {
             "apparmor": "OpenFoodFacts.apparmor",
@@ -11,5 +11,5 @@
     },
     "version": "1.3.0",
     "maintainer": "Ubuntouch-fr Team <jimmy@ubuntouch-fr.org>",
-    "framework": "ubuntu-sdk-15.04"
+    "framework": "ubuntu-sdk-15.04.3-qml"
 }
