@@ -59,7 +59,7 @@ Component {
                 topMargin: units.gu(4)
             }
             horizontalAlignment: Text.AlignHCenter
-            text: i18n.tr("OpenFoodFacts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site.")
+            text: i18n.tr("Open Food Facts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site.")
             wrapMode: Text.WordWrap
         }
     }

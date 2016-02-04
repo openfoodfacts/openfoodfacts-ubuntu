@@ -28,7 +28,7 @@ Rectangle {
 // Initial Walkthrough tutorial
 Walkthrough {
     id: walkthrough
-    appName: "OpenFoodFacts"
+    appName: "Open Food Facts"
     onFinished: {
         console.log("[LOG]: Welcome tour complete")
         settings.firstRun = false

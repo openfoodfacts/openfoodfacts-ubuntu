@@ -39,7 +39,7 @@ Component {
 
         Label {
             id: introductionText
-            text: i18n.tr("Welcome to OpenFoodFacts")
+            text: i18n.tr("Welcome to Open Food Facts")
             fontSize: "x-large"
             height: contentHeight
             anchors.centerIn: parent
