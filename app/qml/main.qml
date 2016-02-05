@@ -126,6 +126,7 @@ MainView {
         property bool visiblenutrition:	true
         property bool visibleingredient:	true
         property bool visiblecharacteristics:	true
+        property bool healthjournal:	false
 
         property string color:  '#48c1ba'
         property string fontColor : "white";

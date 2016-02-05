@@ -52,7 +52,17 @@ Page {
                     }
                 }
 
-
+                ListItem.Standard {
+                    showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+"Enable health journal"+"</font>"
+                    control: Switch {
+                        id: healthjournal
+                        checked: openFoodFacts.settings.healthjournal
+                        onClicked: { openFoodFacts.settings.healthjournal = checked;
+                                     pageStack.clear();
+                        }
+                    }
+                }
 
 
 
