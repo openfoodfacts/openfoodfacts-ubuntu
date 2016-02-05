@@ -70,9 +70,9 @@ Page {
 
         Item {
             width: parent.width
-            height: units.gu(8)
+            height: units.gu(4)
             Label {
-                text: "Version 1.3.0"
+                text: "Version 1.3.1"
                 fontSize: "large"
                 color: UbuntuColors.lightAubergine
                 anchors.centerIn: parent
@@ -90,7 +90,7 @@ Page {
             height: thankLabel.height + units.gu(2)
             Label {
                 id: thankLabel
-                text: qsTr("<b>Crédits</b><br />Jimmy Lejeune<br />Arnaud Ober<br />@Nymeria<br />@Kazord<br /><br /><br />ubuntouch-fr.org")
+                text: qsTr("<b>Crédits</b><br />Jimmy Lejeune<br />Arnaud Ober<br />@Nymeria<br />@Kazord<br /><br /><br />ubuntouch-fr.org<br /><br />") + i18n.tr("The database is licensed ODbL");
                 anchors.centerIn: parent
                 wrapMode: TextEdit.WrapAtWordBoundaryOrAnywhere
                 horizontalAlignment: Text.AlignHCenter
