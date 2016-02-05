@@ -76,6 +76,7 @@ Component {
             text: i18n.tr("Finish")
             onClicked: {
                 settings.firstRun = false
+                header.visible = true
                 pageStack.pop()
                 push(mainpage);
             }

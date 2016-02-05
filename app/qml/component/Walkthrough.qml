@@ -47,7 +47,9 @@ Page {
     // Disable automatic orientation during welcome wizard since it is not landscape friendly yet.
     // Component.onCompleted: podbird.automaticOrientation = false
     // Component.onDestruction: podbird.automaticOrientation = true
-
+    Component.onCompleted: {
+        header.visible = false
+         }
     // ListView to show the slides
     ListView {
         id: listView
@@ -99,7 +101,10 @@ Page {
 
         MouseArea {
             anchors.fill: parent
-            onClicked: walkthrough.finished()
+            onClicked:{
+                header.visible = true;
+                walkthrough.finished()
+            }
         }
     }
 
