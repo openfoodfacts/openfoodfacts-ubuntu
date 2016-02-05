@@ -90,7 +90,7 @@ Page {
             height: thankLabel.height + units.gu(2)
             Label {
                 id: thankLabel
-                text: qsTr("<b>Crédits</b><br />Jimmy Lejeune<br />Arnaud Ober<br />@Nymeria<br />@Kazord<br /><br /><br />ubuntouch-fr.org<br /><br />") + i18n.tr("The database is licensed ODbL");
+                text: qsTr("<b>Crédits</b><br />Jimmy Lejeune<br />Arnaud Ober<br />@Nymeria<br />@Kazord<br /><br /><br />ubuntouch-fr.org<br /><br />") + "<a href=\"http://world.openfoodfacts.org/legal\">" + i18n.tr("Terms of use") + "</a>";
                 anchors.centerIn: parent
                 wrapMode: TextEdit.WrapAtWordBoundaryOrAnywhere
                 horizontalAlignment: Text.AlignHCenter
