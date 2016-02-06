@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Ubuntu.Components 1.2
 
 // Slide 6
 Component {
@@ -76,9 +76,9 @@ Component {
             text: i18n.tr("Finish")
             onClicked: {
                 settings.firstRun = false
-                header.visible = true
+                walkthrough.header.visible = true
                 pageStack.pop()
-                push(mainpage);
+                pageStack.push(mainpage);
             }
         }
     }

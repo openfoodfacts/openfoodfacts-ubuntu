@@ -17,8 +17,8 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Ubuntu.Components 1.2 //bug 1.3 with button skip
+import Ubuntu.Components.ListItems 1.0 as ListItem
 
 Page {
     id: walkthrough
@@ -103,7 +103,7 @@ Page {
             anchors.fill: parent
             onClicked:{
                 header.visible = true;
-                walkthrough.finished()
+                walkthrough.finished();
             }
         }
     }
