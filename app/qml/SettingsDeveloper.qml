@@ -48,6 +48,7 @@ Page {
                         checked: openFoodFacts.settings.scanhomepage
                         onClicked: { openFoodFacts.settings.scanhomepage = checked;
                                      pageStack.clear();
+                             pageStack.push(Qt.resolvedUrl("main.qml"));
                         }
                     }
                 }
@@ -59,14 +60,29 @@ Page {
                         id: healthjournal
                         checked: openFoodFacts.settings.healthjournal
                         onClicked: { openFoodFacts.settings.healthjournal = checked;
-                                     pageStack.clear();
                         }
                     }
                 }
 
+            }
+        } //flickable
 
+        Button {
+            id: settingsButton
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: units.gu(3)
+                horizontalCenter: parent.horizontalCenter
+            }
+            height: units.gu(3)
+            width: parent.width/1.5
+            color: UbuntuColors.red
+            text: i18n.tr("Delete settings")
+            onClicked: {
 
             }
         }
+
+
     }
 }
