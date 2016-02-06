@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-04 07:45+0100\n"
+"POT-Creation-Date: 2016-02-06 08:48+0100\n"
 "PO-Revision-Date: 2016-02-05 19:03+0000\n"
 "Last-Translator: Jimmy L <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
@@ -30,6 +30,10 @@ msgstr "Import image"
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:9
 msgid "About"
 msgstr "About"
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:93
+msgid "Terms of use"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:7
 msgid "Add product"
@@ -192,16 +196,16 @@ msgstr ""
 msgid "lupin"
 msgstr "lupin"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:177
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:184
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr "Settings"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:276
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:277
 msgid "Enter your product's name or product's barcode"
 msgstr "Enter your product's name or product's barcode"
 
@@ -383,6 +387,7 @@ msgid "Composition"
 msgstr "Composition"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:10
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:40
 msgid "Developer settings"
 msgstr "Developer settings"
 
@@ -390,7 +395,7 @@ msgstr "Developer settings"
 msgid "scanner from the home page"
 msgstr "scanner from the home page"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:90
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:92
 msgid "Skip"
 msgstr "Skip"
 
@@ -398,7 +403,7 @@ msgstr "Skip"
 msgid "Welcome to Open Food Facts"
 msgstr "Welcome to Open Food Facts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:53
 msgid ""
 "An application to learn more about food and eating healthier, it lists "
 "information about food products worldwide."
@@ -406,7 +411,7 @@ msgstr ""
 "An application to learn more about food and eating healthier, it lists "
 "information about food products worldwide."
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:71
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:74
 msgid "Swipe to move between pages"
 msgstr "Swipe to move between pages"
 
