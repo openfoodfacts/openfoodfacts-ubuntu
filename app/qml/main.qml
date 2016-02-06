@@ -181,6 +181,15 @@ MainView {
             head {
                 actions: [
                     Action {
+                        text: i18n.tr("Healt journal")
+                        iconName: "bookmark"
+                        onTriggered: {
+                            openFoodFacts.currentPage="healtjournal"
+                            pageStack.push(Qt.resolvedUrl("HealtJournal.qml"));
+                        }
+                        visible: (openFoodFacts.settings.healthjournal) //if active healt journal
+                    },
+                    Action {
                         text: i18n.tr("Settings")
                         iconName: "settings"
                         onTriggered: {
