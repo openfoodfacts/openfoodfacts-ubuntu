@@ -1,29 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # ricsipontaz <ricsipontaz@googlemail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-26 09:44+0100\n"
-"PO-Revision-Date: 2016-01-26 09:32+0000\n"
-"Last-Translator: ricsipontaz <ricsipontaz@googlemail.com>\n"
-"Language-Team: Hungarian (http://www.transifex.com/ubuntouch-fr/openfoodfacts-1/language/hu/)\n"
+"POT-Creation-Date: 2016-02-04 07:45+0100\n"
+"PO-Revision-Date: 2016-02-03 07:28+0000\n"
+"Last-Translator: ricsipontaz <Unknown>\n"
+"Language-Team: Hungarian (http://www.transifex.com/ubuntouch-fr/"
+"openfoodfacts-1/language/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Launchpad-Export-Date: 2016-02-06 07:40+0000\n"
+"X-Generator: Launchpad (build 17908)\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "Vonalkódolvasó"
 
-#. TRANSLATORS: Name of an action in the toolbar to import pictures from other
-#. applications and scan them for codes
+#. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "Kép importálása"
@@ -45,7 +46,7 @@ msgid "Page not yet finished, thank you to return again later."
 msgstr "Az oldal még nincs készen, kérjük nézzen vissza később."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Allergen.qml:8
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:57
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:54
 msgid "Allergen"
 msgstr "Allergén"
 
@@ -101,7 +102,9 @@ msgstr "hal"
 msgid ""
 "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
 "sole, trout, tuna, sardine, sardines"
-msgstr "hal, halak, tőkehal, makréla, lepényhal, laposhal, nagy rombuszhal, foltos tőkehal, lazac, pisztráng, tonhal, szardínia"
+msgstr ""
+"hal, halak, tőkehal, makréla, lepényhal, laposhal, nagy rombuszhal, foltos "
+"tőkehal, lazac, pisztráng, tonhal, szardínia"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:68
 msgid "peanuts"
@@ -117,7 +120,7 @@ msgstr "szójabab"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:74
 msgid "soybeans, soya, soja, soia, soy"
-msgstr "szójabab, szója, "
+msgstr "szójabab, szója,"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:78
 msgid "milk"
@@ -135,7 +138,9 @@ msgstr "dió"
 msgid ""
 "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
 "Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
-msgstr "dió, mandula, mogyoró, kesudió, pekándió, brazil dió, pisztácia, makadámia, queenslandi dió"
+msgstr ""
+"dió, mandula, mogyoró, kesudió, pekándió, brazil dió, pisztácia, makadámia, "
+"queenslandi dió"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:88
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:89
@@ -167,7 +172,10 @@ msgid ""
 "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
 "bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
 "E226, E227, E228"
-msgstr "kén-dioxid és szulfitok, kén-dioxid, szulfitok, hidrogén-szulfit, metabiszulfit, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
+msgstr ""
+"kén-dioxid és szulfitok, kén-dioxid, szulfitok, hidrogén-szulfit, "
+"metabiszulfit, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, "
+"E228"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:108
 msgid "molluscs"
@@ -185,8 +193,8 @@ msgid "lupin"
 msgstr "farkasbab, csillagfürt"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
-msgid "OpenFoodFacts"
-msgstr "OpenFoodFacts"
+msgid "Open Food Facts"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
@@ -207,7 +215,7 @@ msgstr "Nem található ilyen termék"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductSearchResult.qml:10
 msgid "search result for : "
-msgstr "keresése erre:"
+msgstr "keresése erre: "
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:78
 msgid "Common name"
@@ -272,12 +280,12 @@ msgid "Allergen detected"
 msgstr "Észlelt allergének"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:340
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:333
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:352
 msgid "Product characteristics"
 msgstr "Termék információk"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:530
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:355
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:374
 msgid "Nutrition facts"
 msgstr "Tápanyag ismertető"
 
@@ -341,36 +349,36 @@ msgstr "Névjegy"
 msgid "Global"
 msgstr "Globális"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:57
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:76
 msgid "Choose a color"
 msgstr "Válasszon egy színt"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:263
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:311
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:282
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:330
 msgid "Cancel"
 msgstr "Mégse"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:290
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:309
 msgid "Example : #1ab6ef"
 msgstr "Példa : #1ab6ef"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:296
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:315
 msgid "ok"
 msgstr "OK"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:323
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:342
 msgid "Theme"
 msgstr "Téma"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:328
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:347
 msgid "Viewing Information"
 msgstr "Információk megjelenítése"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:344
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:363
 msgid "ingredients"
 msgstr "Összetevők"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:366
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:385
 msgid "Composition"
 msgstr "Összetétel"
 
@@ -387,14 +395,17 @@ msgid "Skip"
 msgstr "Kihagyás"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
-msgid "Welcome to OpenFoodFacts"
-msgstr "Üdvözli az OpenFoodFacts!"
+msgid "Welcome to Open Food Facts"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
 msgid ""
 "An application to learn more about food and eating healthier, it lists "
 "information about food products worldwide."
-msgstr "Egy alkalmazás, ha többet szeretne megtudni az élelmiszerekről és az egészségesebb táplálkozásról. Információt találhat világszerte árult termékekről."
+msgstr ""
+"Egy alkalmazás, ha többet szeretne megtudni az élelmiszerekről és az "
+"egészségesebb táplálkozásról. Információt találhat világszerte árult "
+"termékekről."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:71
 msgid "Swipe to move between pages"
@@ -406,10 +417,10 @@ msgstr "Fedezze fel a termékeket és azok összetevőit"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
 msgid ""
-"OpenFoodFacts uses the official database of the same name to provide access "
-"to a huge collection of food products and their ingredients. You can also "
-"add products directly on the official site."
-msgstr "Az OpenFoodFacts az azonos nevű hivatalos adatbázist használja, hogy hozzáférést biztosítson az élelmiszer ipari termékek és azok összetevői hatalmas gyűjteményéhez. Terméket hozzáadni a hivatalos oldalon van lehetősége."
+"Open Food Facts uses the official database of the same name to provide "
+"access to a huge collection of food products and their ingredients. You can "
+"also add products directly on the official site."
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
 msgid "Allergen management"
@@ -420,27 +431,32 @@ msgid ""
 "If you have a food allergy, ask that information in paramêtres. The "
 "application will help you identify a single glance the products compatible "
 "with your allergy."
-msgstr "Ha allergiája van, mindenképp nézze át a termék információit. Próbáljuk a lehető legszéleskörűbben lefedni az allergén összetevőket egy termékben."
+msgstr ""
+"Ha allergiája van, mindenképp nézze át a termék információit. Próbáljuk a "
+"lehető legszéleskörűbben lefedni az allergén összetevőket egy termékben."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
 msgid ""
 "OpenFoodFacts is available in over 10 languages and is translated by the %1 "
 "community"
-msgstr "Az OpenFoodFacts több, mint 10 nyelven érhető el, köszönhetően a %1 közösségnek"
+msgstr ""
+"Az OpenFoodFacts több, mint 10 nyelven érhető el, köszönhetően a %1 "
+"közösségnek"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:45
 msgid "Support"
 msgstr "Támogatás"
 
-#. TRANSLATORS: The %1 points to a url defined in html format <a
-#. href=\link\>Link</a>.
+#. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
 msgid ""
 "If you find any bugs or have any feature requests, let us know on our "
 "project page at %1"
-msgstr "Ha bármilyen hibát talál, vagy van egy ötlete, vegye fel velünk a kapcsolatot a projekt oldalán: %1"
+msgstr ""
+"Ha bármilyen hibát talál, vagy van egy ötlete, vegye fel velünk a "
+"kapcsolatot a projekt oldalán: %1"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:45
 msgid "Enjoy"

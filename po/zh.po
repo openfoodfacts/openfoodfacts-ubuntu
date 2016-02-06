@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-02 08:26+0100\n"
+"POT-Creation-Date: 2016-02-04 07:45+0100\n"
 "PO-Revision-Date: 2016-02-03 12:33+0000\n"
 "Last-Translator: Jimmy L <jimmy@ubuntouch-fr.org>\n"
-"Language-Team: Chinese Simplified (http://www.transifex.com/ubuntouch-"
-"fr/openfoodfacts-1/language/zh-Hans/)\n"
+"Language-Team: Chinese Simplified (http://www.transifex.com/ubuntouch-fr/"
+"openfoodfacts-1/language/zh-Hans/)\n"
+"Language: zh-Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-02-03 17:52+0000\n"
+"X-Launchpad-Export-Date: 2016-02-06 07:40+0000\n"
 "X-Generator: Launchpad (build 17908)\n"
-"Language: zh-Hans\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
@@ -186,7 +186,7 @@ msgid "lupin"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
-msgid "OpenFoodFacts"
+msgid "Open Food Facts"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
@@ -388,7 +388,7 @@ msgid "Skip"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
-msgid "Welcome to OpenFoodFacts"
+msgid "Welcome to Open Food Facts"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
@@ -407,9 +407,9 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
 msgid ""
-"OpenFoodFacts uses the official database of the same name to provide access "
-"to a huge collection of food products and their ingredients. You can also "
-"add products directly on the official site."
+"Open Food Facts uses the official database of the same name to provide "
+"access to a huge collection of food products and their ingredients. You can "
+"also add products directly on the official site."
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45

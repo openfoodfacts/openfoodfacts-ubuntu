@@ -37,7 +37,7 @@ Page {
 
 
                 ListItem.Header {
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+"Developer settings"+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Developer settings")+"</font>"
                 }
 
                 ListItem.Standard {

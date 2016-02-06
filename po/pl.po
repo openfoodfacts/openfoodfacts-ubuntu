@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-04 07:45+0100\n"
-"PO-Revision-Date: 2016-01-26 08:45+0000\n"
-"Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
+"PO-Revision-Date: 2016-02-03 18:47+0000\n"
+"Last-Translator: Krzysztof Tataradziński <Unknown>\n"
 "Language-Team: Polish (http://www.transifex.com/ubuntouch-fr/openfoodfacts-1/"
 "language/pl/)\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"X-Launchpad-Export-Date: 2016-02-06 07:40+0000\n"
+"X-Generator: Launchpad (build 17908)\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:59
 msgid "eggs"
-msgstr ""
+msgstr "jajka"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:60
 msgid "eggs, egg, egg yolk"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:63
 msgid "fish"
-msgstr ""
+msgstr "ryba"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:64
 msgid ""
@@ -187,9 +187,8 @@ msgid "lupin"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
-#, fuzzy
 msgid "Open Food Facts"
-msgstr "OpenFoodFacts"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
@@ -390,9 +389,8 @@ msgid "Skip"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
-#, fuzzy
 msgid "Welcome to Open Food Facts"
-msgstr "OpenFoodFacts"
+msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:50
 msgid ""

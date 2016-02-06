@@ -1,21 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Arabic translation for openfoodfacts
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the openfoodfacts package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 08:36+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: openfoodfacts\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-02-05 13:13+0100\n"
+"PO-Revision-Date: 2016-02-04 15:20+0000\n"
+"Last-Translator: ahmed <ahmed.fadhil@alumni.emu.edu.tr>\n"
+"Language-Team: Arabic <ar@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-02-06 07:40+0000\n"
+"X-Generator: Launchpad (build 17908)\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
@@ -28,11 +28,7 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:9
 msgid "About"
-msgstr ""
-
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:93
-msgid "Terms of use"
-msgstr ""
+msgstr "حول"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:7
 msgid "Add product"
@@ -53,7 +49,7 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/barcodeReader.qml:17
 msgid "Reading barcode"
-msgstr ""
+msgstr "قراءة الباركود"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/barcodeReader.qml:101
 msgid "please, wait until the focus is done"
@@ -61,7 +57,7 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:8
 msgid "Historical"
-msgstr ""
+msgstr "التاريخي"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:61
 msgid "Empty history"
@@ -186,16 +182,16 @@ msgstr ""
 msgid "lupin"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:177
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
 msgid "Open Food Facts"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:184
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:277
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:276
 msgid "Enter your product's name or product's barcode"
 msgstr ""
 
@@ -374,15 +370,6 @@ msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:385
 msgid "Composition"
-msgstr ""
-
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:10
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:40
-msgid "Developer settings"
-msgstr ""
-
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:45
-msgid "scanner from the home page"
 msgstr ""
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:92
