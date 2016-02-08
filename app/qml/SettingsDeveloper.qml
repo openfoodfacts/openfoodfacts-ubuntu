@@ -42,6 +42,17 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
+                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+"Activate the welcome wizard at next start"+"</font>"
+                    control: Switch {
+                        id: welcomewizard
+                        checked: openFoodFacts.settings.firstRun
+                        onClicked: { openFoodFacts.settings.firstRun = checked;
+                        }
+                    }
+                }
+
+                ListItem.Standard {
+                    showDivider: false
                     text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("scanner from the home page")+"</font>"
                     control: Switch {
                         id: scanhomepageswitch
