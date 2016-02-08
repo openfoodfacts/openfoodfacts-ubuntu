@@ -32,6 +32,7 @@ Walkthrough {
     onFinished: {
         console.log("[LOG]: Welcome tour complete")
         settings.firstRun = false
+        walkthrough.header.visible = true
         pageStack.pop()
         push(mainpage);
     }
