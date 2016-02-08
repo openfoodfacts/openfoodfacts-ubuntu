@@ -145,7 +145,9 @@ Item {
                id: changelog
                text: "
 1.3.2
-- Add changelog to about page
+- Add changeLog to about page
+- Correct bug header in welcome wizard
+- Update language
 
 1.3.1
 - Change name to \"Open Food Facts\"
