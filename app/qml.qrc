@@ -24,6 +24,8 @@
         <file alias="d.png">../OpenFoodFacts/d.png</file>
         <file alias="e.png">../OpenFoodFacts/e.png</file>
         <file alias="picker.png">../OpenFoodFacts/picker.png</file>
+        <file>../OpenFoodFacts/runman.png</file>
+        <file>../OpenFoodFacts/plate.png</file>
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>
