@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-02-05 13:13+0100\n"
-"PO-Revision-Date: 2016-02-05 23:16+0000\n"
+"POT-Creation-Date: 2016-02-08 21:21+0100\n"
+"PO-Revision-Date: 2016-02-07 13:50+0000\n"
 "Last-Translator: VPablo <villumar@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-02-06 07:40+0000\n"
+"X-Launchpad-Export-Date: 2016-02-09 14:28+0000\n"
 "X-Generator: Launchpad (build 17908)\n"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
@@ -27,8 +27,17 @@ msgid "Import image"
 msgstr "Importa una imatge"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:9
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:16
 msgid "About"
 msgstr "Quant a"
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:17
+msgid "ChangeLog"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:116
+msgid "Terms of use"
+msgstr "Condicions d'ús"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:7
 msgid "Add product"
@@ -117,7 +126,7 @@ msgstr "soja"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:74
 msgid "soybeans, soya, soja, soia, soy"
-msgstr ""
+msgstr "soja"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:78
 msgid "milk"
@@ -193,16 +202,16 @@ msgstr ""
 msgid "lupin"
 msgstr "lupinus"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:176
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:177
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:183
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:184
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr "Paràmetres"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:276
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:277
 msgid "Enter your product's name or product's barcode"
 msgstr "Escriga el nom del producte o el codi de barres"
 
@@ -357,53 +366,68 @@ msgstr "Trie un color"
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:282
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:330
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:309
 msgid "Example : #1ab6ef"
-msgstr ""
+msgstr "Exemple : #1ab6ef"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:315
 msgid "ok"
-msgstr ""
+msgstr "bé"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:342
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:347
 msgid "Viewing Information"
-msgstr ""
+msgstr "Informació de visualització"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:363
 msgid "ingredients"
-msgstr ""
+msgstr "ingredients"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:385
 msgid "Composition"
-msgstr ""
+msgstr "Composició"
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:10
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:40
+msgid "Developer settings"
+msgstr "Configuració del programador"
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:56
+msgid "scanner from the home page"
+msgstr "escàner des de la pàgina principal"
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:91
+msgid "Delete settings"
+msgstr "Esborra configuració"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:92
 msgid "Skip"
-msgstr ""
+msgstr "Omet"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
 msgid "Welcome to Open Food Facts"
-msgstr ""
+msgstr "Benvinguts a Open Food Facts"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:53
 msgid ""
 "An application to learn more about food and eating healthier, it lists "
 "information about food products worldwide."
 msgstr ""
+"Una aplicació per aprendre més sobre menjar i menjar més sa, llista "
+"informació sobre productes d'alimentació arreu del món."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:74
 msgid "Swipe to move between pages"
-msgstr ""
+msgstr "Lliscar per moure's entre pàgines"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:45
 msgid "Discover products and their ingredients"
-msgstr ""
+msgstr "Descobreix productes i els seus ingredients"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
 msgid ""
@@ -411,10 +435,13 @@ msgid ""
 "access to a huge collection of food products and their ingredients. You can "
 "also add products directly on the official site."
 msgstr ""
+"Open Food Facts usa la base de dades oficial amb el mateix nom per tindre "
+"accés a una gran col·lecció de productes alimentaris i els seus ingredients. "
+"També pot afegir productes directament a la web oficial."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
 msgid "Allergen management"
-msgstr ""
+msgstr "Gestió d'al·lèrgens"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:62
 msgid ""
@@ -422,6 +449,9 @@ msgid ""
 "application will help you identify a single glance the products compatible "
 "with your allergy."
 msgstr ""
+"Si te una al·lèrgia a algun aliment, pregunte eixa informació als "
+"paràmetres. La aplicació l'ajudarà a identificar d'una mirada els productes "
+"compatibles amb la seua al·lèrgia."
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
@@ -429,10 +459,12 @@ msgid ""
 "OpenFoodFacts is available in over 10 languages and is translated by the %1 "
 "community"
 msgstr ""
+"OpenFoodFacts està disponible en més de 10 idiomes i està traduït per %1 "
+"comunitat"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:45
 msgid "Support"
-msgstr ""
+msgstr "Suport"
 
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:64
@@ -441,15 +473,17 @@ msgid ""
 "If you find any bugs or have any feature requests, let us know on our "
 "project page at %1"
 msgstr ""
+"Si troba algun error o té alguna petició de característiques, faça-nos-ho "
+"saber a la pàgina del projecte a %1"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:45
 msgid "Enjoy"
-msgstr ""
+msgstr "Gaudeix"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:62
 msgid "We hope you enjoy using OpenFoodFacts!"
-msgstr ""
+msgstr "Esperem que gaudeixi usant  OpenFoodFacts!"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
-msgstr ""
+msgstr "Finalitza"
