@@ -32,13 +32,15 @@ int main(int argc, char *argv[])
     QQuickView view;
     qmlRegisterType<QRCodeReader>("CodeReader", 1, 0, "QRCodeReader");
 
-    /*Product p;
+    Product p;
+    QImage *img = new QImage();
+    img->load("/home/morgan/Images/banania.png", "png");
 
-    p.addPicture(new QImage(),"");*/
+    p.addPicture(img,"");
     //view.engine()->addImportPath("qrc:///component/");
-    view.setResizeMode(QQuickView::SizeRootObjectToView);
+    /*view.setResizeMode(QQuickView::SizeRootObjectToView);
     view.setSource(QUrl("qrc:///qml/main.qml"));
-    view.show();
+    view.show();*/
 
     return a.exec();
 }

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-06 20:28+0100\n"
+"POT-Creation-Date: 2016-02-09 15:34+0100\n"
 "PO-Revision-Date: 2016-02-08 20:30+0000\n"
 "Last-Translator: VPablo <villumar@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/ubuntouch-fr/"
@@ -31,10 +31,15 @@ msgid "Import image"
 msgstr "Importar imagen"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:9
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:16
 msgid "About"
 msgstr "Acerca de"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:93
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:17
+msgid "ChangeLog"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:116
 msgid "Terms of use"
 msgstr "Términos de uso"
 
@@ -396,9 +401,13 @@ msgstr "Composición"
 msgid "Developer settings"
 msgstr "Configuración del programador"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:56
 msgid "scanner from the home page"
 msgstr "escáner desde la página principal"
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:91
+msgid "Delete settings"
+msgstr "Elimina configuración"
 
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:92
 msgid "Skip"
@@ -482,6 +491,3 @@ msgstr "¡Esperamos que disfrute usando OpenFoodFacts!"
 #: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
 msgstr "Finalizar"
-
-#~ msgid "Delete settings"
-#~ msgstr "Elimina configuración"
