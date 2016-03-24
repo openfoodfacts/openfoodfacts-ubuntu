@@ -30,43 +30,32 @@ void Product::addPicture(QImage *img, QString productCode, QString label)
     buffer.open(QIODevice::WriteOnly);
     img->save(&buffer, "PNG"); // writes image into ba in PNG format
 
-    QUrl url("http://localhost/off/upload.php");
-   /* QByteArray boundary = "---------------------------87142694621188";
-
-    QNetworkRequest request( url );
-    request.setRawHeader( "Referer", "http://localhost/" );
-    request.setRawHeader( "Content-Type", "multipart/form-data; boundary=" + boundary ); //<-- seulement 27 tirets
-
-
-    QByteArray aadata = "--" + boundary; //<-- mais 29 ici
-    aadata += "\r\nContent-Disposition: form-data; name=\"avatar\"; filename=\"image.png\";\r\n";
-    // upload correspondant au nom du champ "file" du formulaire
-    aadata += "Content-Type: image/png\r\n\r\n" + ba;
-    aadata += "\r\n--" + boundary + "--\r\n"; //<-- et ici
-
-    request.setHeader(QNetworkRequest::ContentLengthHeader, QVariant(QString::number( aadata.size() )) );
-
-    m_manager->post( request, aadata );*/
-
+    //QUrl url("http://localhost/off/upload.php");
+    QUrl url(BASE_URL);
 
     //code: the barcode
     //imagefield: "front"
     QHttpMultiPart *multiPart = new QHttpMultiPart(QHttpMultiPart::FormDataType);
 
-    QHttpPart textPart;
-    textPart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"text\""));
-    textPart.setBody("my text");
+    QHttpPart barcodePart;
+    barcodePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"code\""));
+    barcodePart.setBody("ww");
+
+    QHttpPart fieldPart;
+    fieldPart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"imagefield\""));
+    fieldPart.setBody("front");
 
     QHttpPart imagePart;
     imagePart.setHeader(QNetworkRequest::ContentTypeHeader, QVariant("image/png"));
-    imagePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"avatar\"; filename=\"image.png\";" ));
+    imagePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"imgupload_front\"; filename=\"barcode_front.png\";" ));
 
 
     imagePart.setBody(ba);
     //    imagePart.setBody();
 
 
-    multiPart->append(textPart);
+    multiPart->append(barcodePart);
+    multiPart->append(fieldPart);
     multiPart->append(imagePart);
 
 
