@@ -34,36 +34,6 @@ Item {
                 color: "#EDEDEC"
 
 
-
-                ListItem.Standard {
-                    id: dateDiarySummary
-                        onClicked: calendar.visible = !calendar.visible
-                        Text {
-
-                            text: calendar.selectedDate
-                            anchors.centerIn: parent
-
-
-
-                        Calendar{
-                        id: calendar
-                        anchors.topMargin: 0
-                        anchors.top: dateDiarySummary.bottom
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        visible: false
-                        activeFocusOnTab: true
-                        onClicked: {
-                            visible = false;
-                        }
-                        style: CalendarStyle {
-                            gridVisible: false
-                            }
-                      }
-
-                    }
-
-                }
-
                     Rectangle {
                         anchors {
                             top: dateDiarySummary.bottom
@@ -118,55 +88,199 @@ Item {
             width: tabView.width
             height: tabView.height
 
+
             Rectangle {
+                id:main
                 anchors.fill: parent;
                 color: "#EDEDEC"
-                    Rectangle {
-                        anchors {
-                            top: parent.top
-                            left: parent.left
-                            right: parent.right
-                        }
-                        anchors.topMargin: units.gu(5);
-                        color: "#EDEDEC"
 
-                        Item {
-                            anchors.fill: parent;
+                ListItem.Standard {
+                    id: dateFoodDiary
+                        onClicked: {calendarFoodDiary.visible = !calendarFoodDiary.visible}
 
-                            Image {
-                                id: emptyIcon2
-                                source: Qt.resolvedUrl("qrc:/images/OpenFoodFacts/plate.png");
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                height: units.gu(10)
-                                width: height
-                            }
+                        Text {
+                            text: Qt.formatDateTime(calendarFoodDiary.selectedDate, "d MMMM yyyy") //calendar.selectedDate
+                            anchors.centerIn: parent
+                            color: "#AEA79F"
+                            font.pointSize: 13
+                    }
 
-                            Label {
-                                id: emptyLabel2
-                                text: "Not implemented"
-                                color: "#5d5d5d"
-                                font.bold: true
-                                wrapMode: Text.WordWrap
-                                anchors.top: emptyIcon2.bottom
-                                anchors.topMargin: units.gu(4)
-                                horizontalAlignment: Text.AlignHCenter
-                                anchors.horizontalCenter: parent.horizontalCenter
-                            }
+                }
 
-                            Label {
-                                id: emptySublabel2
-                                text: "Page not finished yet"
-                                color: "#7b7b7b"
-                                wrapMode: Text.WordWrap
-                                anchors.top: emptyLabel2.bottom
-                                horizontalAlignment: Text.AlignHCenter
-                                anchors.horizontalCenter: parent.horizontalCenter
-                            }
+
+                Flickable {
+                    id: flickablefooddiary
+                    anchors.fill: parent
+                    //contentHeight: fooddiaryColumn.height
+                    anchors.topMargin: dateFoodDiary.height
+                    flickableDirection: Flickable.VerticalFlick
+                    clip: true
+                    Component.onCompleted: {
+                        if (openFoodFacts.fooddiaryModel.count == "0")
+                            emptyfooddiary.visible = true
+                        else
+                            fooddiaryColumn.visible = true;
+                    }
+
+                    ListItem.Standard {
+                        id: addfooddiary
+                        showDivider: true
+                        text: "<font color=\""+openFoodFacts.settings.color+"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; " + i18n.tr("Add a product to diary") + "</font>"
+                        onTriggered: { pageStack.push(Qt.resolvedUrl("AddFoodDiary.qml")); }
+                        Icon {
+                            id: addfooddiaryIcon
+                            name: "bookmark-new"
+                            anchors { left: parent.left; verticalCenter: parent.verticalCenter}
+                            anchors.leftMargin: 15;
+                            height: units.gu(2.5)
+                            width: height
                         }
                     }
 
+                        Rectangle {
+                            id:emptyfooddiary
+                            anchors.top: addfooddiary.bottom
+                            visible: false
 
-    }
+                            anchors {
+                                top: parent.top
+                                left: parent.left
+                                right: parent.right
+                            }
+                            anchors.topMargin: units.gu(5);
+                            color: "#EDEDEC"
+
+                            Item {
+                                id: emptyStatefooddiary
+                                anchors.fill: parent;
+
+                                Icon {
+                                    id: emptyIconfooddiary
+                                    source: Qt.resolvedUrl("qrc:/images/OpenFoodFacts/plate.png");
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    height: units.gu(10)
+                                    width: height
+                                    color: "#BBBBBB"
+                                }
+
+                                Label {
+                                    id: emptyLabelfooddiary
+                                    text: i18n.tr("Empty Food Diary")
+                                    color: "#5d5d5d"
+                                    font.bold: true
+                                    width: fooddiaryColumn.width
+                                    wrapMode: Text.WordWrap
+                                    anchors.top: emptyIconfooddiary.bottom
+                                    anchors.topMargin: units.gu(4)
+                                    horizontalAlignment: Text.AlignHCenter
+                                }
+
+                                Label {
+                                    id: emptySublabelfooddiary
+                                    text: i18n.tr("You have not added a product.")
+                                    color: "#7b7b7b"
+                                    width: fooddiaryColumn.width
+                                    wrapMode: Text.WordWrap
+                                    anchors.top: emptyLabelfooddiary.bottom
+                                    horizontalAlignment: Text.AlignHCenter
+                                }
+                            }
+                        }
+
+                Column {
+                    id: fooddiaryColumn
+                    anchors.topMargin: addfooddiary.height
+                    anchors.fill: parent
+                    visible: false
+
+
+                Rectangle {
+                    anchors { left: parent.left; right: parent.right; topMargin: units.gu(0.5);
+                                bottomMargin: units.gu(0.5)
+                    }
+                    color: "#cecece"
+                    height: units.gu(3)
+                    Label {
+                        id: totalfooddiary
+                        anchors.fill: parent
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.rightMargin: units.gu(3)
+                        horizontalAlignment: Text.AlignRight
+                        text: i18n.tr("Total") + " : "
+                        color: "#FFFFFF"
+                    }
+                 }
+
+                Rectangle {
+                    anchors { left: parent.left; right: parent.right; topMargin: units.gu(0.5);
+                                bottomMargin: units.gu(0.5)
+                    }
+                    height: units.gu(1)
+                    color: "transparent"
+                 }
+                SortFilterModel {
+                    id: sortedfooddiaryModel
+
+                    model: openFoodFacts.fooddiaryModel
+                    sort.property: "datefoodiarry"
+                    sort.order: Qt.DescendingOrder
+                    filter.property: "datefoodiarry"
+                    filter.pattern: /2016/
+                    //Qt.formatDateTime(calendarFoodDiary.selectedDate, "d MMMM yyyy") //calendar.selectedDate
+                    //sortedfooddiaryModel.filter.pattern = /2016/
+
+                }
+                        UbuntuListView {
+                            objectName: "ubuntuListView"
+                            width: parent.width
+                            height: main.height
+                            model: sortedfooddiaryModel
+                            spacing: units.gu(1)
+                            interactive: false
+
+                            delegate: ListItem.Subtitled {
+                                showDivider: true
+                                anchors.leftMargin: units.gu(2)
+                                removable: true
+                                confirmRemoval : true
+                                onItemRemoved: openFoodFacts.fooddiaryModel.remove(index)
+
+                                Text {
+                                    text: label
+                                    color: openFoodFacts.settings.color
+                                }
+
+                                Label {
+                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
+                                    anchors.rightMargin: 15;
+                                    text: energy + " " +"KJ"
+                                    color: openFoodFacts.settings.color
+                                }
+                                subText: datefoodiarry
+                            }
+                        } // ListView
+                } // Column
+
+                Calendar{
+                id: calendarFoodDiary
+                anchors.topMargin: 0
+                anchors.top: dateFoodDiary.bottom
+                anchors.horizontalCenter: parent.horizontalCenter
+                visible: false
+                activeFocusOnTab: true
+                onClicked: {
+                    visible = false;
+                }
+                style: CalendarStyle {
+                    gridVisible: false
+                    }
+              }
+
+                } // Flickable
+            }
+
+
+
 } //Food Diary TAB
 
 // Exercice Diary TAB
@@ -185,6 +299,65 @@ Item {
                         }
                         anchors.topMargin: units.gu(5);
                         color: "#EDEDEC"
+                        Label {
+                            id: test
+                            visible:false
+                            text: "2.45"
+                            color: "#5d5d5d"
+                        }
+
+
+                        ListModel {
+                            id: fruitModel
+                            ListElement {
+                                name: "Apple"
+                                cost: 2.45
+                            }
+                            ListElement {
+                                name: "Orange"
+                                cost: 3.25
+                            }
+                            ListElement {
+                                name: "Banana"
+                                cost: 2.45
+                            }
+                        }
+                        SortFilterModel {
+                            id: sortedFruitModel
+                            model: fruitModel
+
+                            filter.property: "cost"
+                            filter.pattern: /2.45/
+                        }
+                        UbuntuListView {
+                            objectName: "ubuntuListView"
+                            width: parent.width
+                            height: main.height
+                            model: sortedFruitModel
+                            spacing: units.gu(1)
+                            interactive: false
+
+                            delegate: ListItem.Subtitled {
+                                showDivider: true
+                                anchors.leftMargin: units.gu(2)
+
+                                Text {
+                                    text: name
+                                    color: openFoodFacts.settings.color
+                                }
+
+                                Label {
+                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
+                                    anchors.rightMargin: 15;
+                                    text: cost
+                                    color: openFoodFacts.settings.color
+                                }
+                            }
+                        } // ListView
+
+
+
+
 
                         Item {
                             anchors.fill: parent;
