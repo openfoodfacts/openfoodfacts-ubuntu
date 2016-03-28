@@ -198,7 +198,7 @@ Item {
                     anchors { left: parent.left; right: parent.right; topMargin: units.gu(0.5);
                                 bottomMargin: units.gu(0.5)
                     }
-                    color: "#cecece"
+                    color: openFoodFacts.settings.color
                     height: units.gu(3)
                     Label {
                         id: totalfooddiary
