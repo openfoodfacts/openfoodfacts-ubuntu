@@ -39,8 +39,20 @@ MainView {
         return history;
     }
 
+    function getFooddiaryArray() {
+        var fooddiary = [], hM_l = openFoodFacts.fooddiaryModel.count;
+        for (var i=0; i<hM_l; i++){
+            var item = openFoodFacts.fooddiaryModel.get(i);
+            fooddiary.push({"label": item.label, "datefoodiarry": item.datefoodiarry, "energy": item.energy});
+        }
+
+        console.log("fooddiaryModel to array, size : "+fooddiary.length);
+        return fooddiary;
+    }
+
     // historyListModel
     property ListModel historyModel: ListModel { id :historyModel}
+    property ListModel fooddiaryModel: ListModel { id :fooddiaryModel}
 
     property ListModel allergenModel :     ListModel {
         id: allergenModel;
@@ -135,6 +147,8 @@ MainView {
 
         property bool developerModeEnabled:	false;
         property var history;
+        property var fooddiary;
+
     }
 
     PageStack {
@@ -166,11 +180,25 @@ MainView {
                 var item = openFoodFacts.settings.history[i];
                 openFoodFacts.historyModel.insert(i,{"label": item.label, "codebarre": item.codebarre})
             }
+            // deal with fooddiary
+            if(typeof openFoodFacts.settings.fooddiary === 'undefined') {
+                console.log("food diary is undefined, let's create a new one");
+                openFoodFacts.settings.fooddiary = [];
+            }
+            console.log("Retrieve fooddiary with : "+ openFoodFacts.settings.fooddiary.length +" elemets");
+            var fooddiary_l = openFoodFacts.settings.fooddiary.length
+            for (var i=0; i<fooddiary_l; i++){
+                var item = openFoodFacts.settings.fooddiary[i];
+                openFoodFacts.fooddiaryModel.insert(i,{"label": item.label, "datefoodiarry": item.datefoodiarry, "energy": item.energy})
+            }
         }
         Component.onDestruction: {
             console.log("####### On component destruction ###### ");
             openFoodFacts.settings.history = getHistoryArray();
             console.log("Store an history with : "+ openFoodFacts.settings.history.length +" elemets");
+
+            openFoodFacts.settings.fooddiary = getFooddiaryArray();
+            console.log("Store an Food Diary with : "+ openFoodFacts.settings.fooddiary.length +" elemets");
         }
 
         Page {

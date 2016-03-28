@@ -15,6 +15,19 @@ Page {
     }
     Component.onCompleted: openFoodFacts.currentPage="ProductView";
 
+    head {
+        actions: [
+            Action {
+                text: i18n.tr("Add to Food Diary")
+                iconName: "bookmark-new"
+                onTriggered: {
+                    openFoodFacts.fooddiaryModel.insert(0, {"label": titleLabel.text, "datefoodiarry": Qt.formatDateTime(new Date(), "dd-MM-yyyy hh:mm"), "energy":   energyfooddiary.text});
+                }
+                visible: (openFoodFacts.settings.healthjournal) //if active healt journal
+            }
+        ]
+        foregroundColor: openFoodFacts.settings.fontColor;
+    }
     property string barcode:"";
     onBarcodeChanged: console.log(pageProductView.barcode);
     property string productNameSearch : "";
@@ -116,6 +129,8 @@ Page {
                 var energy_unit = (typeof _json.nutriments.energy_unit !== "undefined") ? _json.nutriments.energy_unit : " ";
                 var energy_serving  = (typeof _json.nutriments.energy_serving  !== "undefined") ? roundDecimal(_json.nutriments.energy_serving)  : "n/a";
                 energy.value = "<font color=\"#620000\">" + energy_100g + " " + energy_unit + "</font> | <font color=\"#002762\">" + energy_serving + " " + energy_unit + "</font>";
+
+                energyfooddiary.text = energy_serving;
 
                 var fat_100g = (typeof _json.nutriments.fat_100g !== "undefined") ? roundDecimal(_json.nutriments.fat_100g) : "n/a";
                 var fat_unit = (typeof _json.nutriments.fat_unit !== "undefined") ? _json.nutriments.fat_unit : " ";
@@ -299,6 +314,14 @@ Page {
 
                     Label {
                         id: titleLabel
+                        wrapMode: Text.WordWrap
+                        fontSize: "x-large"
+                        width:content.width;
+                        visible: false
+                    }
+
+                    Label {
+                        id: energyfooddiary
                         wrapMode: Text.WordWrap
                         fontSize: "x-large"
                         width:content.width;
