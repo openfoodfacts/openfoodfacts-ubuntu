@@ -103,7 +103,12 @@ Item {
                             anchors.centerIn: parent
                             color: "#AEA79F"
                             font.pointSize: 13
-                    }
+                            }
+                        Component.onCompleted: {
+                            var date = calendarFoodDiary.selectedDate
+                            var datepattern = new RegExp(Qt.formatDateTime(calendarFoodDiary.selectedDate, "dd-MM-yyyy"))
+                            sortedfooddiaryModel.filter.pattern = datepattern
+                        }
 
                 }
 
@@ -111,15 +116,20 @@ Item {
                 Flickable {
                     id: flickablefooddiary
                     anchors.fill: parent
-                    //contentHeight: fooddiaryColumn.height
-                    anchors.topMargin: dateFoodDiary.height
+                    contentWidth: main.width;
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
+                    anchors.topMargin: dateFoodDiary.height
+                    contentHeight: fooddiaryColumn.height + addfooddiary.height
+
+
                     Component.onCompleted: {
-                        if (openFoodFacts.fooddiaryModel.count == "0")
-                            emptyfooddiary.visible = true
-                        else
+                        if (sortedfooddiaryModel.count == "0"){
+                            emptyfooddiary.visible = true;
+                             fooddiaryColumn.visible = false;
+                        }else{
                             fooddiaryColumn.visible = true;
+                                emptyfooddiary.visible = false;}
                     }
 
                     ListItem.Standard {
@@ -192,7 +202,7 @@ Item {
                     anchors.topMargin: addfooddiary.height
                     anchors.fill: parent
                     visible: false
-
+                    height: totalfooddiary.height + listfooddiary.height
 
                 Rectangle {
                     anchors { left: parent.left; right: parent.right; topMargin: units.gu(0.5);
@@ -220,17 +230,13 @@ Item {
                  }
                 SortFilterModel {
                     id: sortedfooddiaryModel
-
                     model: openFoodFacts.fooddiaryModel
                     sort.property: "datefoodiarry"
                     sort.order: Qt.DescendingOrder
                     filter.property: "datefoodiarry"
-                    filter.pattern: /2016/
-                    //Qt.formatDateTime(calendarFoodDiary.selectedDate, "d MMMM yyyy") //calendar.selectedDate
-                    //sortedfooddiaryModel.filter.pattern = /2016/
-
                 }
                         UbuntuListView {
+                            id: listfooddiary
                             objectName: "ubuntuListView"
                             width: parent.width
                             height: main.height
@@ -244,7 +250,6 @@ Item {
                                 removable: true
                                 confirmRemoval : true
                                 onItemRemoved: openFoodFacts.fooddiaryModel.remove(index)
-
                                 Text {
                                     text: label
                                     color: openFoodFacts.settings.color
@@ -270,7 +275,19 @@ Item {
                 activeFocusOnTab: true
                 onClicked: {
                     visible = false;
-                }
+                    var date = calendarFoodDiary.selectedDate
+                    var datepattern = new RegExp(Qt.formatDateTime(calendarFoodDiary.selectedDate, "dd-MM-yyyy"))
+                    sortedfooddiaryModel.filter.pattern = datepattern
+
+                        if (sortedfooddiaryModel.count == "0"){
+                            emptyfooddiary.visible = true;
+                             fooddiaryColumn.visible = false;
+                        }else{
+                            fooddiaryColumn.visible = true;
+                                emptyfooddiary.visible = false;}
+
+
+                     }
                 style: CalendarStyle {
                     gridVisible: false
                     }
@@ -354,9 +371,6 @@ Item {
                                 }
                             }
                         } // ListView
-
-
-
 
 
                         Item {

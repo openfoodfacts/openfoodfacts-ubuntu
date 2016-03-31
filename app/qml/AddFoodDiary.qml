@@ -8,25 +8,35 @@ Page {
 
     title: i18n.tr("Add a product to diary");
     head {
-        actions: [
+        id: addHeader
+        foregroundColor: openFoodFacts.settings.fontColor;
 
+        contents: TextField {
+            anchors {
+                left: parent.left
+                right: parent.right
+                verticalCenter: parent.verticalCenter
+            }
+            placeholderText: "Search product..."
+        }
+
+        actions: [
             Action {
-                text: i18n.tr("Validate")
                 iconName: "ok"
+                text: i18n.tr("Save Product")
+                onTriggered: {
+
+                }
+            },
+            Action {
+                iconName: "edit-clear"
+                text: i18n.tr("Cancel")
                 onTriggered: {
 
                 }
             }
         ]
-        backAction: Action {
-            id: leaveSearchAction
-            text: "Cancel"
-            iconName: "close"
-            onTriggered: pageStack.pop()
-        }
-        foregroundColor: openFoodFacts.settings.fontColor;
     }
-
 
     Rectangle {
         id:main
@@ -45,6 +55,9 @@ Page {
         anchors.fill: parent
 
 
+        ListItem.Header {
+            text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Add manually")+"</font>"
+        }
 
 
     } //Column
