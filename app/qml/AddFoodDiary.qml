@@ -6,18 +6,13 @@ import Ubuntu.Components.Popups 1.0
 Page {
     id: addfooddiary
 
-    title: i18n.tr("Add a product to diary");
     head {
         id: addHeader
         foregroundColor: openFoodFacts.settings.fontColor;
 
-        contents: TextField {
-            anchors {
-                left: parent.left
-                right: parent.right
-                verticalCenter: parent.verticalCenter
-            }
-            placeholderText: "Search product..."
+        contents: Text {
+            text: i18n.tr("Add a product to diary");
+            color: "white";
         }
 
         actions: [

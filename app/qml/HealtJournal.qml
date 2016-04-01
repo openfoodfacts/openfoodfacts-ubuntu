@@ -36,10 +36,11 @@ Item {
 
                     Rectangle {
                         anchors {
-                            top: dateDiarySummary.bottom
+                            top: parent.top
                             left: parent.left
                             right: parent.right
                         }
+                        anchors.topMargin: units.gu(5);
                         color: "#EDEDEC"
 
 
@@ -108,6 +109,13 @@ Item {
                             var date = calendarFoodDiary.selectedDate
                             var datepattern = new RegExp(Qt.formatDateTime(calendarFoodDiary.selectedDate, "dd-MM-yyyy"))
                             sortedfooddiaryModel.filter.pattern = datepattern
+
+                            if (sortedfooddiaryModel.count == "0"){
+                                emptyfooddiary.visible = true;
+                                 fooddiaryColumn.visible = false;
+                            }else{
+                                fooddiaryColumn.visible = true;
+                                    emptyfooddiary.visible = false;}
                         }
 
                 }
@@ -122,15 +130,6 @@ Item {
                     anchors.topMargin: dateFoodDiary.height
                     contentHeight: fooddiaryColumn.height + addfooddiary.height
 
-
-                    Component.onCompleted: {
-                        if (sortedfooddiaryModel.count == "0"){
-                            emptyfooddiary.visible = true;
-                             fooddiaryColumn.visible = false;
-                        }else{
-                            fooddiaryColumn.visible = true;
-                                emptyfooddiary.visible = false;}
-                    }
 
                     ListItem.Standard {
                         id: addfooddiary
@@ -187,7 +186,7 @@ Item {
 
                                 Label {
                                     id: emptySublabelfooddiary
-                                    text: i18n.tr("You have not added a product.")
+                                    text: i18n.tr("You have not added a product this day.")
                                     color: "#7b7b7b"
                                     width: fooddiaryColumn.width
                                     wrapMode: Text.WordWrap
@@ -216,7 +215,6 @@ Item {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.rightMargin: units.gu(3)
                         horizontalAlignment: Text.AlignRight
-                        text: i18n.tr("Total") + " : "
                         color: "#FFFFFF"
                     }
                  }
@@ -228,6 +226,7 @@ Item {
                     height: units.gu(1)
                     color: "transparent"
                  }
+
                 SortFilterModel {
                     id: sortedfooddiaryModel
                     model: openFoodFacts.fooddiaryModel
@@ -247,9 +246,9 @@ Item {
                             delegate: ListItem.Subtitled {
                                 showDivider: true
                                 anchors.leftMargin: units.gu(2)
-                                removable: true
+                                //removable: true
                                 confirmRemoval : true
-                                onItemRemoved: openFoodFacts.fooddiaryModel.remove(index)
+                                //onItemRemoved: openFoodFacts.fooddiaryModel.remove(index)
                                 Text {
                                     text: label
                                     color: openFoodFacts.settings.color
@@ -262,6 +261,17 @@ Item {
                                     color: openFoodFacts.settings.color
                                 }
                                 subText: datefoodiarry
+                                Component.onCompleted: {
+                                    function sum(){
+                                      var result = 0;
+                                      for(var i = 0; i < sortedfooddiaryModel.count; i++){
+                                           result += parseFloat(sortedfooddiaryModel.get(i).energy);
+                                      }
+                                      console.log(result);
+                                      totalfooddiary.text = i18n.tr("Total") + " : " + result + " KJ"
+                                    }
+                                    sum();
+                                }
                             }
                         } // ListView
                 } // Column
@@ -285,9 +295,17 @@ Item {
                         }else{
                             fooddiaryColumn.visible = true;
                                 emptyfooddiary.visible = false;}
-
-
+                        function sum(){
+                          var result = 0;
+                          for(var i = 0; i < sortedfooddiaryModel.count; i++){
+                              result += parseFloat(sortedfooddiaryModel.get(i).energy);
+                          }
+                          console.log(result);
+                          totalfooddiary.text = i18n.tr("Total") + " : " + result + " KJ"
+                        }
+                        sum();
                      }
+
                 style: CalendarStyle {
                     gridVisible: false
                     }
@@ -316,62 +334,6 @@ Item {
                         }
                         anchors.topMargin: units.gu(5);
                         color: "#EDEDEC"
-                        Label {
-                            id: test
-                            visible:false
-                            text: "2.45"
-                            color: "#5d5d5d"
-                        }
-
-
-                        ListModel {
-                            id: fruitModel
-                            ListElement {
-                                name: "Apple"
-                                cost: 2.45
-                            }
-                            ListElement {
-                                name: "Orange"
-                                cost: 3.25
-                            }
-                            ListElement {
-                                name: "Banana"
-                                cost: 2.45
-                            }
-                        }
-                        SortFilterModel {
-                            id: sortedFruitModel
-                            model: fruitModel
-
-                            filter.property: "cost"
-                            filter.pattern: /2.45/
-                        }
-                        UbuntuListView {
-                            objectName: "ubuntuListView"
-                            width: parent.width
-                            height: main.height
-                            model: sortedFruitModel
-                            spacing: units.gu(1)
-                            interactive: false
-
-                            delegate: ListItem.Subtitled {
-                                showDivider: true
-                                anchors.leftMargin: units.gu(2)
-
-                                Text {
-                                    text: name
-                                    color: openFoodFacts.settings.color
-                                }
-
-                                Label {
-                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
-                                    anchors.rightMargin: 15;
-                                    text: cost
-                                    color: openFoodFacts.settings.color
-                                }
-                            }
-                        } // ListView
-
 
                         Item {
                             anchors.fill: parent;
