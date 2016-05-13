@@ -8,7 +8,7 @@ load(ubuntu-click)
 INCLUDEPATH += /usr/include/
 INCLUDEPATH += /usr/include/zbar/
 
-LIBS += /usr/lib/libzbar.a -lv4l2 -ljpeg
+LIBS += /usr/lib/x86_64-linux-gnu/libzbar.a -lv4l2 -ljpeg
 
 SOURCES += main.cpp \
             qrcodereader.cpp \

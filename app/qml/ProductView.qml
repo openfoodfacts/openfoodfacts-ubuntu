@@ -16,7 +16,7 @@ Page {
     Component.onCompleted: openFoodFacts.currentPage="ProductView";
 
     property string barcode:"";
-    onBarcodeChanged: console.log(pageProductView.barcode);
+    onBarcodeChanged: console.log("[ProductView] barcode = "+pageProductView.barcode);
     property string productNameSearch : "";
     onProductNameSearchChanged: {
         console.log("product name search changed : " + productNameSearch);

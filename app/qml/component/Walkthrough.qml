@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Nekhelesh Ramananthan (UCS)
+ * Copyright 2015-2016 Nekhelesh Ramananthan (UCS)
  *
  * This file is part of Podbird.
  *
@@ -17,8 +17,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.2 //bug 1.3 with button skip
-import Ubuntu.Components.ListItems 1.0 as ListItem
+import Ubuntu.Components 1.3
 
 Page {
     id: walkthrough
@@ -33,7 +32,7 @@ Page {
     property list<Component> model
 
     // Property to set the color of bottom cirle to indicate the user's progress
-    property color completeColor: "#48c1ba"
+    property color completeColor: "green"
 
     // Property to set the color of the bottom circle to indicate the slide still left to cover
     property color inCompleteColor: "lightgrey"
@@ -44,12 +43,10 @@ Page {
     // Property to signal walkthrough completion
     signal finished
 
-    // Disable automatic orientation during welcome wizard since it is not landscape friendly yet.
-    // Component.onCompleted: podbird.automaticOrientation = false
-    // Component.onDestruction: podbird.automaticOrientation = true
-    Component.onCompleted: {
-        header.visible = false
-         }
+    header: PageHeader {
+        visible: false
+    }
+
     // ListView to show the slides
     ListView {
         id: listView
@@ -87,7 +84,7 @@ Page {
         id: skipLabel
 
         color: skipTextColor
-        fontSize: "small"
+        textSize: Label.Small
         wrapMode: Text.WordWrap
         text: i18n.tr("Skip")
         horizontalAlignment: Text.AlignRight
@@ -101,10 +98,7 @@ Page {
 
         MouseArea {
             anchors.fill: parent
-            onClicked:{
-                header.visible = true;
-                walkthrough.finished();
-            }
+            onClicked: walkthrough.finished()
         }
     }
 
