@@ -59,7 +59,7 @@ Page {
 
     JSONListModel {
         id: openFoodFactJSON
-        source: "http://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
+        source: "https://ssl-api.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
         query: "$[*]"
         onJsonChanged: {
             console.log("json changed");
