@@ -16,7 +16,7 @@ Page {
     property string productNameSearch : "";
     onProductNameSearchChanged: {
         console.log("product name search changed : " + productNameSearch);
-        searchResultModel.source =  "http://world.openfoodfacts.org/cgi/search.pl?search_terms=" + pageProductSearch.productNameSearch + "&search_simple=1&action=process&xml=1";
+        searchResultModel.source =  "https://ssl-api.openfoodfacts.org/cgi/search.pl?search_terms=" + pageProductSearch.productNameSearch + "&search_simple=1&action=process&xml=1";
     }
 
     property bool loading: searchResultModel.status === XmlListModel.Loading
