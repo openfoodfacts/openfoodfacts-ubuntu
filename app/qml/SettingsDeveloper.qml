@@ -90,7 +90,20 @@ Page {
             color: UbuntuColors.red
             text: i18n.tr("Delete settings")
             onClicked: {
-
+                openFoodFacts.settings.firstRun = true;
+                openFoodFacts.settings.scanhomepage = false;
+                openFoodFacts.settings.visiblecomposition = true;
+                openFoodFacts.settings.visiblenutrition =	true;
+                openFoodFacts.settings.visibleingredient =	true;
+                openFoodFacts.settings.visiblecharacteristics =	true;
+                openFoodFacts.settings.healthjournal =	false;
+                openFoodFacts.settings.color =  '#48c1ba';
+                openFoodFacts.settings.fontColor = "white";
+                openFoodFacts.settings.allergen = [];
+                openFoodFacts.settings.developerModeEnabled =	false;
+                openFoodFacts.settings.history = [];
+                pageStack.clear();
+                pageStack.push(Qt.resolvedUrl("main.qml"));
             }
         }
 
