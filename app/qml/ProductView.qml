@@ -314,6 +314,71 @@ Page {
                         color: openFoodFacts.settings.color;
                     }
 
+                    ListItem.Expandable {
+                        id: sectionnutr
+                        expandedHeight: contentCol2.height + units.gu(1)
+                        expanded: openFoodFacts.settings.visiblenutrition
+                        onClicked: {
+                            if (openFoodFacts.settings.visiblenutrition === true)
+                            {openFoodFacts.settings.visiblenutrition = false;
+                                expendedIcon2.name = "down";}
+                            else
+                            {openFoodFacts.settings.visiblenutrition = true;
+                                expendedIcon2.name = "up";}
+                        }
+                        showDivider: false
+
+                        Column {
+                            id: contentCol2
+                            anchors { left: parent.left; right: parent.right }
+                            Item {
+                                anchors { left: parent.left; right: parent.right}
+                                height: sectionnutr.collapsedHeight
+                                Label {
+                                    anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
+                                    text: i18n.tr("Nutrition facts")
+                                }
+                                Icon {
+                                    id: expendedIcon2
+                                    name: if (openFoodFacts.settings.visiblenutrition = true)
+                                              expendedIcon2.name = "up"
+                                          else
+                                              expendedIcon2.name = "down"
+                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
+                                    height: units.gu(2)
+                                    width: height
+                                }
+                            }
+
+                            UbuntuShape {
+                                anchors { left: parent.left; right: parent.right }
+                                height: imagenutr.height + sizeproduct.height + 20
+                                backgroundColor: "white"
+
+                                Column {
+                                    id: contentsectionnutr
+                                    anchors.fill: parent; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
+
+
+                                    Image {
+                                        id: imagenutr
+                                        fillMode: Image.PreserveAspectFit
+                                        width:contentsectionnutr.width - 10;
+                                        anchors.horizontalCenter: parent.horizontalCenter
+                                    }
+                                    Text{
+                                        id: sizeproduct
+                                        wrapMode: Text.Wrap
+                                        width:contentsectionnutr.width;
+                                        objectName: "label"
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+
 
                     ListItem.Expandable {
                         id: sectioncaract
@@ -505,69 +570,6 @@ Page {
                     }
 
 
-                    ListItem.Expandable {
-                        id: sectionnutr
-                        expandedHeight: contentCol2.height + units.gu(1)
-                        expanded: openFoodFacts.settings.visiblenutrition
-                        onClicked: {
-                            if (openFoodFacts.settings.visiblenutrition === true)
-                            {openFoodFacts.settings.visiblenutrition = false;
-                                expendedIcon2.name = "down";}
-                            else
-                            {openFoodFacts.settings.visiblenutrition = true;
-                                expendedIcon2.name = "up";}
-                        }
-                        showDivider: false
-
-                        Column {
-                            id: contentCol2
-                            anchors { left: parent.left; right: parent.right }
-                            Item {
-                                anchors { left: parent.left; right: parent.right}
-                                height: sectionnutr.collapsedHeight
-                                Label {
-                                    anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
-                                    text: i18n.tr("Nutrition facts")
-                                }
-                                Icon {
-                                    id: expendedIcon2
-                                    name: if (openFoodFacts.settings.visiblenutrition = true)
-                                              expendedIcon2.name = "up"
-                                          else
-                                              expendedIcon2.name = "down"
-                                    anchors { right: parent.right; verticalCenter: parent.verticalCenter}
-                                    height: units.gu(2)
-                                    width: height
-                                }
-                            }
-
-                            UbuntuShape {
-                                anchors { left: parent.left; right: parent.right }
-                                height: imagenutr.height + sizeproduct.height + 20
-                                backgroundColor: "white"
-
-                                Column {
-                                    id: contentsectionnutr
-                                    anchors.fill: parent; anchors.topMargin: 10; anchors.leftMargin: 8; anchors.rightMargin: 8; anchors.bottomMargin: 10;
-
-
-                                    Image {
-                                        id: imagenutr
-                                        fillMode: Image.PreserveAspectFit
-                                        width:contentsectionnutr.width - 10;
-                                        anchors.horizontalCenter: parent.horizontalCenter
-                                    }
-                                    Text{
-                                        id: sizeproduct
-                                        wrapMode: Text.Wrap
-                                        width:contentsectionnutr.width;
-                                        objectName: "label"
-                                    }
-                                }
-
-                            }
-                        }
-                    }
 
                     ListItem.Expandable {
                         id: sectiontablenutr
