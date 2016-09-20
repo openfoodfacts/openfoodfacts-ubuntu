@@ -144,6 +144,15 @@ Item {
           Label {
                id: changelog
                text: "
+1.4.1
+- New api for product view
+- Update language
+- Add delete settings in developer
+- Add nutritional rating in first
+
+1.4.0
+- correct bug with scan barecode
+
 1.3.2
 - Add changeLog to about page
 - Correct bug header in welcome wizard
