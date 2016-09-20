@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 17:45+0000\n"
+"POT-Creation-Date: 2016-09-20 16:16+0000\n"
 "PO-Revision-Date: 2016-03-17 23:37+0000\n"
 "Last-Translator: ahmed <ahmed.fadhil@alumni.emu.edu.tr>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -270,7 +270,7 @@ msgid "Countries where sold"
 msgstr "البلدان التي تباع"
 
 #: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:99
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:457
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:522
 msgid "Ingredients"
 msgstr "المكونات"
 
@@ -291,65 +291,65 @@ msgstr "حجم الحصة"
 msgid "Allergen detected"
 msgstr "الكشف عن حساسية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:340
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:352
-msgid "Product characteristics"
-msgstr "خصائص المنتج"
-
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:530
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:339
 #: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:374
 msgid "Nutrition facts"
 msgstr "حقائق غذائية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:594
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:405
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:352
+msgid "Product characteristics"
+msgstr "خصائص المنتج"
+
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:596
 msgid "nutritional value"
 msgstr "القيمة الغذائية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:619
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:621
 msgid "Composition by"
 msgstr "تكوين بواسطة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:620
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:622
 msgid "serving"
 msgstr "وجبة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:626
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:628
 msgid "Energy"
 msgstr "الطاقة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:630
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:632
 msgid "Fat"
 msgstr "الدهن"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:630
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:632
 msgid "and"
 msgstr "و"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:630
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:632
 msgid "Lipides"
 msgstr "الليبيدات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:638
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:640
 msgid "Carbohydrate"
 msgstr "كربوهيدرات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:642
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:644
 msgid "of which Sugars"
 msgstr "من الذي السكريات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:646
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:648
 msgid "Dietary fiber"
 msgstr "الألياف الغذائية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:650
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:652
 msgid "Proteins"
 msgstr "البروتينات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:654
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:656
 msgid "Salt"
 msgstr "ملح"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:658
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:660
 msgid "Sodium"
 msgstr "صوديوم"
 

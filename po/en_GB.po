@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 17:45+0000\n"
+"POT-Creation-Date: 2016-09-20 16:16+0000\n"
 "PO-Revision-Date: 2016-02-09 08:23+0000\n"
 "Last-Translator: Jimmy L <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
@@ -267,7 +267,7 @@ msgid "Countries where sold"
 msgstr "Countries where sold"
 
 #: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:99
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:457
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:522
 msgid "Ingredients"
 msgstr "Ingredients"
 
@@ -288,65 +288,65 @@ msgstr "Serving size"
 msgid "Allergen detected"
 msgstr "Allergen detected"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:340
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:352
-msgid "Product characteristics"
-msgstr "Product characteristics"
-
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:530
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:339
 #: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:374
 msgid "Nutrition facts"
 msgstr "Nutrition facts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:594
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:405
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:352
+msgid "Product characteristics"
+msgstr "Product characteristics"
+
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:596
 msgid "nutritional value"
 msgstr "nutritional value"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:619
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:621
 msgid "Composition by"
 msgstr "Composition by"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:620
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:622
 msgid "serving"
 msgstr "serving"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:626
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:628
 msgid "Energy"
 msgstr "Energy"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:630
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:632
 msgid "Fat"
 msgstr "Fat"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:630
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:632
 msgid "and"
 msgstr "and"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:630
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:632
 msgid "Lipides"
 msgstr "Fat content"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:638
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:640
 msgid "Carbohydrate"
 msgstr "Carbohydrates"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:642
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:644
 msgid "of which Sugars"
 msgstr "of which Sugars"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:646
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:648
 msgid "Dietary fiber"
 msgstr "Dietary fibre"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:650
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:652
 msgid "Proteins"
 msgstr "Protein content"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:654
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:656
 msgid "Salt"
 msgstr "Salt"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:658
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:660
 msgid "Sodium"
 msgstr "Sodium"
 
