@@ -83,7 +83,7 @@ Item {
             width: parent.width
             height: units.gu(4)
             Label {
-                text: "Version 1.3.2"
+                text: "Version 1.4.1"
                 fontSize: "large"
                 color: UbuntuColors.lightAubergine
                 anchors.centerIn: parent
