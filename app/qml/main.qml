@@ -174,35 +174,44 @@ MainView {
         }
 
         Page {
-            title: i18n.tr("Open Food Facts")
             id: mainpage
             Component.onCompleted: openFoodFacts.currentPage="Main"
 
-            head {
-                actions: [
-                    Action {
-                        text: i18n.tr("Settings")
-                        iconName: "settings"
-                        onTriggered: {
-                            openFoodFacts.currentPage="Settings"
-                            pageStack.push(Qt.resolvedUrl("Settings.qml"));
-                        }
-                    }
-                ]
-                foregroundColor: openFoodFacts.settings.fontColor;
+             header: PageHeader {
+                title: i18n.tr("Open Food Facts")
+                StyleHints {
+                    foregroundColor: openFoodFacts.settings.fontColor;
+                    backgroundColor: openFoodFacts.settings.color;
+                }
+
+                trailingActionBar {
+                    actions: [
+                        Action {
+                            text: i18n.tr("Settings")
+                            iconName: "settings"
+                            onTriggered: {
+                                openFoodFacts.currentPage="Settings"
+                                pageStack.push(Qt.resolvedUrl("Settings.qml"));
+                            }
+                         }
+                   ]
+                }
             }
+
 
 
             Rectangle {
                 id:rect1
-                anchors.fill:parent
+                anchors {
+                    fill: parent
+                    topMargin: units.gu(6)
+                }
                 color: "#EDEDEC"
                 Column {
                     spacing: units.gu(2)
                     anchors {
                         right: parent.right
                         left: parent.left
-
                     }
 
                     Rectangle {

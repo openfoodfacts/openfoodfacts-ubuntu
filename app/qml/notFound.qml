@@ -10,10 +10,14 @@ import "qrc:///component/qml/component"
 
 Page {
     id: notFoundPage
-    title: i18n.tr("Product not found");
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: i18n.tr("Product not found");
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
     Component.onCompleted: openFoodFacts.currentPage="NotFound";
 
     property string barcode:"";
@@ -21,7 +25,10 @@ Page {
 
     Rectangle {
         id:main
-        anchors.fill: parent;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
         Flickable {

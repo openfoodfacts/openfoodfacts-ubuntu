@@ -7,16 +7,23 @@ import Ubuntu.Components.Popups 0.1
 Page {
     id: settingsPage
 
-    title: i18n.tr("Developer settings")
     signal settingsChanged()
     Component.onCompleted: openFoodFacts.currentPage="Settings"
 
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: i18n.tr("Developer settings")
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
     Rectangle {
         id:main
-        anchors.fill: parent;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
         Flickable {

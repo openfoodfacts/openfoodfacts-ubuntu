@@ -7,26 +7,37 @@ import Ubuntu.Components.Popups 0.1
 Page {
     id: settingsPage
 
-    title: i18n.tr("Settings")
     signal settingsChanged()
     Component.onCompleted: openFoodFacts.currentPage="Settings"
 
-    head {
-        actions: [
 
-            Action {
-                text: i18n.tr("about")
-                iconName: "info"
-                onTriggered: {
-                    pageStack.push(Qt.resolvedUrl("About.qml"));
-                }
-            }
-        ]
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: i18n.tr("Settings")
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+       trailingActionBar {
+           actions: [
+                     Action {
+                         text: i18n.tr("about")
+                         iconName: "info"
+                         onTriggered: {
+                             pageStack.push(Qt.resolvedUrl("About.qml"));
+                         }
+                     }
+          ]
+       }
+   }
+
+
     Rectangle {
         id:main
-        anchors.fill: parent;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
         Flickable {

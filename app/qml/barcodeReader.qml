@@ -14,10 +14,16 @@ import "qrc:///component/qml/component"
 
 Page {
     id: grabCodePage
-    title: i18n.tr("Reading barcode");
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+
+    header: PageHeader {
+        title: i18n.tr("Reading barcode");
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
+
 
     QRCodeReader {
         id: qrCodeReader

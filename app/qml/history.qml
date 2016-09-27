@@ -5,14 +5,21 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 Page {
     id: history
 
-    title: i18n.tr("Historical");
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: i18n.tr("Historical");
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
     Component.onCompleted: openFoodFacts.currentPage="History";
     Rectangle {
         id:main
-        anchors.fill: parent;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
         Flickable {

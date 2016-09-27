@@ -5,14 +5,21 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 Page {
     id: allergen
 
-    title: i18n.tr("Allergen");
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: i18n.tr("Allergen");
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
 
     Rectangle {
         id:main
-        anchors.fill: parent;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
         ListView {

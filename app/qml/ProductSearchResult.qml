@@ -7,10 +7,14 @@ import "qrc:///component/qml/component"
 
 Page {
     id: pageProductSearch
-    title: i18n.tr("search result for : ") + pageProductSearch.productNameSearch;
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: i18n.tr("search result for : ") + pageProductSearch.productNameSearch;
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
 
 
     property string productNameSearch : "";
@@ -42,7 +46,10 @@ Page {
 
     Rectangle {
         id:main
-        anchors.fill: parent; //anchors.topMargin: 5; anchors.leftMargin: 5; anchors.rightMargin: 5; anchors.bottomMargin: 5;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
         Rectangle {

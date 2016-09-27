@@ -4,15 +4,22 @@ import Ubuntu.Components 1.3
 Page {
     id: addproductmain
 
-    title: i18n.tr("Add product")
     Component.onCompleted: openFoodFacts.currentPage="AddProduct"
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: i18n.tr("Add product")
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
 
     Rectangle {
         id:main
-        anchors.fill: parent;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
     Flickable {

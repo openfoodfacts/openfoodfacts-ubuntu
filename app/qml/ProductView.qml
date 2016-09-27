@@ -8,11 +8,15 @@ import QtGraphicalEffects 1.0
 
 
 Page {
-    title: titleLabel.text;
     id: pageProductView
-    head {
-        foregroundColor: openFoodFacts.settings.fontColor;
-    }
+    header: PageHeader {
+        title: titleLabel.text;
+       StyleHints {
+           foregroundColor: openFoodFacts.settings.fontColor;
+           backgroundColor: openFoodFacts.settings.color;
+       }
+
+   }
     Component.onCompleted: openFoodFacts.currentPage="ProductView";
 
     property string barcode:"";
@@ -195,7 +199,10 @@ Page {
 
     Rectangle {
         id:main
-        anchors.fill: parent; //anchors.topMargin: 5; anchors.leftMargin: 5; anchors.rightMargin: 5; anchors.bottomMargin: 5;
+        anchors {
+            fill: parent
+            topMargin: units.gu(6)
+        }
         color: "#EDEDEC"
 
 
