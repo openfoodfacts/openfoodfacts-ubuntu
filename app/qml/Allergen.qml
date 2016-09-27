@@ -63,10 +63,18 @@ Page {
                     }
                 }
 
-                Label {
-                    fontSize: "large"
+                Image {
                     anchors.left: parent.left
-                    anchors.leftMargin: units.gu(5)
+                    anchors.leftMargin: units.gu(3)
+                    source: Qt.resolvedUrl("qrc:///component/qml/component/allergen/"+idlabel+".png");
+                    fillMode: Image.PreserveAspectCrop
+                    width: units.gu(2)
+                    height: units.gu(2)
+                }
+
+                Label {
+                    anchors.left: parent.left
+                    anchors.leftMargin: units.gu(6)
                     color: openFoodFacts.settings.color;
                     text: label;
                 }
