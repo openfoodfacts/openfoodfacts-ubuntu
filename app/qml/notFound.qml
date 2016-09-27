@@ -16,6 +16,19 @@ Page {
            foregroundColor: openFoodFacts.settings.fontColor;
            backgroundColor: openFoodFacts.settings.color;
        }
+       trailingActionBar {
+           actions: [
+               Action {
+                   text: i18n.tr("add")
+                   visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
+                   iconName: "add"
+                   onTriggered: {
+                       openFoodFacts.currentPage="addproduct"
+                       pageStack.push(Qt.resolvedUrl("addproduct.qml"));
+                   }
+                }
+          ]
+       }
 
    }
     Component.onCompleted: openFoodFacts.currentPage="NotFound";
