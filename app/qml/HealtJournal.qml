@@ -1,8 +1,7 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Pickers 1.0
 import Ubuntu.Components.ListItems 1.3 as ListItem
-import QtQuick.Controls 1.3
-import QtQuick.Controls.Styles 1.3
 
 Page {
     id: healtjournal
@@ -106,9 +105,9 @@ Item {
                             font.pointSize: 13
                             }
                         Component.onCompleted: {
-                            var date = calendarFoodDiary.selectedDate
+                            /*var date = calendarFoodDiary.selectedDate
                             var datepattern = new RegExp(Qt.formatDateTime(calendarFoodDiary.selectedDate, "dd-MM-yyyy"))
-                            sortedfooddiaryModel.filter.pattern = datepattern
+                            sortedfooddiaryModel.filter.pattern = datepattern*/
 
                             if (sortedfooddiaryModel.count == "0"){
                                 emptyfooddiary.visible = true;
@@ -276,7 +275,17 @@ Item {
                         } // ListView
                 } // Column
 
-                Calendar{
+
+                DatePicker {
+                    id: datePicker
+                    maximum: {
+                        var d = new Date();
+                        d.setFullYear(d.getFullYear() - 1);
+                        return d;
+                    }
+                    minimum: Date.prototype.getInvalidDate.call()
+                }
+                /*Calendar{
                 id: calendarFoodDiary
                 anchors.topMargin: 0
                 anchors.top: dateFoodDiary.bottom
@@ -309,7 +318,7 @@ Item {
                 style: CalendarStyle {
                     gridVisible: false
                     }
-              }
+              }*/
 
                 } // Flickable
             }
