@@ -33,6 +33,20 @@
         <file>qml/component/Walkthrough.qml</file>
         <file>qml/component/ActionButton.qml</file>
         <file>qml/component/allergen.js</file>
+        <file>qml/component/allergen/celery.png</file>
+        <file>qml/component/allergen/crustaceans.png</file>
+        <file>qml/component/allergen/eggs.png</file>
+        <file>qml/component/allergen/fish.png</file>
+        <file>qml/component/allergen/gluten.png</file>
+        <file>qml/component/allergen/lupin.png</file>
+        <file>qml/component/allergen/milk.png</file>
+        <file>qml/component/allergen/molluscs.png</file>
+        <file>qml/component/allergen/mustard.png</file>
+        <file>qml/component/allergen/nuts.png</file>
+        <file>qml/component/allergen/peanuts.png</file>
+        <file>qml/component/allergen/sesame.png</file>
+        <file>qml/component/allergen/soybeans.png</file>
+        <file>qml/component/allergen/sulfur.png</file>
     </qresource>
     <qresource prefix="/welcomewizard">
         <file>qml/welcomewizard/Slide1.qml</file>
