@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-27 18:51+0000\n"
+"POT-Creation-Date: 2016-10-07 09:51+0000\n"
 "PO-Revision-Date: 2016-02-12 11:21+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/ubuntouch-fr/"
@@ -20,85 +20,85 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-09-16 17:08+0000\n"
 "X-Generator: Launchpad (build 18186)\n"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/OpenFoodFacts/Main.qml:99
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "Vonalkódolvasó"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/OpenFoodFacts/Main.qml:110
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "Kép importálása"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/About.qml:10
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/About.qml:10
 msgid "About"
 msgstr "Névjegy"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/About.qml:119
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/About.qml:119
 msgid "Terms of use"
 msgstr "Felhasználási feltételek"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/addproduct.qml:10
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/addproduct.qml:10
 msgid "Add product"
 msgstr "Termék hozzáadása"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/addproduct.qml:49
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/addproduct.qml:49
 msgid "Information product"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Allergen.qml:9
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:65
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:65
 msgid "Allergen"
 msgstr "Allergén"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/barcodeReader.qml:19
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:19
 msgid "Reading barcode"
 msgstr "Vonalkód olvasása"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/barcodeReader.qml:149
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:149
 msgid "please, wait until the focus is done"
 msgstr "várjon amíg az eszköz megfelelően fókuszál"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/history.qml:9
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/history.qml:9
 msgid "Historical"
 msgstr "Előzmények"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/history.qml:68
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/history.qml:68
 msgid "Empty history"
 msgstr "Nincsenek előzmények"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/history.qml:81
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/history.qml:81
 msgid "You have not scanned product."
 msgstr "Még nem keresett termékre"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:51
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:51
 msgid "gluten"
 msgstr "glutén"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:52
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:52
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
 msgstr "glutén, búza, rozs, árpa, zab, tönkölybúza, kamut, búzadara"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:57
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:57
 msgid "crustaceans"
 msgstr "rákfélék"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:58
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:58
 msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
 msgstr "rákfélék, rák, homár, garnéla"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:62
 msgid "eggs"
 msgstr "tojás"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:63
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:63
 msgid "eggs, egg, egg yolk"
 msgstr "tojás, tojássárgája"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:67
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:67
 msgid "fish"
 msgstr "hal"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:68
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:68
 msgid ""
 "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
 "sole, trout, tuna, sardine, sardines"
@@ -106,35 +106,35 @@ msgstr ""
 "hal, halak, tőkehal, makréla, lepényhal, laposhal, nagy rombuszhal, foltos "
 "tőkehal, lazac, pisztráng, tonhal, szardínia"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:73
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:73
 msgid "peanuts"
 msgstr "mogyoró"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:74
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:74
 msgid "peanuts, peanut, arachis hypogaea"
 msgstr "mogyoró, földimogyoró"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:79
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:79
 msgid "soybeans"
 msgstr "szójabab"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:80
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:80
 msgid "soybeans, soya, soja, soia, soy"
 msgstr "szójabab, szója,"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:85
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:85
 msgid "milk"
 msgstr "tej"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:86
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:86
 msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
 msgstr "tej, laktóz, savó, vaj, tejszín, joghurt, sajt"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:91
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:91
 msgid "nuts"
 msgstr "dió"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:92
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:92
 msgid ""
 "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
 "Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
@@ -142,32 +142,32 @@ msgstr ""
 "dió, mandula, mogyoró, kesudió, pekándió, brazil dió, pisztácia, makadámia, "
 "queenslandi dió"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:97
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:98
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:97
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:98
 msgid "celery"
 msgstr "zeller"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:103
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:103
 msgid "mustard"
 msgstr "mustár"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:104
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:104
 msgid "mustard, brassica"
 msgstr "mustár, káposztafélék"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:109
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:109
 msgid "sesame"
 msgstr "szezám"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:110
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:110
 msgid "sesame seeds, sesame"
 msgstr "szezám, szezámmag"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:115
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:115
 msgid "sulfur"
 msgstr "kén"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:116
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:116
 msgid ""
 "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
 "bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
@@ -177,238 +177,243 @@ msgstr ""
 "metabiszulfit, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, "
 "E228"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:121
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:121
 msgid "molluscs"
 msgstr "puhatestűek"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:122
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:122
 msgid ""
 "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
 "mussles, mussle, clams, clam, scallops, scallop"
 msgstr "kagylók, puhatestűek, rákfélék, tintahal, osztriga, kagyló"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:127
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:128
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:127
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:128
 msgid "lupin"
 msgstr "farkasbab, csillagfürt"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:195
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:195
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:204
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:15
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:204
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:15
 msgid "Settings"
 msgstr "Beállítások"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/main.qml:300
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:300
 msgid "Enter your product's name or product's barcode"
 msgstr "Adja meg a termék nevét vagy vonalkódját"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/notFound.qml:14
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/notFound.qml:14
 msgid "Product not found"
 msgstr "Nem található termék"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/notFound.qml:22
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/notFound.qml:22
 #, fuzzy
 msgid "add"
 msgstr "és"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/notFound.qml:82
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/notFound.qml:82
 msgid "Your product was not found"
 msgstr "Nem található ilyen termék"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductSearchResult.qml:11
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductSearchResult.qml:11
 msgid "search result for : "
 msgstr "keresése erre: "
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:82
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:85
 msgid "Common name"
 msgstr "Ismert neve"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:84
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:87
 msgid "Quantity"
 msgstr "Mennyiség"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:86
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:89
 msgid "Packaging"
 msgstr "Csomagolás"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:88
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:91
 msgid "Brands"
 msgstr "Márkák"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:91
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:94
 msgid "Categories"
 msgstr "Kategóriák"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:93
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:96
 msgid "Origin of ingredients"
 msgstr "Összetevők származása"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:95
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:98
 msgid "Manufacturing or processing places"
 msgstr "Gyártási vagy feldolgozási helyek"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:97
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:100
 msgid "City and Country where purchased"
 msgstr "Vásárlás országa, városa"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:99
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:102
 msgid "Stores"
 msgstr "Boltok"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:101
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:104
 msgid "Countries where sold"
 msgstr "Árusító országok"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:103
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:529
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
 msgid "Ingredients"
 msgstr "Össztevők"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:106
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:109
 msgid "Substances or products causing allergies or intolerances"
 msgstr "Allergiát vagy intoleranciát okozó anyagok, termékek"
 
 #. TRANSLATORS: an aliment can contains traces of thoses products
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:111
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:114
 msgid "Traces"
 msgstr "Nyomokban tartalmazhat"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:117
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:120
 msgid "Serving size"
 msgstr "Adag"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:297
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:300
 msgid "Allergen detected"
 msgstr "Észlelt allergének"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:346
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:385
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:385
 msgid "Nutrition facts"
 msgstr "Tápanyag ismertető"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:412
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:363
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:363
 msgid "Product characteristics"
 msgstr "Termék információk"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:603
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
+msgid "View picture"
+msgstr ""
+
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:642
 msgid "nutritional value"
 msgstr "tápérték"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:628
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:668
 msgid "Composition by"
 msgstr "Összetétel"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:629
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:669
 msgid "serving"
 msgstr "adag"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:635
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
 msgid "Energy"
 msgstr "Energia"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:639
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "Fat"
 msgstr "Zsír"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:639
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "and"
 msgstr "és"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:639
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "Lipides"
 msgstr "lipidek"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:647
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
 msgid "Carbohydrate"
 msgstr "Szénhidrát"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:651
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
 msgid "of which Sugars"
 msgstr "ebből cukor"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:655
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
 msgid "Dietary fiber"
 msgstr "Élelmi rost"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:659
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
 msgid "Proteins"
 msgstr "Fehérje"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:663
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
 msgid "Salt"
 msgstr "Só"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/ProductView.qml:667
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
 msgid "Sodium"
 msgstr "Nátrium"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:24
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:24
 msgid "about"
 msgstr "Névjegy"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:60
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:60
 msgid "Global"
 msgstr "Globális"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:87
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:87
 msgid "Choose a color"
 msgstr "Válasszon egy színt"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:293
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:341
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:293
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:341
 msgid "Cancel"
 msgstr "Mégse"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:320
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:320
 msgid "Example : #1ab6ef"
 msgstr "Példa : #1ab6ef"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:326
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:326
 msgid "ok"
 msgstr "OK"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:353
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:353
 msgid "Theme"
 msgstr "Téma"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:358
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:358
 msgid "Viewing Information"
 msgstr "Információk megjelenítése"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:374
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:374
 msgid "ingredients"
 msgstr "Összetevők"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/Settings.qml:396
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:396
 msgid "Composition"
 msgstr "Összetétel"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/SettingsDeveloper.qml:14
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/SettingsDeveloper.qml:47
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:47
 msgid "Developer settings"
 msgstr "Fejlesztői beállítások"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/SettingsDeveloper.qml:63
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:63
 msgid "scanner from the home page"
 msgstr "Beolvasás a kezdőoldalról"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/SettingsDeveloper.qml:98
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:98
 msgid "Delete settings"
 msgstr "Beállítások törlése"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/component/Walkthrough.qml:89
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/component/Walkthrough.qml:89
 msgid "Skip"
 msgstr "Kihagyás"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide1.qml:42
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:42
 msgid "Welcome to Open Food Facts"
 msgstr "Üdvözli az Open Food Facts!"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide1.qml:53
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
 msgid ""
 "An application to learn more about food and eating healthier, it lists "
 "information about food products worldwide."
@@ -417,15 +422,15 @@ msgstr ""
 "egészségesebb táplálkozásról. Információt találhat világszerte árult "
 "termékekről."
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide1.qml:74
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
 msgid "Swipe to move between pages"
 msgstr "Húzással navigálhat az oldalak között"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide2.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:45
 msgid "Discover products and their ingredients"
 msgstr "Fedezze fel a termékeket és azok összetevőit"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide2.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
 msgid ""
 "Open Food Facts uses the official database of the same name to provide "
 "access to a huge collection of food products and their ingredients. You can "
@@ -435,11 +440,11 @@ msgstr ""
 "hozzáférést biztosít az élelmiszeripari termékek és összetevőik "
 "gyűjteményéhez. A hivatalos oldalon adhat hozzá új termékeket."
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide3.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
 msgid "Allergen management"
 msgstr "Allergén összetevők"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide3.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
 msgid ""
 "If you have a food allergy, ask that information in paramêtres. The "
 "application will help you identify a single glance the products compatible "
@@ -448,7 +453,7 @@ msgstr ""
 "Ha allergiája van, mindenképp nézze át a termék információit. Próbáljuk a "
 "lehető legszéleskörűbben lefedni az allergén összetevőket egy termékben."
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide4.qml:66
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
 msgid ""
 "OpenFoodFacts is available in over 10 languages and is translated by the %1 "
@@ -457,12 +462,12 @@ msgstr ""
 "Az OpenFoodFacts több, mint 10 nyelven érhető el, köszönhetően a %1 "
 "közösségnek"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide5.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
 msgid "Support"
 msgstr "Támogatás"
 
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide5.qml:64
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
 msgid ""
 "If you find any bugs or have any feature requests, let us know on our "
@@ -471,15 +476,15 @@ msgstr ""
 "Ha bármilyen hibát talál, vagy van egy ötlete, vegye fel velünk a "
 "kapcsolatot a projekt oldalán: %1"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide6.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
 msgid "Enjoy"
 msgstr "Élvezze"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide6.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:62
 msgid "We hope you enjoy using OpenFoodFacts!"
 msgstr "Reméljük örömét leli az OpenFoodFacts használatában!"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu.git/app/qml/welcomewizard/Slide6.qml:76
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
 msgstr "Befejezés"
 
