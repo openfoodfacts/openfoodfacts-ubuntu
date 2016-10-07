@@ -78,6 +78,9 @@ Page {
                 picturebackgroundtop.source = _json.image_small_url;
                 labelbarcode.text=pageProductView.barcode;
 
+                productImagenutr.source = _json.image_nutrition_url;
+                productImageingr.source = _json.image_ingredients_url;
+
                 var generic_name = _json.generic_name || 'n/a';
                 descproduct.text = "<b>"+i18n.tr("Common name")+ " : </b>" + generic_name;
                 var quantity = _json.quantity || 'n/a';
@@ -542,7 +545,7 @@ Page {
 
                             UbuntuShape {
                                 anchors { left: parent.left; right: parent.right }
-                                height: ingrproduct.height + allergenproduct.height + tracproduct.height + 20
+                                height: ingrproduct.height + allergenproduct.height + tracproduct.height + pictureButtoningr.height + productImageingr.height  + 20
 
                                 backgroundColor: "white"
 
@@ -568,6 +571,42 @@ Page {
                                         wrapMode: Text.Wrap
                                         width:contentsectioningr.width;
                                         objectName: "label"
+                                    }
+
+                                    Rectangle {
+                                        id: pictureButtoningr
+                                        width: parent.width
+                                        height: units.gu(4)
+                                        Icon {
+                                            id: iconingr
+                                            anchors.right: labelingr.left
+                                            anchors.rightMargin: 4
+                                            anchors.verticalCenter: parent.verticalCenter;
+                                            name: "stock_image"
+                                            width: units.gu(2)
+                                            height: units.gu(2)
+                                            color: UbuntuColors.warmGrey
+                                        }
+                                        Label {
+                                        id: labelingr
+                                        anchors.horizontalCenter: parent.horizontalCenter;
+                                        anchors.verticalCenter: parent.verticalCenter;
+                                        text: i18n.tr("View picture")
+                                        }
+                                        MouseArea {
+                                            anchors.fill: pictureButtoningr
+                                            onClicked: {
+                                                productImageingr.visible = true;
+                                                productImageingr.width = parent.width;
+                                            }
+                                        }
+                                    }
+
+                                    Image {
+                                        id : productImageingr;
+                                        fillMode: Image.PreserveAspectFit
+                                        width: 0
+                                        visible: false
                                     }
 
                                 }
@@ -616,12 +655,13 @@ Page {
 
                             UbuntuShape {
                                 anchors { left: parent.left; right: parent.right }
-                                height: tablenutri.height + energy.height + fat.height + carbohydrates.height + sugars.height + fiber.height + proteins.height + salt.height + sodium.height + 20
+                                height: tablenutri.height + energy.height + fat.height + carbohydrates.height + sugars.height + fiber.height + proteins.height + salt.height + sodium.height + pictureButtonnutr.height + productImagenutr.height + 20
                                 backgroundColor: "white"
 
                                 Column {
                                     id: contentsectiontablenutr
                                     anchors.fill: parent; anchors.topMargin: 10; anchors.leftMargin: 3; anchors.rightMargin: 3; anchors.bottomMargin: 10;
+
 
                                     ListItem.SingleValue {
                                         id:tablenutri
@@ -665,6 +705,42 @@ Page {
                                     ListItem.SingleValue {
                                         id: sodium
                                         text: "<font color=\"#000000\">    "+i18n.tr("Sodium")+"</font>"
+                                    }
+
+                                    Rectangle {
+                                        id: pictureButtonnutr
+                                        width: parent.width
+                                        height: units.gu(4)
+                                        Icon {
+                                            id: iconnutr
+                                            anchors.right: labelnutr.left
+                                            anchors.rightMargin: 4
+                                            anchors.verticalCenter: parent.verticalCenter;
+                                            name: "stock_image"
+                                            width: units.gu(2)
+                                            height: units.gu(2)
+                                            color: UbuntuColors.warmGrey
+                                        }
+                                        Label {
+                                        id: labelnutr
+                                        anchors.horizontalCenter: parent.horizontalCenter;
+                                        anchors.verticalCenter: parent.verticalCenter;
+                                        text: i18n.tr("View picture")
+                                        }
+                                        MouseArea {
+                                            anchors.fill: pictureButtonnutr
+                                            onClicked: {
+                                                productImagenutr.visible = true;
+                                                productImagenutr.width = parent.width;
+                                            }
+                                        }
+                                    }
+
+                                    Image {
+                                        id : productImagenutr;
+                                        fillMode: Image.PreserveAspectFit
+                                        width: 0
+                                        visible: false
                                     }
                                 }
                             }
