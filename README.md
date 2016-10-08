@@ -1,32 +1,38 @@
-#OpenFoodFacts Ubuntu Touch
-An implementation of OpenFoodFacts database to Ubuntu touch devices.
+#Open Food Facts for Ubuntu Touch
+An implementation of Open Food Facts database to Ubuntu touch devices.
+
+# Developpers and contributors
+- Nymerea
+- sy-per
 
 #License
-This application is released under the term of the GNU GENERAL PUBLIC LICENSE Version 3.
+This application is released under the term of the GNU GENERAL PUBLIC LICENSE Version 3.<br>
 See file [gpl-3.0.txt](gpl-3.0.txt) for details.
 
-#Dependences
-Don't forget to install dependences because the barcode detector use static linkage
+#Dependencies
+Don't forget to install dependencies because the barcode detector uses static linkage
 
 `sudo apt-get install libjpeg-dev libzbar0 zbar-tools  libzbar-dev libv4l-dev libqrencode-dev`
 
-If you want publish your application on smartphone, don't forget to install dependences on your kit  
-qt creator -> option -> ubuntu -> choose your click and click on "maintain"  
+If you want publish your application on smartphone, don't forget to install dependencies on your kit  
+Qt Creator -> Option -> Ubuntu -> Choose your click and click on "Maintain"  
 `sudo apt-get install libjpeg-dev:armhf libzbar0:armhf zbar-tools:armhf  libzbar-dev:armhf libv4l-dev:armhf libqrencode-dev:armhf`
 after executing this, in your regular console execute : 
 `click-chroot-agent -r` it will reload your qtcreator (sort of)
 
-# Api Official Documentation
+# Official Documentation of the Open Food Facts API
 The official documentation for API : http://en.wiki.openfoodfacts.org/Project:API
 
+# Help translate the app 
+- https://translations.launchpad.net/openfoodfacts/trunk/+pots/openfoodfacts-ubuntu-mobile
 
-#Usefull link 
+# Useful links
 
-- JSON formater (for visualising json data) : http://jsonformatter.curiousconcept.com/
+- JSON formater (for visualising JSON data) : http://jsonformatter.curiousconcept.com/
 
-- how read JSON API in QML : http://morgan-durand.com/parser-une-api-json-dans-un-listview/
+- How to read a JSON API in QML : http://morgan-durand.com/parser-une-api-json-dans-un-listview/
 
-- Navigate between page with ubuntu touch : http://morgan-durand.com/creation-dune-application-ubuntu-jour-4/
+- Navigate between pages with Ubuntu Touch : http://morgan-durand.com/creation-dune-application-ubuntu-jour-4/
 
 
 
