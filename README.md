@@ -26,6 +26,14 @@ The official documentation for API : http://en.wiki.openfoodfacts.org/Project:AP
 # Help translate the app 
 - https://translations.launchpad.net/openfoodfacts/trunk/+pots/openfoodfacts-ubuntu-mobile
 
+**Status**
+===
+
+[![Project Status](http://opensource.box.com/badges/active.svg)](http://opensource.box.com/badges)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/openfoodfacts/openfoodfacts-ubuntu.svg)](http://isitmaintained.com/project/openfoodfacts/openfoodfacts-ubuntu.svg "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/openfoodfacts/openfoodfacts-ubuntu.svg)](http://isitmaintained.com/project/openfoodfacts/openfoodfacts-ubuntu.svg "Percentage of issues still open")
+
+
 # Useful links
 
 - JSON formater (for visualising JSON data) : http://jsonformatter.curiousconcept.com/
