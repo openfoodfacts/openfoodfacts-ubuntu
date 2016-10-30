@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-07 09:51+0000\n"
+"POT-Creation-Date: 2016-10-30 14:41+0000\n"
 "PO-Revision-Date: 2016-01-26 08:45+0000\n"
 "Last-Translator: Jimmy <jimmy@ubuntouch-fr.org>\n"
 "Language-Team: Chinese Simplified (http://www.transifex.com/ubuntouch-fr/"
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:300
+#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:305
 msgid "Enter your product's name or product's barcode"
 msgstr ""
 
