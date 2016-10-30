@@ -285,6 +285,11 @@ MainView {
                                 onClicked: {
                                     pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
                                 }
+                                onPressed: { mask2.color = "#CCCCCC"; }
+                                Timer {
+                                    interval: 2000; running: true; repeat: true
+                                    onTriggered: mask2.color = openFoodFacts.settings.color
+                                }
                             }
                         }
                     } // header picture
@@ -324,6 +329,8 @@ MainView {
                         } // send button
 
                     }
+
+
                 }
             }
 
