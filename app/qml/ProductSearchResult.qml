@@ -60,7 +60,7 @@ Page {
             Flickable {
                 anchors.fill: parent
                 contentWidth: helpScreen.width;
-                contentHeight: searchResultView
+                contentHeight: searchResultModel.height
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
 
