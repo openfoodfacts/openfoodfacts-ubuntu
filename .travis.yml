@@ -1,0 +1,2 @@
+language: ubuntu-touch
+test_path: tests/unit
