@@ -1,2 +1,3 @@
 language: ubuntu-touch
 test_path: tests/unit
+sudo: required
