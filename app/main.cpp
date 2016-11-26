@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
 
     QQuickView view;
     qmlRegisterType<QRCodeReader>("CodeReader", 1, 0, "QRCodeReader");
+    qmlRegisterType<Product>("ProductAdder", 1, 0, "Product");
 
     /*Product p;
     QImage *img = new QImage();

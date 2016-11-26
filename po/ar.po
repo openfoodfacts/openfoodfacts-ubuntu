@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-30 14:41+0000\n"
+"POT-Creation-Date: 2016-02-09 15:34+0100\n"
 "PO-Revision-Date: 2016-03-17 23:37+0000\n"
 "Last-Translator: ahmed <ahmed.fadhil@alumni.emu.edu.tr>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -18,85 +18,94 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-10-30 14:32+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
+#: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "قارئ الباركود"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
+#: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "ادخال صورة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/About.qml:10
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:9
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:16
 msgid "About"
 msgstr "حول"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/About.qml:119
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:17
+msgid "ChangeLog"
+msgstr "سجل تغييرات"
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:116
 msgid "Terms of use"
 msgstr "شروط الاستخدام"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/addproduct.qml:10
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:7
 msgid "Add product"
 msgstr "اضف المنتج"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/addproduct.qml:49
-msgid "Information product"
-msgstr ""
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:56
+msgid "Not implemented"
+msgstr "غير مطبق"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:65
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:69
+msgid "Page not yet finished, thank you to return again later."
+msgstr "الصفحة لم تنته بعد، وشكرا لك بالعودة مرة أخرى لاحقا."
+
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Allergen.qml:8
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:54
 msgid "Allergen"
 msgstr "المسببة للحساسية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:19
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/barcodeReader.qml:17
 msgid "Reading barcode"
 msgstr "قراءة الباركود"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:149
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/barcodeReader.qml:101
 msgid "please, wait until the focus is done"
 msgstr "يرجى الانتظار حتى يتم التركيز"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/history.qml:9
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:8
 msgid "Historical"
 msgstr "التاريخي"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/history.qml:68
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:61
 msgid "Empty history"
 msgstr "التاريخ فارغ"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/history.qml:81
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:74
 msgid "You have not scanned product."
 msgstr "لم تقم بمسح ضوئي للمنتج"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:51
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:50
 msgid "gluten"
 msgstr "الغولتين"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:52
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:51
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
 msgstr "الغلوتين والقمح والجاودار والشعير والشوفان وردت، كاموت، سميد من القمح"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:57
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:55
 msgid "crustaceans"
 msgstr "القشريات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:58
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:56
 msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
 msgstr "القشريات، سرطان البحر، جراد البحر، جراد البحر، الجمبري والروبيان"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:59
 msgid "eggs"
 msgstr "بيض"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:63
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:60
 msgid "eggs, egg, egg yolk"
 msgstr "البيض، البيض، صفار البيض"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:67
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:63
 msgid "fish"
 msgstr "سمكة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:68
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:64
 msgid ""
 "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
 "sole, trout, tuna, sardine, sardines"
@@ -105,37 +114,37 @@ msgstr ""
 "الترس، سمك الحدوق، سمك السلمون، سمك موسى، والسلمون، والتونة، السردين، سمك "
 "السردين"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:73
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:68
 msgid "peanuts"
 msgstr "الفول السوداني"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:74
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:69
 msgid "peanuts, peanut, arachis hypogaea"
 msgstr "الفول السوداني، والفول السوداني"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:79
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:73
 msgid "soybeans"
 msgstr "فول الصويا"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:80
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:74
 msgid "soybeans, soya, soja, soia, soy"
 msgstr "فول الصويا، فول الصويا، فول الصويا، فول الصويا"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:85
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:78
 msgid "milk"
 msgstr "حليب"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:86
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:79
 msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
 msgstr ""
 "الحليب، اللاكتوز، مصل اللبن، ومنتجات الألبان والزبدة والقشدة واللبن والجبن "
 "والزبادي"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:91
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:83
 msgid "nuts"
 msgstr "جوز"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:92
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:84
 msgid ""
 "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
 "Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
@@ -143,32 +152,32 @@ msgstr ""
 "المكسرات مثل اللوز والبندق والجوز والكاجو، والكاجو، الجوز البقان، البقان "
 "والبندق والبرازيل، والفستق، المكاديميا والمكسرات كوينزلاند"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:97
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:98
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:88
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:89
 msgid "celery"
 msgstr "كرفس"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:103
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:93
 msgid "mustard"
 msgstr "خردل"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:104
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:94
 msgid "mustard, brassica"
 msgstr "الخردل، الكرنب"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:109
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:98
 msgid "sesame"
 msgstr "سمسم"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:110
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:99
 msgid "sesame seeds, sesame"
 msgstr "sesame seeds, sesame"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:115
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:103
 msgid "sulfur"
 msgstr "كبريت"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:116
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:104
 msgid ""
 "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
 "bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
@@ -178,11 +187,11 @@ msgstr ""
 "بيسلفيت، ميتابيسلفيت، E150b، E150d، E220، E221، E222، E223، E224، E225، "
 "E226، E227، E228"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:121
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:108
 msgid "molluscs"
 msgstr "الرخويات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:122
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:109
 msgid ""
 "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
 "mussles, mussle, clams, clam, scallops, scallop"
@@ -190,233 +199,223 @@ msgstr ""
 "الرخويات، الرخويات، الرخويات، الرخويات والحبار، الحبار، والمحار، والمحار، "
 "وبلح البحر، بلح البحر، والمحار، والبطلينوس والمحار، الإسكالوب"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:127
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:128
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:113
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:114
 msgid "lupin"
 msgstr "الترمس"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:195
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:177
 msgid "Open Food Facts"
 msgstr "الحقائق الغدائيه المفتوحه"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:204
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:15
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:184
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
 msgid "Settings"
 msgstr "الإعدادات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/main.qml:305
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:277
 msgid "Enter your product's name or product's barcode"
 msgstr "أدخل اسم المنتج الخاص بك أو باركود المنتج"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/notFound.qml:14
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:13
 msgid "Product not found"
 msgstr "المنتج غير موجود"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/notFound.qml:22
-#, fuzzy
-msgid "add"
-msgstr "و"
-
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/notFound.qml:82
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:62
 msgid "Your product was not found"
 msgstr "لم يتم العثور على المنتج الخاص بك"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductSearchResult.qml:11
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductSearchResult.qml:10
 msgid "search result for : "
 msgstr "نتيجة البحث عن "
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:85
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:78
 msgid "Common name"
 msgstr "الإسم الشائع"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:87
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:80
 msgid "Quantity"
 msgstr "الكمية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:89
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:82
 msgid "Packaging"
 msgstr "التعبئة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:91
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:84
 msgid "Brands"
 msgstr "العلامات التجارية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:94
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:87
 msgid "Categories"
 msgstr "الاصناف"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:96
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:89
 msgid "Origin of ingredients"
 msgstr "أصل المكونات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:98
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:91
 msgid "Manufacturing or processing places"
 msgstr "أماكن التصنيع أو التجهيز"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:100
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:93
 msgid "City and Country where purchased"
 msgstr "المدينة والبلد الذي تم الشراء منه"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:102
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:95
 msgid "Stores"
 msgstr "المتاجر"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:104
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:97
 msgid "Countries where sold"
 msgstr "البلدان التي تباع"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:99
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:457
 msgid "Ingredients"
 msgstr "المكونات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:109
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:102
 msgid "Substances or products causing allergies or intolerances"
 msgstr "المواد أو المنتجات يسبب الحساسية أو عدم تحمل"
 
 #. TRANSLATORS: an aliment can contains traces of thoses products
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:114
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:107
 msgid "Traces"
 msgstr "آثار"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:120
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:113
 msgid "Serving size"
 msgstr "حجم الحصة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:300
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:290
 msgid "Allergen detected"
 msgstr "الكشف عن حساسية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:385
-msgid "Nutrition facts"
-msgstr "حقائق غذائية"
-
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:363
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:340
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:352
 msgid "Product characteristics"
 msgstr "خصائص المنتج"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
-msgid "View picture"
-msgstr ""
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:530
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:374
+msgid "Nutrition facts"
+msgstr "حقائق غذائية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:642
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:594
 msgid "nutritional value"
 msgstr "القيمة الغذائية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:668
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:619
 msgid "Composition by"
 msgstr "تكوين بواسطة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:669
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:620
 msgid "serving"
 msgstr "وجبة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:626
 msgid "Energy"
 msgstr "الطاقة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:630
 msgid "Fat"
 msgstr "الدهن"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:630
 msgid "and"
 msgstr "و"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:630
 msgid "Lipides"
 msgstr "الليبيدات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:638
 msgid "Carbohydrate"
 msgstr "كربوهيدرات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:642
 msgid "of which Sugars"
 msgstr "من الذي السكريات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:646
 msgid "Dietary fiber"
 msgstr "الألياف الغذائية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:650
 msgid "Proteins"
 msgstr "البروتينات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:654
 msgid "Salt"
 msgstr "ملح"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:658
 msgid "Sodium"
 msgstr "صوديوم"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:24
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:18
 msgid "about"
 msgstr "حول"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:60
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:49
 msgid "Global"
 msgstr "عالمي"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:87
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:76
 msgid "Choose a color"
 msgstr "اختر لون"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:293
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:341
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:282
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:330
 msgid "Cancel"
 msgstr "الغاء"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:320
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:309
 msgid "Example : #1ab6ef"
 msgstr "على سبيل المثال: # 1ab6ef"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:326
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:315
 msgid "ok"
 msgstr "موافق"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:353
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:342
 msgid "Theme"
 msgstr "الثيمة"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:358
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:347
 msgid "Viewing Information"
 msgstr "عرض معلومات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:374
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:363
 msgid "ingredients"
 msgstr "المكونات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/Settings.qml:396
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:385
 msgid "Composition"
 msgstr "التركيب"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:47
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:10
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:40
 msgid "Developer settings"
 msgstr "إعدادات المطور"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:63
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:56
 msgid "scanner from the home page"
 msgstr "الماسح الضوئي من الصفحة الرئيسية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:98
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:91
 msgid "Delete settings"
 msgstr "حذف إعدادات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/component/Walkthrough.qml:89
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:92
 msgid "Skip"
 msgstr "تخطى"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:42
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
 msgid "Welcome to Open Food Facts"
 msgstr "مرحبا بكم في حقائق الغذاء  المفتوح"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:53
 msgid ""
 "An application to learn more about food and eating healthier, it lists "
 "information about food products worldwide."
@@ -424,15 +423,15 @@ msgstr ""
 "تطبيق لمعرفة المزيد عن الطعام والأكل الصحي، فإنه يسرد المعلومات حول المنتجات "
 "الغذائية في جميع أنحاء العالم"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:74
 msgid "Swipe to move between pages"
 msgstr "انتقد للتنقل بين الصفحات"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:45
 msgid "Discover products and their ingredients"
 msgstr "اكتشاف المنتجات ومكوناتها"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
 msgid ""
 "Open Food Facts uses the official database of the same name to provide "
 "access to a huge collection of food products and their ingredients. You can "
@@ -442,11 +441,11 @@ msgstr ""
 "الوصول إلى مجموعة ضخمة من المنتجات الغذائية ومكوناتها. يمكنك أيضا إضافة "
 "المنتجات مباشرة على الموقع الرسمي."
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
 msgid "Allergen management"
 msgstr "إدارة حساسية"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:62
 msgid ""
 "If you have a food allergy, ask that information in paramêtres. The "
 "application will help you identify a single glance the products compatible "
@@ -455,7 +454,7 @@ msgstr ""
 "إذا كان لديك حساسية الطعام، نطلب المعلومات في البارامترات. والتطبيق سوف "
 "تساعدك على تحديد لمحة واحدة من منتجات متوافقة مع الحساسية الخاصة بك."
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
 msgid ""
 "OpenFoodFacts is available in over 10 languages and is translated by the %1 "
@@ -464,12 +463,12 @@ msgstr ""
 "OpenFoodFacts يتوفر في أكثر من 10 لغة، وترجم من قبل المجتمع<a href=\\link\\>"
 "%1</a>."
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:45
 msgid "Support"
 msgstr "دعم"
 
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
 msgid ""
 "If you find any bugs or have any feature requests, let us know on our "
@@ -478,23 +477,18 @@ msgstr ""
 "إذا وجدت أي أخطاء أو لديك أي طلبات جديدة، واسمحوا لنا أن نعرف على صفحة "
 "المشروع في <a href=\\link\\>%1</a>."
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:45
 msgid "Enjoy"
 msgstr "استمتع"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:62
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:62
 msgid "We hope you enjoy using OpenFoodFacts!"
 msgstr "نأمل أن تستمتع باستخدام OpenFoodFacts!"
 
-#: /home/jimmy/Documents/Github/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
+#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
 msgstr "أنهي"
 
-#~ msgid "ChangeLog"
-#~ msgstr "سجل تغييرات"
-
-#~ msgid "Not implemented"
-#~ msgstr "غير مطبق"
-
-#~ msgid "Page not yet finished, thank you to return again later."
-#~ msgstr "الصفحة لم تنته بعد، وشكرا لك بالعودة مرة أخرى لاحقا."
+#, fuzzy
+#~ msgid "add"
+#~ msgstr "و"

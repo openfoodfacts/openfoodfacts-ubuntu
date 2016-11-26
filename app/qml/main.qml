@@ -355,7 +355,7 @@ MainView {
                 }
             },
 
-            /*RadialAction {
+            RadialAction {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
@@ -364,7 +364,7 @@ MainView {
                     openFoodFacts.currentPage="AddProduct";
                     pageStack.push(Qt.resolvedUrl("addproduct.qml"));
                 }
-            },*/
+            },
 
             RadialAction {
                 iconName: "settings"
