@@ -3,6 +3,8 @@
 #include <QDebug>
 #include <QHttpPart>
 #include <qimage.h>
+#include <QGuiApplication>
+#include <QWindow>
 
 Product::Product()
 {
@@ -10,12 +12,51 @@ Product::Product()
     connect(m_manager, SIGNAL(finished(QNetworkReply*)),
             this, SLOT(replyFinished(QNetworkReply*)));
 
+    QGuiApplication *app = qobject_cast<QGuiApplication*>(qApp);
+
+    foreach (QWindow *win, app->allWindows()) {
+        QQuickWindow *quickWin = qobject_cast<QQuickWindow*>(win);
+        if (quickWin) {
+            m_mainWindow = quickWin;
+        }
+    }
+
 
 }
 
 Product::~Product()
 {
     delete m_manager;
+}
+
+void Product::setScanRect(const QRect &rect)
+{
+    if (m_scanRect != rect) {
+        qDebug() << "new rectangle has been setted with size :" << rect.height() << " * " << rect.width();
+        m_scanRect = rect;
+    }
+}
+
+QRect Product::scanRect() const
+{
+    return m_scanRect;
+}
+
+void Product::grab()
+{
+    if (!m_mainWindow) {
+        return;
+    }
+
+
+    QImage img = m_mainWindow->grabWindow();
+
+    if (m_scanRect.isValid()) {
+        img = img.copy(m_scanRect);
+    }
+
+    qDebug() << "got image" << img.size();
+
 }
 
 void Product::addPicture(QImage *img, QString productCode, QString label)
