@@ -7,6 +7,7 @@ Page {
     id: addproductmain
 
     header: PageHeader {
+        id: pageHeader
         title: i18n.tr("Add product")
         StyleHints {
             foregroundColor: openFoodFacts.settings.fontColor;
@@ -40,17 +41,13 @@ Page {
             focus.focusMode = Camera.FocusContinuous
             focus.focusPointMode = Camera.FocusPointAuto
         }
-        Component.onCompleted: {
-            captureTimer.start()
-        }
+
     }
 
 
     VideoOutput {
         id: videoOutput
-        anchors {
-            fill: parent
-        }
+        anchors { fill: parent; topMargin: pageHeader.height }
         fillMode: Image.PreserveAspectCrop
 
         orientation: {
@@ -62,7 +59,10 @@ Page {
         focus: visible
         MouseArea {
             anchors.fill: parent;
-            onClicked:  productAdder.grab();
+            onClicked:  {
+                productAdder.addPicture("123654789877", "front");
+                camera.stop();
+            }
         }
     }
 
@@ -98,6 +98,7 @@ Page {
         width: videoOutput.width
         height: videoOutput.height *0.85
         border.color: "red"
+        border.width: 1
         color:"transparent"
     }
 

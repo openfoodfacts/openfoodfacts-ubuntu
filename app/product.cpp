@@ -57,19 +57,28 @@ void Product::grab()
 
     qDebug() << "got image" << img.size();
 
+
 }
 
-void Product::addPicture(QImage *img, QString productCode, QString label)
+void Product::addPicture(QString productCode, QString imagefield)
 {
     if(!m_manager) {
         qDebug() << "no network manager avaible";
         return;
     }
 
+    QImage img = m_mainWindow->grabWindow();
+
+    if (m_scanRect.isValid()) {
+        img = img.copy(m_scanRect);
+    }
+
+    qDebug() << "got image" << img.size();
+
     QByteArray ba;
     QBuffer buffer(&ba);
     buffer.open(QIODevice::WriteOnly);
-    img->save(&buffer, "PNG"); // writes image into ba in PNG format
+    img.save(&buffer, "PNG"); // writes image into ba in PNG format
 
     //QUrl url("http://localhost/off/upload.php");
     QUrl url(BASE_URL);
@@ -80,15 +89,15 @@ void Product::addPicture(QImage *img, QString productCode, QString label)
 
     QHttpPart barcodePart;
     barcodePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"code\""));
-    barcodePart.setBody("ww");
+    barcodePart.setBody(productCode.toUtf8());
 
     QHttpPart fieldPart;
     fieldPart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"imagefield\""));
-    fieldPart.setBody("front");
+    fieldPart.setBody(imagefield.toUtf8());
 
     QHttpPart imagePart;
     imagePart.setHeader(QNetworkRequest::ContentTypeHeader, QVariant("image/png"));
-    imagePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"imgupload_front\"; filename=\"barcode_front.png\";" ));
+    imagePart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"imgupload_"+imagefield+"\"; filename=\"image_"+imagefield+".png\";" ));
 
 
     imagePart.setBody(ba);
