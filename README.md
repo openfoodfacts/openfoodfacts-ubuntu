@@ -24,6 +24,7 @@ after executing this, in your regular console execute :
 The official documentation for API : http://en.wiki.openfoodfacts.org/Project:API
 
 # Help translate the app 
+You can help translate Open Food Facts and the app at (no technical knowledge required, takes a minute to signup): 
 - https://translations.launchpad.net/openfoodfacts/trunk/+pots/openfoodfacts-ubuntu-mobile
 
 **Status**
