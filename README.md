@@ -21,7 +21,7 @@ after executing this, in your regular console execute :
 `click-chroot-agent -r` it will reload your qtcreator (sort of)
 
 # Official Documentation of the Open Food Facts API
-The official documentation for API : http://en.wiki.openfoodfacts.org/Project:API
+The official documentation for API : https://en.wiki.openfoodfacts.org/Project:API
 
 # Help translate the app 
 You can help translate Open Food Facts and the app at (no technical knowledge required, takes a minute to signup): 
