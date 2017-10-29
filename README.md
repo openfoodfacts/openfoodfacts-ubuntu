@@ -37,11 +37,11 @@ You can help translate Open Food Facts and the app at (no technical knowledge re
 
 # Useful links
 
-- JSON formater (for visualising JSON data) : http://jsonformatter.curiousconcept.com/
+- JSON formater (for visualising JSON data) : https://jsonformatter.curiousconcept.com/
 
-- How to read a JSON API in QML : http://morgan-durand.com/parser-une-api-json-dans-un-listview/
+- How to read a JSON API in QML : https://morgan-durand.com/parser-une-api-json-dans-un-listview/
 
-- Navigate between pages with Ubuntu Touch : http://morgan-durand.com/creation-dune-application-ubuntu-jour-4/
+- Navigate between pages with Ubuntu Touch : https://morgan-durand.com/creation-dune-application-ubuntu-jour-4/
 
 
 
