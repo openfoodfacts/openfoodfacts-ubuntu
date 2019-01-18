@@ -1,0 +1,11 @@
+{
+    "docker_image":"ut-zbar",
+    "dependencies": [
+        "libjpeg-dev",
+        "libzbar0",
+        "zbar-tools",
+        "libzbar-dev",
+        "libv4l-dev",
+        "libqrencode-dev"  
+    ]
+}

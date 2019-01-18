@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-09 15:34+0100\n"
+"POT-Creation-Date: 2019-01-17 13:45+0000\n"
 "PO-Revision-Date: 2016-02-21 10:07+0000\n"
 "Last-Translator: VPablo <villumar@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -18,94 +18,85 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-10-30 14:32+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:99
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
 msgstr "Lector de codi de barres"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
-#: /home/jimmy/Documents/Github/openfoodfacts/OpenFoodFacts/Main.qml:110
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
 msgid "Import image"
 msgstr "Importa una imatge"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:9
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:16
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/About.qml:10
 msgid "About"
 msgstr "Quant a"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:17
-msgid "ChangeLog"
-msgstr "Registre de canvis"
-
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/About.qml:116
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/About.qml:119
 msgid "Terms of use"
 msgstr "Condicions d'ús"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:7
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:11
 msgid "Add product"
 msgstr "Afegeix producte"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:56
-msgid "Not implemented"
-msgstr "Sense implementar"
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
+msgid "tape to take a picture"
+msgstr ""
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/addproduct.qml:69
-msgid "Page not yet finished, thank you to return again later."
-msgstr "Pàgina sense finalitzar, per favor torne més tard."
-
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Allergen.qml:8
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:54
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:65
 msgid "Allergen"
 msgstr "Al·lèrgens"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/barcodeReader.qml:17
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:19
 msgid "Reading barcode"
 msgstr "Llegint codi de barres"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/barcodeReader.qml:101
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:149
 msgid "please, wait until the focus is done"
 msgstr "per favor, espere fins obtindre el focus"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:8
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:9
 msgid "Historical"
 msgstr "Històric"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:61
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:68
 msgid "Empty history"
 msgstr "Històric buit"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/history.qml:74
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:81
 msgid "You have not scanned product."
 msgstr "No ha escanejat cap producte"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:50
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:51
 msgid "gluten"
 msgstr "gluten"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:51
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:52
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
 msgstr "gluten, blat, sègol, ordi, avena, espelta, kamut, sèmola de blat"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:55
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:57
 msgid "crustaceans"
 msgstr "crustacis"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:56
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:58
 msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
 msgstr "crustacis, cranc, llagosta, cranc de riu, gamba, gambeta"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:59
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:62
 msgid "eggs"
 msgstr "ous"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:60
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:63
 msgid "eggs, egg, egg yolk"
 msgstr "ous, ou, rovell d'ou"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:63
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:67
 msgid "fish"
 msgstr "peix"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:64
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:68
 msgid ""
 "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
 "sole, trout, tuna, sardine, sardines"
@@ -113,37 +104,37 @@ msgstr ""
 "peixos, bacallà, verat, palaia, rèmol, mer, abadejo, salmó, llenguado, "
 "truita, tonyina, sardina, sardines"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:68
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:73
 msgid "peanuts"
 msgstr "cacauets"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:69
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:74
 msgid "peanuts, peanut, arachis hypogaea"
 msgstr "cacauets, cacauet, Arachis hypogaea"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:73
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:79
 msgid "soybeans"
 msgstr "soja"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:74
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:80
 msgid "soybeans, soya, soja, soia, soy"
 msgstr "soja"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:78
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:85
 msgid "milk"
 msgstr "llet"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:79
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:86
 msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
 msgstr ""
 "llet, lactosa, sèrum de llet, productes lactis, mantega, crema, iogurt, "
 "formatge, iogurt"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:83
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:91
 msgid "nuts"
 msgstr "nous"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:84
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:92
 msgid ""
 "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
 "Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
@@ -151,32 +142,32 @@ msgstr ""
 "nous, ametlles, avellanes, nous, anacards, nous pequen, pequen, nous del "
 "Brasil, nous de pistatxo, de macadàmia, nous d'Austràlia"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:88
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:89
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:97
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:98
 msgid "celery"
 msgstr "api"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:93
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:103
 msgid "mustard"
 msgstr "mostassa"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:94
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:104
 msgid "mustard, brassica"
 msgstr "mostassa, brassica"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:98
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:109
 msgid "sesame"
 msgstr "sèsam"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:99
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:110
 msgid "sesame seeds, sesame"
 msgstr "llavors de sèsam, sèsam"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:103
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:115
 msgid "sulfur"
 msgstr "sofre"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:104
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:116
 msgid ""
 "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
 "bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
@@ -186,11 +177,11 @@ msgstr ""
 "metabisulfit, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, "
 "E228"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:108
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:121
 msgid "molluscs"
 msgstr "mol·luscs"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:109
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:122
 msgid ""
 "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
 "mussles, mussle, clams, clam, scallops, scallop"
@@ -198,223 +189,233 @@ msgstr ""
 "mol·luscs, mol·lusc, calamars, sèpies, ostres, musclos, cloïsses, vieires, "
 "petxina de pelegrí"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:113
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:114
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:127
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:128
 msgid "lupin"
 msgstr "lupinus"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:177
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:195
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:184
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:10
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:204
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:15
 msgid "Settings"
 msgstr "Paràmetres"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/main.qml:277
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:305
 msgid "Enter your product's name or product's barcode"
 msgstr "Escriga el nom del producte o el codi de barres"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:13
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/notFound.qml:14
 msgid "Product not found"
 msgstr "El producte no es troba"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/notFound.qml:62
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/notFound.qml:22
+#, fuzzy
+msgid "add"
+msgstr "i"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/notFound.qml:82
 msgid "Your product was not found"
 msgstr "El seu producte no s'ha trobat"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductSearchResult.qml:10
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductSearchResult.qml:11
 msgid "search result for : "
 msgstr "resultats de cerca per a : "
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:78
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:85
 msgid "Common name"
 msgstr "Nom comú"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:80
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:87
 msgid "Quantity"
 msgstr "Quantitat"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:82
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:89
 msgid "Packaging"
 msgstr "Empaquetament"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:84
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:91
 msgid "Brands"
 msgstr "Marques"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:87
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:94
 msgid "Categories"
 msgstr "Categories"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:89
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:96
 msgid "Origin of ingredients"
 msgstr "Origen dels ingredients"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:91
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:98
 msgid "Manufacturing or processing places"
 msgstr "Llocs de fabricació o processament"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:93
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:100
 msgid "City and Country where purchased"
 msgstr "País o ciutat os va ser adquirit"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:95
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:102
 msgid "Stores"
 msgstr "Botigues"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:97
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:104
 msgid "Countries where sold"
 msgstr "Països on es va vendre"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:99
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:457
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
 msgid "Ingredients"
 msgstr "Ingredients"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:102
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:109
 msgid "Substances or products causing allergies or intolerances"
 msgstr "Productes o substancies que causen intoleràncies o al·lèrgies"
 
 #. TRANSLATORS: an aliment can contains traces of thoses products
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:107
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:114
 msgid "Traces"
 msgstr "Traces"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:113
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:120
 msgid "Serving size"
 msgstr "Mida de la porció"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:290
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:300
 msgid "Allergen detected"
 msgstr "S'ha detectat un al·lergen"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:340
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:352
-msgid "Product characteristics"
-msgstr "Característiques del producte"
-
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:530
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:374
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:385
 msgid "Nutrition facts"
 msgstr "Informació nutricional"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:594
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:363
+msgid "Product characteristics"
+msgstr "Característiques del producte"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
+msgid "View picture"
+msgstr ""
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:642
 msgid "nutritional value"
 msgstr "valor nutricional"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:619
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:668
 msgid "Composition by"
 msgstr "Compost per"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:620
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:669
 msgid "serving"
 msgstr "porció"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:626
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
 msgid "Energy"
 msgstr "Energia"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:630
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "Fat"
 msgstr "Greix"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:630
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "and"
 msgstr "i"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:630
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "Lipides"
 msgstr "Lípids"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:638
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
 msgid "Carbohydrate"
 msgstr "Carbohidrat"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:642
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
 msgid "of which Sugars"
 msgstr "dels quals sucre"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:646
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
 msgid "Dietary fiber"
 msgstr "Fibra dietètica"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:650
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
 msgid "Proteins"
 msgstr "Proteïnes"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:654
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
 msgid "Salt"
 msgstr "Sal"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/ProductView.qml:658
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
 msgid "Sodium"
 msgstr "Sodi"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:18
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:24
 msgid "about"
 msgstr "quant a"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:49
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:60
 msgid "Global"
 msgstr "General"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:76
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:87
 msgid "Choose a color"
 msgstr "Trie un color"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:282
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:330
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:293
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:341
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:309
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:320
 msgid "Example : #1ab6ef"
 msgstr "Exemple : #1ab6ef"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:315
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:326
 msgid "ok"
 msgstr "bé"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:342
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:353
 msgid "Theme"
 msgstr "Tema"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:347
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:358
 msgid "Viewing Information"
 msgstr "Informació de visualització"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:363
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:374
 msgid "ingredients"
 msgstr "ingredients"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/Settings.qml:385
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:396
 msgid "Composition"
 msgstr "Composició"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:10
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:40
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:47
 msgid "Developer settings"
 msgstr "Configuració del programador"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:56
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:63
 msgid "scanner from the home page"
 msgstr "escàner des de la pàgina principal"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/SettingsDeveloper.qml:91
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:98
 msgid "Delete settings"
 msgstr "Esborra configuració"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/component/Walkthrough.qml:92
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/component/Walkthrough.qml:89
 msgid "Skip"
 msgstr "Omet"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:42
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:42
 msgid "Welcome to Open Food Facts"
 msgstr "Benvinguts a Open Food Facts"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:53
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
 msgid ""
 "An application to learn more about food and eating healthier, it lists "
 "information about food products worldwide."
@@ -422,15 +423,15 @@ msgstr ""
 "Una aplicació per aprendre més sobre menjar i menjar més sa, llista "
 "informació sobre productes d'alimentació arreu del món."
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide1.qml:74
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
 msgid "Swipe to move between pages"
 msgstr "Lliscar per moure's entre pàgines"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:45
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:45
 msgid "Discover products and their ingredients"
 msgstr "Descobreix productes i els seus ingredients"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide2.qml:62
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
 msgid ""
 "Open Food Facts uses the official database of the same name to provide "
 "access to a huge collection of food products and their ingredients. You can "
@@ -440,11 +441,11 @@ msgstr ""
 "accés a una gran col·lecció de productes alimentaris i els seus ingredients. "
 "També pot afegir productes directament a la web oficial."
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:45
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
 msgid "Allergen management"
 msgstr "Gestió d'al·lèrgens"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide3.qml:62
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
 msgid ""
 "If you have a food allergy, ask that information in paramêtres. The "
 "application will help you identify a single glance the products compatible "
@@ -454,7 +455,7 @@ msgstr ""
 "paràmetres. La aplicació l'ajudarà a identificar d'una mirada els productes "
 "compatibles amb la seua al·lèrgia."
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide4.qml:66
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
 msgid ""
 "OpenFoodFacts is available in over 10 languages and is translated by the %1 "
@@ -463,12 +464,12 @@ msgstr ""
 "OpenFoodFacts està disponible en més de 10 idiomes i està traduït per %1 "
 "comunitat"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:45
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
 msgid "Support"
 msgstr "Suport"
 
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide5.qml:64
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
 msgid ""
 "If you find any bugs or have any feature requests, let us know on our "
@@ -477,18 +478,23 @@ msgstr ""
 "Si troba algun error o té alguna petició de característiques, faça-nos-ho "
 "saber a la pàgina del projecte a %1"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:45
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
 msgid "Enjoy"
 msgstr "Gaudeix"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:62
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:62
 msgid "We hope you enjoy using OpenFoodFacts!"
 msgstr "Esperem que gaudeixi usant  OpenFoodFacts!"
 
-#: /home/jimmy/Documents/Github/openfoodfacts/app/qml/welcomewizard/Slide6.qml:76
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
 msgstr "Finalitza"
 
-#, fuzzy
-#~ msgid "add"
-#~ msgstr "i"
+#~ msgid "ChangeLog"
+#~ msgstr "Registre de canvis"
+
+#~ msgid "Not implemented"
+#~ msgstr "Sense implementar"
+
+#~ msgid "Page not yet finished, thank you to return again later."
+#~ msgstr "Pàgina sense finalitzar, per favor torne més tard."

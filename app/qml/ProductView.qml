@@ -24,7 +24,7 @@ Page {
     property string productNameSearch : "";
     onProductNameSearchChanged: {
         console.log("product name search changed : " + productNameSearch);
-        openFoodFactJSON.source =  "http://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
+        openFoodFactJSON.source =  "https://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";
     }
 
     function roundDecimal(nombre, precision){

@@ -9,7 +9,7 @@ INCLUDEPATH += /usr/include/
 INCLUDEPATH += /usr/include/zbar/
 
 #desktop usage
-LIBS += /usr/lib/x86_64-linux-gnu/libzbar.a -lv4l2 -ljpeg
+LIBS += /usr/lib/arm-linux-gnueabihf/libzbar.a -lv4l2 -ljpeg
 
 #phone usage
 #LIBS += /usr/lib/libzbar.a -lv4l2 -ljpeg
