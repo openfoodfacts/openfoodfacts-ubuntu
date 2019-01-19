@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-19 07:42+0000\n"
-"PO-Revision-Date: 2019-01-19 08:25\n"
+"PO-Revision-Date: 2019-01-19 12:10\n"
 "Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
@@ -18,12 +18,12 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
-msgstr ""
+msgstr "Stregkodelæser"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
 msgid "Import image"
-msgstr ""
+msgstr "Importer billede"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/About.qml:10
 msgid "About"
@@ -35,7 +35,7 @@ msgstr "Brugsvilkår"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:11
 msgid "Add product"
-msgstr ""
+msgstr "Tilføj produkt"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
 msgid "tape to take a picture"
@@ -56,11 +56,11 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:9
 msgid "Historical"
-msgstr ""
+msgstr "Historisk"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:68
 msgid "Empty history"
-msgstr ""
+msgstr "Tom historik"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:81
 msgid "You have not scanned product."
@@ -68,39 +68,39 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:51
 msgid "gluten"
-msgstr ""
+msgstr "gluten"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:52
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
-msgstr ""
+msgstr "gluten, hvede, rug, byg, havre, spelt, kamut, hvede semulje"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:57
 msgid "crustaceans"
-msgstr ""
+msgstr "krebsdyr"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:58
 msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
-msgstr ""
+msgstr "krebsdyr, krabbe, hummer, krebs, rejer, rejer"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:62
 msgid "eggs"
-msgstr ""
+msgstr "æg"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:63
 msgid "eggs, egg, egg yolk"
-msgstr ""
+msgstr "æg, æg, æggeblomme"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:67
 msgid "fish"
-msgstr ""
+msgstr "fisk"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:68
 msgid "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, sole, trout, tuna, sardine, sardines"
-msgstr ""
+msgstr "fisk, fisk, torsk, makrel, skrubbe, helleflynder, pighvar, kuller, laks, tunge, ørred, tun, sardin, sardiner"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:73
 msgid "peanuts"
-msgstr ""
+msgstr "jordnødder"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:74
 msgid "peanuts, peanut, arachis hypogaea"
