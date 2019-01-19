@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-19 07:42+0000\n"
-"PO-Revision-Date: 2019-01-19 12:20\n"
+"PO-Revision-Date: 2019-01-19 13:00\n"
 "Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
@@ -353,11 +353,11 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:326
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:353
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:358
 msgid "Viewing Information"
@@ -374,7 +374,7 @@ msgstr ""
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:47
 msgid "Developer settings"
-msgstr ""
+msgstr "Udviklerindstillinger"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:63
 msgid "scanner from the home page"
@@ -386,7 +386,7 @@ msgstr "Slet indstillinger"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/component/Walkthrough.qml:89
 msgid "Skip"
-msgstr ""
+msgstr "Spring over"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:42
 msgid "Welcome to Open Food Facts"
