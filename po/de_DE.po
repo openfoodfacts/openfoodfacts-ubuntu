@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-19 07:42+0000\n"
-"PO-Revision-Date: 2019-01-19 08:50\n"
+"PO-Revision-Date: 2019-01-19 09:00\n"
 "Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
-msgstr ""
+msgstr "Barcodelesegerät"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
