@@ -29,20 +29,27 @@ Page {
                 left: parent.left
                 right: parent.right
             }
-            anchors.topMargin: units.gu(1)
             spacing: units.gu(1)
 
             model: openFoodFacts.allergenModel
-            delegate: Item {
-                anchors.left: parent.left
-                anchors.right: parent.right
-                height: childrenRect.height
-                anchors.leftMargin: units.gu(2)
-                anchors.rightMargin: units.gu(2)
+            delegate: ListItem.SingleValue {
+                
+                               
+                showDivider: true
+                progression: false
+                iconSource: Qt.resolvedUrl("qrc:///component/qml/component/allergen/"+idlabel+".png");
+                Text {
+                    width: parent.width
+                    horizontalAlignment: Text.AlignLeft
+                    anchors.verticalCenter: parent.verticalCenter;
 
+                    color: openFoodFacts.settings.color
+                    text: label
+                }
+                
                 CheckBox {
-                    //anchors.verticalCenter: egg.verticalCenter
-                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.verticalCenter: parent.verticalCenter;
                     checked: (openFoodFacts.settings.allergen.indexOf(label) >-1)
                     onCheckedChanged: {
                         if (checked) {
@@ -61,23 +68,8 @@ Page {
                             }
                         }
                     }
-                }
-
-                Image {
-                    anchors.left: parent.left
-                    anchors.leftMargin: units.gu(3)
-                    source: Qt.resolvedUrl("qrc:///component/qml/component/allergen/"+idlabel+".png");
-                    fillMode: Image.PreserveAspectCrop
-                    width: units.gu(2)
-                    height: units.gu(2)
-                }
-
-                Label {
-                    anchors.left: parent.left
-                    anchors.leftMargin: units.gu(6)
-                    color: openFoodFacts.settings.color;
-                    text: label;
-                }
+                } 
+            
             }
         }
 

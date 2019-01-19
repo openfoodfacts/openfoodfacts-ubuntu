@@ -70,15 +70,17 @@ Page {
         //orientation: isPortrait ? ListView.Horizontal : ListView.Vertical
         anchors.fill: parent;
         model: searchResultModel
-        delegate:  ListItem.Subtitled {
+        delegate:  ListItem.SingleValue {
+            
+            showDivider: true
+            progression: true
             iconSource: thumb_url
             Text {
                 width: parent.width
                 horizontalAlignment: Text.AlignLeft
-                font.pixelSize: 24
                 anchors.verticalCenter: parent.verticalCenter;
 
-                color: "black"
+                color: openFoodFacts.settings.color
                 text: product_name
             }
             onClicked: {
