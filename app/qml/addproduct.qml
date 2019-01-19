@@ -112,7 +112,7 @@ Page {
         height: addproductmain.height - captureZone.height;
         Text {
             id: tapToRecord
-            text: i18n.tr("tape to take a picture");
+            text: i18n.tr("tap to take a picture");
             color: "white"
             font.family: "Helvetica"
             font.pointSize: 24
