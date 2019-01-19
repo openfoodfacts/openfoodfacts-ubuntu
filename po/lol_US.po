@@ -1,0 +1,445 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openfoodfacts\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-19 07:42+0000\n"
+"PO-Revision-Date: 2019-01-19 08:26\n"
+"Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
+"Language-Team: LOLCAT\n"
+"Language: lol_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: openfoodfacts\n"
+"X-Crowdin-Language: lol\n"
+"X-Crowdin-File: /develop/po/openfoodfacts.ubuntouch-fr.pot\n"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
+msgid "Barcode reader"
+msgstr "crwdns112378:0crwdne112378:0"
+
+#. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
+msgid "Import image"
+msgstr "crwdns112380:0crwdne112380:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/About.qml:10
+msgid "About"
+msgstr "crwdns112382:0crwdne112382:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/About.qml:119
+msgid "Terms of use"
+msgstr "crwdns112384:0crwdne112384:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:11
+msgid "Add product"
+msgstr "crwdns112386:0crwdne112386:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
+msgid "tape to take a picture"
+msgstr "crwdns112388:0crwdne112388:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:65
+msgid "Allergen"
+msgstr "crwdns112390:0crwdne112390:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:19
+msgid "Reading barcode"
+msgstr "crwdns112392:0crwdne112392:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:149
+msgid "please, wait until the focus is done"
+msgstr "crwdns112394:0crwdne112394:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:9
+msgid "Historical"
+msgstr "crwdns112396:0crwdne112396:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:68
+msgid "Empty history"
+msgstr "crwdns112398:0crwdne112398:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:81
+msgid "You have not scanned product."
+msgstr "crwdns112400:0crwdne112400:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:51
+msgid "gluten"
+msgstr "crwdns112402:0crwdne112402:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:52
+msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
+msgstr "crwdns112404:0crwdne112404:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:57
+msgid "crustaceans"
+msgstr "crwdns112406:0crwdne112406:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:58
+msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
+msgstr "crwdns112408:0crwdne112408:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:62
+msgid "eggs"
+msgstr "crwdns112410:0crwdne112410:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:63
+msgid "eggs, egg, egg yolk"
+msgstr "crwdns112412:0crwdne112412:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:67
+msgid "fish"
+msgstr "crwdns112414:0crwdne112414:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:68
+msgid "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, sole, trout, tuna, sardine, sardines"
+msgstr "crwdns112416:0crwdne112416:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:73
+msgid "peanuts"
+msgstr "crwdns112418:0crwdne112418:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:74
+msgid "peanuts, peanut, arachis hypogaea"
+msgstr "crwdns112420:0crwdne112420:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:79
+msgid "soybeans"
+msgstr "crwdns112422:0crwdne112422:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:80
+msgid "soybeans, soya, soja, soia, soy"
+msgstr "crwdns112424:0crwdne112424:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:85
+msgid "milk"
+msgstr "crwdns112426:0crwdne112426:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:86
+msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
+msgstr "crwdns112428:0crwdne112428:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:91
+msgid "nuts"
+msgstr "crwdns112430:0crwdne112430:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:92
+msgid "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
+msgstr "crwdns112432:0crwdne112432:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:97
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:98
+msgid "celery"
+msgstr "crwdns112434:0crwdne112434:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:103
+msgid "mustard"
+msgstr "crwdns112436:0crwdne112436:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:104
+msgid "mustard, brassica"
+msgstr "crwdns112438:0crwdne112438:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:109
+msgid "sesame"
+msgstr "crwdns112440:0crwdne112440:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:110
+msgid "sesame seeds, sesame"
+msgstr "crwdns112442:0crwdne112442:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:115
+msgid "sulfur"
+msgstr "crwdns112444:0crwdne112444:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:116
+msgid "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
+msgstr "crwdns112446:0crwdne112446:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:121
+msgid "molluscs"
+msgstr "crwdns112448:0crwdne112448:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:122
+msgid "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, mussles, mussle, clams, clam, scallops, scallop"
+msgstr "crwdns112450:0crwdne112450:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:127
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:128
+msgid "lupin"
+msgstr "crwdns112452:0crwdne112452:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:195
+msgid "Open Food Facts"
+msgstr "crwdns112454:0crwdne112454:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:204
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:15
+msgid "Settings"
+msgstr "crwdns112456:0crwdne112456:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:305
+msgid "Enter your product's name or product's barcode"
+msgstr "crwdns112458:0crwdne112458:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/notFound.qml:14
+msgid "Product not found"
+msgstr "crwdns112460:0crwdne112460:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/notFound.qml:22
+msgid "add"
+msgstr "crwdns112462:0crwdne112462:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/notFound.qml:82
+msgid "Your product was not found"
+msgstr "crwdns112464:0crwdne112464:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductSearchResult.qml:11
+msgid "search result for : "
+msgstr "crwdns112466:0crwdne112466:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:85
+msgid "Common name"
+msgstr "crwdns112468:0crwdne112468:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:87
+msgid "Quantity"
+msgstr "crwdns112470:0crwdne112470:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:89
+msgid "Packaging"
+msgstr "crwdns112472:0crwdne112472:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:91
+msgid "Brands"
+msgstr "crwdns112474:0crwdne112474:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:94
+msgid "Categories"
+msgstr "crwdns112476:0crwdne112476:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:96
+msgid "Origin of ingredients"
+msgstr "crwdns112478:0crwdne112478:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:98
+msgid "Manufacturing or processing places"
+msgstr "crwdns112480:0crwdne112480:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:100
+msgid "City and Country where purchased"
+msgstr "crwdns112482:0crwdne112482:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:102
+msgid "Stores"
+msgstr "crwdns112484:0crwdne112484:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:104
+msgid "Countries where sold"
+msgstr "crwdns112486:0crwdne112486:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
+msgid "Ingredients"
+msgstr "crwdns112488:0crwdne112488:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:109
+msgid "Substances or products causing allergies or intolerances"
+msgstr "crwdns112490:0crwdne112490:0"
+
+#. TRANSLATORS: an aliment can contains traces of thoses products
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:114
+msgid "Traces"
+msgstr "crwdns112492:0crwdne112492:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:120
+msgid "Serving size"
+msgstr "crwdns112494:0crwdne112494:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:300
+msgid "Allergen detected"
+msgstr "crwdns112496:0crwdne112496:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:385
+msgid "Nutrition facts"
+msgstr "crwdns112498:0crwdne112498:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:363
+msgid "Product characteristics"
+msgstr "crwdns112500:0crwdne112500:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
+msgid "View picture"
+msgstr "crwdns112502:0crwdne112502:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:642
+msgid "nutritional value"
+msgstr "crwdns112504:0crwdne112504:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:668
+msgid "Composition by"
+msgstr "crwdns112506:0crwdne112506:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:669
+msgid "serving"
+msgstr "crwdns112508:0crwdne112508:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
+msgid "Energy"
+msgstr "crwdns112510:0crwdne112510:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+msgid "Fat"
+msgstr "crwdns112512:0crwdne112512:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+msgid "and"
+msgstr "crwdns112514:0crwdne112514:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+msgid "Lipides"
+msgstr "crwdns112516:0crwdne112516:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
+msgid "Carbohydrate"
+msgstr "crwdns112518:0crwdne112518:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
+msgid "of which Sugars"
+msgstr "crwdns112520:0crwdne112520:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
+msgid "Dietary fiber"
+msgstr "crwdns112522:0crwdne112522:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
+msgid "Proteins"
+msgstr "crwdns112524:0crwdne112524:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
+msgid "Salt"
+msgstr "crwdns112526:0crwdne112526:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
+msgid "Sodium"
+msgstr "crwdns112528:0crwdne112528:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:24
+msgid "about"
+msgstr "crwdns112530:0crwdne112530:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:60
+msgid "Global"
+msgstr "crwdns112532:0crwdne112532:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:87
+msgid "Choose a color"
+msgstr "crwdns112534:0crwdne112534:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:293
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:341
+msgid "Cancel"
+msgstr "crwdns112536:0crwdne112536:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:320
+msgid "Example : #1ab6ef"
+msgstr "crwdns112538:0crwdne112538:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:326
+msgid "ok"
+msgstr "crwdns112540:0crwdne112540:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:353
+msgid "Theme"
+msgstr "crwdns112542:0crwdne112542:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:358
+msgid "Viewing Information"
+msgstr "crwdns112544:0crwdne112544:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:374
+msgid "ingredients"
+msgstr "crwdns112546:0crwdne112546:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:396
+msgid "Composition"
+msgstr "crwdns112548:0crwdne112548:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:47
+msgid "Developer settings"
+msgstr "crwdns112550:0crwdne112550:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:63
+msgid "scanner from the home page"
+msgstr "crwdns112552:0crwdne112552:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:98
+msgid "Delete settings"
+msgstr "crwdns112554:0crwdne112554:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/component/Walkthrough.qml:89
+msgid "Skip"
+msgstr "crwdns112556:0crwdne112556:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:42
+msgid "Welcome to Open Food Facts"
+msgstr "crwdns112558:0crwdne112558:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
+msgid "An application to learn more about food and eating healthier, it lists information about food products worldwide."
+msgstr "crwdns112560:0crwdne112560:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
+msgid "Swipe to move between pages"
+msgstr "crwdns112562:0crwdne112562:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:45
+msgid "Discover products and their ingredients"
+msgstr "crwdns112564:0crwdne112564:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
+msgid "Open Food Facts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site."
+msgstr "crwdns112566:0crwdne112566:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
+msgid "Allergen management"
+msgstr "crwdns112568:0crwdne112568:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
+msgid "If you have a food allergy, ask that information in paramêtres. The application will help you identify a single glance the products compatible with your allergy."
+msgstr "crwdns112570:0crwdne112570:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
+#, qt-format
+msgid "OpenFoodFacts is available in over 10 languages and is translated by the %1 community"
+msgstr "crwdns112572:0%1crwdne112572:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
+msgid "Support"
+msgstr "crwdns112574:0crwdne112574:0"
+
+#. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
+#, qt-format
+msgid "If you find any bugs or have any feature requests, let us know on our project page at %1"
+msgstr "crwdns112576:0%1crwdne112576:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
+msgid "Enjoy"
+msgstr "crwdns112578:0crwdne112578:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:62
+msgid "We hope you enjoy using OpenFoodFacts!"
+msgstr "crwdns112580:0crwdne112580:0"
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
+msgid "Finish"
+msgstr "crwdns112582:0crwdne112582:0"
+
