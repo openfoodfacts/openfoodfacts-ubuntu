@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-19 07:42+0000\n"
-"PO-Revision-Date: 2019-01-19 08:26\n"
+"PO-Revision-Date: 2019-01-19 08:50\n"
 "Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -23,7 +23,7 @@ msgstr ""
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
 msgid "Import image"
-msgstr ""
+msgstr "Bilder importieren"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/About.qml:10
 msgid "About"
@@ -35,11 +35,11 @@ msgstr "Nutzungsbedingungen"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:11
 msgid "Add product"
-msgstr ""
+msgstr "Produkt hinzufügen"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
 msgid "tape to take a picture"
-msgstr ""
+msgstr "Antippen, um ein Foto aufzunehmen"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:65
@@ -48,7 +48,7 @@ msgstr "Allergen"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:19
 msgid "Reading barcode"
-msgstr ""
+msgstr "Strichcode einlesen"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:149
 msgid "please, wait until the focus is done"
@@ -56,27 +56,27 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:9
 msgid "Historical"
-msgstr ""
+msgstr "Historisch"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:68
 msgid "Empty history"
-msgstr ""
+msgstr "Verlauf leeren"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/history.qml:81
 msgid "You have not scanned product."
-msgstr ""
+msgstr "Sie haben das Produkte nicht erfasst."
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:51
 msgid "gluten"
-msgstr ""
+msgstr "Gluten"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:52
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
-msgstr ""
+msgstr "Gluten, Weizen, Roggen, Gerste, Hafer, Dinkel, Kamut (Khorasan-Weizen), Weizengrieß"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:57
 msgid "crustaceans"
-msgstr ""
+msgstr "Krustentiere"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:58
 msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
