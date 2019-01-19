@@ -1,23 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Translators:
-# Adam Leitgeb <leitgeb.a@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-19 07:42+0000\n"
-"PO-Revision-Date: 2016-01-29 13:18+0000\n"
-"Last-Translator: Adam Leitgeb <leitgeb.a@gmail.com>\n"
-"Language-Team: Czech (Czech Republic) (http://www.transifex.com/ubuntouch-fr/"
-"openfoodfacts-1/language/cs_CZ/)\n"
+"PO-Revision-Date: 2019-01-19 08:25\n"
+"Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
+"Language-Team: Czech\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: openfoodfacts\n"
+"X-Crowdin-Language: cs\n"
+"X-Crowdin-File: /develop/po/openfoodfacts.ubuntouch-fr.pot\n"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
@@ -34,7 +31,7 @@ msgstr "O aplikaci"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/About.qml:119
 msgid "Terms of use"
-msgstr ""
+msgstr "Podmínky použití"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:11
 msgid "Add product"
@@ -98,12 +95,8 @@ msgid "fish"
 msgstr "ryba"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:68
-msgid ""
-"fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
-"sole, trout, tuna, sardine, sardines"
-msgstr ""
-"ryba, ryby, treska, makrela, platýz, platýz obecný, kambala, treska "
-"skvrnitá, losos, mořský jazyk, pstruh, tuňák, sardinka, sardinky"
+msgid "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, sole, trout, tuna, sardine, sardines"
+msgstr "ryba, ryby, treska, makrela, platýz, platýz obecný, kambala, treska skvrnitá, losos, mořský jazyk, pstruh, tuňák, sardinka, sardinky"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:73
 msgid "peanuts"
@@ -127,21 +120,15 @@ msgstr "mléko"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:86
 msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
-msgstr ""
-"mléko, laktóza, syrovátka, mléčné výrobky, máslo, smetana, jogurt, sýr, "
-"jogurt"
+msgstr "mléko, laktóza, syrovátka, mléčné výrobky, máslo, smetana, jogurt, sýr, jogurt"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:91
 msgid "nuts"
 msgstr "ořechy"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:92
-msgid ""
-"nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
-"Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
-msgstr ""
-"ořechy, mandle, lískové ořechy, vlašské ořechy, kešu, kešu, pekanové ořechy, "
-"pekanové ořechy, para ořechy, pistácie, makadamie, makadamie"
+msgid "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
+msgstr "ořechy, mandle, lískové ořechy, vlašské ořechy, kešu, kešu, pekanové ořechy, pekanové ořechy, para ořechy, pistácie, makadamie, makadamie"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:97
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:98
@@ -169,10 +156,7 @@ msgid "sulfur"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:116
-msgid ""
-"sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
-"bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
-"E226, E227, E228"
+msgid "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:121
@@ -180,9 +164,7 @@ msgid "molluscs"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:122
-msgid ""
-"molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
-"mussles, mussle, clams, clam, scallops, scallop"
+msgid "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, mussles, mussle, clams, clam, scallops, scallop"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:127
@@ -192,12 +174,12 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:195
 msgid "Open Food Facts"
-msgstr ""
+msgstr "Open Food Facts"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:204
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:15
 msgid "Settings"
-msgstr ""
+msgstr "Nastavení"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:305
 msgid "Enter your product's name or product's barcode"
@@ -221,31 +203,31 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:85
 msgid "Common name"
-msgstr ""
+msgstr "Běžné jméno"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:87
 msgid "Quantity"
-msgstr ""
+msgstr "Množství"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:89
 msgid "Packaging"
-msgstr ""
+msgstr "Obal"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:91
 msgid "Brands"
-msgstr ""
+msgstr "Značky"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:94
 msgid "Categories"
-msgstr ""
+msgstr "Kategorie"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:96
 msgid "Origin of ingredients"
-msgstr ""
+msgstr "Původ přísad"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:98
 msgid "Manufacturing or processing places"
-msgstr ""
+msgstr "Výrobní nebo zpracovatelská místa"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:100
 msgid "City and Country where purchased"
@@ -253,29 +235,29 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:102
 msgid "Stores"
-msgstr ""
+msgstr "Prodejny"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:104
 msgid "Countries where sold"
-msgstr ""
+msgstr "Země prodeje"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
 msgid "Ingredients"
-msgstr ""
+msgstr "Složení"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:109
 msgid "Substances or products causing allergies or intolerances"
-msgstr ""
+msgstr "Látky nebo produkty vyvolávající alergie nebo nesnášenlivost"
 
 #. TRANSLATORS: an aliment can contains traces of thoses products
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:114
 msgid "Traces"
-msgstr ""
+msgstr "Stopy"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:120
 msgid "Serving size"
-msgstr ""
+msgstr "Velikost porce"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:300
 msgid "Allergen detected"
@@ -284,12 +266,12 @@ msgstr ""
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:385
 msgid "Nutrition facts"
-msgstr ""
+msgstr "Nutriční hodnoty"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:363
 msgid "Product characteristics"
-msgstr ""
+msgstr "Vlastnosti výrobku"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
@@ -310,11 +292,11 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
 msgid "Energy"
-msgstr ""
+msgstr "Energie"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "Fat"
-msgstr ""
+msgstr "Tuky"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
 msgid "and"
@@ -326,7 +308,7 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
 msgid "Carbohydrate"
-msgstr ""
+msgstr "Sacharidy"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
 msgid "of which Sugars"
@@ -334,19 +316,19 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
 msgid "Dietary fiber"
-msgstr ""
+msgstr "Vláknina"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
 msgid "Proteins"
-msgstr ""
+msgstr "Bílkoviny"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
 msgid "Salt"
-msgstr ""
+msgstr "Sůl"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
 msgid "Sodium"
-msgstr ""
+msgstr "Sodík"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:24
 msgid "about"
@@ -363,7 +345,7 @@ msgstr ""
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:293
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:341
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:320
 msgid "Example : #1ab6ef"
@@ -383,7 +365,7 @@ msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:374
 msgid "ingredients"
-msgstr ""
+msgstr "složení"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:396
 msgid "Composition"
@@ -411,9 +393,7 @@ msgid "Welcome to Open Food Facts"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
-msgid ""
-"An application to learn more about food and eating healthier, it lists "
-"information about food products worldwide."
+msgid "An application to learn more about food and eating healthier, it lists information about food products worldwide."
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
@@ -425,10 +405,7 @@ msgid "Discover products and their ingredients"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
-msgid ""
-"Open Food Facts uses the official database of the same name to provide "
-"access to a huge collection of food products and their ingredients. You can "
-"also add products directly on the official site."
+msgid "Open Food Facts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site."
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
@@ -436,17 +413,12 @@ msgid "Allergen management"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
-msgid ""
-"If you have a food allergy, ask that information in paramêtres. The "
-"application will help you identify a single glance the products compatible "
-"with your allergy."
+msgid "If you have a food allergy, ask that information in paramêtres. The application will help you identify a single glance the products compatible with your allergy."
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
-msgid ""
-"OpenFoodFacts is available in over 10 languages and is translated by the %1 "
-"community"
+msgid "OpenFoodFacts is available in over 10 languages and is translated by the %1 community"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
@@ -456,9 +428,7 @@ msgstr ""
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
-msgid ""
-"If you find any bugs or have any feature requests, let us know on our "
-"project page at %1"
+msgid "If you find any bugs or have any feature requests, let us know on our project page at %1"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
@@ -473,8 +443,3 @@ msgstr ""
 msgid "Finish"
 msgstr ""
 
-#~ msgid "Not implemented"
-#~ msgstr "Neimplementováno"
-
-#~ msgid "Page not yet finished, thank you to return again later."
-#~ msgstr "Stránka zatím není připraveny, vraťte se prosím později."
