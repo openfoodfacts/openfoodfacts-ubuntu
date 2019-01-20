@@ -39,7 +39,7 @@ msgstr "Ajouter un produit"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
 msgid "tape to take a picture"
-msgstr ""
+msgstr "appuyez pour prendre une photo"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:65
@@ -68,7 +68,7 @@ msgstr "Vous n'avez pas scanné de produit"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:51
 msgid "gluten"
-msgstr ""
+msgstr "gluten"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:52
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
