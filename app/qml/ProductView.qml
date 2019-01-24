@@ -78,8 +78,8 @@ Page {
                 picturebackgroundtop.source = _json.image_small_url;
                 labelbarcode.text=pageProductView.barcode;
 
-                productImagenutr.source = _json.image_nutrition_url;
-                productImageingr.source = _json.image_ingredients_url;
+                if (_json.image_nutrition_url) {productImagenutr.source = _json.image_nutrition_url;}else{ pictureButtonnutr.visible = false; pictureButtonnutr.height = units.gu(0); }
+                if (_json.image_ingredients_url) {productImageingr.source = _json.image_ingredients_url;}else{ pictureButtoningr.visible = false; pictureButtoningr.height = units.gu(0); }
 
                 var generic_name = _json.generic_name || 'n/a';
                 descproduct.text = "<b>"+i18n.tr("Common name")+ " : </b>" + generic_name;
@@ -206,7 +206,7 @@ Page {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: "#EDEDEC"
+        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
 
         ActivityIndicator {
@@ -221,7 +221,7 @@ Page {
         Rectangle {
             id:helpScreen
             width:main.width; height:main.height
-            color: "#EDEDEC"
+            color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
             visible: false
 
             Flickable {
@@ -235,7 +235,7 @@ Page {
                     id: headerpicture
                     width: helpScreen.width;
                     height: units.gu(25)
-                    color: "#EDEDEC"
+                    color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
                     Image {
                         id : picturebackgroundtop;
@@ -321,7 +321,7 @@ Page {
                         objectName: "label"
                         fontSize: "x-small"
                         horizontalAlignment : Text.AlignHCenter
-                        color: openFoodFacts.settings.color;
+                        color: openFoodFacts.settings.textColor;
                     }
 
                     ListItem.Expandable {
@@ -347,6 +347,8 @@ Page {
                                 Label {
                                     anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
                                     text: i18n.tr("Nutrition facts")
+                                    color: openFoodFacts.settings.textColor;
+
                                 }
                                 Icon {
                                     id: expendedIcon2
@@ -413,6 +415,7 @@ Page {
                                 Label {
                                     anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
                                     text: i18n.tr("Product characteristics")
+                                    color: openFoodFacts.settings.textColor;
                                 }
                                 Icon {
                                     id: expendedIcon4
@@ -530,6 +533,7 @@ Page {
                                 Label {
                                     anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
                                     text: i18n.tr("Ingredients")
+                                    color: openFoodFacts.settings.textColor;
                                 }
                                 Icon {
                                     id: expendedIcon3
@@ -640,6 +644,7 @@ Page {
                                 Label {
                                     anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter}
                                     text: i18n.tr("nutritional value")
+                                    color: openFoodFacts.settings.textColor;
                                 }
                                 Icon {
                                     id: expendedIcon

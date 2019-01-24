@@ -20,7 +20,7 @@ Page {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: "#EDEDEC"
+        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
         Flickable {
             id: flickable
@@ -95,34 +95,38 @@ Page {
                 visible: false
 
 
-                UbuntuListView {
-                    objectName: "ubuntuListView"
-                    width: parent.width
-                    height: main.height
+                ListView {
+                    id:historyListView
+                    anchors.fill: parent;
                     model: openFoodFacts.historyModel
-                    clip: true
-                    spacing: units.gu(1)
-
-                    delegate: ListItem.Subtitled {
-                        showDivider: false
-                        anchors.leftMargin: units.gu(2)
+                    delegate:  ListItem.Subtitled {
                         removable: true
                         confirmRemoval : true
                         onItemRemoved: openFoodFacts.historyModel.remove(index)
-
+                        showDivider: false
+                        progression: true
                         Text {
+                            width: parent.width
+                            horizontalAlignment: Text.AlignLeft
+                            color: openFoodFacts.settings.textColor
                             text: label
-                            color: openFoodFacts.settings.color
                         }
                         subText: codebarre
                         onClicked: {
                             var barcodeValue = codebarre;
-                            pageStack.push(Qt.resolvedUrl("ProductView.qml"), {"barcode": barcodeValue});
+                            pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": barcodeValue});
+
                         }
                     }
-                } // ListView
+                }
 
             } // Column
+            
+            
+
+            
+            
+            
         } // Flickable
     }
 }

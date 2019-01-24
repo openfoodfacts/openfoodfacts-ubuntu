@@ -42,7 +42,7 @@ Page {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: "#EDEDEC"
+        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
         Flickable {
             id: flickable
@@ -80,7 +80,7 @@ Page {
                         Label {
                             id: emptyLabel
                             text: i18n.tr("Your product was not found")
-                            color: "#5d5d5d"
+                            color: openFoodFacts.settings.textColor
                             fontSize: "large"
                             font.bold: true
                             width: product.width
@@ -92,7 +92,7 @@ Page {
                         Label {
                             id: emptyBarrecode
                             text: notFoundPage.barcode
-                            color: "#5d5d5d"
+                            color: openFoodFacts.settings.textColor
                             fontSize: "small"
                             width: product.width
                             wrapMode: Text.WordWrap

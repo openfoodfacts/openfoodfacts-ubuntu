@@ -38,7 +38,7 @@ Page {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: "#EDEDEC"
+        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
         Flickable {
             id: flickable
@@ -57,12 +57,12 @@ Page {
                 }
 
                 ListItem.Header {
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Global")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Global")+"</font>"
                 }
 
                 ListItem.MultiValue {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Allergen")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Allergen")+"</font>"
                     function addFontColor(list, color) {
                         if(list.length > 0) {
                             var txtlist = list.slice(); //local copy
@@ -268,7 +268,6 @@ Page {
 
                         }
 
-
                         Row {
                             id: row3
                             width: parent.width
@@ -330,7 +329,21 @@ Page {
                             }
 
                         }
-
+                        
+                        Row {
+                            id: rowdark
+                            width: parent.width
+                            spacing: units.gu(1)
+                                Button {
+                                        width: parent.width
+                                        text: i18n.tr("Night mode")
+                                        color:  "#111111"
+                                        onClicked: { PopupUtils.close(dialogue);
+                                        openFoodFacts.settings.color = "#3B3B3B";
+                                                   }
+                                }
+                        }
+                        
                         Row {
                             id: row4
                             width: parent.width
@@ -350,17 +363,17 @@ Page {
                 ListItem.SingleValue {
                     showDivider: false
                     progression: true
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Theme")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Theme")+"</font>"
                     onClicked: PopupUtils.open(dialog)
                 }
 
                 ListItem.Header {
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Viewing Information")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Viewing Information")+"</font>"
                 }
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Product characteristics")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Product characteristics")+"</font>"
                     control: Switch {
                         id: characteristicswitch
                         checked: openFoodFacts.settings.visiblecharacteristics
@@ -371,7 +384,7 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("ingredients")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("ingredients")+"</font>"
                     control: Switch {
                         id: ingredientwitch
                         checked: openFoodFacts.settings.visibleingredient
@@ -382,7 +395,7 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Nutrition facts")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Nutrition facts")+"</font>"
                     control: Switch {
                         id: nutritionwitch
                         checked: openFoodFacts.settings.visiblenutrition
@@ -393,7 +406,7 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">"+i18n.tr("Composition")+"</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Composition")+"</font>"
                     control: Switch {
                         id: compositionwitch
                         checked: openFoodFacts.settings.visiblecomposition
@@ -408,7 +421,7 @@ Page {
                     id: settingsdeveloper
                     visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.color+"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developer settings</font>"
+                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developer settings</font>"
                     progression: true
                     onTriggered: {
                         pageStack.push(Qt.resolvedUrl("SettingsDeveloper.qml"));

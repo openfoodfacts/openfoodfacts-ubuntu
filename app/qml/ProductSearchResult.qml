@@ -50,12 +50,12 @@ Page {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: "#EDEDEC"
+        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
         Rectangle {
             id:helpScreen
             width:main.width; height:main.height
-            color: "#EDEDEC"
+            color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
             Flickable {
                 anchors.fill: parent
@@ -80,7 +80,7 @@ Page {
                 horizontalAlignment: Text.AlignLeft
                 anchors.verticalCenter: parent.verticalCenter;
 
-                color: openFoodFacts.settings.color
+                color: openFoodFacts.settings.textColor
                 text: product_name
             }
             onClicked: {

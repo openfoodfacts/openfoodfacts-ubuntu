@@ -23,7 +23,7 @@ Page {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: "#EDEDEC"
+        color: if (openFoodFacts.settings.color = "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 Item {
       width: parent.width
       height: parent.height
@@ -86,7 +86,7 @@ Item {
             width: parent.width
             height: units.gu(4)
             Label {
-                text: "Version 1.6"
+                text: "Version 1.5"
                 fontSize: "large"
                 color: UbuntuColors.lightAubergine
                 anchors.centerIn: parent

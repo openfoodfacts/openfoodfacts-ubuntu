@@ -4,7 +4,6 @@ import QtGraphicalEffects 1.0
 import Qt.labs.settings 1.0
 import "qrc:///component/qml/component"
 
-
 MainView {
     id: openFoodFacts
     objectName: "openFoodFacts"
@@ -12,6 +11,7 @@ MainView {
 
     width: units.gu(40)
     height: units.gu(68)
+
 
     //Theme.name = "Ubuntu.Components.Themes.SuruDark"
     headerColor: openFoodFacts.settings.color;
@@ -143,7 +143,8 @@ MainView {
         property bool healthjournal:	false
 
         property string color:  '#48c1ba'
-        property string fontColor : "white";
+        property string fontColor : if (openFoodFacts.settings.color == "#3B3B3B"){ "#F7F7F7"; }else{ "white"; }
+        property string textColor : if (openFoodFacts.settings.color == "#3B3B3B"){ "#F7F7F7"; }else{ openFoodFacts.settings.color; }
 
         property var allergen;
 
@@ -220,7 +221,7 @@ MainView {
                     fill: parent
                     topMargin: units.gu(6)
                 }
-                color: "#EDEDEC"
+                color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
                 Column {
                     spacing: units.gu(2)
                     anchors {
@@ -232,7 +233,7 @@ MainView {
                         id: headerpicture
                         width: parent.width;
                         height: units.gu(20)
-                        color: "#EDEDEC"
+                        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
                         Image {
                             id : picturebackgroundtop;
@@ -359,7 +360,7 @@ MainView {
                 iconName: "add"
                 iconColor: "white"
                 backgroundColor: UbuntuColors.green
-                enabled : openFoodFacts.currentPage !== "AddProduct"
+                enabled : openFoodFacts.settings.developerModeEnabled //openFoodFacts.currentPage !== "AddProduct"
                 onTriggered: {
                     openFoodFacts.currentPage="AddProduct";
                     pageStack.push(Qt.resolvedUrl("addproduct.qml"));
