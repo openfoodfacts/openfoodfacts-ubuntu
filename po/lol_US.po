@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 07:42+0000\n"
+"POT-Creation-Date: 2019-01-24 09:30+0000\n"
 "PO-Revision-Date: 2019-01-19 08:26\n"
 "Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
 "Language-Team: LOLCAT\n"
@@ -38,7 +38,8 @@ msgid "Add product"
 msgstr "crwdns112386:0crwdne112386:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
-msgid "tape to take a picture"
+#, fuzzy
+msgid "tap to take a picture"
 msgstr "crwdns112388:0crwdne112388:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
@@ -95,7 +96,9 @@ msgid "fish"
 msgstr "crwdns112414:0crwdne112414:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:68
-msgid "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, sole, trout, tuna, sardine, sardines"
+msgid ""
+"fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
+"sole, trout, tuna, sardine, sardines"
 msgstr "crwdns112416:0crwdne112416:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:73
@@ -127,7 +130,9 @@ msgid "nuts"
 msgstr "crwdns112430:0crwdne112430:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:92
-msgid "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
+msgid ""
+"nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
+"Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
 msgstr "crwdns112432:0crwdne112432:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:97
@@ -156,7 +161,10 @@ msgid "sulfur"
 msgstr "crwdns112444:0crwdne112444:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:116
-msgid "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
+msgid ""
+"sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
+"bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
+"E226, E227, E228"
 msgstr "crwdns112446:0crwdne112446:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:121
@@ -164,7 +172,9 @@ msgid "molluscs"
 msgstr "crwdns112448:0crwdne112448:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:122
-msgid "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, mussles, mussle, clams, clam, scallops, scallop"
+msgid ""
+"molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
+"mussles, mussle, clams, clam, scallops, scallop"
 msgstr "crwdns112450:0crwdne112450:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:127
@@ -172,16 +182,16 @@ msgstr "crwdns112450:0crwdne112450:0"
 msgid "lupin"
 msgstr "crwdns112452:0crwdne112452:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:195
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:196
 msgid "Open Food Facts"
 msgstr "crwdns112454:0crwdne112454:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:204
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:205
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:15
 msgid "Settings"
 msgstr "crwdns112456:0crwdne112456:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:305
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:306
 msgid "Enter your product's name or product's barcode"
 msgstr "crwdns112458:0crwdne112458:0"
 
@@ -242,7 +252,7 @@ msgid "Countries where sold"
 msgstr "crwdns112486:0crwdne112486:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:535
 msgid "Ingredients"
 msgstr "crwdns112488:0crwdne112488:0"
 
@@ -264,69 +274,69 @@ msgid "Allergen detected"
 msgstr "crwdns112496:0crwdne112496:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:385
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:398
 msgid "Nutrition facts"
 msgstr "crwdns112498:0crwdne112498:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:363
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:417
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:376
 msgid "Product characteristics"
 msgstr "crwdns112500:0crwdne112500:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:598
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:733
 msgid "View picture"
 msgstr "crwdns112502:0crwdne112502:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:642
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:646
 msgid "nutritional value"
 msgstr "crwdns112504:0crwdne112504:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:668
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:673
 msgid "Composition by"
 msgstr "crwdns112506:0crwdne112506:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:669
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:674
 msgid "serving"
 msgstr "crwdns112508:0crwdne112508:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:680
 msgid "Energy"
 msgstr "crwdns112510:0crwdne112510:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "Fat"
 msgstr "crwdns112512:0crwdne112512:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "and"
 msgstr "crwdns112514:0crwdne112514:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "Lipides"
 msgstr "crwdns112516:0crwdne112516:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:692
 msgid "Carbohydrate"
 msgstr "crwdns112518:0crwdne112518:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:696
 msgid "of which Sugars"
 msgstr "crwdns112520:0crwdne112520:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:700
 msgid "Dietary fiber"
 msgstr "crwdns112522:0crwdne112522:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:704
 msgid "Proteins"
 msgstr "crwdns112524:0crwdne112524:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:708
 msgid "Salt"
 msgstr "crwdns112526:0crwdne112526:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:712
 msgid "Sodium"
 msgstr "crwdns112528:0crwdne112528:0"
 
@@ -342,32 +352,36 @@ msgstr "crwdns112532:0crwdne112532:0"
 msgid "Choose a color"
 msgstr "crwdns112534:0crwdne112534:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:293
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:341
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:292
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:354
 msgid "Cancel"
 msgstr "crwdns112536:0crwdne112536:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:320
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:319
 msgid "Example : #1ab6ef"
 msgstr "crwdns112538:0crwdne112538:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:326
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:325
 msgid "ok"
 msgstr "crwdns112540:0crwdne112540:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:353
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:339
+msgid "Night mode"
+msgstr ""
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:366
 msgid "Theme"
 msgstr "crwdns112542:0crwdne112542:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:358
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:371
 msgid "Viewing Information"
 msgstr "crwdns112544:0crwdne112544:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:374
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:387
 msgid "ingredients"
 msgstr "crwdns112546:0crwdne112546:0"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:396
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:409
 msgid "Composition"
 msgstr "crwdns112548:0crwdne112548:0"
 
@@ -393,7 +407,9 @@ msgid "Welcome to Open Food Facts"
 msgstr "crwdns112558:0crwdne112558:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
-msgid "An application to learn more about food and eating healthier, it lists information about food products worldwide."
+msgid ""
+"An application to learn more about food and eating healthier, it lists "
+"information about food products worldwide."
 msgstr "crwdns112560:0crwdne112560:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
@@ -405,7 +421,10 @@ msgid "Discover products and their ingredients"
 msgstr "crwdns112564:0crwdne112564:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
-msgid "Open Food Facts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site."
+msgid ""
+"Open Food Facts uses the official database of the same name to provide "
+"access to a huge collection of food products and their ingredients. You can "
+"also add products directly on the official site."
 msgstr "crwdns112566:0crwdne112566:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
@@ -413,12 +432,17 @@ msgid "Allergen management"
 msgstr "crwdns112568:0crwdne112568:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
-msgid "If you have a food allergy, ask that information in paramêtres. The application will help you identify a single glance the products compatible with your allergy."
+msgid ""
+"If you have a food allergy, ask that information in paramêtres. The "
+"application will help you identify a single glance the products compatible "
+"with your allergy."
 msgstr "crwdns112570:0crwdne112570:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
-msgid "OpenFoodFacts is available in over 10 languages and is translated by the %1 community"
+msgid ""
+"OpenFoodFacts is available in over 10 languages and is translated by the %1 "
+"community"
 msgstr "crwdns112572:0%1crwdne112572:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
@@ -428,7 +452,9 @@ msgstr "crwdns112574:0crwdne112574:0"
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
-msgid "If you find any bugs or have any feature requests, let us know on our project page at %1"
+msgid ""
+"If you find any bugs or have any feature requests, let us know on our "
+"project page at %1"
 msgstr "crwdns112576:0%1crwdne112576:0"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
@@ -442,4 +468,3 @@ msgstr "crwdns112580:0crwdne112580:0"
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
 msgstr "crwdns112582:0crwdne112582:0"
-

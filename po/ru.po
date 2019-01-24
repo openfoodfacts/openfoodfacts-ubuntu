@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 07:42+0000\n"
+"POT-Creation-Date: 2019-01-24 09:30+0000\n"
 "PO-Revision-Date: 2016-06-09 09:16+0000\n"
 "Last-Translator: Nkolay Parukhin <parukhin@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
@@ -40,7 +40,7 @@ msgid "Add product"
 msgstr "Добавить продукт"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
-msgid "tape to take a picture"
+msgid "tap to take a picture"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
@@ -193,16 +193,16 @@ msgstr ""
 msgid "lupin"
 msgstr "люпин"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:195
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:196
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:204
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:205
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:15
 msgid "Settings"
 msgstr "Настройки"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:305
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:306
 msgid "Enter your product's name or product's barcode"
 msgstr "Введите название продукта или его штрих-код"
 
@@ -264,7 +264,7 @@ msgid "Countries where sold"
 msgstr "Страны, в которых продаётся"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:535
 msgid "Ingredients"
 msgstr "Ингредиенты"
 
@@ -286,69 +286,69 @@ msgid "Allergen detected"
 msgstr "Обнаружен аллерген"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:385
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:398
 msgid "Nutrition facts"
 msgstr "Пищевая ценность"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:363
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:417
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:376
 msgid "Product characteristics"
 msgstr "Характеристики продукта"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:598
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:733
 msgid "View picture"
 msgstr ""
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:642
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:646
 msgid "nutritional value"
 msgstr "пищевая ценность"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:668
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:673
 msgid "Composition by"
 msgstr "Состав по"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:669
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:674
 msgid "serving"
 msgstr "порция"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:680
 msgid "Energy"
 msgstr "Калорийность"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "Fat"
 msgstr "Жир"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "and"
 msgstr "и"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "Lipides"
 msgstr "Липиды"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:692
 msgid "Carbohydrate"
 msgstr "Углеводы"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:696
 msgid "of which Sugars"
 msgstr "из которых сахара"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:700
 msgid "Dietary fiber"
 msgstr "Пищевые волокна"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:704
 msgid "Proteins"
 msgstr "Белки"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:708
 msgid "Salt"
 msgstr "Соль"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:712
 msgid "Sodium"
 msgstr "Натрий"
 
@@ -364,32 +364,36 @@ msgstr "Общие"
 msgid "Choose a color"
 msgstr "Выберите цвет"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:293
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:341
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:292
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:354
 msgid "Cancel"
 msgstr "Отмена"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:320
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:319
 msgid "Example : #1ab6ef"
 msgstr "Например: #1ab6ef"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:326
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:325
 msgid "ok"
 msgstr "ok"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:353
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:339
+msgid "Night mode"
+msgstr ""
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:366
 msgid "Theme"
 msgstr "Оформление"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:358
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:371
 msgid "Viewing Information"
 msgstr "Просмотр информации"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:374
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:387
 msgid "ingredients"
 msgstr "ингредиенты"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:396
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:409
 msgid "Composition"
 msgstr "Состав"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-19 07:42+0000\n"
+"POT-Creation-Date: 2019-01-24 09:30+0000\n"
 "PO-Revision-Date: 2016-02-12 11:21+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/ubuntouch-fr/"
@@ -42,7 +42,7 @@ msgid "Add product"
 msgstr "Termék hozzáadása"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
-msgid "tape to take a picture"
+msgid "tap to take a picture"
 msgstr ""
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
@@ -192,16 +192,16 @@ msgstr "kagylók, puhatestűek, rákfélék, tintahal, osztriga, kagyló"
 msgid "lupin"
 msgstr "farkasbab, csillagfürt"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:195
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:196
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:204
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:205
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:15
 msgid "Settings"
 msgstr "Beállítások"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:305
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/main.qml:306
 msgid "Enter your product's name or product's barcode"
 msgstr "Adja meg a termék nevét vagy vonalkódját"
 
@@ -263,7 +263,7 @@ msgid "Countries where sold"
 msgstr "Árusító országok"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:532
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:535
 msgid "Ingredients"
 msgstr "Össztevők"
 
@@ -285,69 +285,69 @@ msgid "Allergen detected"
 msgstr "Észlelt allergének"
 
 #: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:349
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:385
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:398
 msgid "Nutrition facts"
 msgstr "Tápanyag ismertető"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:415
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:363
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:417
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:376
 msgid "Product characteristics"
 msgstr "Termék információk"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:594
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:728
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:598
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:733
 msgid "View picture"
 msgstr ""
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:642
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:646
 msgid "nutritional value"
 msgstr "tápérték"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:668
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:673
 msgid "Composition by"
 msgstr "Összetétel"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:669
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:674
 msgid "serving"
 msgstr "adag"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:675
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:680
 msgid "Energy"
 msgstr "Energia"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "Fat"
 msgstr "Zsír"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "and"
 msgstr "és"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:679
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
 msgid "Lipides"
 msgstr "lipidek"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:687
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:692
 msgid "Carbohydrate"
 msgstr "Szénhidrát"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:691
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:696
 msgid "of which Sugars"
 msgstr "ebből cukor"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:695
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:700
 msgid "Dietary fiber"
 msgstr "Élelmi rost"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:699
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:704
 msgid "Proteins"
 msgstr "Fehérje"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:703
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:708
 msgid "Salt"
 msgstr "Só"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:707
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/ProductView.qml:712
 msgid "Sodium"
 msgstr "Nátrium"
 
@@ -363,32 +363,36 @@ msgstr "Globális"
 msgid "Choose a color"
 msgstr "Válasszon egy színt"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:293
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:341
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:292
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:354
 msgid "Cancel"
 msgstr "Mégse"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:320
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:319
 msgid "Example : #1ab6ef"
 msgstr "Példa : #1ab6ef"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:326
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:325
 msgid "ok"
 msgstr "OK"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:353
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:339
+msgid "Night mode"
+msgstr ""
+
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:366
 msgid "Theme"
 msgstr "Téma"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:358
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:371
 msgid "Viewing Information"
 msgstr "Információk megjelenítése"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:374
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:387
 msgid "ingredients"
 msgstr "Összetevők"
 
-#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:396
+#: /home/jimmy/GITLAB/openfoodfacts-ubuntu/app/qml/Settings.qml:409
 msgid "Composition"
 msgstr "Összetétel"
 
