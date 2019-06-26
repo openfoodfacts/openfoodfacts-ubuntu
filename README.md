@@ -1,19 +1,19 @@
-#Open Food Facts for Ubuntu Touch
+# Open Food Facts for Ubuntu Touch
 An implementation of Open Food Facts database to Ubuntu touch devices.
 
 # Developpers and contributors
 - Nymerea
 - sy-per
 
-#License
+# License
 This application is released under the term of the GNU GENERAL PUBLIC LICENSE Version 3.<br>
 See file [gpl-3.0.txt](gpl-3.0.txt) for details.
 
-#Dependencies
+# Dependencies
 Don't forget to install dependencies because the barcode detector uses static linkage
 
 clickable.json
-`{
+```{
     "dependencies": [
         "libjpeg-dev",
         "libzbar0",
@@ -22,12 +22,12 @@ clickable.json
         "libv4l-dev",
         "libqrencode-dev"
     ]
-}`
-
+}
+```
 If you want publish your application on smartphone, create your docker image manually and don't forget to install dependencies on your kit with Dockerfile
 
 Dockerfile
-`
+```
 FROM clickable/ubuntu-sdk:16.04-armhf
 
 RUN apt update
@@ -38,16 +38,16 @@ RUN apt install -y libzbar-dev:armhf
 
 RUN apt install -y libjpeg-dev:armhf
 RUN apt install -y libv4l-dev:armhf
-`
+```
 
 Terminal :
-`
+```
 docker build ./ -t ut16.04-zbar
-`
+```
 
 
 clickable.json
-`{
+```{
     "docker_image":"ut16.04-zbar",
     "dependencies": [
         "libjpeg-dev:armhf",
@@ -57,8 +57,8 @@ clickable.json
         "libv4l-dev:armhf",
         "libqrencode-dev:armhf"
     ]
-}`
-
+}
+```
 # Official Documentation of the Open Food Facts API
 The official documentation for API : https://en.wiki.openfoodfacts.org/Project:API
 
