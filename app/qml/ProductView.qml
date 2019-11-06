@@ -15,13 +15,22 @@ Page {
            foregroundColor: openFoodFacts.settings.fontColor;
            backgroundColor: openFoodFacts.settings.color;
        }
-
+            leadingActionBar.actions: [
+                Action {
+                    iconName: "back"
+                    text: "Back"
+                    onTriggered: {
+                        pageStack.pop();
+                    }
+                }
+            ]
    }
     Component.onCompleted: openFoodFacts.currentPage="ProductView";
 
     property string barcode:"";
     onBarcodeChanged: console.log("[ProductView] barcode = "+pageProductView.barcode);
     property string productNameSearch : "";
+    
     onProductNameSearchChanged: {
         console.log("product name search changed : " + productNameSearch);
         openFoodFactJSON.source =  "https://world.openfoodfacts.org/api/v0/product/" + pageProductView.barcode + ".json";

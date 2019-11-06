@@ -12,18 +12,8 @@ import "qrc:///component/qml/component"
 
 
 
-Page {
+Item {
     id: grabCodePage
-
-    header: PageHeader {
-        title: i18n.tr("Reading barcode");
-       StyleHints {
-           foregroundColor: openFoodFacts.settings.fontColor;
-           backgroundColor: openFoodFacts.settings.color;
-       }
-
-   }
-
 
     QRCodeReader {
         id: qrCodeReader
@@ -31,7 +21,6 @@ Page {
         onValidChanged: {
             if (valid) {
                 captureTimer.stop()
-                pageStack.pop();
                 pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": qrCodeReader.text});
             }
         }

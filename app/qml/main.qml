@@ -3,6 +3,9 @@ import Ubuntu.Components 1.3
 import QtGraphicalEffects 1.0
 import Qt.labs.settings 1.0
 import "qrc:///component/qml/component"
+import QtMultimedia 5.4
+import CodeReader 1.0
+import QtQuick.Window 2.0
 
 MainView {
     id: openFoodFacts
@@ -284,7 +287,14 @@ MainView {
                             MouseArea {
                                 anchors.fill: mask
                                 onClicked: {
-                                    pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
+                                    headerpicture.height = rect1.height-(codeInput.height*3)
+                                   grabCodePage.visible = true 
+                                   captureTimer.start()
+
+                camera.startAndConfigure();
+                qrCodeReader.scanRect = Qt.rect(openFoodFacts.mapFromItem(barcodeZone, 0, 0).x, openFoodFacts.mapFromItem(barcodeZone, 0, 0).y, barcodeZone.width, barcodeZone.height);
+        openFoodFacts.currentPage="BarcodeReader";
+                                    //pageStack.push(Qt.resolvedUrl("barcodeReader.qml"));
                                 }
                                 onPressed: { mask2.color = "#CCCCCC"; }
                                 Timer {
@@ -293,12 +303,189 @@ MainView {
                                 }
                             }
                         }
+                        
+Item {
+    id: grabCodePage
+anchors.fill: parent
+    visible: false
+    
+    QRCodeReader {
+        id: qrCodeReader
+
+        onValidChanged: {
+            if (valid) {
+                captureTimer.stop()
+                    
+                grabCodePage.visible = false 
+                    
+               headerpicture.height = units.gu(20)
+                   pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": qrCodeReader.text});
+            }
+        }
+    }
+
+
+    Camera {
+        id: camera
+
+        //                flash.mode: torchButton.active ? Camera.FlashTorch : Camera.FlashOff
+        //                flash.mode: Camera.FlashTorch
+
+        focus.focusMode: Camera.FocusContinuous
+        focus.focusPointMode: Camera.FocusPointAuto
+
+        /* Use only digital zoom for now as it's what phone cameras mostly use.
+               TODO: if optical zoom is available, maximumZoom should be the combined
+               range of optical and digital zoom and currentZoom should adjust the two
+               transparently based on the value. */
+        property alias currentZoom: camera.digitalZoom
+        property alias maximumZoom: camera.maximumDigitalZoom
+
+        function startAndConfigure() {
+            start();
+            focus.focusMode = Camera.FocusContinuous
+            focus.focusPointMode = Camera.FocusPointAuto
+        }
+
+    }
+
+    Timer {
+        id: captureTimer
+        interval: 2000
+        repeat: true
+        onTriggered: {
+            print("capturing");
+            qrCodeReader.grab();
+        }
+    }
+
+
+    VideoOutput {
+        id: videoOutput
+        anchors {
+            fill: parent
+        }
+        fillMode: Image.PreserveAspectCrop
+
+        orientation: {
+            var angle = Screen.primaryOrientation == Qt.PortraitOrientation ? -90 : 0;
+            angle += Screen.orientation == Qt.InvertedLandscapeOrientation ? 180 : 0;
+            return angle;
+        }
+        source: camera
+        focus: visible
+        MouseArea {
+            anchors.fill: parent;
+            onClicked:  qrCodeReader.grab();
+        }
+    }
+    PinchArea {
+        id: pinchy
+        anchors.fill: parent
+
+        property real initialZoom
+        property real minimumScale: 0.3
+        property real maximumScale: 3.0
+        property bool active: false
+
+        onPinchStarted: {
+            print("pinch started!")
+            active = true;
+            initialZoom = camera.currentZoom;
+        }
+        onPinchUpdated: {
+            print("pinch updated")
+            var scaleFactor = MathUtils.projectValue(pinch.scale, 1.0, maximumScale, 0.0, camera.maximumZoom);
+            camera.currentZoom = MathUtils.clamp(initialZoom + scaleFactor, 1, camera.maximumZoom);
+        }
+        onPinchFinished: {
+            active = false;
+        }
+    }
+
+
+
+    Rectangle {
+        id: barcodeZone
+        x: videoOutput.width*2/8
+        y: videoOutput.height*2/8
+        width: videoOutput.width/2
+        height: videoOutput.height/2
+        border.color: "red"
+        color:"transparent"
+    }
+
+    /*
+    *   Fill the screen with a gray area
+    *   like that, the user can focus on the barcode
+    */
+    Rectangle {
+        id : mapGreyToTop
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x;
+        y: videoOutput.y;
+        width: videoOutput.width;
+        height: barcodeZone.y;
+
+        Text {
+            id: infoTexte
+            text : i18n.tr("please, wait until the focus is done");
+            font.bold: true;
+            color:"white";
+            width: parent.width
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+        }
+    }
+
+    Rectangle {
+        id : mapGreyToBottom
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x;
+        y: (videoOutput.y + videoOutput.height) - barcodeZone.y
+        width: videoOutput.width;
+        height: barcodeZone.y;
+    }
+    Rectangle {
+        id : mapGreyToLeft
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x;
+        y: mapGreyToTop.y + mapGreyToTop.height;
+        width: barcodeZone.x - videoOutput.x;
+        height: mapGreyToBottom.y - barcodeZone.y ;
+    }
+
+    Rectangle {
+        id : mapGreyToRight
+        color: "black"
+        opacity: 0.6
+        x: videoOutput.x + barcodeZone.x + barcodeZone.width;
+        y: mapGreyToTop.y + mapGreyToTop.height;
+        width: barcodeZone.x - videoOutput.x;
+        height: mapGreyToBottom.y - barcodeZone.y ;
+    }
+
+
+
+    // We must use Item element because Screen component does not work with QtObject
+    Item {
+        id: device
+        property string naturalOrientation: Screen.primaryOrientation == Qt.LandscapeOrientation ? "landscape" : "portrait"
+        visible: false
+    }
+
+}
+
                     } // header picture
 
 
                     Row {
                         anchors.horizontalCenter: parent.horizontalCenter
                         spacing: units.gu(1)
+                        id: codeInput
 
                         TextField {
                             id: barcodeinput
@@ -326,6 +513,9 @@ MainView {
                                 } else {
                                     pageStack.push(Qt.resolvedUrl("ProductSearchResult.qml"), {"productNameSearch": searchValue});
                                 }
+                                grabCodePage.visible = false 
+                                captureTimer.stop()
+                                headerpicture.height = units.gu(20)
                             }
                         } // send button
 

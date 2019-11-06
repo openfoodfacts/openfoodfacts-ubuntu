@@ -1,6 +1,5 @@
 {
-    "docker_image":"ut16.04-zbar",
-    "dependencies": [
+    "dependencies_target": [
         "libjpeg-dev",
         "libzbar0",
         "zbar-tools",
