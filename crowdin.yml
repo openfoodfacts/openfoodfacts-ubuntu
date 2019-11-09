@@ -1,3 +1,3 @@
 files:
-  - source: /po/openfoodfacts.ubuntouch-fr.pot
+  - source: /po/openfoodfacts.pot
     translation: /po/%locale_with_underscore%.po
