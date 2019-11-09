@@ -8,23 +8,18 @@ Page {
 
     header: PageHeader {
         title: i18n.tr("About");
-       StyleHints {
-           foregroundColor: openFoodFacts.settings.fontColor;
-           backgroundColor: openFoodFacts.settings.color;
-       }
-
    }
 
 
 // ABOUT PAGE
-    Rectangle {
+    Item {
         id:rect1
         anchors {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: if (openFoodFacts.settings.color = "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
-Item {
+
+    Item {
       width: parent.width
       height: parent.height
 
@@ -86,7 +81,7 @@ Item {
             width: parent.width
             height: units.gu(4)
             Label {
-                text: "Version 1.7"
+                text: "Version 1.9"
                 fontSize: "large"
                 color: UbuntuColors.lightAubergine
                 anchors.centerIn: parent

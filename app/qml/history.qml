@@ -7,27 +7,22 @@ Page {
 
     header: PageHeader {
         title: i18n.tr("Historical");
-       StyleHints {
-           foregroundColor: openFoodFacts.settings.fontColor;
-           backgroundColor: openFoodFacts.settings.color;
-       }
-
    }
+    
     Component.onCompleted: openFoodFacts.currentPage="History";
-    Rectangle {
-        id:main
-        anchors {
-            fill: parent
-            topMargin: units.gu(6)
-        }
-        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
         Flickable {
             id: flickable
-            anchors.fill: parent
+            anchors { 
+                left: parent.left
+                right: parent.right 
+                top: header.bottom
+                bottom: parent.bottom
+            }
             contentHeight: historyColumn.height
             flickableDirection: Flickable.VerticalFlick
             clip: true
+                
             Component.onCompleted: {
                 if (openFoodFacts.historyModel.count == "0")
                     emptyrect.visible = true
@@ -38,7 +33,7 @@ Page {
 
 
 
-            Rectangle {
+            Item {
                 id:emptyrect
                 visible: false
 
@@ -48,7 +43,6 @@ Page {
                     right: parent.right
                 }
                 anchors.topMargin: units.gu(5);
-                color: "#EDEDEC"
 
                 Item {
                     id: emptyState
@@ -66,7 +60,7 @@ Page {
                     Label {
                         id: emptyLabel
                         text: i18n.tr("Empty history")
-                        color: "#5d5d5d"
+                        color: theme.palette.normal.backgroundText
                         fontSize: "large"
                         font.bold: true
                         width: historyColumn.width
@@ -79,7 +73,7 @@ Page {
                     Label {
                         id: emptySublabel
                         text: i18n.tr("You have not scanned product.")
-                        color: "#7b7b7b"
+                        color: theme.palette.normal.backgroundSecondaryText
                         width: historyColumn.width
                         wrapMode: Text.WordWrap
                         anchors.top: emptyLabel.bottom
@@ -103,13 +97,14 @@ Page {
                         removable: true
                         confirmRemoval : true
                         onItemRemoved: openFoodFacts.historyModel.remove(index)
-                        showDivider: false
+                        showDivider: true
                         progression: true
                         Text {
                             width: parent.width
                             horizontalAlignment: Text.AlignLeft
-                            color: openFoodFacts.settings.textColor
+                            color: theme.palette.normal.backgroundText
                             text: label
+                            font.bold: true
                         }
                         subText: codebarre
                         onClicked: {
@@ -128,5 +123,5 @@ Page {
             
             
         } // Flickable
-    }
+    
 }

@@ -12,19 +12,15 @@ Page {
 
     header: PageHeader {
         title: i18n.tr("Developer settings")
-       StyleHints {
-           foregroundColor: openFoodFacts.settings.fontColor;
-           backgroundColor: openFoodFacts.settings.color;
-       }
+
 
    }
-    Rectangle {
+    Item {
         id:main
         anchors {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
         Flickable {
             id: flickable
@@ -44,12 +40,12 @@ Page {
 
 
                 ListItem.Header {
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Developer settings")+"</font>"
+                    text: i18n.tr("Developer settings")
                 }
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+"Activate the welcome wizard at next start"+"</font>"
+                    text: "Activate the welcome wizard at next start"
                     control: Switch {
                         id: welcomewizard
                         checked: openFoodFacts.settings.firstRun
@@ -60,20 +56,7 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("scanner from the home page")+"</font>"
-                    control: Switch {
-                        id: scanhomepageswitch
-                        checked: openFoodFacts.settings.scanhomepage
-                        onClicked: { openFoodFacts.settings.scanhomepage = checked;
-                                     pageStack.clear();
-                             pageStack.push(Qt.resolvedUrl("main.qml"));
-                        }
-                    }
-                }
-
-                ListItem.Standard {
-                    showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+"Enable health journal"+"</font>"
+                    text: "Enable health journal"
                     control: Switch {
                         id: healthjournal
                         checked: openFoodFacts.settings.healthjournal

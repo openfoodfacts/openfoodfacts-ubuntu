@@ -24,6 +24,18 @@
         <file alias="e.png">../OpenFoodFacts/e.png</file>
         <file alias="picker.png">../OpenFoodFacts/picker.png</file>
     </qresource>
+    <qresource prefix="/assets">
+        <file alias="additives.svg">qml/assets/additives.svg</file>
+        <file alias="energy.svg">qml/assets/energy.svg</file>
+        <file alias="fiber.svg">qml/assets/fiber.svg</file>
+        <file alias="proteins.svg">qml/assets/proteins.svg</file>
+        <file alias="salt.svg">qml/assets/salt.svg</file>
+        <file alias="saturatedfat.svg">qml/assets/saturatedfat.svg</file>
+        <file alias="sugars.svg">qml/assets/sugars.svg</file>
+        <file alias="low.svg">qml/assets/low.svg</file>
+        <file alias="moderate.svg">qml/assets/moderate.svg</file>
+        <file alias="high.svg">qml/assets/high.svg</file>
+    </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>
         <file>qml/component/RadialAction.qml</file>

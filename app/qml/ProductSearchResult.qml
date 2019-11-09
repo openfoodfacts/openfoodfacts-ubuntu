@@ -9,11 +9,6 @@ Page {
     id: pageProductSearch
     header: PageHeader {
         title: i18n.tr("search result for : ") + pageProductSearch.productNameSearch;
-       StyleHints {
-           foregroundColor: openFoodFacts.settings.fontColor;
-           backgroundColor: openFoodFacts.settings.color;
-       }
-
    }
 
 
@@ -44,18 +39,16 @@ Page {
 
     }
 
-    Rectangle {
+    Item {
         id:main
         anchors {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
-        Rectangle {
+        Item {
             id:helpScreen
             width:main.width; height:main.height
-            color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
             Flickable {
                 anchors.fill: parent
@@ -79,9 +72,9 @@ Page {
                 width: parent.width
                 horizontalAlignment: Text.AlignLeft
                 anchors.verticalCenter: parent.verticalCenter;
-
-                color: openFoodFacts.settings.textColor
                 text: product_name
+                color: theme.palette.normal.backgroundText
+                font.bold: true
             }
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("qrc:///qml/ProductView.qml"), {"barcode": code});

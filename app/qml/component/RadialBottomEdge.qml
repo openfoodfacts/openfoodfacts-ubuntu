@@ -9,7 +9,7 @@ Item {
     property color hintColor: Theme.palette.normal.overlay
     property string hintIconName: "view-grid-symbolic"
     property alias hintIconSource: hintIcon.source
-    property color hintIconColor: UbuntuColors.coolGrey
+    property color hintIconColor: theme.palette.normal.background
     property bool bottomEdgeEnabled: true
 
     property int expandAngle: 360
@@ -36,7 +36,8 @@ Item {
         id: bgVisual
         
         z: 1
-        color: "black"
+
+        color: theme.palette.normal.backgroundText
         anchors.fill: parent
         opacity: 0.7 * ((bottomEdge.height - bottomEdgeHint.y) / bottomEdge.height)
     }
@@ -44,7 +45,7 @@ Item {
     Rectangle {
         id: bottomEdgeHint
 
-        color: hintColor
+        color: theme.palette.normal.backgroundText
         width: hintSize
         height: width
         radius: width/2

@@ -15,19 +15,6 @@ MainView {
     width: units.gu(40)
     height: units.gu(68)
 
-
-    //Theme.name = "Ubuntu.Components.Themes.SuruDark"
-    headerColor: openFoodFacts.settings.color;
-
-    /* theme.palette: Palette {
-           normal.background: UbuntuColors.blue
-       }
-    Component.onCompleted: { console.log(i18n.domain)
-        console.log(i18n.language)
-        if(settings.allergen === undefined)
-            settings.allergen = []
-    }*/
-
     // for display the right icon in RadialButton
     property string currentPage : ""
 
@@ -197,10 +184,6 @@ MainView {
 
              header: PageHeader {
                 title: i18n.tr("Open Food Facts")
-                StyleHints {
-                    foregroundColor: openFoodFacts.settings.fontColor;
-                    backgroundColor: openFoodFacts.settings.color;
-                }
 
                 trailingActionBar {
                     actions: [
@@ -218,13 +201,13 @@ MainView {
 
 
 
-            Rectangle {
+            Item {
                 id:rect1
                 anchors {
                     fill: parent
                     topMargin: units.gu(6)
                 }
-                color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
+
                 Column {
                     spacing: units.gu(2)
                     anchors {
@@ -232,11 +215,10 @@ MainView {
                         left: parent.left
                     }
 
-                    Rectangle {
+                    Item {
                         id: headerpicture
                         width: parent.width;
                         height: units.gu(20)
-                        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
                         Image {
                             id : picturebackgroundtop;
@@ -259,7 +241,7 @@ MainView {
                             anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: picturebackgroundtop.bottom;
                             width: units.gu(9)
                             height: units.gu(9)
-                            color: "#EDEDEC"
+                            color: theme.palette.normal.background
                             radius: 120
                             clip: true
                             visible: true
@@ -269,7 +251,7 @@ MainView {
                                 anchors.horizontalCenter: parent.horizontalCenter; anchors.verticalCenter: mask.verticalCenter;
                                 width: units.gu(8)
                                 height: units.gu(8)
-                                color: openFoodFacts.settings.color;
+                                color: "#48c1ba";
                                 radius: 120
                                 clip: true
                                 visible: true
@@ -299,7 +281,7 @@ MainView {
                                 onPressed: { mask2.color = "#CCCCCC"; }
                                 Timer {
                                     interval: 2000; running: true; repeat: true
-                                    onTriggered: mask2.color = openFoodFacts.settings.color
+                                    onTriggered: mask2.color = "#48c1ba"
                                 }
                             }
                         }

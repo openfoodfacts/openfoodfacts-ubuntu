@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 14:00+0000\n"
+"POT-Creation-Date: 2019-11-09 07:23+0000\n"
 "PO-Revision-Date: 2016-02-19 16:06+0000\n"
 "Last-Translator: mara sdr <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -31,7 +31,7 @@ msgstr "Εισαγωγή εικόνας"
 msgid "About"
 msgstr "Περί"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/About.qml:119
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/About.qml:114
 msgid "Terms of use"
 msgstr "Όροι χρήσης"
 
@@ -44,7 +44,7 @@ msgid "tap to take a picture"
 msgstr ""
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:65
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:60
 msgid "Allergen"
 msgstr "Αλλεργιογόνο"
 
@@ -53,7 +53,7 @@ msgid "Reading barcode"
 msgstr "Γίνεται ανάγνωση barcode"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:148
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:433
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:415
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/component/scanReader.qml:137
 msgid "please, wait until the focus is done"
 msgstr "Παρακαλούμε περιμένετε μέχρι να γίνει η εστίαση"
@@ -62,45 +62,45 @@ msgstr "Παρακαλούμε περιμένετε μέχρι να γίνει �
 msgid "Historical"
 msgstr "Ιστορικό"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/history.qml:68
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/history.qml:62
 msgid "Empty history"
 msgstr "Καθαρισμός ιστορικού"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/history.qml:81
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/history.qml:75
 msgid "You have not scanned product."
 msgstr "Δεν έχετε σκανάρει προϊόν."
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:54
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:41
 msgid "gluten"
 msgstr "γλουτένη"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:55
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:42
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
 msgstr ""
 "γλουτένη, σιτάρι, σίκαλη, κριθάρι, βρώμη, όλυρα (αγριοσίταρο), σιτάρι "
 "χορασάν (kamut), σιμιγδάλι"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:60
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:47
 msgid "crustaceans"
 msgstr "μαλακόστρακα"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:61
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:48
 msgid "crustaceans, crab, lobster, crayfish, prawn, shrimp"
 msgstr "μαλακόστρακα, καβούρι, αστακός, καραβίδα, γαρίδα, γάμπαρη"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:65
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:52
 msgid "eggs"
 msgstr "αυγά"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:66
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:53
 msgid "eggs, egg, egg yolk"
 msgstr "αυγά, αυγό, κρόκος αυγού"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:70
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:57
 msgid "fish"
 msgstr "ψάρι"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:71
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:58
 msgid ""
 "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
 "sole, trout, tuna, sardine, sardines"
@@ -108,35 +108,35 @@ msgstr ""
 "ψάρι, ψάρια, γάδος, σκουμπρί, πησσί, ιππόγλωσσος, καλκάνι, εγκλεφίνος, "
 "σολωμός, γλώσσα, πέστροφα, τόνος, σαρδέλλα, σαρδέλλες"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:76
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:63
 msgid "peanuts"
 msgstr "φιστίκια"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:77
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:64
 msgid "peanuts, peanut, arachis hypogaea"
 msgstr "φιστίκια, φιστίκι, αράπικο φιστίκι"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:82
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:69
 msgid "soybeans"
 msgstr "σόγια"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:83
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:70
 msgid "soybeans, soya, soja, soia, soy"
 msgstr "φυτό σόγιας, σόγια"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:88
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:75
 msgid "milk"
 msgstr "γάλα"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:89
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:76
 msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
 msgstr "γάλα, λακτόζη, τυρόγαλο, γαλακτοκομικό, βούτυρο, κρέμα, γιαούρτι, τυρί"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:94
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:81
 msgid "nuts"
 msgstr "ξηροί καρποί"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:95
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:82
 msgid ""
 "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
 "Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
@@ -144,32 +144,32 @@ msgstr ""
 "ξηροί καρποί, αμύγδαλα, φουντούκια, καρύδια, κάσιους, κάσιου, πεκάν, "
 "φιστίκια πεκάν, καρύδια Βραζιλίας, φιστίκια Αιγίνης, μακαδάμια"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:100
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:101
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:87
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:88
 msgid "celery"
 msgstr "σέλερι"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:106
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:93
 msgid "mustard"
 msgstr "μουστάρδα"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:107
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:94
 msgid "mustard, brassica"
 msgstr "μουστάρδα, κράμβη"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:112
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:99
 msgid "sesame"
 msgstr "σουσάμι"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:113
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:100
 msgid "sesame seeds, sesame"
 msgstr "σπόροι σουσαμιού, σουσάμι"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:118
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:105
 msgid "sulfur"
 msgstr "θείο"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:119
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:106
 msgid ""
 "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
 "bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
@@ -179,11 +179,11 @@ msgstr ""
 "μεταδιθειώδη, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, "
 "E228"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:124
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:111
 msgid "molluscs"
 msgstr "μαλάκια"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:125
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:112
 msgid ""
 "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
 "mussles, mussle, clams, clam, scallops, scallop"
@@ -191,21 +191,21 @@ msgstr ""
 "μαλάκια, μαλάκιο, καλαμάρι, σουπιά, στρείδια, στρείδι, μύδια, μύδι, "
 "αχιβάδες, αχιβάδα, χτένια, χτένι"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:130
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:131
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:117
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:118
 msgid "lupin"
 msgstr "λούπινο"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:199
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:186
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:208
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:191
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:15
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:493
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:475
 msgid "Enter your product's name or product's barcode"
 msgstr "Εισάγετε το όνομα ή το barcode του προϊόντος"
 
@@ -226,190 +226,206 @@ msgstr "Το προϊόν σας δε βρέθηκε"
 msgid "search result for : "
 msgstr "αποτελέσματα αναζήτησης για: "
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:94
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:91
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:94
 msgid "Common name"
 msgstr "Κοινή ονομασία"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:96
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:93
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:96
 msgid "Quantity"
 msgstr "Ποσότητα"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:98
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:95
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:98
 msgid "Packaging"
 msgstr "Συσκευασία"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:100
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:97
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:100
 msgid "Brands"
 msgstr "Εμπορικές Μάρκες"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:103
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:100
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:103
 msgid "Categories"
 msgstr "Κατηγορίες"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:105
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:102
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:105
 msgid "Origin of ingredients"
 msgstr "Προέλευση συστατικών"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:107
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:104
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:107
 msgid "Manufacturing or processing places"
 msgstr "Σημεία παρασκευής ή επεξεργασίας"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:109
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:109
 msgid "City and Country where purchased"
 msgstr "Πόλη και χώρα αγοράς"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:111
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:108
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:111
 msgid "Stores"
 msgstr "Καταστήματα"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:113
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:110
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:113
 msgid "Countries where sold"
 msgstr "Χώρες πώλησης"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:115
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:544
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:112
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:782
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:115
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:544
 msgid "Ingredients"
 msgstr "Συστατικά"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:118
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:115
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:118
 msgid "Substances or products causing allergies or intolerances"
 msgstr "Ουσίες ή προϊόντα που προκαλούν αλλεργίες ή δυσανεξία"
 
 #. TRANSLATORS: an aliment can contains traces of thoses products
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:123
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:120
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:123
 msgid "Traces"
 msgstr "Ίχνη"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:129
-msgid "Serving size"
-msgstr "Μέγεθος μερίδας"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:309
-msgid "Allergen detected"
-msgstr "Ανιχνεύτηκε αλλεργιογόνο"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:358
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:398
-msgid "Nutrition facts"
-msgstr "Θρεπτικά στοιχεία"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:426
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:376
-msgid "Product characteristics"
-msgstr "Χαρακτηριστικά προϊόντος"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:607
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:742
-msgid "View picture"
-msgstr ""
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:655
-msgid "nutritional value"
-msgstr "Θρεπτική αξία"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:682
-msgid "Composition by"
-msgstr "Σύνθεση από"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:683
-msgid "serving"
-msgstr "μερίδα"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:689
-msgid "Energy"
-msgstr "Ενέργεια"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:693
-msgid "Fat"
-msgstr "Λίπη"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:693
-msgid "and"
-msgstr "και"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:693
-msgid "Lipides"
-msgstr "Λιπίδια"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:701
-msgid "Carbohydrate"
-msgstr "Υδατάνθρακας"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:705
-msgid "of which Sugars"
-msgstr "από τα οποία Σάκχαρα"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:709
-msgid "Dietary fiber"
-msgstr "Φυτικές ίνες"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:713
-msgid "Proteins"
-msgstr "Πρωτεΐνες"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:717
-msgid "Salt"
-msgstr "Αλάτι"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:721
-msgid "Sodium"
-msgstr "Νάτριο"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:24
-msgid "about"
-msgstr "σχετικά"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:60
-msgid "Global"
-msgstr ""
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:87
-msgid "Choose a color"
-msgstr "Επιλέξτε ένα χρώμα"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:292
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:354
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:319
-msgid "Example : #1ab6ef"
-msgstr "Παράδειγμα : #1ab6ef"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:325
-msgid "ok"
-msgstr "εντάξει"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:339
-msgid "Night mode"
-msgstr ""
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:366
-msgid "Theme"
-msgstr "Εμφάνιση"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:371
-msgid "Viewing Information"
-msgstr "Προβολή πληροφοριών"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:387
-msgid "ingredients"
-msgstr "συστατικά"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:409
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:312
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:117
 msgid "Composition"
 msgstr "Σύνθεση"
 
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:318
+msgid "for 100 g"
+msgstr ""
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:329
+msgid "Additives"
+msgstr ""
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:330
+msgid "Presence of additives"
+msgstr ""
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:378
+#, fuzzy
+msgid "Calorie"
+msgstr "Κατηγορίες"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:426
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
+msgid "Fat"
+msgstr "Λίπη"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:475
+msgid "Sugars"
+msgstr ""
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:523
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:713
+msgid "Proteins"
+msgstr "Πρωτεΐνες"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:572
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:717
+msgid "Salt"
+msgstr "Αλάτι"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:620
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:709
+msgid "Dietary fiber"
+msgstr "Φυτικές ίνες"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
+#, fuzzy
+msgid "Characteristics"
+msgstr "Χαρακτηριστικά προϊόντος"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:129
+msgid "Serving size"
+msgstr "Μέγεθος μερίδας"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:309
+msgid "Allergen detected"
+msgstr "Ανιχνεύτηκε αλλεργιογόνο"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:358
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:106
+msgid "Nutrition facts"
+msgstr "Θρεπτικά στοιχεία"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:426
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:84
+msgid "Product characteristics"
+msgstr "Χαρακτηριστικά προϊόντος"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:607
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:742
+msgid "View picture"
+msgstr ""
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:655
+msgid "nutritional value"
+msgstr "Θρεπτική αξία"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:682
+msgid "Composition by"
+msgstr "Σύνθεση από"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:683
+msgid "serving"
+msgstr "μερίδα"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:689
+msgid "Energy"
+msgstr "Ενέργεια"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
+msgid "and"
+msgstr "και"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
+msgid "Lipides"
+msgstr "Λιπίδια"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:701
+msgid "Carbohydrate"
+msgstr "Υδατάνθρακας"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:705
+msgid "of which Sugars"
+msgstr "από τα οποία Σάκχαρα"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:721
+msgid "Sodium"
+msgstr "Νάτριο"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:20
+msgid "about"
+msgstr "σχετικά"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:55
+msgid "Global"
+msgstr ""
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:79
+msgid "Viewing Information"
+msgstr "Προβολή πληροφοριών"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:95
+msgid "ingredients"
+msgstr "συστατικά"
+
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:47
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:43
 msgid "Developer settings"
 msgstr ""
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:63
-msgid "scanner from the home page"
-msgstr "σκάνερ από την αρχική σελίδα"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:98
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:81
 msgid "Delete settings"
 msgstr "Διαγραφή ρυθμίσεων"
 
@@ -497,6 +513,24 @@ msgstr "Ελπίζουμε να απολαύσετε τη χρήση του Open
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
 msgstr "Τέλος"
+
+#~ msgid "Choose a color"
+#~ msgstr "Επιλέξτε ένα χρώμα"
+
+#~ msgid "Cancel"
+#~ msgstr "Ακύρωση"
+
+#~ msgid "Example : #1ab6ef"
+#~ msgstr "Παράδειγμα : #1ab6ef"
+
+#~ msgid "ok"
+#~ msgstr "εντάξει"
+
+#~ msgid "Theme"
+#~ msgstr "Εμφάνιση"
+
+#~ msgid "scanner from the home page"
+#~ msgstr "σκάνερ από την αρχική σελίδα"
 
 #~ msgid "ChangeLog"
 #~ msgstr "Καταγραφή αλλαγών"

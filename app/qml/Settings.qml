@@ -13,10 +13,6 @@ Page {
 
     header: PageHeader {
         title: i18n.tr("Settings")
-       StyleHints {
-           foregroundColor: openFoodFacts.settings.fontColor;
-           backgroundColor: openFoodFacts.settings.color;
-       }
 
        trailingActionBar {
            actions: [
@@ -32,13 +28,12 @@ Page {
    }
 
 
-    Rectangle {
+    Item {
         id:main
         anchors {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: if (openFoodFacts.settings.color == "#3B3B3B"){ "#5D5D5D"; }else{ "#EDEDEC"; }
 
         Flickable {
             id: flickable
@@ -57,12 +52,12 @@ Page {
                 }
 
                 ListItem.Header {
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Global")+"</font>"
+                    text: i18n.tr("Global")
                 }
 
                 ListItem.MultiValue {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Allergen")+"</font>"
+                    text: i18n.tr("Allergen")
                     function addFontColor(list, color) {
                         if(list.length > 0) {
                             var txtlist = list.slice(); //local copy
@@ -80,300 +75,13 @@ Page {
                     }
                 }
 
-                Component {
-                    id: dialog
-                    Dialog {
-                        id: dialogue
-                        title: i18n.tr("Choose a color")
-                        Row {
-                            id: row
-                            width: main.width
-                            spacing: units.gu(1)
-
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "red"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "red"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "#FF0099"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#FF0099"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "#CC0066"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#CC0066"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "purple"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "purple"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "indigo"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "indigo"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "blue"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "blue"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "#1ab6ef"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#1ab6ef"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "#336666"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#336666"
-                                        ;
-
-                                    }
-                                }
-                            }
-
-
-
-                        }
-
-                        Row {
-                            id: row2
-                            width: main.width
-                            spacing: units.gu(1)
-
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "green"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "green"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "#00CC66"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#00CC66"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "#FF9966"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#FF9966"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "orange"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "orange"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "grey"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "grey"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "#647da4"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#647da4"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "brown"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "brown"; }
-                                }
-                            }
-                            Rectangle {
-                                width: units.gu(3)
-                                height: units.gu(3)
-                                color: "black"
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "black"; }
-                                }
-                            }
-
-
-
-                        }
-
-                        Row {
-                            id: row3
-                            width: parent.width
-                            spacing: units.gu(1)
-
-                            /*********************************** COLOR PICKER START **************************************/
-
-                            Component {
-                                id: dialog2
-                                Dialog {
-                                    id: dialogue2
-                                    title: "Picker"
-                                    Row {
-                                        id: row2
-                                        width: parent.width
-                                        spacing: units.gu(1)
-
-                                    }
-
-                                    Button {
-                                        width: parent.width
-                                        text: i18n.tr("Cancel")
-                                        color:  "#fc4949"
-                                        onClicked: PopupUtils.close(dialogue2);
-                                    }
-
-                                }
-                            }
-                            Image {
-                                id : productImage;
-                                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                                source: Qt.resolvedUrl("qrc:///images/picker.png");
-                                fillMode: Image.PreserveAspectCrop
-                                width: units.gu(4)
-                                height: units.gu(4)
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: { PopupUtils.open(dialog2) }
-                                }
-                            }
-
-
-                            /*********************************** COLOR PICKER END ***************************************/
-
-                            TextField {
-                                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                                id: barcodeinput
-                                width: parent.width/1.6
-                                placeholderText: i18n.tr("Example : #1ab6ef")
-                            }
-
-                            Button {
-                                visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                                width: parent.width/6;
-                                text: i18n.tr("ok");
-                                color:  "#38B44A"
-                                onClicked: ((barcodeinput.text == "")? openFoodFacts.settings.color = "#1ab6ef" : openFoodFacts.settings.color = barcodeinput.text),
-                                           PopupUtils.close(dialogue)
-                            }
-
-                        }
-                        
-                        Row {
-                            id: rowdark
-                            width: parent.width
-                            spacing: units.gu(1)
-                                Button {
-                                        width: parent.width
-                                        text: i18n.tr("Night mode")
-                                        color:  "#111111"
-                                        onClicked: { PopupUtils.close(dialogue);
-                                        openFoodFacts.settings.color = "#3B3B3B";
-                                                   }
-                                }
-                        }
-                        
-                        Row {
-                            id: row4
-                            width: parent.width
-                            spacing: units.gu(1)
-
-                            Button {
-                                width: parent.width
-                                text: i18n.tr("Cancel")
-                                color:  "#fc4949"
-                                onClicked: PopupUtils.close(dialogue);
-                            }
-                        }
-
-
-                    }
-                }
-                ListItem.SingleValue {
-                    showDivider: false
-                    progression: true
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Theme")+"</font>"
-                    onClicked: PopupUtils.open(dialog)
-                }
-
                 ListItem.Header {
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Viewing Information")+"</font>"
+                    text: i18n.tr("Viewing Information")
                 }
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Product characteristics")+"</font>"
+                    text: i18n.tr("Product characteristics")
                     control: Switch {
                         id: characteristicswitch
                         checked: openFoodFacts.settings.visiblecharacteristics
@@ -384,7 +92,7 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("ingredients")+"</font>"
+                    text: i18n.tr("ingredients")
                     control: Switch {
                         id: ingredientwitch
                         checked: openFoodFacts.settings.visibleingredient
@@ -395,7 +103,7 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Nutrition facts")+"</font>"
+                    text: i18n.tr("Nutrition facts")
                     control: Switch {
                         id: nutritionwitch
                         checked: openFoodFacts.settings.visiblenutrition
@@ -406,7 +114,7 @@ Page {
 
                 ListItem.Standard {
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">"+i18n.tr("Composition")+"</font>"
+                    text: i18n.tr("Composition")
                     control: Switch {
                         id: compositionwitch
                         checked: openFoodFacts.settings.visiblecomposition
@@ -421,7 +129,7 @@ Page {
                     id: settingsdeveloper
                     visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
                     showDivider: false
-                    text: "<font color=\""+openFoodFacts.settings.textColor+"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developer settings</font>"
+                    text: "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developer settings"
                     progression: true
                     onTriggered: {
                         pageStack.push(Qt.resolvedUrl("SettingsDeveloper.qml"));

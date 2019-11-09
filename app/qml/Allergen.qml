@@ -7,20 +7,14 @@ Page {
 
     header: PageHeader {
         title: i18n.tr("Allergen");
-       StyleHints {
-           foregroundColor: openFoodFacts.settings.fontColor;
-           backgroundColor: openFoodFacts.settings.color;
-       }
-
    }
 
-    Rectangle {
+    Item {
         id:main
         anchors {
             fill: parent
             topMargin: units.gu(6)
         }
-        color: "#EDEDEC"
 
         ListView {
             anchors.fill: parent
@@ -42,8 +36,6 @@ Page {
                     width: parent.width
                     horizontalAlignment: Text.AlignLeft
                     anchors.verticalCenter: parent.verticalCenter;
-
-                    color: openFoodFacts.settings.color
                     text: label
                 }
                 
