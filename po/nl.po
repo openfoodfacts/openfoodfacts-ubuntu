@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-09 07:40+0000\n"
+"POT-Creation-Date: 2019-11-11 12:41+0000\n"
 "PO-Revision-Date: 2016-03-06 16:55+0000\n"
 "Last-Translator: Pierre Slamich <pierre.slamich@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/ubuntouch-fr/openfoodfacts-1/"
@@ -47,7 +47,8 @@ msgid "tap to take a picture"
 msgstr ""
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:60
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:329
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:69
 msgid "Allergen"
 msgstr "Allergeen"
 
@@ -276,7 +277,7 @@ msgid "Countries where sold"
 msgstr "Verkooplanden"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:112
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:782
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:874
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:115
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:544
 msgid "Ingredients"
@@ -293,53 +294,56 @@ msgstr "Stoffen die allergieën of intoleranties veroorzaken"
 msgid "Traces"
 msgstr "Sporen"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:312
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:117
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:309
 msgid "Composition"
 msgstr "Samenstelling"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:318
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:315
 msgid "for 100 g"
 msgstr ""
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:329
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:331
+msgid "Presence of allergen"
+msgstr ""
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:379
 msgid "Additives"
 msgstr ""
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:330
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:380
 msgid "Presence of additives"
 msgstr ""
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:378
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:469
 #, fuzzy
 msgid "Calorie"
 msgstr "Categorieën"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:426
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:517
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
 msgid "Fat"
 msgstr "Vet"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:475
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:566
 msgid "Sugars"
 msgstr ""
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:523
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:713
-msgid "Proteins"
-msgstr "Eiwitten"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:572
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:614
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:717
 msgid "Salt"
 msgstr "Zout"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:620
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:663
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:713
+msgid "Proteins"
+msgstr "Eiwitten"
+
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:712
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:709
 msgid "Dietary fiber"
 msgstr "Voedingsvezels"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:684
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:776
 #, fuzzy
 msgid "Characteristics"
 msgstr "Productkenmerken"
@@ -354,12 +358,10 @@ msgid "Allergen detected"
 msgstr "Allergeen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:358
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:106
 msgid "Nutrition facts"
 msgstr "Voedingsfeiten"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:426
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:84
 msgid "Product characteristics"
 msgstr "Productkenmerken"
 
@@ -408,24 +410,17 @@ msgstr "Natrium"
 msgid "about"
 msgstr "over"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:55
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:59
 msgid "Global"
 msgstr "Wereldwijd"
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:79
-msgid "Viewing Information"
-msgstr "Informatie bekijken"
-
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:95
-msgid "ingredients"
-msgstr "Ingrediënten"
-
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:114
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:43
 msgid "Developer settings"
 msgstr ""
 
-#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:81
+#: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:72
 msgid "Delete settings"
 msgstr ""
 
@@ -499,6 +494,12 @@ msgstr ""
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
 msgstr ""
+
+#~ msgid "Viewing Information"
+#~ msgstr "Informatie bekijken"
+
+#~ msgid "ingredients"
+#~ msgstr "Ingrediënten"
 
 #~ msgid "Choose a color"
 #~ msgstr "Kies een kleur"

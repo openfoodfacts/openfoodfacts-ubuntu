@@ -1,8 +1,8 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
 import Qt.labs.settings 1.0
 import Ubuntu.Components.Popups 0.1
+import QtGraphicalEffects 1.0
 
 Page {
     id: settingsPage
@@ -49,101 +49,115 @@ Page {
                     top: parent.top
                     left: parent.left
                     right: parent.right
+                    bottom: parent.bottom
                 }
 
-                ListItem.Header {
-                    text: i18n.tr("Global")
+                ListItem {
+                    height: layout2.height + (divider.visible ? divider.height : 0)
+                    ListItemLayout {
+                        id: layout2
+                        title.text: i18n.tr("Global")
+                    }
                 }
-
-                ListItem.MultiValue {
-                    showDivider: false
-                    text: i18n.tr("Allergen")
-                    function addFontColor(list, color) {
-                        if(list.length > 0) {
-                            var txtlist = list.slice(); //local copy
-                            txtlist[0] = "<font color=\""+color+"\">"+txtlist[0];
-                            txtlist[txtlist.length-1] = txtlist[txtlist.length-1]+"</font>";
-                            return txtlist;
+             
+                
+            ListItem {
+                height: layout.height + (divider.visible ? divider.height : 0)
+                    divider.visible: false
+                ListItemLayout {
+                    id: layout
+                    title.text: i18n.tr("Allergen")
+                      
+                            
+                        Item{
+                                SlotsLayout.position: SlotsLayout.Trailing;
+                                height: parent.height/3
+                                width: parent.height/3
+                                    
+                                Icon {
+                                    name: "next"
+                                    antialiasing: true
+                                    color: theme.palette.normal.backgroundSecondaryText
+                                    visible: false
+                                    id: nextImage
+                                    anchors.fill: parent
+                                 }
+                                 ColorOverlay{
+                                     anchors.fill: parent
+                                     source: nextImage
+                                     color: theme.palette.normal.backgroundSecondaryText
+                                     antialiasing: true
+                                 }
+                            }
+                            
+                    }
+    
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: pageStack.push(Qt.resolvedUrl("Allergen.qml")); 
                         }
-                        else
-                            return [];
-                    }
-                    values: addFontColor(openFoodFacts.settings.allergen, "#b3b3b3")
-                    progression: true
-                    onTriggered: {
-                        pageStack.push(Qt.resolvedUrl("Allergen.qml"));
-                    }
-                }
+    
 
-                ListItem.Header {
-                    text: i18n.tr("Viewing Information")
-                }
+                    }
+                
 
-                ListItem.Standard {
-                    showDivider: false
-                    text: i18n.tr("Product characteristics")
-                    control: Switch {
-                        id: characteristicswitch
-                        checked: openFoodFacts.settings.visiblecharacteristics
-                        onClicked: { openFoodFacts.settings.visiblecharacteristics = checked;
+
+                    ListItem {
+                        height: layout6.height + (divider.visible ? divider.height : 0)
+                            
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: pageStack.push(Qt.resolvedUrl("SettingsDeveloper.qml")); 
+                        }
+                        ListItemLayout {
+                            id: layout6
+                            title.text: i18n.tr("Developer settings")
+                                
+                            Item{
+                                SlotsLayout.position: SlotsLayout.Leading;
+                                height: parent.height/2
+                                width: parent.height/2
+                                    
+                                Icon {
+                                    name: "security-alert"
+                                    antialiasing: true
+                                    color: "#ED3146"
+                                    visible: false
+                                    id: saltImage
+                                    anchors.fill: parent
+                                 }
+                                 ColorOverlay{
+                                     anchors.fill: parent
+                                     source: saltImage
+                                     color: "#ED3146"
+                                     antialiasing: true
+                                 }
+                            }  
+                            
+                        Item{
+                                SlotsLayout.position: SlotsLayout.Trailing;
+                                height: parent.height/3
+                                width: parent.height/3
+                                    
+                                Icon {
+                                    name: "next"
+                                    antialiasing: true
+                                    color: theme.palette.normal.backgroundSecondaryText
+                                    visible: false
+                                    id: nestImage
+                                    anchors.fill: parent
+                                 }
+                                 ColorOverlay{
+                                     anchors.fill: parent
+                                     source: nestImage
+                                     color: theme.palette.normal.backgroundSecondaryText
+                                     antialiasing: true
+                                 }
+                            }
+                            
+                            
                         }
                     }
-                }
-
-                ListItem.Standard {
-                    showDivider: false
-                    text: i18n.tr("ingredients")
-                    control: Switch {
-                        id: ingredientwitch
-                        checked: openFoodFacts.settings.visibleingredient
-                        onClicked: { openFoodFacts.settings.visibleingredient = checked;
-                        }
-                    }
-                }
-
-                ListItem.Standard {
-                    showDivider: false
-                    text: i18n.tr("Nutrition facts")
-                    control: Switch {
-                        id: nutritionwitch
-                        checked: openFoodFacts.settings.visiblenutrition
-                        onClicked: { openFoodFacts.settings.visiblenutrition = checked;
-                        }
-                    }
-                }
-
-                ListItem.Standard {
-                    showDivider: false
-                    text: i18n.tr("Composition")
-                    control: Switch {
-                        id: compositionwitch
-                        checked: openFoodFacts.settings.visiblecomposition
-                        onClicked: { openFoodFacts.settings.visiblecomposition = checked;
-                        }
-                    }
-                }
-
-
-
-                ListItem.Standard {
-                    id: settingsdeveloper
-                    visible: (openFoodFacts.settings.developerModeEnabled) //MODE DEVELOPPER
-                    showDivider: false
-                    text: "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developer settings"
-                    progression: true
-                    onTriggered: {
-                        pageStack.push(Qt.resolvedUrl("SettingsDeveloper.qml"));
-                    }
-                    Icon {
-                        id: expendedIcon4
-                        name: "security-alert"
-                        anchors { left: parent.left; verticalCenter: parent.verticalCenter}
-                        anchors.leftMargin: 15;
-                        height: units.gu(2.5)
-                        width: height
-                    }
-                }
-
 
 
             }

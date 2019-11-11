@@ -174,11 +174,8 @@ Page {
                 //sodium.text = sodium_100g + " " + sodium_unit;
 
                 if (ALLERGEN.isContainsAllergen(ingredients_text_with_allergens) === true) {
-                    allergendetect.color = "red";
-                    labelattention.visible = true;
-                    maskallergen.visible = true;
-                    mask.height = units.gu(17);
-                    mask.width = units.gu(17);
+                    allergenWarning.visible = true;
+                    allergenIcon.source = Qt.resolvedUrl("qrc:///assets/high.svg")
                 }
 
                 // add the product only if
@@ -321,6 +318,59 @@ Page {
 
                     }
 
+                    
+                    ListItem {
+                        id: allergenWarning
+                        visible: false
+                        height: layoutallergen.height + (divider.visible ? divider.height : 0)
+
+                        ListItemLayout {
+                            id: layoutallergen
+                            title.text: i18n.tr("Allergen")
+                            title.color: "#ED3146"
+                            subtitle.text: i18n.tr("Presence of allergen")
+                            Item{
+                                SlotsLayout.position: SlotsLayout.Leading;
+                                height: parent.height/2
+                                width: parent.height/2
+                                    
+                                Icon {
+                                    source: Qt.resolvedUrl("qrc:///assets/allergen.svg")
+                                    antialiasing: true
+                                    color: theme.palette.normal.backgroundText
+                                    visible: false
+                                    id: allergenImage
+                                    anchors.fill: parent
+                                 }
+                                 ColorOverlay{
+                                     anchors.fill: parent
+                                     source: allergenImage
+                                     color: theme.palette.normal.backgroundText
+                                     antialiasing: true
+                                 }
+                            }
+                            Row{
+                                SlotsLayout.position: SlotsLayout.Trailing;
+                                height: parent.height/2
+                                spacing: units.gu(1)
+                                
+                                Label {
+                                    id: nbAllergen
+                                    anchors.verticalCenter: parent.verticalCenter
+                                }
+                                Icon{
+                                     id: allergenIcon
+                                     height: units.gu(2) 
+                                     width: units.gu(2)   
+                                     anchors.verticalCenter: parent.verticalCenter
+                                }
+                                
+                            }
+                            
+                            
+                        }
+                    }
+                    
                     ListItem {
                         height: layout.height + (divider.visible ? divider.height : 0)
 
@@ -363,12 +413,53 @@ Page {
                                      width: units.gu(2)   
                                      anchors.verticalCenter: parent.verticalCenter
                                 }
+                                Item{
+                                    height: parent.height/2
+                                    width: parent.height/2
+                                    anchors.verticalCenter: parent.verticalCenter
+
+                                    Icon {
+                                        name: "down"
+                                        antialiasing: true
+                                        color: theme.palette.normal.backgroundSecondaryText
+                                        visible: false
+                                        id: nextImage
+                                        anchors.fill: parent
+                                     }
+                                     ColorOverlay{
+                                         visible: false//todo
+                                         anchors.fill: parent
+                                         source: nextImage
+                                         color: theme.palette.normal.backgroundSecondaryText
+                                         antialiasing: true
+                                     }
+                                }
                                 
                             }
                             
                             
                         }
                     }
+                    
+               Column{
+                   id: detailAdditives
+                    visible: false
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: parent.width-units.gu(4)
+                    spacing: units.gu(1)
+                    
+                    
+                    Text{
+                        id: detailAdditivesText
+                        wrapMode: Text.Wrap
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        width: parent.width-units.gu(4)
+                        color: theme.palette.normal.backgroundText
+                    }
+
+                    
+                }//column detail additives
+                                        
                     
                     ListItem {
                         height: layout2.height + (divider.visible ? divider.height : 0)
@@ -514,6 +605,55 @@ Page {
                             
                         }
                     }        
+
+                    ListItem {
+                        height: layout6.height + (divider.visible ? divider.height : 0)
+
+                        ListItemLayout {
+                            id: layout6
+                            title.text: i18n.tr("Salt")
+                            Item{
+                                SlotsLayout.position: SlotsLayout.Leading;
+                                height: parent.height/2
+                                width: parent.height/2
+                                    
+                                Icon {
+                                    source: Qt.resolvedUrl("qrc:///assets/salt.svg")
+                                    antialiasing: true
+                                    color: theme.palette.normal.backgroundText
+                                    visible: false
+                                    id: saltImage
+                                    anchors.fill: parent
+                                 }
+                                 ColorOverlay{
+                                     anchors.fill: parent
+                                     source: saltImage
+                                     color: theme.palette.normal.backgroundText
+                                     antialiasing: true
+                                 }
+                            }
+                            Row{
+                                SlotsLayout.position: SlotsLayout.Trailing;
+                                height: parent.height/2
+                                spacing: units.gu(1)
+                                
+                                Label {
+                                    id: salt
+                                    anchors.verticalCenter: parent.verticalCenter
+                                }
+                                Icon{
+                                     id: saltIcon
+                                     height: units.gu(2) 
+                                     width: units.gu(2)   
+                                     anchors.verticalCenter: parent.verticalCenter
+                                }
+                                
+                            }
+                            
+                            
+                        }
+                    }
+                    
                     
                     ListItem {
                         height: layout5.height + (divider.visible ? divider.height : 0)
@@ -563,54 +703,6 @@ Page {
                         }
                     }
                     
-                    
-                    ListItem {
-                        height: layout6.height + (divider.visible ? divider.height : 0)
-
-                        ListItemLayout {
-                            id: layout6
-                            title.text: i18n.tr("Salt")
-                            Item{
-                                SlotsLayout.position: SlotsLayout.Leading;
-                                height: parent.height/2
-                                width: parent.height/2
-                                    
-                                Icon {
-                                    source: Qt.resolvedUrl("qrc:///assets/salt.svg")
-                                    antialiasing: true
-                                    color: theme.palette.normal.backgroundText
-                                    visible: false
-                                    id: saltImage
-                                    anchors.fill: parent
-                                 }
-                                 ColorOverlay{
-                                     anchors.fill: parent
-                                     source: saltImage
-                                     color: theme.palette.normal.backgroundText
-                                     antialiasing: true
-                                 }
-                            }
-                            Row{
-                                SlotsLayout.position: SlotsLayout.Trailing;
-                                height: parent.height/2
-                                spacing: units.gu(1)
-                                
-                                Label {
-                                    id: salt
-                                    anchors.verticalCenter: parent.verticalCenter
-                                }
-                                Icon{
-                                     id: saltIcon
-                                     height: units.gu(2) 
-                                     width: units.gu(2)   
-                                     anchors.verticalCenter: parent.verticalCenter
-                                }
-                                
-                            }
-                            
-                            
-                        }
-                    }
                     
                     ListItem {
                         height: layout7.height + (divider.visible ? divider.height : 0)

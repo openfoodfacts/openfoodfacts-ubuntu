@@ -54,16 +54,7 @@ Page {
                     }
                 }
 
-                ListItem.Standard {
-                    showDivider: false
-                    text: "Enable health journal"
-                    control: Switch {
-                        id: healthjournal
-                        checked: openFoodFacts.settings.healthjournal
-                        onClicked: { openFoodFacts.settings.healthjournal = checked;
-                        }
-                    }
-                }
+
 
             }
         } //flickable

@@ -35,6 +35,7 @@
         <file alias="low.svg">qml/assets/low.svg</file>
         <file alias="moderate.svg">qml/assets/moderate.svg</file>
         <file alias="high.svg">qml/assets/high.svg</file>
+        <file alias="allergen.svg">qml/assets/allergen.svg</file>
     </qresource>
     <qresource prefix="/component">
         <file>qml/component/JSONListModel.qml</file>

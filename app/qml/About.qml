@@ -81,7 +81,7 @@ Page {
             width: parent.width
             height: units.gu(4)
             Label {
-                text: "Version 2.0"
+                text: "Version 2.1"
                 fontSize: "large"
                 color: UbuntuColors.lightAubergine
                 anchors.centerIn: parent
