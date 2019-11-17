@@ -82,7 +82,7 @@ Page {
                 labelbarcode.text=pageProductView.barcode;
                 
                 nbAdditives.text = _json.additives_n;
-    
+                
                 //if (_json.image_nutrition_url) {productImagenutr.source = _json.image_nutrition_url;};
                 
                 //if (_json.image_ingredients_url) {productImageingr.source = _json.image_ingredients_url;}else{ pictureButtoningr.visible = false; pictureButtoningr.height = units.gu(0); }
@@ -111,8 +111,10 @@ Page {
                 var ingredients_text_with_allergens = _json.ingredients_text_with_allergens || 'n/a';
                 ingrproduct.text = "<b>"+i18n.tr("Ingredients")+" : </b>" + ingredients_text_with_allergens;
 
-                var allergens = _json.allergens || 'n/a';
+                var allergens = _json.allergens_from_ingredients || 'n/a';
                 allergenproduct.text = "<b>"+i18n.tr("Substances or products causing allergies or intolerances")+" : </b>" + allergens;
+                
+                detailAllergensText.text = allergens;
 
                 var traces = _json.traces || 'n/a';
 
@@ -364,12 +366,76 @@ Page {
                                      width: units.gu(2)   
                                      anchors.verticalCenter: parent.verticalCenter
                                 }
-                                
+                                Item{
+                                    height: parent.height/2
+                                    width: parent.height/2
+                                    anchors.verticalCenter: parent.verticalCenter
+
+                                    Icon {
+                                        name: "down"
+                                        antialiasing: true
+                                        color: theme.palette.normal.backgroundSecondaryText
+                                        visible: false
+                                        id: nextImageAllergens
+                                        anchors.fill: parent
+                                     }
+                                     ColorOverlay{
+                                         anchors.fill: parent
+                                         source: nextImageAllergens
+                                         color: theme.palette.normal.backgroundSecondaryText
+                                         antialiasing: true
+                                     }
+                                }                                
                             }
                             
                             
                         }
+                        
+                MouseArea {
+                    anchors.fill: parent
+
+                    onClicked: {
+                        if (detailAllergens.visible) {
+                            detailAllergens.visible = false;
+                            nextImageAllergens.name = "down";
+                        } else {
+                            detailAllergens.visible = true;
+                            nextImageAllergens.name = "up";
+                        }
+                    } 
+                }
+                        
                     }
+
+                    
+                    
+               Column{
+                   id: detailAllergens
+                    visible: false
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: parent.width-units.gu(16)
+                    spacing: units.gu(1)
+                    
+                    Item{
+                        width: parent.width
+                        height: units.gu(1)
+                    }
+                   
+                    
+                    Text{
+                        id: detailAllergensText
+                        wrapMode: Text.Wrap
+                        width: parent.width-units.gu(4)
+                        color: theme.palette.normal.backgroundText
+                    }
+                   
+                    Item{
+                        width: parent.width
+                        height: units.gu(1)
+                    }
+               }
+
+                                        
                     
                     ListItem {
                         height: layout.height + (divider.visible ? divider.height : 0)
@@ -427,8 +493,8 @@ Page {
                                         anchors.fill: parent
                                      }
                                      ColorOverlay{
-                                         visible: false//todo
                                          anchors.fill: parent
+                                        visible: false //todo
                                          source: nextImage
                                          color: theme.palette.normal.backgroundSecondaryText
                                          antialiasing: true
@@ -437,8 +503,21 @@ Page {
                                 
                             }
                             
-                            
                         }
+                        
+                MouseArea {
+                    anchors.fill: parent
+
+                    onClicked: {
+                        if (detailAdditives.visible) {
+                            detailAdditives.visible = false;
+                        } else {
+                            detailAdditives.visible = true;
+                        }
+                    } 
+                }     
+                        
+                        
                     }
                     
                Column{
@@ -920,4 +999,3 @@ Page {
 
 
 }
-

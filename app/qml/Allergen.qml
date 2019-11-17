@@ -37,6 +37,7 @@ Page {
                     horizontalAlignment: Text.AlignLeft
                     anchors.verticalCenter: parent.verticalCenter;
                     text: label
+                    color: theme.palette.normal.backgroundText
                 }
                 
                 CheckBox {
