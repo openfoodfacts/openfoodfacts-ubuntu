@@ -9,7 +9,7 @@
             "desktop": "OpenFoodFacts.desktop"
         }
     },
-    "version": "2.1",
+    "version": "2.2",
     "maintainer": "openfoodfacts <contact@openfoodfacts.org>",
     "framework": "ubuntu-sdk-15.04.3-qml"
 }
