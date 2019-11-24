@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-17 12:54+0000\n"
-"PO-Revision-Date: 2019-01-19 08:26\n"
+"PO-Revision-Date: 2019-11-24 13:52+0100\n"
 "Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -11,7 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: openfoodfacts\n"
 "X-Crowdin-Language: fr\n"
 "X-Crowdin-File: /develop/po/openfoodfacts.ubuntouch-fr.pot\n"
@@ -38,7 +37,6 @@ msgid "Add product"
 msgstr "Ajouter un produit"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
-#, fuzzy
 msgid "tap to take a picture"
 msgstr "appuyez pour prendre une photo"
 
@@ -193,7 +191,7 @@ msgstr ""
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:117
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:118
 msgid "lupin"
-msgstr ""
+msgstr "lupin"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:186
 msgid "Open Food Facts"
@@ -214,7 +212,7 @@ msgstr "Produit introuvable"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/notFound.qml:22
 msgid "add"
-msgstr ""
+msgstr "ajouter"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/notFound.qml:82
 msgid "Your product was not found"
@@ -294,28 +292,27 @@ msgstr "Traces éventuelles"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:311
 msgid "Composition"
-msgstr ""
+msgstr "Composition"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:317
 msgid "for 100 g"
-msgstr ""
+msgstr "pour 100 g"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:333
 msgid "Presence of allergen"
-msgstr ""
+msgstr "Présence d'allergènes"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:445
 msgid "Additives"
-msgstr ""
+msgstr "Additifs"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:446
 msgid "Presence of additives"
-msgstr ""
+msgstr "Présence d'additifs"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:548
-#, fuzzy
 msgid "Calorie"
-msgstr "Catégories"
+msgstr "Calories"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:596
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
@@ -324,7 +321,7 @@ msgstr "Matières grasses"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:645
 msgid "Sugars"
-msgstr ""
+msgstr "Sucres"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:693
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:717
@@ -342,9 +339,8 @@ msgid "Dietary fiber"
 msgstr "Fibres alimentaires"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:855
-#, fuzzy
 msgid "Characteristics"
-msgstr "Caractéristiques du produit"
+msgstr "Caractéristiques"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:129
 msgid "Serving size"
@@ -365,7 +361,7 @@ msgstr "Caractéristiques du produit"
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:607
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:742
 msgid "View picture"
-msgstr ""
+msgstr "Afficher l'image"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:655
 msgid "nutritional value"
@@ -389,7 +385,7 @@ msgstr "et"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
 msgid "Lipides"
-msgstr ""
+msgstr "Lipides"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:701
 msgid "Carbohydrate"
