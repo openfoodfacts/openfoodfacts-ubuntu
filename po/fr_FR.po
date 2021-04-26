@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-17 12:54+0000\n"
-"PO-Revision-Date: 2019-11-24 13:52+0100\n"
-"Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
+"PO-Revision-Date: 2021-04-26 06:32\n"
+"Last-Translator: \n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
@@ -12,12 +12,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Crowdin-Project: openfoodfacts\n"
+"X-Crowdin-Project-ID: 243092\n"
 "X-Crowdin-Language: fr\n"
-"X-Crowdin-File: /develop/po/openfoodfacts.ubuntouch-fr.pot\n"
+"X-Crowdin-File: openfoodfacts.ubuntouch-fr.pot\n"
+"X-Crowdin-File-ID: 1686\n"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
-msgstr "Lecteur de codebarre"
+msgstr "Lecteur de code-barres"
 
 #. TRANSLATORS: Name of an action in the toolbar to import pictures from other applications and scan them for codes
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:110
@@ -48,7 +50,7 @@ msgstr "Allergène"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:19
 msgid "Reading barcode"
-msgstr "Lecture du codebarre"
+msgstr "Lecture du code-barres"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/barcodeReader.qml:148
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:415
@@ -97,12 +99,8 @@ msgid "fish"
 msgstr "poisson"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:58
-msgid ""
-"fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
-"sole, trout, tuna, sardine, sardines"
-msgstr ""
-"poisson, poissons, morue, maquereau, plie, flétan, turbot, aiglefin, saumon, "
-"sole, truite, thon, sardine, sardines"
+msgid "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, sole, trout, tuna, sardine, sardines"
+msgstr "poisson, poissons, morue, maquereau, plie, flétan, turbot, aiglefin, saumon, sole, truite, thon, sardine, sardines"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:63
 msgid "peanuts"
@@ -126,20 +124,15 @@ msgstr "lait"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:76
 msgid "milk, lactose, whey, dairy, butter, cream, yogurt, cheese, yoghurt"
-msgstr ""
-"lait, lactose, petit-lait, laitier, beurre, crème, yaourt, fromage, yahourt"
+msgstr "lait, lactose, petit-lait, laitier, beurre, crème, yaourt, fromage, yahourt"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:81
 msgid "nuts"
 msgstr "noix"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:82
-msgid ""
-"nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
-"Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
-msgstr ""
-"noix, amandes, noisettes, noix, noix de cajou, noix de cajou, noix de pécan, "
-"noix de pécan, noix du Brésil, pistaches, macadamia, noix du Queensland"
+msgid "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
+msgstr "noix, amandes, noisettes, noix, noix de cajou, noix de cajou, noix de pécan, noix de pécan, noix du Brésil, pistaches, macadamia, noix du Queensland"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:87
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:88
@@ -167,26 +160,16 @@ msgid "sulfur"
 msgstr "sulfure"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:106
-msgid ""
-"sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
-"bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
-"E226, E227, E228"
-msgstr ""
-"dioxyde de soufre et sulfites, anhydride sulfureux, sulfites, sulfites, "
-"bisulfite, métabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
-"E226, E227, E228"
+msgid "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
+msgstr "dioxyde de soufre et sulfites, anhydride sulfureux, sulfites, sulfites, bisulfite, métabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:111
 msgid "molluscs"
 msgstr "mollusques"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:112
-msgid ""
-"molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
-"mussles, mussle, clams, clam, scallops, scallop"
-msgstr ""
-"mollusques, mollusque, mollusques, mollusque, calmars, seiches, huîtres, "
-"huître, moules, moule, palourdes, palourde, pétoncles, pétoncle"
+msgid "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, mussles, mussle, clams, clam, scallops, scallop"
+msgstr "mollusques, mollusque, mollusques, mollusque, calmars, seiches, huîtres, huître, moules, moule, palourdes, palourde, pétoncles, pétoncle"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:117
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:118
@@ -361,7 +344,7 @@ msgstr "Caractéristiques du produit"
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:607
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:742
 msgid "View picture"
-msgstr "Afficher l'image"
+msgstr "Afficher les photos"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:655
 msgid "nutritional value"
@@ -426,13 +409,8 @@ msgid "Welcome to Open Food Facts"
 msgstr "Bienvenue sur Open Food Facts"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
-msgid ""
-"An application to learn more about food and eating healthier, it lists "
-"information about food products worldwide."
-msgstr ""
-"Une application pour en savoir plus à propos de la nourriture et pour manger "
-"sain, il répertorie les informations sur les produits alimentaires à travers "
-"le monde."
+msgid "An application to learn more about food and eating healthier, it lists information about food products worldwide."
+msgstr "Une application pour en savoir plus à propos de la nourriture et pour manger sain, il répertorie les informations sur les produits alimentaires à travers le monde."
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
 msgid "Swipe to move between pages"
@@ -443,38 +421,21 @@ msgid "Discover products and their ingredients"
 msgstr "Découvrez les produits et leurs ingrédients"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
-msgid ""
-"Open Food Facts uses the official database of the same name to provide "
-"access to a huge collection of food products and their ingredients. You can "
-"also add products directly on the official site."
-msgstr ""
-"Open Food Facts utilise la base de données officielle du même nom qui donne "
-"accès à une vaste collection de produits alimentaires et de leurs "
-"ingrédients. Vous pouvez également ajouter des produits directement sur le "
-"site officiel."
+msgid "Open Food Facts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site."
+msgstr "Open Food Facts utilise la base de données officielle du même nom qui donne accès à une vaste collection de produits alimentaires et de leurs ingrédients. Vous pouvez également ajouter des produits directement sur le site officiel."
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
 msgid "Allergen management"
 msgstr "La gestion des allergènes"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
-msgid ""
-"If you have a food allergy, ask that information in paramêtres. The "
-"application will help you identify a single glance the products compatible "
-"with your allergy."
-msgstr ""
-"Si vous avez une allergie alimentaire, renseigné ces informations dans les "
-"paramètres. L'application va vous aider à identifier d'un seul coup d'œil "
-"les produits compatibles avec votre allergie."
+msgid "If you have a food allergy, ask that information in paramêtres. The application will help you identify a single glance the products compatible with your allergy."
+msgstr "Si vous avez une allergie alimentaire, renseigné ces informations dans les paramètres. L'application va vous aider à identifier d'un seul coup d'œil les produits compatibles avec votre allergie."
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
-msgid ""
-"OpenFoodFacts is available in over 10 languages and is translated by the %1 "
-"community"
-msgstr ""
-"OpenFoodFacts est disponible dans plus de 10 langues et est traduit par la "
-"communauté %1"
+msgid "OpenFoodFacts is available in over 10 languages and is translated by the %1 community"
+msgstr "OpenFoodFacts est disponible dans plus de 10 langues et est traduit par la communauté %1"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
 msgid "Support"
@@ -483,12 +444,8 @@ msgstr "Assistance"
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
-msgid ""
-"If you find any bugs or have any feature requests, let us know on our "
-"project page at %1"
-msgstr ""
-"Si vous trouvez des anomalies ou si vous avez des demandes de "
-"fonctionnalités, faites-le nous savoir dans notre page de projet sur %1"
+msgid "If you find any bugs or have any feature requests, let us know on our project page at %1"
+msgstr "Si vous trouvez des anomalies ou si vous avez des demandes de fonctionnalités, faites-le nous savoir dans notre page de projet sur %1"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
 msgid "Enjoy"
@@ -502,20 +459,3 @@ msgstr "Nous espérons que vous apprécierez OpenFoodFacts!"
 msgid "Finish"
 msgstr "Terminer"
 
-#~ msgid "Viewing Information"
-#~ msgstr "Informations visibles"
-
-#~ msgid "ingredients"
-#~ msgstr "Ingrédients"
-
-#~ msgid "Choose a color"
-#~ msgstr "Choisir une couleur"
-
-#~ msgid "Cancel"
-#~ msgstr "Annuler"
-
-#~ msgid "Theme"
-#~ msgstr "Thème"
-
-#~ msgid "scanner from the home page"
-#~ msgstr "scanner depuis la page d'accueil"
