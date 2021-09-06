@@ -1,8 +1,8 @@
 # Open Food Facts for Ubuntu Touch
-An implementation of Open Food Facts database to Ubuntu touch devices.
+The official native client of the Open Food Facts database for Ubuntu Touch devices.
 
 # Developpers and contributors
-- Nymerea
+- nymerea
 - sy-per
 
 # License
@@ -66,12 +66,11 @@ The official documentation for API : https://en.wiki.openfoodfacts.org/Project:A
 You can help translate Open Food Facts and the app at (no technical knowledge required, takes a minute to signup): 
 - https://translations.launchpad.net/openfoodfacts/trunk/+pots/openfoodfacts-ubuntu-mobile
 
-**Status**
-===
+# Status
 
-[![Project Status](http://opensource.box.com/badges/active.svg)](http://opensource.box.com/badges)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/openfoodfacts/openfoodfacts-ubuntu.svg)](http://isitmaintained.com/project/openfoodfacts/openfoodfacts-ubuntu.svg "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/openfoodfacts/openfoodfacts-ubuntu.svg)](http://isitmaintained.com/project/openfoodfacts/openfoodfacts-ubuntu.svg "Percentage of issues still open")
+[![Project Status](https://opensource.box.com/badges/active.svg)](https://opensource.box.com/badges)
+[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/openfoodfacts/openfoodfacts-ubuntu.svg)](https://isitmaintained.com/project/openfoodfacts/openfoodfacts-ubuntu.svg "Average time to resolve an issue")
+[![Percentage of issues still open](https://isitmaintained.com/badge/open/openfoodfacts/openfoodfacts-ubuntu.svg)](https://isitmaintained.com/project/openfoodfacts/openfoodfacts-ubuntu.svg "Percentage of issues still open")
 
 
 # Useful links
@@ -81,6 +80,3 @@ You can help translate Open Food Facts and the app at (no technical knowledge re
 - How to read a JSON API in QML : https://morgan-durand.com/parser-une-api-json-dans-un-listview/
 
 - Navigate between pages with Ubuntu Touch : https://morgan-durand.com/creation-dune-application-ubuntu-jour-4/
-
-
-
