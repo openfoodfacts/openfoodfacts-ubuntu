@@ -3,18 +3,19 @@ msgstr ""
 "Project-Id-Version: openfoodfacts\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-17 12:54+0000\n"
-"PO-Revision-Date: 2019-01-19 09:10\n"
-"Last-Translator: pierreslamich <pierre.slamich@gmail.com>\n"
+"PO-Revision-Date: 2021-04-26 06:32\n"
+"Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: openfoodfacts\n"
+"X-Crowdin-Project-ID: 243092\n"
 "X-Crowdin-Language: de\n"
-"X-Crowdin-File: /develop/po/openfoodfacts.ubuntouch-fr.pot\n"
+"X-Crowdin-File: openfoodfacts.ubuntouch-fr.pot\n"
+"X-Crowdin-File-ID: 1686\n"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/OpenFoodFacts/Main.qml:99
 msgid "Barcode reader"
@@ -38,9 +39,8 @@ msgid "Add product"
 msgstr "Produkt hinzufügen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/addproduct.qml:115
-#, fuzzy
 msgid "tap to take a picture"
-msgstr "Antippen, um ein Foto aufzunehmen"
+msgstr "tippe, um ein Bild zu machen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Allergen.qml:9
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:331
@@ -56,7 +56,7 @@ msgstr "Strichcode einlesen"
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:415
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/component/scanReader.qml:137
 msgid "please, wait until the focus is done"
-msgstr ""
+msgstr "bitte warten Sie, bis es fokussiert ist"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/history.qml:9
 msgid "Historical"
@@ -76,9 +76,7 @@ msgstr "Gluten"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:42
 msgid "gluten, wheat, rye, barley, oats, spelt, kamut, wheat semolina"
-msgstr ""
-"Gluten, Weizen, Roggen, Gerste, Hafer, Dinkel, Kamut (Khorasan-Weizen), "
-"Weizengrieß"
+msgstr "Gluten, Weizen, Roggen, Gerste, Hafer, Dinkel, Kamut (Khorasan-Weizen), Weizengrieß"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:47
 msgid "crustaceans"
@@ -101,12 +99,8 @@ msgid "fish"
 msgstr "Fisch"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:58
-msgid ""
-"fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, "
-"sole, trout, tuna, sardine, sardines"
-msgstr ""
-"Fisch, Fische, Kabeljau, Makrele, Flunder, Heilbutt, Steinbutt, Schellfisch, "
-"Lachs, Seezunge, Forelle, Thunfisch, Sardine, Sardinen"
+msgid "fish, fishes, cod, mackerel, flounder, halibut, turbot, haddock, salmon, sole, trout, tuna, sardine, sardines"
+msgstr "Fisch, Fische, Kabeljau, Makrele, Flunder, Heilbutt, Steinbutt, Schellfisch, Lachs, Seezunge, Forelle, Thunfisch, Sardine, Sardinen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:63
 msgid "peanuts"
@@ -137,12 +131,8 @@ msgid "nuts"
 msgstr "Nüsse"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:82
-msgid ""
-"nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  "
-"Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
-msgstr ""
-"Nüsse, Mandeln, Haselnüsse, Walnüsse, Cashewnüsse, Cashew, Pekannüsse, "
-"Pekannuss, Macadamia, Queensland Nüsse"
+msgid "nuts, almonds, hazelnuts, walnuts, cashews, cashew, pecan nuts, pecan,  Brazil nuts, pistachio nuts, macadamia, Queensland nuts"
+msgstr "Nüsse, Mandeln, Haselnüsse, Walnüsse, Cashewnüsse, Cashew, Pekannüsse, Pekannuss, Macadamia, Queensland Nüsse"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:87
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:88
@@ -155,7 +145,7 @@ msgstr "Senf"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:94
 msgid "mustard, brassica"
-msgstr ""
+msgstr "Senf, Brassica"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:99
 msgid "sesame"
@@ -170,29 +160,21 @@ msgid "sulfur"
 msgstr "Schwefel"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:106
-msgid ""
-"sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, "
-"bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, "
-"E226, E227, E228"
-msgstr ""
-"Schwefeldioxid und Sulfite, Schwefeldioxid, Sulfite, Bisulfite, "
-"Metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, "
-"E228"
+msgid "sulphur dioxide and sulphites, sulphur dioxide, sulphites, sulfites, bisulfite, metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
+msgstr "Schwefeldioxid und Sulfite, Schwefeldioxid, Sulfite, Bisulfite, Metabisulfite, E150b, E150d, E220, E221, E222, E223, E224, E225, E226, E227, E228"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:111
 msgid "molluscs"
-msgstr ""
+msgstr "Weichtiere"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:112
-msgid ""
-"molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, "
-"mussles, mussle, clams, clam, scallops, scallop"
-msgstr ""
+msgid "molluscs, mollusc, mollusks, mollusk, squid, cuttlefish, oysters, oyster, mussles, mussle, clams, clam, scallops, scallop"
+msgstr "Weichtiere, Muscheln, Tintenfische, Austern"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:117
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:118
 msgid "lupin"
-msgstr ""
+msgstr "Lupinen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:186
 msgid "Open Food Facts"
@@ -205,23 +187,23 @@ msgstr "Einstellungen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/main.qml:475
 msgid "Enter your product's name or product's barcode"
-msgstr ""
+msgstr "Geben Sie den Namen oder den Strichcode Ihres Produkts ein"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/notFound.qml:14
 msgid "Product not found"
-msgstr ""
+msgstr "Produkt nicht gefunden"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/notFound.qml:22
 msgid "add"
-msgstr ""
+msgstr "Hinzufügen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/notFound.qml:82
 msgid "Your product was not found"
-msgstr ""
+msgstr "Ihr Produkt wurde nicht gefunden"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductSearchResult.qml:11
 msgid "search result for : "
-msgstr ""
+msgstr "Suchergebnisse für: "
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:91
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:94
@@ -261,7 +243,7 @@ msgstr "Herstellungs- oder Verarbeitungsstätten"
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:106
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:109
 msgid "City and Country where purchased"
-msgstr ""
+msgstr "Stadt und Land, in dem die Ware gekauft wurde"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:108
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:111
@@ -283,8 +265,7 @@ msgstr "Inhaltsstoffe"
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:115
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:118
 msgid "Substances or products causing allergies or intolerances"
-msgstr ""
-"Stoffe oder Erzeugnisse, die Allergien oder Unverträglichkeiten auslösen"
+msgstr "Stoffe oder Erzeugnisse, die Allergien oder Unverträglichkeiten auslösen"
 
 #. TRANSLATORS: an aliment can contains traces of thoses products
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:122
@@ -294,28 +275,27 @@ msgstr "Spuren"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:311
 msgid "Composition"
-msgstr ""
+msgstr "Zusammensetzung"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:317
 msgid "for 100 g"
-msgstr ""
+msgstr "für 100 g"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:333
 msgid "Presence of allergen"
-msgstr ""
+msgstr "Vorhandensein von Allergenen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:445
 msgid "Additives"
-msgstr ""
+msgstr "Zusatzstoffe"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:446
 msgid "Presence of additives"
-msgstr ""
+msgstr "Vorhandensein von Zusatzstoffen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:548
-#, fuzzy
 msgid "Calorie"
-msgstr "Kategorien"
+msgstr "Kalorien"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:596
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
@@ -324,7 +304,7 @@ msgstr "Fett"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:645
 msgid "Sugars"
-msgstr ""
+msgstr "Zucker"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:693
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:717
@@ -342,18 +322,16 @@ msgid "Dietary fiber"
 msgstr "Ballaststoffe"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductView.qml:855
-#, fuzzy
 msgid "Characteristics"
-msgstr "Produkteigenschaften"
+msgstr "Eigenschaften"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:129
 msgid "Serving size"
 msgstr "Portionsgröße"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:309
-#, fuzzy
 msgid "Allergen detected"
-msgstr "Allergen"
+msgstr "Allergen erkannt"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:358
 msgid "Nutrition facts"
@@ -366,19 +344,19 @@ msgstr "Produkteigenschaften"
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:607
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:742
 msgid "View picture"
-msgstr ""
+msgstr "Foto anzeigen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:655
 msgid "nutritional value"
-msgstr ""
+msgstr "Nährwerttabelle"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:682
 msgid "Composition by"
-msgstr ""
+msgstr "Zusammensetzung aus"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:683
 msgid "serving"
-msgstr ""
+msgstr "Portionen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:689
 msgid "Energy"
@@ -386,11 +364,11 @@ msgstr "Brennwert"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
 msgid "and"
-msgstr ""
+msgstr "und"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:693
 msgid "Lipides"
-msgstr ""
+msgstr "Fette"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:701
 msgid "Carbohydrate"
@@ -398,7 +376,7 @@ msgstr "Kohlenhydrate"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:705
 msgid "of which Sugars"
-msgstr ""
+msgstr "davon Zucker"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/ProductViewBACK.qml:721
 msgid "Sodium"
@@ -406,95 +384,78 @@ msgstr "Natrium"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:20
 msgid "about"
-msgstr ""
+msgstr "über"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:59
 msgid "Global"
-msgstr ""
+msgstr "Global"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/Settings.qml:114
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:14
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:43
 msgid "Developer settings"
-msgstr ""
+msgstr "Entwickler-Einstellungen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/SettingsDeveloper.qml:72
 msgid "Delete settings"
-msgstr ""
+msgstr "Einstellungen löschen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/component/Walkthrough.qml:89
 msgid "Skip"
-msgstr ""
+msgstr "Überspringen"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:42
 msgid "Welcome to Open Food Facts"
-msgstr ""
+msgstr "Willkommen bei Open Food Facts"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:53
-msgid ""
-"An application to learn more about food and eating healthier, it lists "
-"information about food products worldwide."
-msgstr ""
+msgid "An application to learn more about food and eating healthier, it lists information about food products worldwide."
+msgstr "Eine Anwendung, um mehr über Lebensmittel und gesünderes Essen zu erfahren, es listet Informationen über Lebensmittelprodukte weltweit auf."
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide1.qml:74
 msgid "Swipe to move between pages"
-msgstr ""
+msgstr "Wischen, um zwischen Seiten zu wechseln"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:45
 msgid "Discover products and their ingredients"
-msgstr ""
+msgstr "Entdecken Sie Produkte und deren Zutaten"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide2.qml:62
-msgid ""
-"Open Food Facts uses the official database of the same name to provide "
-"access to a huge collection of food products and their ingredients. You can "
-"also add products directly on the official site."
-msgstr ""
+msgid "Open Food Facts uses the official database of the same name to provide access to a huge collection of food products and their ingredients. You can also add products directly on the official site."
+msgstr "Open Food Facts benutzt die offizielle Datenbank selben Namens, um Zugang zu einer riesigen Sammlung an Lebensmitteln und ihrer Zutaten zu bieten. Auch du kannst Produkte direkt über das offizielle Portal hinzufügen."
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:45
 msgid "Allergen management"
-msgstr ""
+msgstr "Allergen-Management"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide3.qml:62
-msgid ""
-"If you have a food allergy, ask that information in paramêtres. The "
-"application will help you identify a single glance the products compatible "
-"with your allergy."
-msgstr ""
+msgid "If you have a food allergy, ask that information in paramêtres. The application will help you identify a single glance the products compatible with your allergy."
+msgstr "Wenn du eine Lebensmittelallergie hast, trage diese in den Einstellungen ein. Die App wird dir helfen, auf einen Blick Produkte zu finden, die mit deiner Allergie kompatibel sind."
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide4.qml:66
 #, qt-format
-msgid ""
-"OpenFoodFacts is available in over 10 languages and is translated by the %1 "
-"community"
-msgstr ""
+msgid "OpenFoodFacts is available in over 10 languages and is translated by the %1 community"
+msgstr "OpenFoodFacts ist in mehr als 10 Sprachen verfügbar und wird von der %1 -Gemeinschaft übersetzt"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:45
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #. TRANSLATORS: The %1 points to a url defined in html format <a href=\link\>Link</a>.
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide5.qml:64
 #, qt-format
-msgid ""
-"If you find any bugs or have any feature requests, let us know on our "
-"project page at %1"
-msgstr ""
+msgid "If you find any bugs or have any feature requests, let us know on our project page at %1"
+msgstr "Wenn Sie irgendwelche Fehler finden oder Funktionswünsche haben, teilen Sie uns auf unserer Projektseite bei %1"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:45
 msgid "Enjoy"
-msgstr ""
+msgstr "Viel Spaß"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:62
 msgid "We hope you enjoy using OpenFoodFacts!"
-msgstr ""
+msgstr "Wir wünschen Ihnen viel Spaß mit OpenFoodFacts!"
 
 #: /home/jimmy/Githlab/openfoodfacts-ubuntu/app/qml/welcomewizard/Slide6.qml:76
 msgid "Finish"
-msgstr ""
+msgstr "Fertig"
 
-#~ msgid "ingredients"
-#~ msgstr "Inhaltsstoffe"
-
-#~ msgid "Cancel"
-#~ msgstr "Abbrechen"
