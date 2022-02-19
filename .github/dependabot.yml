@@ -5,11 +5,18 @@
 
 version: 2
 updates:
+  - package-ecosystem: "docker"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-        interval: "daily"
-  - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-        interval: "daily"
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
