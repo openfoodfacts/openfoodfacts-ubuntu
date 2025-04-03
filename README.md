@@ -1,4 +1,5 @@
-# Open Food Facts for Ubuntu Touch
+# Open Food Facts for Ubuntu Touch (Paused)
+This project is paused, due to the lack of volunteers. Please email contact at openfoodfacts dot org if you'd like us to unarchive it so that you can maintain it.
 The official native client of the Open Food Facts database for Ubuntu Touch devices.
 
 # Developpers and contributors
